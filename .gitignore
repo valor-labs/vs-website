@@ -25,6 +25,8 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+build
+bundles
 
 # Dependency directories
 node_modules
@@ -35,3 +37,20 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+typings
+dist
+
+# ide
+.idea
+.vscode
+
+/dist
+/coverage
+/ts
+
+/src/**/*.js
+!/src/assets/**/*.js
+/src/**/*.js.map
+/src/**/*.d.ts
+!/src/custom-typings.d.ts
