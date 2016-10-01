@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
@@ -30,7 +31,8 @@ import { routing } from './router.config';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    Ng2BootstrapModule
   ],
   providers: [MainService, ConfigProvider],
   bootstrap: [AppComponent]
