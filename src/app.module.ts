@@ -8,10 +8,18 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 import { LandingComponent } from './components/landing/landing.component';
+import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { EventsComponent } from './components/events/events.component';
+import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
+import { CareersComponent } from './components/careers/careers.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 import { MainService } from './services/main.service';
 import { ConfigProvider } from './services/config';
@@ -22,10 +30,18 @@ import { routing } from './router.config';
   declarations: [
     AppComponent,
     TopMenuComponent,
+    FooterComponent,
     MainComponent,
     LandingComponent,
+    ApproachComponent,
     ServicesComponent,
-    TeamComponent
+    ClientsComponent,
+    BlogComponent,
+    EventsComponent,
+    AboutComponent,
+    TeamComponent,
+    CareersComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

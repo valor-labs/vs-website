@@ -23,6 +23,7 @@
     "@types/jasmine": "2.2.34",
     "@types/node": "6.0.41",
     "@types/webpack": "1.12.34",
+    "codecov": "1.0.1",
     "codelyzer": "0.0.28",
     "eslint-config-valorsoft": "0.1.0",
     "gitignore-to-glob": "0.2.1",
