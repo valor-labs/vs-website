@@ -13,7 +13,7 @@
  * all here! Crazy huh. So we need to do some setup
  */
 'use strict';
-// todo: replace with path to your test files source
+
 const PATH_TO_FILES = './src';
 
 Error.stackTraceLimit = Infinity;
