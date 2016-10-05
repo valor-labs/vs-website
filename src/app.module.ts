@@ -3,11 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { Ng2PageScrollModule } from 'ng2-page-scroll/ng2-page-scroll.ts';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
+import { HamburgerMenuComponent } from './components/hamburger-menu/hamburger-menu.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { LandingComponent } from './components/landing/landing.component';
@@ -30,6 +32,7 @@ import { routing } from './router.config';
   declarations: [
     AppComponent,
     TopMenuComponent,
+    HamburgerMenuComponent,
     FooterComponent,
     MainComponent,
     LandingComponent,
@@ -48,6 +51,7 @@ import { routing } from './router.config';
     FormsModule,
     HttpModule,
     routing,
+    Ng2PageScrollModule,
     Ng2BootstrapModule
   ],
   providers: [MainService, ConfigProvider],
