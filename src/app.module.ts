@@ -21,7 +21,11 @@ import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component';
+import { ProjectsListComponent } from './partials/projects-list/projects-list.component';
+
 import { MainService } from './services/main.service';
+import { ProjectsService } from './services/projects.service';
 import { ConfigProvider } from './services/config';
 
 import { routing } from './router.config';
@@ -36,6 +40,8 @@ import { routing } from './router.config';
     ApproachComponent,
     ServicesComponent,
     ClientsComponent,
+    ProjectPreviewComponent,
+    ProjectsListComponent,
     BlogComponent,
     EventsComponent,
     AboutComponent,
@@ -50,7 +56,7 @@ import { routing } from './router.config';
     routing,
     Ng2BootstrapModule
   ],
-  providers: [MainService, ConfigProvider],
+  providers: [MainService, ConfigProvider, ProjectsService ],
   bootstrap: [AppComponent]
 })
 
