@@ -1,32 +1,62 @@
-<ul class="nav navbar-nav navbar-right">
-  <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-    <a routerLink="/">Home</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/approach">Approach</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/services">Services</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/clients">Clients</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/blog">Blog</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/events">Events</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/about">About</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/team">Team</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/careers">Careers</a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="/contact">Contact</a>
-  </li>
-</ul>
+<section class="introduction">
+    <header class="header">
+        <hamburger-menu></hamburger-menu>
+        <a routerLink="/" class="logo"></a>
+        <a routerLink="/contact" class="contact-btn">
+            <span data-hover="Contact">Contact</span>
+        </a>
+    </header>
+    <div class="introduction__text">
+        <h2>
+            Using our intelligence<br>
+            we make the world <span class="introduction__text_red">better!</span>
+        </h2>
+        <p>We create smart web & mobile solutions</p>
+    </div>
+    <div class="introduction__arrow" pageScroll href="#whatWeDo">
+        <svg>
+            <use xlink:href="#icon-scroll-arrow"></use>
+        </svg>
+    </div>
+
+    <div id="particles-js"></div>
+</section>
+<div class="menu">
+    <div class="container">
+        <div class="menu__inner">
+            <a routerLink="/" class="menu__logo"></a>
+            <ul class="menu__list">
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a routerLink="/">Home</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/approach">Approach</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/services">Services</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/clients">Clients</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/blog">Blog</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/events">Events</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/about">About</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/team">Team</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/careers">Careers</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a routerLink="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
