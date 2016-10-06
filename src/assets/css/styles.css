@@ -84,7 +84,7 @@ svg {
 .btn {
     background: #cd151e;
     border: 2px solid #c3121a;
-    border-radius: 8px;
+    border-radius: 4px;
     color: #fff;
     font-weight: 500;
     line-height: 30px;
@@ -107,4 +107,15 @@ svg {
 
 .btn:focus {
     color: #fff;
+}
+
+.btn_transparent {
+    border: 2px solid white;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.btn_transparent:hover {
+    background: #fff;
+    color: #cd151e;
 }

@@ -1,12 +1,8 @@
 <section class="introduction">
     <header class="header">
         <hamburger-menu></hamburger-menu>
-        <a href="./" class="logo">
-            <svg>
-                <use xlink:href="#logo"></use>
-            </svg>
-        </a>
-        <a href="#" class="contact-btn">
+        <a routerLink="/" class="logo"></a>
+        <a routerLink="/contact" class="contact-btn">
             <span data-hover="Contact">Contact</span>
         </a>
     </header>
@@ -19,7 +15,7 @@
     </div>
     <div class="introduction__arrow" pageScroll href="#whatWeDo">
         <svg>
-            <use xlink:href="#scroll-arrow"></use>
+            <use xlink:href="#icon-scroll-arrow"></use>
         </svg>
     </div>
 
@@ -28,11 +24,7 @@
 <div class="menu">
     <div class="container">
         <div class="menu__inner">
-            <a href="./" class="menu__logo">
-                <svg>
-                    <use xlink:href="#logo"></use>
-                </svg>
-            </a>
+            <a routerLink="/" class="menu__logo"></a>
             <ul class="menu__list">
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                     <a routerLink="/">Home</a>

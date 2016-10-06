@@ -13,6 +13,8 @@
   width: 139px;
   height: 79px;
   display: block;
+  background: url(./src/components/top-menu/img/logo-first-screen.png);
+  background-size: cover;
 }
 
 .introduction {
@@ -156,15 +158,18 @@ canvas {
   align-items: center;
 }
 .menu__logo {
-  width: 100px;
+  min-width: 100px;
   height: 57px;
   display: block;
+  background: url(./src/components/top-menu/img/logo-white-menu.png);
+  background-size: cover;
 }
 
 .menu__list {
   display: flex;
   list-style: none;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 .menu__list li {
@@ -180,4 +185,8 @@ canvas {
 
 .menu__list li a{
   color: #fefeff;
+}
+
+.menu__list li a:hover {
+  text-decoration: none;
 }
