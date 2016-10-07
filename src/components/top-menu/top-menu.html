@@ -1,4 +1,4 @@
-<section class="introduction">
+<section  class="introduction">
     <header class="header">
         <hamburger-menu></hamburger-menu>
         <a routerLink="/" class="logo"></a>
@@ -21,7 +21,7 @@
 
     <div id="particles-js"></div>
 </section>
-<div class="menu">
+<div class="menu" [class.is-sticky]="isSticky">
     <div class="container">
         <div class="menu__inner">
             <a routerLink="/" class="menu__logo"></a>

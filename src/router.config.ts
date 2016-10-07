@@ -17,7 +17,7 @@ export const routes:Routes = [
     path: '',
     component: MainComponent,
     children: [
-      {path: '', component: LandingComponent},
+      {path: '', component: LandingComponent, data: {'home': true}},
       {path: 'approach', component: ApproachComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'clients', component: ClientsComponent},

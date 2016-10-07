@@ -152,7 +152,18 @@ canvas {
 .menu {
   background: #1d1d2b;
   padding: 7px 8px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
 }
+
+.menu.is-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
 .menu__inner {
   display: flex;
   align-items: center;
@@ -175,8 +186,27 @@ canvas {
 .menu__list li {
   font-size: 18px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 57px;
   margin-right: 20px;
+  position: relative;
+}
+
+.menu__list li.active:after {
+  content: '';
+  position: absolute;
+  width:100%;
+  bottom: -7px;
+  height: 2px;
+  background: #cd151e;
+}
+
+.menu__list li:hover:after {
+  content: '';
+  position: absolute;
+  width:100%;
+  bottom: -7px;
+  height: 2px;
+  background: #cd151e;
 }
 
 .menu__list li:last-child {
