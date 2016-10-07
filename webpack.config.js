@@ -2,11 +2,13 @@
 'use strict';
 
 var conf = getWebpackConfig(process.env.NODE_ENV, require('./.ng2-config'));
-conf.module.loaders.push({
-  test: /\.png$/,
-  loader: 'file',
-  exclude: /node_modules/
-});
+conf.module.loaders.push(
+  {
+    test: /\.(jpg|png|gif)$/,
+    loader: 'file'
+  }
+);
+
 module.exports = conf;
 
 function getWebpackConfig(env, config) {
