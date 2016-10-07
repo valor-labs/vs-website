@@ -119,3 +119,36 @@ svg {
     background: #fff;
     color: #cd151e;
 }
+
+/*=========================Projects styles start=======================*/
+.projects-preview {
+  margin: 15px;
+  float: left;
+  width: 400px;
+  height: 300px;
+}
+
+.projects-preview.dark {
+  background: #000;
+}
+
+.projects-preview.light {
+  background: #fff;
+}
+
+.projects-preview.light > .projects-preview-title{
+  color: #000;
+}
+
+.projects-preview.dark > .projects-preview-title{
+  color: #FFF;
+}
+
+.projects-preview > .projects-preview-description {
+  color: #777777;
+}
+
+.projects-preview > div > .projects-preview-link {
+  color: #ff090a;
+}
+/*=========================Projects styles end=======================*/
