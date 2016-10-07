@@ -120,7 +120,7 @@ svg {
     color: #cd151e;
 }
 
-/*=========================MY=======================*/
+/*=========================Projects styles start=======================*/
 .projects-preview {
   margin: 15px;
   float: left;
@@ -151,3 +151,4 @@ svg {
 .projects-preview > div > .projects-preview-link {
   color: #ff090a;
 }
+/*=========================Projects styles end=======================*/

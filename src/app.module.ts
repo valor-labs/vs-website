@@ -16,7 +16,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ClientsComponent } from './components/clients/clients.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { EventsComponent } from './components/events/events.component';
 import { AboutComponent } from './components/about/about.component';
@@ -43,7 +43,7 @@ import { routing } from './router.config';
     LandingComponent,
     ApproachComponent,
     ServicesComponent,
-    ClientsComponent,
+    ProjectsComponent,
     ProjectPreviewComponent,
     ProjectsListComponent,
     BlogComponent,
