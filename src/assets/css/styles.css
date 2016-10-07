@@ -7,6 +7,11 @@ main {
     height: 100%;
 }
 
+landing {
+    margin-top: 71px;
+    display: block;
+}
+
 body {
     min-width: 320px;
 }
@@ -21,6 +26,14 @@ svg {
 .frame {
     text-align: center;
     padding: 90px 0;
+}
+
+.frame_dark {
+    background: #1d1d2b;
+}
+
+.frame_light {
+    background: #eef5f9;
 }
 
 .frame__top {
@@ -120,6 +133,7 @@ svg {
     color: #cd151e;
 }
 
+
 /*=========================Projects styles start=======================*/
 .projects-preview {
   margin: 15px;
@@ -163,3 +177,75 @@ svg {
   color: #babfc4;
 }
 /*=========================Projects styles end=======================*/
+
+/* carousel */
+
+.carousel.slide {
+    padding: 0 50px 60px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background: none;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.carousel-control > span.icon-next, .carousel-control > span.icon-prev {
+    width: 13px;
+    height: 23px;
+    background: url(../../components/landing/images/arrow.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.carousel-control .icon-prev {
+    transform: rotate(180deg);
+}
+
+.carousel-control > span:before {
+    display: none;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    background: #babfc4;
+    width: 11px;
+    height: 11px;
+    margin: 0 10px;
+}
+
+.carousel-indicators .active {
+    background: #1d1d2b;
+    margin: 0 10px;
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.socials__item a {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.socials__item svg{
+    fill: #babfc4;
+}
+
+.socials__item a:hover svg{
+    fill: #fff;
+}

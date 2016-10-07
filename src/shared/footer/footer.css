@@ -52,31 +52,6 @@
     padding: 27px 0;
 }
 
-.socials {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.socials__item {
-    margin-right: 12px;
-}
-
-.socials__item a {
-    display: block;
-    width: 28px;
-    height: 28px;
-}
-
-.socials__item svg{
-    fill: #babfc4;
-}
-
-.socials__item a:hover svg{
-    fill: #fff;
-}
-
 .copyrights {
     color: #babfc4;
     font-size: 13px;
