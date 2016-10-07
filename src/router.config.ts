@@ -4,7 +4,7 @@ import { MainComponent } from './components/main/main.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
-import { ClientsComponent } from './components/clients/clients.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { EventsComponent } from './components/events/events.component';
 import { AboutComponent } from './components/about/about.component';
@@ -20,7 +20,7 @@ export const routes:Routes = [
       {path: '', component: LandingComponent, data: {'home': true}},
       {path: 'approach', component: ApproachComponent},
       {path: 'services', component: ServicesComponent},
-      {path: 'clients', component: ClientsComponent},
+      {path: 'clients', component: ProjectsComponent},
       {path: 'blog', component: BlogComponent},
       {path: 'events', component: EventsComponent},
       {path: 'about', component: AboutComponent},

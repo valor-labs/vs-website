@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class TopMenuComponent {
   public isSticky: boolean = false;
   public startFixedPosition: number = window.innerHeight;
+  @Input() public isLanding:boolean;
   public constructor(public router: Router) {
 
   }
