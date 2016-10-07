@@ -17,12 +17,10 @@ export class Project {
 
 @Component({
   selector: 'project-preview',
-  template: require('./project-preview.html'),
-  styles: [require('./projects-list.css')]
+  template: require('./project-preview.html')
 })
 
 export class ProjectPreviewComponent {
-  public project: Project;
   public styles: any;
 
   @Input() public project: Project;
@@ -33,7 +31,6 @@ export class ProjectPreviewComponent {
 
 @Component({
   selector: 'projects-list',
-  // styles: [require('./projects-list.css')],
   template: require('./projects-list.html')
 })
 
