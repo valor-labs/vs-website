@@ -128,27 +128,38 @@ svg {
   height: 300px;
 }
 
-.projects-preview.dark {
+.projects-list-dark .projects-preview {
   background: #000;
 }
 
-.projects-preview.light {
+.projects-list-light .projects-preview {
   background: #fff;
 }
 
-.projects-preview.light > .projects-preview-title{
+.projects-list-light .projects-preview .projects-preview-title{
   color: #000;
 }
 
-.projects-preview.dark > .projects-preview-title{
+.projects-list-dark .projects-preview .projects-preview-title{
   color: #FFF;
 }
 
-.projects-preview > .projects-preview-description {
+.projects-preview .projects-preview-description {
   color: #777777;
 }
 
-.projects-preview > div > .projects-preview-link {
+.projects-preview .projects-preview-link {
   color: #ff090a;
+}
+
+.frame_dark {
+  background: #000;
+}
+
+.frame_text_light {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #babfc4;
 }
 /*=========================Projects styles end=======================*/
