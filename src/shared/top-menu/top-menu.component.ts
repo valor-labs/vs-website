@@ -1,5 +1,4 @@
 import { Component, Input, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'top-menu',
@@ -10,9 +9,7 @@ export class TopMenuComponent {
   public isSticky: boolean = false;
   public startFixedPosition: number = window.innerHeight;
   @Input() public isLanding:boolean;
-  public constructor(public router: Router) {
-
-  }
+  // tslint:disable
   @HostListener('window:scroll', ['$event']) private scroll () {
     if(window.scrollY > this.startFixedPosition) {
       this.isSticky = true;

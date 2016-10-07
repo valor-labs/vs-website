@@ -21,9 +21,10 @@
 
     <div id="particles-js"></div>
 </section>
-<div class="menu" [class.is-sticky]="isSticky">
+<div class="menu" [class.is-sticky]="isSticky" [class.not-home]="!isLanding">
     <div class="container">
         <div class="menu__inner">
+            <div class="menu__inner">
             <a routerLink="/" class="menu__logo"></a>
             <ul class="menu__list">
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
@@ -57,6 +58,12 @@
                     <a routerLink="/contact">Contact</a>
                 </li>
             </ul>
+            </div>
+            <a class="menu__git" target="_blank" href="https://github.com/valor-software">
+                <svg>
+                    <use xlink:href="#icon-git"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </div>

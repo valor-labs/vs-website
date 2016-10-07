@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'landing',
@@ -11,7 +10,7 @@ export class LandingComponent {
     public noWrapSlides: boolean = false;
     public slides: Array<any> = [];
 
-    public constructor(route: ActivatedRoute) {
+    public constructor() {
         for (let i = 0; i < 4; i++) {
             this.addSlide();
         }
