@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   template: require('./landing.html')
 })
 export class LandingComponent {
-
+  public getImage = (img:string):string => require('./images/' + img);
 }

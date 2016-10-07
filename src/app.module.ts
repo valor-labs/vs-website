@@ -18,8 +18,6 @@ import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/project/project.component';
-import { BlogComponent } from './components/blog/blog.component';
-import { EventsComponent } from './components/events/events.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
@@ -48,8 +46,6 @@ import { routing } from './router.config';
     ProjectComponent,
     ProjectPreviewComponent,
     ProjectsListComponent,
-    BlogComponent,
-    EventsComponent,
     AboutComponent,
     TeamComponent,
     CareersComponent,

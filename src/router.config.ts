@@ -6,8 +6,6 @@ import { ApproachComponent } from './components/approach/approach.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/project/project.component';
-import { BlogComponent } from './components/blog/blog.component';
-import { EventsComponent } from './components/events/events.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
@@ -23,8 +21,6 @@ export const routes:Routes = [
       {path: 'services', component: ServicesComponent},
       {path: 'clients', component: ProjectsComponent},
       {path: 'project/:projectId', component: ProjectComponent},
-      {path: 'blog', component: BlogComponent},
-      {path: 'events', component: EventsComponent},
       {path: 'about', component: AboutComponent},
       {path: 'team', component: TeamComponent},
       {path: 'careers', component: CareersComponent},
