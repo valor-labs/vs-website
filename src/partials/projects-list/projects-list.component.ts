@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-// import { Router } from '@angular/router';
 
 import { ProjectsService } from '../../services/projects.service';
 
@@ -20,8 +19,6 @@ export class Project {
 })
 
 export class ProjectPreviewComponent {
-  public styles:any;
-
   @Input() public project:Project;
 
   public getImage = (img:string):string => require(img);
@@ -35,33 +32,41 @@ export class ProjectPreviewComponent {
 export class ProjectsListComponent implements OnInit {
 
   public projects:Project[];
-  // public projectsBackground:string = 'light';
-  // public projectsBackground:string = 'dark';
+  @Input() public maxItems:number;
+  @Input() public hasButton:boolean;
+  @Input() public similarTo:number;
 
   public ngOnInit():void {
+    const path:string = './images';
 
-    // const path = this.projectsService.getImagesPath();
-    // const path = 'src/partials/projects-list/images';
-    const path = './images';
-    const projects = [].concat(this.projectsService.getAll());
+    // receiving All projects OR(if parameter similarTo specified) - similar projects only
+    const projects:Project[] = (this.similarTo && Number.isInteger(this.similarTo)) ?
+      this.projectsService.getSimilarTo(this.similarTo) :
+      this.projectsService.getAll();
 
-    this.projects = projects.map((project:any) => {
+    let resultProjectsList:Project[] = []
+      .concat(projects)
+      .map((project:any) => {
 
-      // wtf? without this we receive path like src/images/src/images/src/images....
-      if (project.isModified) {
+        // wtf? without this we receive path like src/images/src/images/src/images....
+        if (project.isModified) {
+          return project;
+        }
+        project.isModified = true;
+
+        // build path to images
+        project.previewImage = `${path}/${project.previewImage}`;
+        project.fullImage = `${path}${project.fullImage}`;
         return project;
-      }
-      project.isModified = true;
-      // if (project.isModified) {
-      //   project.isModified ++;
-      // } else {
-      //   project.isModified = 1;
-      // }
+      });
 
-      project.previewImage = `${path}/${project.previewImage}`;
-      project.fullImage = `${path}${project.fullImage}`;
-      return project;
-    });
+    // if param maxItems is specified - manage items number
+    if (this.maxItems && this.maxItems < resultProjectsList.length) {
+      resultProjectsList = resultProjectsList.slice(0, this.maxItems);
+    }
+
+    this.projects = resultProjectsList;
+
   }
 
   public constructor(public projectsService:ProjectsService) {
