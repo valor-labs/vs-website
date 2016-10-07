@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 
 import { TopMenuComponent } from './shared/top-menu/top-menu.component';
-import { HamburgerMenuComponent } from './components/hamburger-menu/hamburger-menu.component';
+import { HamburgerMenuComponent } from './shared/hamburger-menu/hamburger-menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { LandingComponent } from './components/landing/landing.component';
