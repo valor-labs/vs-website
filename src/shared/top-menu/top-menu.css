@@ -227,3 +227,16 @@ canvas {
 .menu__list li a:hover {
     text-decoration: none;
 }
+
+.menu__git {
+    width: 27px;
+    height: 27px;
+}
+
+.menu__git svg {
+    fill: #babfc4;
+}
+
+.menu__git:hover svg {
+    fill: #fff;
+}
