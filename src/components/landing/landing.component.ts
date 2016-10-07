@@ -9,6 +9,7 @@ export class LandingComponent {
     public myInterval: number = 500000;
     public noWrapSlides: boolean = false;
     public slides: Array<any> = [];
+    public getImage = (img: string): string => require('./images/' + img);
 
     public constructor() {
         for (let i = 0; i < 4; i++) {

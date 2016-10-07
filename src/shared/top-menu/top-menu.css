@@ -10,11 +10,11 @@
 }
 
 .logo {
-    width: 139px;
-    height: 79px;
-    display: block;
-    background: url(./src/shared/top-menu/images/logo-first-screen.png);
-    background-size: cover;
+  width: 139px;
+  height: 79px;
+  display: block;
+  background: url('./images/logo-first-screen.png');
+  background-size: cover;
 }
 
 .introduction {
@@ -176,24 +176,11 @@ canvas {
 }
 
 .menu__logo {
-    min-width: 100px;
-    height: 57px;
-    display: block;
-    background: url(./src/shared/top-menu/images/logo-white-menu.png);
-    background-size: cover;
-}
-
-.menu__git {
-    width: 27px;
-    height: 27px;
-}
-
-.menu__git svg {
-    fill: #babfc4;
-}
-
-.menu__git:hover svg {
-    fill: #fff;
+  min-width: 100px;
+  height: 57px;
+  display: block;
+  background: url('./images/logo-white-menu.png');
+  background-size: cover;
 }
 
 .menu__list {
