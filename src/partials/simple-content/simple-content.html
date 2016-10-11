@@ -1,0 +1,11 @@
+<div class="container">
+  <section-heading [title]="contentItem.title" [description]="contentItem.description"></section-heading>
+
+  <div class="row"
+       [innerHTML]="contentItem.content">
+  </div>
+
+  <div *ngIf="contentItem.link" class="frame__btn">
+    <a routerLink="{{contentItem.link}}" class="btn">{{contentItem.linkText}}</a>
+  </div>
+</div>
