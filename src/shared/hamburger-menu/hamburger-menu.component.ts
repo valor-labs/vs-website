@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HamburgerMenuComponent {
     public isOpen: boolean = false;
-    private keys: any = {37: 1, 38: 1, 39: 1, 40: 1};
+    private keys: any = {32: 1, 33: 1, 34: 1, 37: 1, 38: 1, 39: 1, 40: 1};
 
     public menuToggle():void {
         this.isOpen = !this.isOpen;
