@@ -1,0 +1,52 @@
+[
+  {
+    "name": "John Pemberton",
+    "photo": "/assets/images/photo.png",
+    "position": "CEO Coca-Cola",
+    "location": "United States",
+    "industry": "Soft drink company",
+    "image": "/assets/images/cola-logo.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "link": "#"
+  },
+  {
+    "name": "John Pemberton",
+    "photo": "/assets/images/photo.png",
+    "position": "CEO Dell",
+    "location": "United States",
+    "industry": "Computer hardware",
+    "image": "/assets/images/cola-logo.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "link": "#"
+  },
+  {
+    "name": "John Pemberton",
+    "photo": "/assets/images/photo.png",
+    "position": "CEO Dell",
+    "location": "United States",
+    "industry": "Computer hardware",
+    "image": "/assets/images/cola-logo.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "link": "#"
+  },
+  {
+    "name": "John Pemberton",
+    "photo": "/assets/images/photo.png",
+    "position": "CEO Coca-Cola",
+    "location": "United States",
+    "industry": "Soft drink company",
+    "image": "/assets/images/cola-logo.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "link": "#"
+  },
+  {
+    "name": "John Pemberton",
+    "photo": "/assets/images/photo.png",
+    "position": "CEO Coca-Cola",
+    "location": "United States",
+    "industry": "Soft drink company",
+    "image": "/assets/images/cola-logo.png",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "link": "#"
+  }
+]

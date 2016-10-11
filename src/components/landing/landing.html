@@ -58,62 +58,7 @@
     </div>
 </section>
 
-<carousel [interval]="myInterval" [noWrap]="noWrapSlides">
-    <slide *ngFor="let slidez of slides; let index=index" [active]="slidez.active">
-        <div class="slide__inner">
-            <div class="slide__item">
-                <div class="slide__left">
-                    <div class="slide__brand">
-                        <img src="./src/components/landing/images/cola-logo.png" alt="">
-                    </div>
-                    <strong>{{slidez.text}} Industry</strong>
-                    <span>Soft drink company</span>
-                    <strong>Location</strong>
-                    <span>United States</span>
-                </div>
-                <div class="slide__right">
-                    <div class="slide__person">
-                        <div class="slide__avatar">
-                            <img src="./src/components/landing/images/photo.png" alt="">
-                        </div>
-                        <strong class="slide__name">John Pemberton</strong>
-                        <span class="slide__position">CEO Dell</span>
-                    </div>
-                    <div class="slide__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="#">View case »</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="slide__item">
-                <div class="slide__left">
-                    <div class="slide__brand">
-                        <img src="./src/components/landing/images/cola-logo.png" alt="">
-                    </div>
-                    <strong>{{slidez.text}} Industry</strong>
-                    <span>Soft drink company</span>
-                    <strong>Location</strong>
-                    <span>United States</span>
-                </div>
-                <div class="slide__right">
-                    <div class="slide__person">
-                        <div class="slide__avatar">
-                            <img src="./src/components/landing/images/photo.png" alt="">
-                        </div>
-                        <strong class="slide__name">John Pemberton</strong>
-                        <span class="slide__position">CEO Dell</span>
-                    </div>
-                    <div class="slide__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="#">View case »</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </slide>
-</carousel>
+<feedback></feedback>
 
 <section class="frame">
   <div class="frame_dark">
