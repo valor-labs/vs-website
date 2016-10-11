@@ -3,7 +3,7 @@
 }
 
 .footer__top {
-    padding: 35px 0;
+    padding: 30px 0;
     background: #cd151e;
 }
 
@@ -46,6 +46,7 @@
 
 .footer__btn {
     font-size: 18px;
+    padding: 8px 57px;
 }
 
 .footer__bottom {

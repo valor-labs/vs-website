@@ -1,9 +1,12 @@
-<img [src]="getImage(project.previewImage)" width="398" height="200">
-<p class="projects-preview-title">
-  {{project.title}}
-</p>
-<p class="projects-preview-description">{{project.description}}</p>
-
-<div>
-  <a [routerLink]="['/project', project.projectId]" class="projects-preview-link">View Case >></a>
+<div class="projects-preview__image">
+  <a [routerLink]="['/project', project.projectId]">
+    <img [src]="getImage(project.previewImage)" width="400" height="200">
+  </a>
+</div>
+<div class="projects-preview__bottom">
+  <p class="projects-preview__title">
+    {{project.title}}
+  </p>
+  <a [routerLink]="['/project', project.projectId]" class="projects-preview__link">View Case »</a>
+  <p class="projects-preview__description">{{project.description}}</p>
 </div>

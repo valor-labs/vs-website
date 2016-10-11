@@ -23,6 +23,15 @@ svg {
     vertical-align: top;
 }
 
+a {
+    color: #cd151e;
+}
+
+a:hover {
+    color: #cd151e;
+    text-decoration: underline;
+}
+
 .frame {
     text-align: center;
     padding: 90px 0;
@@ -37,7 +46,7 @@ svg {
 }
 
 .frame__top {
-    padding-bottom: 38px;
+    padding-bottom: 50px;
 }
 
 .frame__heading {
@@ -48,7 +57,7 @@ svg {
     line-height: 30px;
     position: relative;
     margin: 0;
-    padding: 0 0 30px;
+    padding: 0 0 40px;
 }
 
 .frame__heading:after {
@@ -67,14 +76,21 @@ svg {
     font-weight: 300;
     line-height: 32px;
     color: #1d1d2b;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.frame_dark .frame__text {
+    color: #babfc4;
 }
 
 .frame__btn {
-    margin-top: 65px;
+    margin-top: 50px;
 }
 
 .icon-block__icon {
     height: 56px;
+    margin-bottom: 33px;
 }
 
 .icon-block__icon img {
@@ -91,7 +107,7 @@ svg {
     color: #1d1d2b;
     font-size: 16px;
     font-weight: 300;
-    line-height: 38px;
+    line-height: 30px;
 }
 
 .btn {
@@ -101,7 +117,8 @@ svg {
     color: #fff;
     font-weight: 500;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 8px 25px;
 }
 
 .btn:after {
@@ -133,49 +150,90 @@ svg {
     color: #cd151e;
 }
 
-
 /*=========================Projects styles start=======================*/
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects-list .frame__btn {
+    margin-top: 0;
+}
+
+.project-list__item {
+    flex: 0 0 33%;
+    padding: 0 25px 20px;
+    min-width: 400px;
+    margin-bottom: 43px;
+}
+
 .projects-preview {
-  margin: 15px;
-  float: left;
-  width: 400px;
-  height: 300px;
+    width: 400px;
+    height: 300px;
+}
+
+.projects-preview__image {
+    margin-bottom: 20px;
+    max-height: 234px;
+    overflow: hidden;
+}
+
+.projects-preview__image img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.projects-preview__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    text-align: left;
+}
+
+.projects-preview__title {
+    width: 50%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.projects-preview__link {
+    display: block;
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.projects-preview__description {
+    color: #babfc4;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .projects-list-dark .projects-preview {
-  background: #000;
+    background: #1e1e2d;
 }
 
 .projects-list-light .projects-preview {
-  background: #fff;
+    background: #fff;
 }
 
-.projects-list-light .projects-preview .projects-preview-title{
-  color: #000;
-}
-
-.projects-list-dark .projects-preview .projects-preview-title{
-  color: #FFF;
+.projects-list-light .projects-preview .projects-preview-title {
+    color: #000;
 }
 
 .projects-preview .projects-preview-description {
-  color: #777777;
+    color: #777777;
 }
 
 .projects-preview .projects-preview-link {
-  color: #ff090a;
+    color: #ff090a;
 }
 
-.frame_dark {
-  background: #000;
-}
-
-.frame_text_light {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 32px;
-  color: #babfc4;
-}
 /*=========================Projects styles end=======================*/
 
 /* carousel */
@@ -195,7 +253,7 @@ svg {
 .carousel-control > span.icon-next, .carousel-control > span.icon-prev {
     width: 13px;
     height: 23px;
-    background: url(../../components/landing/images/arrow.png);
+    background: url(../../src/components/landing/images/arrow.png);
     background-size: cover;
     cursor: pointer;
 }
@@ -242,10 +300,10 @@ svg {
     height: 28px;
 }
 
-.socials__item svg{
+.socials__item svg {
     fill: #babfc4;
 }
 
-.socials__item a:hover svg{
+.socials__item a:hover svg {
     fill: #fff;
 }
