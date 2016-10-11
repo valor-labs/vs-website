@@ -11,7 +11,6 @@ export class TopMenuComponent implements OnInit {
   @Input() public isLanding:boolean;
 
   public ngOnInit():void {
-    require('./particles.min');
     require('./particles-config');
   }
 
