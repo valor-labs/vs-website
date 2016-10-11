@@ -1,5 +1,5 @@
 .hamburger {
-    padding: 15px 15px;
+    padding: 15px 15px 15px 0;
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -122,8 +122,12 @@
     list-style: none;
     margin: 100px 0 0 90px;
     text-align: left;
-    padding: 0;
-    height: 100%;
+    max-height: 100%;
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100vh - 100px);
 }
 
 .hamburger-list li {
@@ -152,6 +156,10 @@
 
 .hamburger-list li:hover a {
     color: #fff;
+}
+
+.hamburger-list a:focus {
+    text-decoration: none;
 }
 
 .hamburger-list li:hover:after {
