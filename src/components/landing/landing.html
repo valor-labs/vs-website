@@ -49,28 +49,28 @@
     </div>
 </section>
 
-<section class="frame frame_white frame_white">
+<section class="frame frame_dark">
+    <div class="container">
+        <div class="frame__top">
+            <h2 class="frame__heading">Our selected results</h2>
+            <p class="frame__text">
+                We perform a whole project lifecycle and stay after its launch to help you make the business really successful!
+            </p>
+        </div>
+        <div class="row">
+            <projects-list class="projects-list projects-list__dark" [maxItems] = "6" [hasButton] = "true"></projects-list>
+        </div>
+    </div>
+</section>
+
+<section class="frame">
     <div class="container">
         <div class="frame__top">
             <h2 class="frame__heading">What people are saying</h2>
             <p class="frame__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
         </div>
+        <div class="row">
+          <feedback></feedback>  
+        </div>
     </div>
-</section>
-
-<feedback></feedback>
-
-<section class="frame">
-  <div class="frame_dark">
-    <div class="frame__top">
-      <div class="container">
-        <h2 class="frame__heading">Recent</h2>
-        <p class="frame_text_light">
-          We perform a whole project lifecycle and stay after its launch to help you make the business really successful!
-          These are public projects while the rest are under NDA
-        </p>
-        <projects-list class="projects-list-dark" [maxItems] = "6" [hasButton] = "true"></projects-list>
-      </div>
-    </div>
-  </div>
 </section>

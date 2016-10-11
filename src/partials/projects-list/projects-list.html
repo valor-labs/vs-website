@@ -1,7 +1,6 @@
-<div *ngFor="let project of projects">
+<div *ngFor="let project of projects" class="project-list__item">
   <project-preview class="projects-preview" [project]="project"></project-preview>
 </div>
 <div *ngIf = "hasButton" class="frame__btn">
   <a [routerLink]="['/clients']" class="btn">See how we do it</a>
 </div>
-<div style="clear: both"></div>

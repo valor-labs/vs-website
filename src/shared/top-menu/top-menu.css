@@ -10,11 +10,11 @@
 }
 
 .logo {
-  width: 139px;
-  height: 79px;
-  display: block;
-  background: url('./images/logo-first-screen.png');
-  background-size: cover;
+    width: 139px;
+    height: 79px;
+    display: block;
+    background: url('./images/logo-first-screen.png');
+    background-size: cover;
 }
 
 .introduction {
@@ -74,7 +74,7 @@
     border: 1px solid #fff;
     text-transform: uppercase;
     position: relative;
-    line-height: 30px;
+    line-height: 24px;
     font-size: 14px;
     color: #fff;
     display: inline-block;
@@ -86,7 +86,7 @@
 .contact-btn span {
     position: relative;
     display: inline-block;
-    padding: 0 14px;
+    padding: 0 8px;
     background: transparent;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -176,11 +176,11 @@ canvas {
 }
 
 .menu__logo {
-  min-width: 100px;
-  height: 57px;
-  display: block;
-  background: url('./images/logo-white-menu.png');
-  background-size: cover;
+    min-width: 100px;
+    height: 57px;
+    display: block;
+    background: url('./images/logo-white-menu.png');
+    background-size: cover;
 }
 
 .menu__list {
