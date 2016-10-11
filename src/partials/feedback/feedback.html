@@ -1,0 +1,31 @@
+<carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+  <slide *ngFor="let slide of slides; let i=index" [active]="slide.active">
+    <div class="slide__inner">
+      <div class="slide__item" *ngFor="let comment of slide">
+        <div class="slide__left">
+          <div class="slide__brand">
+            <img src="{{comment.image}}" alt="">
+          </div>
+          <strong>Industry</strong>
+          <span>{{comment.industry}}</span>
+          <strong>Location</strong>
+          <span>{{comment.location}}</span>
+        </div>
+        <div class="slide__right">
+          <div class="slide__person">
+            <div class="slide__avatar">
+              <img src="{{comment.photo}}" alt="">
+            </div>
+            <strong class="slide__name">{{comment.name}}</strong>
+            <span class="slide__position">{{comment.position}}</span>
+          </div>
+          <div class="slide__text">
+            <p>{{comment.text}}</p>
+            <a href="{{comment.link}}" target="_blank">View case »</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </slide>
+</carousel>

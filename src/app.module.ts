@@ -23,8 +23,8 @@ import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component';
-import { ProjectsListComponent } from './partials/projects-list/projects-list.component';
+import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
+import { FeedbackComponent } from './partials/feedback/feedback.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -39,17 +39,20 @@ import { routing } from './router.config';
     HamburgerMenuComponent,
     FooterComponent,
     MainComponent,
+
     LandingComponent,
     ApproachComponent,
     ServicesComponent,
     ProjectsComponent,
     ProjectComponent,
-    ProjectPreviewComponent,
-    ProjectsListComponent,
     AboutComponent,
     TeamComponent,
     CareersComponent,
-    ContactComponent
+    ContactComponent,
+
+    ProjectPreviewComponent,
+    ProjectsListComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
