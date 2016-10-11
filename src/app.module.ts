@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { CarouselModule } from 'ng2-bootstrap/components/carousel';
 import { Ng2PageScrollModule } from 'ng2-page-scroll/src/ng2-page-scroll.module.ts';
 
 import { AppComponent } from './app.component';
@@ -23,8 +23,8 @@ import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component';
-import { ProjectsListComponent } from './partials/projects-list/projects-list.component';
+import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
+import { FeedbackComponent } from './partials/feedback/feedback.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -39,17 +39,20 @@ import { routing } from './router.config';
     HamburgerMenuComponent,
     FooterComponent,
     MainComponent,
+
     LandingComponent,
     ApproachComponent,
     ServicesComponent,
     ProjectsComponent,
     ProjectComponent,
-    ProjectPreviewComponent,
-    ProjectsListComponent,
     AboutComponent,
     TeamComponent,
     CareersComponent,
-    ContactComponent
+    ContactComponent,
+
+    ProjectPreviewComponent,
+    ProjectsListComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,7 @@ import { routing } from './router.config';
     HttpModule,
     routing,
     Ng2PageScrollModule,
-    Ng2BootstrapModule
+    CarouselModule
   ],
 
   providers: [

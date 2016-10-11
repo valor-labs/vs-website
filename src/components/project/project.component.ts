@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'project',
-  styles: [require('./project.css')],
+  // styles: [require('./project.css')],
   template: require('./project.html')
 })
 
