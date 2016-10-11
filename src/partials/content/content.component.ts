@@ -18,7 +18,7 @@ export class ContentItem {
 })
 
 export class ContentComponent implements OnInit {
-  @Input() public contentId: number;
+  @Input() public contentId: string;
 
   public content: ContentItem;
 

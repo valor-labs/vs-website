@@ -1,6 +1,6 @@
 [
   {
-    "contentId": 0,
+    "contentId": "directions",
     "title": "WHAT WE DO FOR YOUR SUCCESS",
     "description": "Some cool description. Lorem ipsum dolor sit amet, consectetur adipisicing.",
     "link": "/approach",
@@ -24,6 +24,60 @@
       {
         "image": "node_js.png",
         "title": "Migration To Node.JS",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      }
+    ]
+  },
+  {
+    "contentId": "culture",
+    "title": "OUR CULTURE",
+    "description": "We stand by our values. From the way we work with our clients to the way we interact with each other, these four values influence everything that we do",
+    "columns": [
+      {
+        "image": "things.png",
+        "title": "Make Great Things",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "deliver.png",
+        "title": "Deliver Results",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "always-learn.png",
+        "title": "Always Learn",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "fun.png",
+        "title": "Have Fun",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      }
+    ]
+  },
+  {
+    "contentId": "advantages",
+    "title": "Advantages of iterative development",
+    "description": "We stand by our values. From the way we work with our clients to the way we interact with each other, these four values influence everything that we do",
+    "columns": [
+      {
+        "image": "transparency.png",
+        "title": "Transparency For Clients",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "focus.png",
+        "title": "Focus On Business Value",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "early.png",
+        "title": "Early Predictable Delivery",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "image": "allows.png",
+        "title": "Allows For Change",
         "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
       }
     ]
