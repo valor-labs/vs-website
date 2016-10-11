@@ -25,7 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
-import { SimpleContentComponent } from './partials/simple-content/simple-content.component';
+import { ContentComponent } from './partials/content/content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
 
 import { MainService } from './services/main.service';
@@ -55,7 +55,7 @@ import { routing } from './router.config';
 
     ProjectPreviewComponent,
     ProjectsListComponent,
-    SimpleContentComponent,
+    ContentComponent,
     SectionHeadingComponent,
     FeedbackComponent
   ],

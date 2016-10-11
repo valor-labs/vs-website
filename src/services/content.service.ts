@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ContentService {
-  public getSimpleContent(index: number): any {
-    const content = require('./collections/simple-content-collection.json');
+  public getContent(index: number): any {
+    const content = require('./collections/content.json');
     return content[index];
   }
 }
