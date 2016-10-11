@@ -25,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
+import { HeaderComponent } from './partials/header/header.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -52,7 +53,8 @@ import { routing } from './router.config';
 
     ProjectPreviewComponent,
     ProjectsListComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
