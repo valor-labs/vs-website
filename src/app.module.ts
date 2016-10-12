@@ -26,6 +26,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
 import { ContentComponent } from './partials/content/content.component';
+import { DuplexContentComponent } from './partials/duplex-content/duplex-content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
 import { HeaderComponent } from './partials/header/header.component';
 
@@ -57,6 +58,7 @@ import { routing } from './router.config';
     ProjectPreviewComponent,
     ProjectsListComponent,
     ContentComponent,
+    DuplexContentComponent,
     SectionHeadingComponent,
     FeedbackComponent,
     HeaderComponent

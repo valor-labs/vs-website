@@ -163,7 +163,10 @@ canvas {
 }
 
 .menu.not-home {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .menu.is-sticky {

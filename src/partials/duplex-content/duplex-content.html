@@ -1,0 +1,23 @@
+<div class="illustrated" [ngClass]="{'illustrated_dark': dark}">
+  <div class="container">
+    <div class="illustrated__inner">
+      <div class="illustrated__section">
+        <div class="illustrated__img">
+          <img [src]="getImage(image)" alt="agile">
+        </div>
+      </div>
+      <div class="illustrated__section" [ngClass]="{'illustrated__section_left': textIsLeft}">
+        <div class="illustrated__top">
+          <h4 class="illustrated__heading">{{title}}</h4>
+          <p>{{text}}</p>
+        </div>
+        <div class="illustrated__text">
+          <div *ngFor="let block of content;">
+            <h6>{{block.title}}</h6>
+            <p>{{block.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
