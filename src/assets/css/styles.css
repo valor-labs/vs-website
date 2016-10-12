@@ -71,6 +71,14 @@ a:hover {
     background: #babfc4;
 }
 
+.frame__align-left {
+   text-align: left
+}
+
+.frame__align-left:after {
+  left: 15px;
+}
+
 .frame__text {
     font-size: 18px;
     font-weight: 300;
