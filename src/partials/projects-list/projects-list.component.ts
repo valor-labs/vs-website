@@ -44,21 +44,11 @@ export class ProjectsListComponent implements OnInit {
       this.projectsService.getSimilarTo(this.similarTo) :
       this.projectsService.getAll();
 
-    let resultProjectsList:Project[] = []
-      .concat(projects)
-      .map((project:any) => {
-
-        // wtf? without this we receive path like src/images/src/images/src/images....
-        if (project.isModified) {
-          return project;
-        }
-        project.isModified = true;
-
-        // build path to images
-        project.previewImage = `${path}/${project.previewImage}`;
-        project.fullImage = `${path}${project.fullImage}`;
-        return project;
-      });
+    let resultProjectsList:Project[] = projects.map((project:any) => {
+      project.previewImage = `${path}/${project.previewImage}`;
+      project.fullImage = `${path}${project.fullImage}`;
+      return project;
+    });
 
     // if param maxItems is specified - manage items number
     if (this.maxItems && this.maxItems < resultProjectsList.length) {

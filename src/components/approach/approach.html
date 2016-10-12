@@ -1,3 +1,25 @@
 <section class="frame frame_white">
   <content [contentId]="'advantages'"></content>
 </section>
+
+<section class="frame frame_white">
+  <div class="container">
+    <section-heading
+      [title]="'Our results'"
+      [description]="'By combining learn requirements...By combining learn requirements...By combining learn requirements...By combining learn requirements...By combining learn requirements...'">
+    </section-heading>
+    <div class="row">
+      <carousel class="hide-carousel-indicators" [interval]="myInterval" [noWrap]="noWrapSlides">
+        <slide *ngFor="let project of projects; let i=index" [active]="project.active">
+          <div class="slide__inner">
+            <div style="float: none; margin: 0 auto;">
+              <img [src]="getImage(project.fullImage)" width="800" height="500">
+              <h5  class="icon-block__title">{{project.title}}</h5>
+              <a href="{{project.externalLink}}" target="_blank">View case »</a>
+            </div>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</section>
