@@ -7,3 +7,26 @@
 <section class="frame frame_white">
   <content [contentId]="'advantages'"></content>
 </section>
+
+
+<duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
