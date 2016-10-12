@@ -101,6 +101,7 @@
 .slide__text p {
   color: #1d1d2b;
   font-style: italic;
+  line-height: 30px;
 }
 
 .slide__text a {

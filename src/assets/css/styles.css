@@ -45,6 +45,14 @@ a:hover {
     background: #eef5f9;
 }
 
+.frame_projects {
+    padding-bottom: 7px;
+}
+
+.frame_projects .projects-list {
+    border-bottom: 1px solid #babfc4;
+}
+
 .frame__top {
     padding-bottom: 50px;
 }
@@ -176,7 +184,7 @@ a:hover {
 }
 
 .project-list__item {
-    flex: 0 0 33%;
+    flex: 0 0 33.333%;
     padding: 0 25px 20px;
     min-width: 400px;
     margin-bottom: 43px;
@@ -211,6 +219,11 @@ a:hover {
     width: 50%;
     font-weight: 500;
     font-size: 16px;
+    color: #1d1d2b;
+}
+
+.projects-list_dark .projects-preview__title {
+    color: #fff;
 }
 
 .frame_dark .frame__text {
@@ -230,29 +243,13 @@ a:hover {
 }
 
 .projects-preview__description {
-    color: #babfc4;
+    color: #55555c;
     font-size: 14px;
     font-weight: 300;
 }
 
-.projects-list-dark .projects-preview {
-    background: #1e1e2d;
-}
-
-.projects-list-light .projects-preview {
-    background: #fff;
-}
-
-.projects-list-light .projects-preview .projects-preview-title {
-    color: #000;
-}
-
-.projects-preview .projects-preview-description {
-    color: #777777;
-}
-
-.projects-preview .projects-preview-link {
-    color: #ff090a;
+.projects-list_dark .projects-preview__description {
+    color: #babfc4;
 }
 
 /*=========================Projects styles end=======================*/
