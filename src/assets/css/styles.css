@@ -267,3 +267,48 @@ a:hover {
 .socials__item a:hover svg {
     fill: #fff;
 }
+
+/*=========================illustrated component start=======================*/
+
+.illustrated {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.illustrated_dark {
+    background: #1d1d2b;
+}
+
+.illustrated__section {
+
+}
+
+
+/*=========================illustrated component end=======================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

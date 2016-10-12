@@ -1,3 +1,7 @@
+header {
+    display: block;
+    margin-bottom: 57px;
+}
 .header {
     position: relative;
     height: 320px;
