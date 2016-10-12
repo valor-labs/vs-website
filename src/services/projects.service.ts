@@ -25,10 +25,9 @@ export class ProjectsService {
    * @param projectId: Number
    * @returns {any[]}
    */
-  public getSimilarTo(projectId: number): any[] {
-    console.log(projectId);
+  public getSimilarTo(projectLink: string): any[] {
+    console.log(projectLink);
     const projects: any[] = require('./collections/projects.json');
-    projects.splice(projectId, 1);
     return this.shuffleProjectsArray(projects);
   }
 
