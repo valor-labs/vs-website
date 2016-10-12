@@ -22,8 +22,6 @@ import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component.ts';
-import { ProjectsListComponent } from './partials/projects-list/projects-list.component.ts';
 import { FormsComponent } from './partials/forms/forms.component';
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
