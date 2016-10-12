@@ -1,15 +1,16 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 
-let style = require('./forms.css');
+require('./forms.css');
 
 @Component({
   selector: 'forms',
-  styles: [style.toString()],
   template: require('./forms.html')
 })
 export class FormsComponent implements OnInit {
+  @Input('pageName')
+  private pageName: string;
   private location: Location;
   private urlEvents: Subject<any>;
   private isContactForm: boolean = false;
@@ -22,16 +23,16 @@ export class FormsComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    let urlPath = location.hash.replace('#/', '');
-    if (urlPath.indexOf('contact') !== -1) {
+
+    if (this.pageName === 'Contact page') {
       this.isContactForm = true;
     }
 
-    if (urlPath.indexOf('careers') !== -1) {
+    if (this.pageName === 'Careers page') {
       this.isVacancyForm = true;
     }
 
-    if (urlPath.indexOf('project') !== -1) {
+    if (this.pageName === 'Project page') {
       this.isCaseForm = true;
     }
   }
