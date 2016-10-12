@@ -71,6 +71,14 @@ a:hover {
     background: #babfc4;
 }
 
+.frame__align-left {
+   text-align: left
+}
+
+.frame__align-left:after {
+  left: 15px;
+}
+
 .frame__text {
     font-size: 18px;
     font-weight: 300;
@@ -148,6 +156,19 @@ a:hover {
 .btn_transparent:hover {
     background: #fff;
     color: #cd151e;
+}
+
+.img-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+.img-list img{
+    width: 50%;
 }
 
 /*=========================Projects styles start=======================*/
@@ -242,6 +263,10 @@ a:hover {
     color: #ff090a;
 }
 
+.hide-carousel-indicators .carousel-indicators {
+  display: none;
+}
+
 /*=========================Projects styles end=======================*/
 
 .socials {
@@ -268,3 +293,99 @@ a:hover {
 .socials__item a:hover svg {
     fill: #fff;
 }
+
+/*=========================illustrated component start=======================*/
+
+.illustrated {
+    text-align: left;
+    padding: 90px 0 70px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #55555c;
+}
+
+.illustrated_dark {
+    background: #1d1d2b;
+    color: #fff;
+}
+
+.illustrated_dark .illustrated__text h6 {
+    color: #fff;
+}
+
+.illustrated__inner {
+    display: flex;
+}
+
+.illustrated__section {
+    width: 50%;
+    padding-left: 30px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.illustrated__section_left {
+    order: -1;
+}
+
+.illustrated__img {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.illustrated__img img {
+    max-width: 100%;
+}
+
+.illustrated__top {
+    margin-bottom: 48px;
+}
+
+.illustrated__heading {
+    color: #cd151e;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+    margin: 0 0 15px;
+}
+
+.illustrated__heading:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background: #babfc4;
+    bottom: 0;
+    left: 0;
+}
+
+.illustrated__text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.illustrated__text div {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.illustrated__text div:nth-child(even) {
+    padding-left: 20px;
+}
+
+.illustrated__text h6{
+    font-weight: 500;
+    color: #1d1d2b;
+    font-size: 18px;
+}
+
+/*=========================illustrated component end=======================*/
