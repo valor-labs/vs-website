@@ -8,14 +8,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class ProjectComponent implements OnInit {
-  public projectId: number;
+  public projectLink: string;
   public constructor(public route: ActivatedRoute) {
   }
 
   public ngOnInit(): void {
     this.route.params.subscribe((params: any) => {
       /* tslint:disable */
-      this.projectId = +params['projectId'];
+      this.projectLink = params['projectLink'];
       /* tslint:enable */
     });
   }

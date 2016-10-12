@@ -34,13 +34,13 @@ export class ProjectsListComponent implements OnInit {
   public projects:Project[];
   @Input() public maxItems:number;
   @Input() public hasButton:boolean;
-  @Input() public similarTo:number;
+  @Input() public similarTo:string;
 
   public ngOnInit():void {
     const path:string = './images';
 
     // receiving All projects OR(if parameter similarTo specified) - similar projects only
-    const projects:Project[] = (this.similarTo && Number.isInteger(this.similarTo)) ?
+    const projects:Project[] = (this.similarTo) ?
       this.projectsService.getSimilarTo(this.similarTo) :
       this.projectsService.getAll();
 

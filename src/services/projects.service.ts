@@ -8,6 +8,18 @@ export class ProjectsService {
     return projects;
   }
 
+  public getByLink(projectLink: string): any {
+    const projects: any[] = require('./collections/projects.json');
+    // todo: add Project type
+    return projects.filter((project: any) => project.link === projectLink)[0];
+  }
+
+  public getById(id: number): any {
+    const projects: any[] = require('./collections/projects.json');
+    // todo: add Project type
+    return projects.filter((project: any) => project.id === id)[0];
+  }
+
   /**
    * Now - just return shuffled array of products, in future, maybe - returns similar items
    * @param projectId: Number

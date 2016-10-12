@@ -1,4 +1,6 @@
-One  Project # <b>{{projectId}}</b>
+<header></header>
+
+<project-details [projectLink]="projectLink"></project-details>
 
 <section class="frame frame_white">
   <div class="frame__top">
@@ -8,7 +10,9 @@ One  Project # <b>{{projectId}}</b>
         We perform a whole project lifecycle and stay after its launch to help you make the business really successful!
         These are public projects while the rest are under NDA
       </p>
-      <projects-list class="projects-list-light" [maxItems] = "3" [similarTo]="projectId"></projects-list>
+      <projects-list class="projects-list-light" [maxItems] = "3" [similarTo]="projectLink"></projects-list>
     </div>
   </div>
 </section>
+
+<feedback></feedback>
