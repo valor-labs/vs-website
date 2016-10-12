@@ -1,0 +1,19 @@
+<div class="container">
+  <section-heading [title]="content.title" [description]="content.description"></section-heading>
+
+  <div class="row">
+    <div *ngFor="let item of content.columns" class="col-lg-3">
+      <div class="icon-block">
+        <div class="icon-block__icon">
+          <img [src]="getImage(item.image)" alt="#">
+        </div>
+        <h5 class="icon-block__title">{{item.title}}</h5>
+        <p class="icon-block__text">{{item.text}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="content.link" class="frame__btn">
+    <a routerLink="{{content.link}}" class="btn">{{content.linkText}}</a>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<header
+  [title]="'We use agile'"
+  [text]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'"
+  [bg]="'approach/images/background.jpg'"
+>
+</header>
+<section class="frame frame_white">
+  <content [contentId]="'advantages'"></content>
+</section>
+
+
+<duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>

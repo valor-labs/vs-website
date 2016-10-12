@@ -22,13 +22,9 @@ import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
-
 import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component';
 import { ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FormsComponent } from './partials/forms/forms.component';
-
-import { MainService } from './services/main.service';
-import { ProjectsService } from './services/projects.service';
 import { ConfigProvider } from './services/config.service';
 
 import { routing } from './router.config';
@@ -40,18 +36,25 @@ import { routing } from './router.config';
     HamburgerMenuComponent,
     FooterComponent,
     MainComponent,
+
     LandingComponent,
     ApproachComponent,
     ServicesComponent,
     ProjectsComponent,
     ProjectComponent,
-    ProjectPreviewComponent,
-    ProjectsListComponent,
     AboutComponent,
     TeamComponent,
     FormsComponent,
     CareersComponent,
-    ContactComponent
+    ContactComponent,
+
+    ProjectPreviewComponent,
+    ProjectsListComponent,
+    ContentComponent,
+    DuplexContentComponent,
+    SectionHeadingComponent,
+    FeedbackComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +69,7 @@ import { routing } from './router.config';
     MainService,
     ConfigProvider,
     ProjectsService,
+    ContentService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 

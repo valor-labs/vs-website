@@ -1,20 +1,9 @@
-.header {
-    position: relative;
-    z-index: 100;
-    display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 20px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo {
-  width: 139px;
-  height: 79px;
-  display: block;
-  background: url('./images/logo-first-screen.png');
-  background-size: cover;
+    width: 139px;
+    height: 79px;
+    display: block;
+    background: url('./images/logo-first-screen.png');
+    background-size: cover;
 }
 
 .introduction {
@@ -23,6 +12,17 @@
     position: relative;
     text-align: center;
     background: #000;
+}
+
+.introduction__header {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .introduction__text {
@@ -74,19 +74,22 @@
     border: 1px solid #fff;
     text-transform: uppercase;
     position: relative;
-    line-height: 30px;
+    line-height: 24px;
     font-size: 14px;
     color: #fff;
     display: inline-block;
     outline: none;
     text-decoration: none;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
 }
 
 .contact-btn span {
     position: relative;
     display: inline-block;
-    padding: 0 14px;
+    padding: 0 8px;
     background: transparent;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -120,13 +123,14 @@
 }
 
 .contact-btn span:hover {
-    -webkit-transform: rotateX(90deg) translateY(-15px);
-    -moz-transform: rotateX(90deg) translateY(-15px);
-    transform: rotateX(90deg) translateY(-15px);
+    -webkit-transform: rotateX(90deg) translateY(-12px);
+    -moz-transform: rotateX(90deg) translateY(-12px);
+    transform: rotateX(90deg) translateY(-12px);
 }
 
 .contact-btn:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 hamburger-menu {
@@ -159,7 +163,10 @@ canvas {
 }
 
 .menu.not-home {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .menu.is-sticky {
@@ -176,11 +183,11 @@ canvas {
 }
 
 .menu__logo {
-  min-width: 100px;
-  height: 57px;
-  display: block;
-  background: url('./images/logo-white-menu.png');
-  background-size: cover;
+    min-width: 100px;
+    height: 57px;
+    display: block;
+    background: url('./images/logo-white-menu.png');
+    background-size: cover;
 }
 
 .menu__list {
@@ -222,6 +229,8 @@ canvas {
 
 .menu__list li a {
     color: #fefeff;
+    display: block;
+    height: 100%;
 }
 
 .menu__list li a:hover {

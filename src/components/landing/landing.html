@@ -1,131 +1,58 @@
-<!-- move to component -->
 <section class="frame frame_white" id="whatWeDo">
-    <div class="container">
-        <div class="frame__top">
-            <h2 class="frame__heading">What we do for your success</h2>
-            <p class="frame__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolores et illo</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="icon-block">
-                    <div class="icon-block__icon">
-                        <img [src]="getImage('ui-ux.png')" alt="#">
-                    </div>
-                    <h5 class="icon-block__title">User Experience Design</h5>
-                    <p class="icon-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-block">
-                    <div class="icon-block__icon">
-                        <img [src]="getImage('web-dev.png')" alt="#">
-                    </div>
-                    <h5 class="icon-block__title">User Experience Design</h5>
-                    <p class="icon-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-block">
-                    <div class="icon-block__icon">
-                        <img [src]="getImage('mobile-dev.png')" alt="#">
-                    </div>
-                    <h5 class="icon-block__title">User Experience Design</h5>
-                    <p class="icon-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-block">
-                    <div class="icon-block__icon">
-                        <img [src]="getImage('node_js.png')" alt="#">
-                    </div>
-                    <h5 class="icon-block__title">User Experience Design</h5>
-                    <p class="icon-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                </div>
-            </div>
-        </div>
-        <div class="frame__btn">
-            <a routerLink="/approach" class="btn">See how we do it</a>
-        </div>
-    </div>
+  <content [contentId]="'directions'"></content>
 </section>
 
-<section class="frame frame_white frame_white">
-    <div class="container">
-        <div class="frame__top">
-            <h2 class="frame__heading">What people are saying</h2>
-            <p class="frame__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-        </div>
+<section class="frame frame_dark">
+  <div class="container">
+    <section-heading
+      [title]="'Our selected results'"
+      [description]="'We perform a whole project lifecycle and stay after its launch to help you make the business really successful!'">
+    </section-heading>
+    <div class="row">
+      <projects-list class="projects-list projects-list__dark" [maxItems]="6" [hasButton]="true"></projects-list>
     </div>
+  </div>
 </section>
-
-<carousel [interval]="myInterval" [noWrap]="noWrapSlides">
-    <slide *ngFor="let slidez of slides; let index=index" [active]="slidez.active">
-        <div class="slide__inner">
-            <div class="slide__item">
-                <div class="slide__left">
-                    <div class="slide__brand">
-                        <img src="./src/components/landing/images/cola-logo.png" alt="">
-                    </div>
-                    <strong>{{slidez.text}} Industry</strong>
-                    <span>Soft drink company</span>
-                    <strong>Location</strong>
-                    <span>United States</span>
-                </div>
-                <div class="slide__right">
-                    <div class="slide__person">
-                        <div class="slide__avatar">
-                            <img src="./src/components/landing/images/photo.png" alt="">
-                        </div>
-                        <strong class="slide__name">John Pemberton</strong>
-                        <span class="slide__position">CEO Dell</span>
-                    </div>
-                    <div class="slide__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="#">View case »</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="slide__item">
-                <div class="slide__left">
-                    <div class="slide__brand">
-                        <img src="./src/components/landing/images/cola-logo.png" alt="">
-                    </div>
-                    <strong>{{slidez.text}} Industry</strong>
-                    <span>Soft drink company</span>
-                    <strong>Location</strong>
-                    <span>United States</span>
-                </div>
-                <div class="slide__right">
-                    <div class="slide__person">
-                        <div class="slide__avatar">
-                            <img src="./src/components/landing/images/photo.png" alt="">
-                        </div>
-                        <strong class="slide__name">John Pemberton</strong>
-                        <span class="slide__position">CEO Dell</span>
-                    </div>
-                    <div class="slide__text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="#">View case »</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </slide>
-</carousel>
 
 <section class="frame">
-  <div class="frame_dark">
-    <div class="frame__top">
-      <div class="container">
-        <h2 class="frame__heading">Recent</h2>
-        <p class="frame_text_light">
-          We perform a whole project lifecycle and stay after its launch to help you make the business really successful!
-          These are public projects while the rest are under NDA
-        </p>
-        <projects-list class="projects-list-dark" [maxItems] = "6" [hasButton] = "true"></projects-list>
-      </div>
+  <div class="container">
+    <section-heading
+      [title]="'What people are saying'"
+      [description]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'">
+    </section-heading>
+    <div class="row">
+      <feedback></feedback>
+    </div>
+  </div>
+</section>
+
+<section class="frame frame_light">
+  <div class="container">
+    <section-heading
+      [title]="'Thanks for partners'"
+      [description]="'They are people and organizations with ambitious missions. They want to unleash the power of software for their cause or business. We help them envisage, design and deliver.'">
+    </section-heading>
+    <div class="row">
+      <ul class="img-list">
+        <li>
+          <img [src]="getImage('pinterest.png')" alt="pinterest">
+        </li>
+        <li>
+          <img [src]="getImage('ideo.png')" alt="ideo">
+        </li>
+        <li>
+          <img [src]="getImage('mastercard.png')" alt="mastercard">
+        </li>
+        <li>
+          <img [src]="getImage('intuit.png')" alt="intuit">
+        </li>
+        <li>
+          <img [src]="getImage('mtv.png')" alt="mtv">
+        </li>
+        <li>
+          <img [src]="getImage('salesforce.png')" alt="salesforce">
+        </li>
+      </ul>
     </div>
   </div>
 </section>
