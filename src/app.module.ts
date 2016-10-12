@@ -25,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import { ProjectPreviewComponent } from './partials/projects-list/projects-list.component';
 import { ProjectsListComponent } from './partials/projects-list/projects-list.component';
+import { FormsComponent } from './partials/forms/forms.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -48,6 +49,7 @@ import { routing } from './router.config';
     ProjectsListComponent,
     AboutComponent,
     TeamComponent,
+    FormsComponent,
     CareersComponent,
     ContactComponent
   ],
