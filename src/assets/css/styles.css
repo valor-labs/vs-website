@@ -159,6 +159,7 @@ a:hover {
 
 .projects-list .frame__btn {
     margin-top: 0;
+    flex: 0 0 100%;
 }
 
 .project-list__item {
