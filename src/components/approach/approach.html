@@ -7,87 +7,26 @@
 <section class="frame frame_white">
   <content [contentId]="'advantages'"></content>
 </section>
-<div class="illustrated illustrated_dark">
-    <div class="container">
-        <div class="illustrated__inner">
-            <div class="illustrated__section">
-                <div class="illustrated__img">
-                    <img src="./src/components/approach/images/agile.png" alt="agile">
-                </div>
-            </div>
-            <div class="illustrated__section">
-                <div class="illustrated__top">
-                    <h4 class="illustrated__heading">Iterative process</h4>
-                    <p>We blend user experience expertise with Agile software development to form a single, cohesive
-                        team to design, implement and test results with actual customers.</p>
-                </div>
-                <div class="illustrated__text">
-                    <div>
-                        <h6>Scope and Plan</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim.</p>
-                    </div>
-                    <div>
-                        <h6>Analysy and Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim arcu.
-                            Cras porta, massa non pulvinar.</p>
-                    </div>
-                    <div>
-                        <h6>Ipmplement and Verify</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim arcu.
-                            Cras porta, massa non pulvinar.</p>
-                    </div>
-                    <div>
-                        <h6>Scope and Plan</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="illustrated">
-    <div class="container">
-        <div class="illustrated__inner">
-            <div class="illustrated__section">
-                <div class="illustrated__img">
-                    <img src="./src/components/approach/images/agile.png" alt="agile">
-                </div>
-            </div>
-            <div class="illustrated__section illustrated__section_left">
-                <div class="illustrated__top">
-                    <h4 class="illustrated__heading">Migration to node.js</h4>
-                    <p>Do you have an amazing idea of the web application and want the world to check it out? We can manage that easily for you! Amazing design and usability is guaranteed! iOS and Android users will enjoy your cool application soon.</p>
-                </div>
-                <div class="illustrated__text">
-                    <div>
-                        <h6>Scope and Plan</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim.</p>
-                    </div>
-                    <div>
-                        <h6>Analysy and Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim arcu.
-                            Cras porta, massa non pulvinar.</p>
-                    </div>
-                    <div>
-                        <h6>Ipmplement and Verify</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim arcu.
-                            Cras porta, massa non pulvinar.</p>
-                    </div>
-                    <div>
-                        <h6>Scope and Plan</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Donec ac dignissim.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+<duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
