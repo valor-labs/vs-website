@@ -27,6 +27,7 @@ import { ProjectPreviewComponent, ProjectsListComponent } from './partials/proje
 import { FeedbackComponent } from './partials/feedback/feedback.component';
 import { ContentComponent } from './partials/content/content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
+import { HeaderComponent } from './partials/header/header.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -57,7 +58,8 @@ import { routing } from './router.config';
     ProjectsListComponent,
     ContentComponent,
     SectionHeadingComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
