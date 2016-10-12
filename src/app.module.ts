@@ -25,10 +25,14 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
+import { ContentComponent } from './partials/content/content.component';
+import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
+import { HeaderComponent } from './partials/header/header.component';
 import { ProjectDetailsComponent } from './partials/project-details/project-details.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
+import { ContentService } from './services/content.service';
 import { ConfigProvider } from './services/config.service';
 
 import { routing } from './router.config';
@@ -53,7 +57,10 @@ import { routing } from './router.config';
 
     ProjectPreviewComponent,
     ProjectsListComponent,
+    ContentComponent,
+    SectionHeadingComponent,
     FeedbackComponent,
+    HeaderComponent,
     ProjectDetailsComponent
   ],
   imports: [
@@ -69,6 +76,7 @@ import { routing } from './router.config';
     MainService,
     ConfigProvider,
     ProjectsService,
+    ContentService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 

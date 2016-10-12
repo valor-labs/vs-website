@@ -159,6 +159,7 @@ a:hover {
 
 .projects-list .frame__btn {
     margin-top: 0;
+    flex: 0 0 100%;
 }
 
 .project-list__item {
@@ -197,6 +198,13 @@ a:hover {
     width: 50%;
     font-weight: 500;
     font-size: 16px;
+}
+
+.frame_dark .frame__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #babfc4;
 }
 
 .projects-preview__link {
