@@ -150,6 +150,19 @@ a:hover {
     color: #cd151e;
 }
 
+.img-list {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+.img-list img{
+    width: 50%;
+}
+
 /*=========================Projects styles start=======================*/
 .projects-list {
     display: flex;
