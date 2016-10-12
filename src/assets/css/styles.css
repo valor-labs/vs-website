@@ -263,6 +263,10 @@ a:hover {
     color: #ff090a;
 }
 
+.hide-carousel-indicators .carousel-indicators {
+  display: none;
+}
+
 /*=========================Projects styles end=======================*/
 
 .socials {
@@ -385,4 +389,3 @@ a:hover {
 }
 
 /*=========================illustrated component end=======================*/
-
