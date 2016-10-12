@@ -16,7 +16,7 @@ export class ProjectsService {
   public getSimilarTo(projectId: number): any[] {
     console.log(projectId);
     const projects: any[] = require('./collections/projects.json');
-
+    projects.splice(projectId, 1);
     return this.shuffleProjectsArray(projects);
   }
 

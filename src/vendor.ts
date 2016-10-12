@@ -16,6 +16,8 @@ import '@angular/forms';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
+import 'particles.js';
+
 if ('production' === ENV) {
   // Production
 
