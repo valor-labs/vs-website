@@ -5,7 +5,6 @@ import { Project } from '../../partials/projects-list/projects-list.component';
 
 @Component({
   selector: 'approach',
-  // styles: [require('./approach.css')],
   template: require('./approach.html')
 })
 export class ApproachComponent implements OnInit {
