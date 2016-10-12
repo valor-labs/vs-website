@@ -81,6 +81,9 @@
     outline: none;
     text-decoration: none;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
 }
 
 .contact-btn span {
@@ -120,13 +123,14 @@
 }
 
 .contact-btn span:hover {
-    -webkit-transform: rotateX(90deg) translateY(-15px);
-    -moz-transform: rotateX(90deg) translateY(-15px);
-    transform: rotateX(90deg) translateY(-15px);
+    -webkit-transform: rotateX(90deg) translateY(-12px);
+    -moz-transform: rotateX(90deg) translateY(-12px);
+    transform: rotateX(90deg) translateY(-12px);
 }
 
 .contact-btn:hover {
     text-decoration: none;
+    color: #fff;
 }
 
 hamburger-menu {
@@ -222,6 +226,8 @@ canvas {
 
 .menu__list li a {
     color: #fefeff;
+    display: block;
+    height: 100%;
 }
 
 .menu__list li a:hover {
