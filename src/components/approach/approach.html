@@ -1,9 +1,8 @@
-<header
-  [title]="'We use agile'"
-  [text]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'"
-  [bg]="'approach/images/background.jpg'"
->
+<header [title]="'We use agile'"
+        [text]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'"
+        [bg]="'approach/images/app-header-bg.jpg'">
 </header>
+
 <section class="frame frame_white">
   <content [contentId]="'advantages'"></content>
 </section>
@@ -42,7 +41,7 @@
           <div class="slide__inner">
             <div style="float: none; margin: 0 auto;">
               <img [src]="getImage(project.fullImage)" width="800" height="500">
-              <h5  class="icon-block__title">{{project.title}}</h5>
+              <h5 class="icon-block__title">{{project.title}}</h5>
               <a href="{{project.externalLink}}" target="_blank">View case »</a>
             </div>
           </div>
