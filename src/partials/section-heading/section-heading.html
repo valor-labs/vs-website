@@ -1,4 +1,8 @@
 <div class="frame__top">
   <h2 class="frame__heading">{{title}}</h2>
   <p class="frame__text">{{description}}</p>
+  <div *ngIf="additionalText || additionalLink" class="frame__more">
+    <strong *ngIf="additionalText">{{additionalText}}</strong>
+    <strong *ngIf="additionalLink"><a [routerLink]="[additionalLink]" >{{additionalLinkText}}</a></strong>
+  </div>
 </div>
