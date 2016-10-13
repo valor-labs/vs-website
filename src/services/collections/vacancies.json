@@ -1,77 +1,103 @@
+
 [
   {
     "vacancyId": "1",
     "name": "Javascript Developer",
-    "description": "bllalalalalalaa lgllglglglglglg glgllglglglg",
+    "description": "The best candidates possess the skill and personality to drive your product's most important initiatives. From working on our main design tool to our new products, you'll have many opportunities to have an enormous impact at our small company. If you love designing great user interfaces and want to leave your mark on the future, then you’d be a great fit on our team!",
     "responsibilities": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;",
+      "Do research and create example user behavior diagrams;",
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;"
     ],
     "requirements": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "5+ years of UI design and interactive work;",
+      "5+ years of UI design and interactive work;",
+      "Experience designing web applications;",
+      "Experience designing web applications;",
+      "An obsessive eye for visual and interaction details;",
+      "An obsessive eye for visual and interaction details;"
     ]
   },
   {
     "vacancyId": "2",
     "name": "Front-end dev",
-    "description": "bllalalalalalaa lgllglglglglglg glgllglglglg",
+    "description": "The best candidates possess the skill and personality to drive your product's most important initiatives. From working on our main design tool to our new products, you'll have many opportunities to have an enormous impact at our small company. If you love designing great user interfaces and want to leave your mark on the future, then you’d be a great fit on our team!",
     "responsibilities": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;",
+      "Do research and create example user behavior diagrams;",
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;"
     ],
     "requirements": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "5+ years of UI design and interactive work;",
+      "5+ years of UI design and interactive work;",
+      "Experience designing web applications;",
+      "Experience designing web applications;",
+      "An obsessive eye for visual and interaction details;",
+      "An obsessive eye for visual and interaction details;"
     ]
   },
   {
     "vacancyId": "3",
     "name": "Technical writer",
-    "description": "bllalalalalalaa lgllglglglglglg glgllglglglg",
+    "description": "The best candidates possess the skill and personality to drive your product's most important initiatives. From working on our main design tool to our new products, you'll have many opportunities to have an enormous impact at our small company. If you love designing great user interfaces and want to leave your mark on the future, then you’d be a great fit on our team!",
     "responsibilities": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;",
+      "Do research and create example user behavior diagrams;",
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;"
     ],
     "requirements": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "5+ years of UI design and interactive work;",
+      "5+ years of UI design and interactive work;",
+      "Experience designing web applications;",
+      "Experience designing web applications;",
+      "An obsessive eye for visual and interaction details;",
+      "An obsessive eye for visual and interaction details;"
     ]
   },
   {
     "vacancyId": "4",
     "name": "Wtf man  ",
-    "description": "bllalalalalalaa lgllglglglglglg glgllglglglg",
+    "description": "The best candidates possess the skill and personality to drive your product's most important initiatives. From working on our main design tool to our new products, you'll have many opportunities to have an enormous impact at our small company. If you love designing great user interfaces and want to leave your mark on the future, then you’d be a great fit on our team!",
     "responsibilities": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;",
+      "Do research and create example user behavior diagrams;",
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;"
     ],
     "requirements": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "5+ years of UI design and interactive work;",
+      "5+ years of UI design and interactive work;",
+      "Experience designing web applications;",
+      "Experience designing web applications;",
+      "An obsessive eye for visual and interaction details;",
+      "An obsessive eye for visual and interaction details;"
     ]
   },
   {
     "vacancyId": "5",
     "name": "I don't know who it is",
-    "description": "bllalalalalalaa lgllglglglglglg glgllglglglg",
+    "description": "The best candidates possess the skill and personality to drive your product's most important initiatives. From working on our main design tool to our new products, you'll have many opportunities to have an enormous impact at our small company. If you love designing great user interfaces and want to leave your mark on the future, then you’d be a great fit on our team!",
     "responsibilities": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;",
+      "Do research and create example user behavior diagrams;",
+      "Own every aspect of product design, from concept to shipping a pixel-perfect product;",
+      "Help make high-level strategic decisions with the rest of the team;"
     ],
     "requirements": [
-      "omg wtf",
-      "fsksfkkfksfkkfkf",
-      "fjfjsjfjjfsjjfjsjfsjfjsfjfjsfjsfjjfsfjfj sfjjsjfsjsf"
+      "5+ years of UI design and interactive work;",
+      "5+ years of UI design and interactive work;",
+      "Experience designing web applications;",
+      "Experience designing web applications;",
+      "An obsessive eye for visual and interaction details;",
+      "An obsessive eye for visual and interaction details;"
     ]
   }
 ]
