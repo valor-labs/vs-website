@@ -23,6 +23,7 @@ import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VacancyComponent } from './components/vacancy/vacancy.component';
+import { FormsComponent } from './partials/forms/forms.component';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
@@ -30,6 +31,7 @@ import { ContentComponent } from './partials/content/content.component';
 import { DuplexContentComponent } from './partials/duplex-content/duplex-content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
 import { HeaderComponent } from './partials/header/header.component';
+
 import { VacanciesListComponent, VacancyPreviewComponent } from './partials/vacancies-list/vacancies-list.component';
 
 import { MainService } from './services/main.service';
@@ -55,6 +57,7 @@ import { routing } from './router.config';
     ProjectComponent,
     AboutComponent,
     TeamComponent,
+    FormsComponent,
     CareersComponent,
     ContactComponent,
 

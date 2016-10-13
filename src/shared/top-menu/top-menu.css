@@ -156,10 +156,12 @@ canvas {
 
 .menu {
     background: #1d1d2b;
-    padding: 7px 8px;
+    padding: 7px 0;
     position: absolute;
     width: 100%;
     top: 100%;
+    left: 0;
+    right: 0;
 }
 
 .menu.not-home {

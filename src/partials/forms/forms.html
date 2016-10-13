@@ -1,0 +1,167 @@
+<div id="contact-form" *ngIf="isContactForm">
+  <form class="form-horizontal">
+    <fieldset>
+      <!-- Form Name -->
+      <div class="form-group">
+
+        <!-- Text input-->
+        <div class="col-md-6">
+          <input id="contact-name" name="name" type="text" placeholder="Your name.."
+                 class="form-control border placeholder-text input-md">
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <div class="col-md-6">
+          <input id="contact-e-mail" name="e-mail" type="text" placeholder="Your e-mail.."
+                 class="form-control border placeholder-text input-md">
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <div class="col-md-6">
+          <textarea class="form-control field-height placeholder-text" id="contact-textarea" placeholder="Message.."
+                    name="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-6">
+
+          <div class="drop-container">
+            <div class="text-drop">
+              <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+              <span> Add Document </span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-6">
+          <div class="send-red-button">
+            <div class="text-button"> Send inquery <span class="arrow">»</span></div>
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+
+  </form>
+</div>
+
+
+<div id="vacancy-form" *ngIf="isVacancyForm">
+  <form class="form-horizontal">
+    <fieldset>
+
+      <div class="form-group">
+
+        <div class="col-md-4">
+          <input id="candidate-name" name="name" type="text" placeholder="Your name.."
+                 class="form-control border  placeholder-text input-md">
+        </div>
+
+        <div class="col-md-4">
+          <input id="candidate-e-mail" name="e-mail" type="text" placeholder="Your e-mail.."
+                 class="form-control border placeholder-text input-md">
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-4">
+          <input id="candidate-city" name="city" type="text" placeholder="Your city.."
+                 class="form-control border placeholder-text input-md">
+        </div>
+
+
+        <div class="col-md-4">
+          <input id="candidate-phone" name="phone" type="text" placeholder="Your phone.."
+                 class="form-control border placeholder-text input-md">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-8">
+          <textarea class="form-control field-height placeholder-text" id="candidate-textarea" placeholder="Message.."
+                    name="textarea"></textarea>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-md-6 shift-right">
+          <div class="drop-container">
+
+            <div class="text-drop">
+              <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+              Drag & drop files here to upload attachements or <span> browse the file </span></div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2">
+          <div class="send-red-button">
+            <div class="text-button"> Send inquery <span class="arrow">»</span></div>
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+</div>
+
+<div id="case-form" *ngIf="isCaseForm">
+
+  <form class="form-horizontal">
+    <fieldset>
+
+      <div class="form-group">
+        <div class="col-md-4    ">
+          <input id="client-name" name="name" type="text" placeholder="Your name.."
+                 style="height:50px" class="form-control border placeholder-text  input-md">
+        </div>
+
+        <div class="col-md-4">
+          <textarea class="form-control field-height placeholder-text" id="client-textarea" placeholder="Message.."
+                    name="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-4 ">
+          <input id="client-e-mail" name="e-mail" type="text" placeholder="Your e-mail.."
+                 class="form-control placeholder-style border input-md">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-6 shift-right">
+          <div class="drop-container">
+
+            <div class="text-drop">
+              <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+              Drag & drop files here to upload attachements or <span> browse the file </span></div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2">
+          <div class="send-red-button">
+            <div class="text-button"> Send inquery <span class="arrow">»</span></div>
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+
+
+

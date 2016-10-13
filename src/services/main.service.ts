@@ -3,7 +3,9 @@ import { Injectable }    from '@angular/core';
 @Injectable()
 export class MainService {
   public getTeam():any[] {
-    return require('./collections/team.json');
+    const team:any[] = require('./collections/team.json');
+    let copy = JSON.parse(JSON.stringify(team));
+    return copy;
   }
 
   public getFeedback():any[] {

@@ -1,8 +1,51 @@
 [
   {
-    "name": "user1"
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo1.jpg",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "name": "user2"
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo2.jpg",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo3.jpg",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Marketing"]
+  },
+  {
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo4.jpg",
+    "skills": ["UI/UX Design", "Web Design", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo1.jpg",
+    "skills": ["UI/UX Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo2.jpg",
+    "skills": ["Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "id": 1,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "previewImage": "photo3.jpg",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics"]
   }
 ]

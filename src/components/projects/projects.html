@@ -1,15 +1,32 @@
-<div class="frame frame_white">
-  <div class="frame__top">
-    <div class="container">
-      <h2 class="frame__heading">Recent</h2>
-      <p class="frame__text">
-        We perform a whole project lifecycle and stay after its launch to help you make the business really successful!
-        These are public projects while the rest are under NDA
-      </p>
-      <projects-list class="projects-list-light"></projects-list>
+<header
+  [title]="'Our clients think big'"
+  [text]="'They are people and organizations with ambitious missions. They want to unleash the power of software for their cause or business. We help them envisage, design and deliver. Here are some recent examples.'"
+  [bg]="'projects/images/proj-header-bg.jpg'"
+>
+</header>
+
+<div class="frame frame_projects">
+  <div class="container">
+    <section-heading
+      [title]="'Recent projects'"
+      [description]="'We perform a whole project lifecycle and stay after its launch to help you make the business really successful! These are public projects while the rest are under NDA'">
+    </section-heading>
+    <div class="row">
+      <projects-list class="projects-list"></projects-list>
     </div>
   </div>
 </div>
 
+<section class="frame">
+  <div class="container">
+    <section-heading
+      [title]="'What people are saying'"
+      [description]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'">
+    </section-heading>
+    <div class="row">
+      <feedback></feedback>
+    </div>
+  </div>
+</section>
 
 
