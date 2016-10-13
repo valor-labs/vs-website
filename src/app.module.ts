@@ -25,11 +25,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormsComponent } from './partials/forms/forms.component';
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
-import { ContentComponent } from './partials/content/content.component';
+import { SingleContentComponent } from './partials/single-content/single-content.component';
 import { DuplexContentComponent } from './partials/duplex-content/duplex-content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
 import { HeaderComponent } from './partials/header/header.component';
-import { ProjectDetailsComponent } from './partials/project-details/project-details.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
@@ -59,12 +58,11 @@ import { routing } from './router.config';
 
     ProjectPreviewComponent,
     ProjectsListComponent,
-    ContentComponent,
+    SingleContentComponent,
     DuplexContentComponent,
     SectionHeadingComponent,
     FeedbackComponent,
-    HeaderComponent,
-    ProjectDetailsComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

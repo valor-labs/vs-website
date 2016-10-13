@@ -1,8 +1,51 @@
 [
   {
-    "name": "user1"
+    "memberId": 0,
+    "name": "Mikhail Voloshin",
+    "position": "UI/UX Designer",
+    "avatar": "Avatar-3.png",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "name": "user2"
+    "memberId": 1,
+    "name": "Chuck Norris",
+    "position": "Texas Ranger",
+    "avatar": "Avatar-2.png",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "memberId": 2,
+    "name": "Batman",
+    "position": "I am Night",
+    "avatar": "Avatar-4.png",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Marketing"]
+  },
+  {
+    "memberId": 3,
+    "name": "Mr. Creeper",
+    "position": "Kabooom!",
+    "avatar": "Avatar-5.png",
+    "skills": ["UI/UX Design", "Web Design", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "memberId": 4,
+    "name": "Big brother",
+    "position": "I watching you!",
+    "avatar": "Avatar-7.png",
+    "skills": ["UI/UX Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "memberId": 5,
+    "name": "Leelu Dallas",
+    "position": "Multipass",
+    "avatar": "Avatar-9.png",
+    "skills": ["Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+  },
+  {
+    "memberId": 6,
+    "name": "Hodor",
+    "position": "Hodor",
+    "avatar": "Avatar-2.png",
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics"]
   }
 ]

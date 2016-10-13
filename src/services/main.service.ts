@@ -1,9 +1,12 @@
 import { Injectable }    from '@angular/core';
+import { Member }    from './classes/member';
 
 @Injectable()
 export class MainService {
-  public getTeam():any[] {
-    return require('./collections/team.json');
+  public getTeam(): Member[] {
+    const team: Member[] = require('./collections/team.json');
+    let copy = JSON.parse(JSON.stringify(team));
+    return copy;
   }
 
   public getFeedback():any[] {
@@ -19,5 +22,10 @@ export class MainService {
       }
     }
     return slides;
+  }
+
+  public getFeedbackForProject(projectId: number): any {
+    const feedbacksList = require('./collections/feedback.json');
+    return feedbacksList.find((feedback: any) => projectId === feedback.projectId);
   }
 }

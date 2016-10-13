@@ -8,6 +8,7 @@ require('./header.css');
 })
 export class HeaderComponent implements OnInit {
   @Input() public title:string;
+  @Input() public subtitle:string;
   @Input() public text:string;
   @Input() public bg:string;
 
@@ -18,7 +19,12 @@ export class HeaderComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    this.url = this.sanitize(require('../../components/' + this.bg));
+    console.log(this);
+    if (this.bg.indexOf('/') === -1 ) {
+      this.url = this.sanitize(this.bg);
+    } else {
+      this.url = this.sanitize(require('../../components/' + this.bg));
+    }
   }
 
   public sanitize(url:any):any {

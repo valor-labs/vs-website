@@ -1,5 +1,5 @@
 import { Injectable }    from '@angular/core';
-import { Project }    from '../partials/projects-list/projects-list.component';
+import { Project }    from '../services/classes/project';
 
 @Injectable()
 export class ProjectsService {
@@ -15,41 +15,30 @@ export class ProjectsService {
   }
 
   public getByLink(projectLink: string): any {
-    const projects: any[] = require('./collections/projects.json');
+    const projects: Project[] = this.getAll();
     // todo: add Project type
-    return projects.filter((project: any) => project.link === projectLink)[0];
-  }
-
-  public getById(id: number): any {
-    const projects: any[] = require('./collections/projects.json');
-    // todo: add Project type
-    return projects.filter((project: any) => project.id === id)[0];
+    return projects.find((project: any) => projectLink === project.link);
   }
 
   /**
    * Now - just return shuffled array of products, in future, maybe - returns similar items
-   * @param projectId: Number
-   * @returns {any[]}
+   * @param projectLink: String
+   * @returns {Project[]}
    */
 
-  public getSimilarTo(projectLink: string): any[] {
-    console.log(projectLink);
+  public getSimilarTo(projectLink: string): Project[] {
+    let projects: Project[] = this.getAll()
+      .filter((project: Project) => {
+        return projectLink !== project.link;
+      });
 
-    const projects: Project[] = require('./collections/projects.json');
-    let projectsList: Project[] = [];
-
-    projects.forEach((project: Project) => {
-      projectsList.push(Object.assign({}, project));
-    });
-    // projectsList.splice(projectId, 1);
-    return this.shuffleArray(projectsList);
-
+    return this.shuffleArray(projects);
   }
 
   /**
    * Shuffles array
-   * @param array
-   * @returns {any[]}
+   * @param array<T>
+   * @returns {array<T>}
    */
   private shuffleArray(array: any[]): any[] {
     let counter = array.length;

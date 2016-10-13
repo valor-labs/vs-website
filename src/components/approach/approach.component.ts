@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProjectsService } from '../../services/projects.service';
-import { Project } from '../../partials/projects-list/projects-list.component';
+import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'approach',
@@ -17,7 +17,7 @@ export class ApproachComponent implements OnInit {
   }
 
   public getImage(img:string):string {
-    return require('../../partials/projects-list/images/' + img);
+    return require('../../services/images/projects/' + img);
   }
 
   public constructor(private projectsService: ProjectsService) {}
