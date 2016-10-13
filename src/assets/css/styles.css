@@ -49,12 +49,18 @@ a:hover {
     padding-bottom: 7px;
 }
 
+.frame_border .frame__inner {
+    border-bottom: 1px solid #babfc4;
+}
+
 .frame_projects .projects-list {
     border-bottom: 1px solid #babfc4;
 }
 
 .frame__top {
     padding-bottom: 50px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .frame__heading {
@@ -84,8 +90,18 @@ a:hover {
     font-weight: 300;
     line-height: 32px;
     color: #1d1d2b;
-    max-width: 800px;
     margin: 0 auto;
+}
+
+.frame__additional-info {
+    color: #1d1d2b;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.frame__additional-info a {
+    color: #cd151e;
 }
 
 .frame_dark .frame__text {
