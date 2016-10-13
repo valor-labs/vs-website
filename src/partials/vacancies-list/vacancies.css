@@ -1,0 +1,44 @@
+a:hover {
+  color: #cd151e;
+  text-decoration: none !important;
+}
+
+.vacancies-link:hover .vacancy-preview__link {
+text-decoration: underline;
+}
+
+.vacancies-link:hover .vacancy-rectangle {
+  background-color: #eef5f9;
+}
+
+
+.vacancy-rectangle {
+  width:325px;
+  height:105px;
+  background-color: #fafcfd;
+  border: 1px solid #babfc4;
+  border-left: 5px solid #55555c;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.vacancy-preview__title {
+  color: #1d1d2b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0px;
+}
+
+.vacancy-data-container {
+  text-align: justify;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.vacancy-preview__link {
+  color: #cd151e;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}

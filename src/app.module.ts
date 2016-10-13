@@ -22,6 +22,7 @@ import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { VacancyComponent } from './components/vacancy/vacancy.component';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
@@ -29,9 +30,11 @@ import { ContentComponent } from './partials/content/content.component';
 import { DuplexContentComponent } from './partials/duplex-content/duplex-content.component';
 import { SectionHeadingComponent } from './partials/section-heading/section-heading.component';
 import { HeaderComponent } from './partials/header/header.component';
+import { VacanciesListComponent, VacancyPreviewComponent } from './partials/vacancies-list/vacancies-list.component';
 
 import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
+import { VacanciesService } from './services/vacancies.service';
 import { ContentService } from './services/content.service';
 import { ConfigProvider } from './services/config.service';
 
@@ -61,7 +64,10 @@ import { routing } from './router.config';
     DuplexContentComponent,
     SectionHeadingComponent,
     FeedbackComponent,
-    HeaderComponent
+    HeaderComponent,
+    VacanciesListComponent,
+    VacancyComponent,
+    VacancyPreviewComponent
   ],
   imports: [
     BrowserModule,
@@ -77,6 +83,7 @@ import { routing } from './router.config';
     ConfigProvider,
     ProjectsService,
     ContentService,
+    VacanciesService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 
