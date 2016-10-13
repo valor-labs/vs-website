@@ -28,7 +28,7 @@ export class FormsComponent implements OnInit {
       this.isContactForm = true;
     }
 
-    if (this.pageName === 'Careers page') {
+    if (this.pageName === 'Vacancy page') {
       this.isVacancyForm = true;
     }
 

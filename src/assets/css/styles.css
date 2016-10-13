@@ -206,6 +206,14 @@ a:hover {
     width: 50%;
 }
 
+.sound-like-you {
+  color: #1d1d2b;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: -45px
+}
+
 /*=========================Projects styles start=======================*/
 .projects-list {
     display: flex;
