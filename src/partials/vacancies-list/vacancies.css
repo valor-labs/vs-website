@@ -1,16 +1,14 @@
-a:hover {
-  color: #cd151e;
-  text-decoration: none !important;
+.vacancies-link:hover {
+  text-decoration: none;
 }
 
 .vacancies-link:hover .vacancy-preview__link {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .vacancies-link:hover .vacancy-rectangle {
   background-color: #eef5f9;
 }
-
 
 .vacancy-rectangle {
   width:325px;
@@ -27,7 +25,7 @@ text-decoration: underline;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .vacancy-data-container {
