@@ -4,6 +4,8 @@
     display: block;
     background: url('./images/logo-first-screen.png');
     background-size: cover;
+    position: relative;
+    z-index: 100;
 }
 
 .introduction {
@@ -11,12 +13,17 @@
     background-size: cover;
     position: relative;
     text-align: center;
-    background: #000;
+    background: #050508;
+    background: -moz-linear-gradient(top,  #050508 0%, #13141f 30%, #141520 35%, #141520 100%);
+    background: -webkit-linear-gradient(top,  #050508 0%,#13141f 30%,#141520 35%,#141520 100%);
+    background: linear-gradient(to bottom,  #050508 0%,#13141f 30%,#141520 35%,#141520 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050508', endColorstr='#141520',GradientType=0 );
+
+
 }
 
 .introduction__header {
     position: relative;
-    z-index: 100;
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
@@ -34,7 +41,6 @@
     right: 0;
     bottom: 0;
     margin: auto 0;
-    z-index: 10;
 }
 
 .introduction__text h2 {
@@ -43,12 +49,18 @@
     text-transform: uppercase;
     font-weight: 900;
     line-height: 110px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
 }
 
 .introduction__text p {
     font-size: 28px;
-    margin: 20px 0 0;
+    margin: 20px auto 0;
     text-transform: capitalize;
+    max-width: 600px;
+    position: relative;
+    z-index: 10;
 }
 
 .introduction__text_red {
@@ -84,6 +96,7 @@
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
     perspective: 1000px;
+    z-index: 100;
 }
 
 .contact-btn span {
@@ -196,6 +209,7 @@ canvas {
     display: flex;
     list-style: none;
     margin-bottom: 0;
+    padding-left: 35px;
     flex-wrap: wrap;
 }
 
@@ -203,7 +217,7 @@ canvas {
     font-size: 18px;
     font-weight: 300;
     line-height: 57px;
-    margin-right: 20px;
+    margin-right: 39px;
     position: relative;
 }
 

@@ -3,33 +3,35 @@
         [bg]="'approach/images/app-header-bg.jpg'">
 </header>
 
-<section class="frame frame_white">
-  <single-content [contentId]="'advantages'"></single-content>
+<section class="frame">
+  <content [contentId]="'advantages'"></content>
 </section>
 
-<duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
-                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
-                [content]="[
-                  {
-                    title: 'Scope and Plan',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
-                  },
-                  {
-                    title: 'Analysy and Design',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
-                  },
-                  {
-                    title: 'Ipmplement and Verify',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
-                  },
-                  {
-                    title: 'Scope and Plan',
-                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
-                  }
-                ]">
-</duplex-content>
+<div class="frame frame_dark">
+  <duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
+                  [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                  [content]="[
+                    {
+                      title: 'Scope and Plan',
+                      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                    },
+                    {
+                      title: 'Analysy and Design',
+                      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                    },
+                    {
+                      title: 'Ipmplement and Verify',
+                      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                    },
+                    {
+                      title: 'Scope and Plan',
+                      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                    }
+                  ]">
+  </duplex-content>
+</div>
 
-<section class="frame frame_white">
+<section class="frame">
   <div class="container">
     <section-heading
       [title]="'Our results'"

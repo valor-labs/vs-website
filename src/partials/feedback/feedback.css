@@ -13,8 +13,8 @@
 }
 
 .carousel-control > span.icon-next, .carousel-control > span.icon-prev {
-  width: 13px;
-  height: 23px;
+  width: 14px;
+  height: 28px;
   background: url(./images/arrow.png);
   background-size: cover;
   cursor: pointer;

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+require('./about.css');
 
 @Component({
   selector: 'about',
-  // styles: [require('./about.css')],
   template: require('./about.html')
 })
 export class AboutComponent {
-
+  public getImage = (img:string):string => require('./images/' + img);
 }

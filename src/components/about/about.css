@@ -1,0 +1,43 @@
+.about-story__inner {
+    display: flex;
+}
+
+.about-story__section {
+    width: 50%;
+}
+
+.about-story__img {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-story__facts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-story__fact {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.about-story__fact-num {
+    color: #cd151e;
+    font-size: 75px;
+    margin-right: 25px;
+    width: 100px;
+}
+
+.about-story__fact-num span {
+    font-size: 30px;
+}
+
+.about-story__fact-text {
+    color: #1d1d2b;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 36px;
+}

@@ -1,5 +1,51 @@
-<section class="frame frame_white">
-  <single-content [contentId]="'culture'"></single-content>
+<header [title]="'We are valor software'"
+        [text]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.'"
+        [bg]="'about/images/about.jpg'">
+</header>
+
+<section class="frame frame_border">
+  <div class="container">
+    <section-heading
+      [title]="'Our story'"
+      [description]="'We started in 2013. At the moment we are the team of 25 talented professionals, and we continue to grow. We are a technology maniacs and always work with proven cutting edge technologies. We don’t stop learning: we stay abreast of disruptive technologies that enable the next generation of amazing software and experiences.'"
+    >
+    </section-heading>
+    <div class="about-story">
+      <div class="container">
+        <div class="about-story__inner">
+          <div class="about-story__section">
+            <div class="about-story__img">
+              <img [src]="getImage('about-logo@2x.jpg')" alt="agile">
+            </div>
+          </div>
+          <div class="about-story__section" >
+            <div class="about-story__facts">
+              <div class="about-story__fact">
+                <strong class="about-story__fact-num">5<span>yrs</span></strong>
+                <span class="about-story__fact-text">company <br /> experience</span>
+              </div>
+              <div class="about-story__fact">
+                <strong class="about-story__fact-num">92<span>+</span></strong>
+                <span class="about-story__fact-text">ambitious <br /> professionals</span>
+              </div>
+              <div class="about-story__fact">
+                <strong class="about-story__fact-num">24<span>+</span></strong>
+                <span class="about-story__fact-text">big data <br /> projects</span>
+              </div>
+              <div class="about-story__fact">
+                <strong class="about-story__fact-num">96<span>%</span></strong>
+                <span class="about-story__fact-text">positive <br/> feedback</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="frame frame_border">
+  <content [contentId]="'culture'"></content>
 </section>
 
 
@@ -13,7 +59,6 @@
     </section-heading>
     <vacancies class="row"></vacancies>
   </div>
-
 </section>
 
 
