@@ -1,16 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { MainService } from '../../services/main.service';
+import { Member } from '../../services/classes/member';
 require('./team.css');
-
-export class Team {
-  public constructor(public id:number,
-                     public name:string,
-                     public previewImage:string,
-                     public position:string,
-                     public skills:string[]) {
-  };
-}
 
 @Component({
   selector: 'team',
@@ -18,18 +10,12 @@ export class Team {
 })
 
 export class TeamComponent implements OnInit {
-  public team:Team[];
+  public team:Member[];
 
-  public getImage = (img:string):string => require(img);
+  public getImage = (img:string):string => require('../../services/images/members/'+img);
 
   public ngOnInit():void {
-    const path:string = './images';
     this.team = this.mainService.getTeam();
-    this.team.map((member:any) => {
-      // build path to images
-      member.previewImage = `${path}/${member.previewImage}`;
-      return member;
-    });
   }
 
   public constructor(public mainService:MainService) {

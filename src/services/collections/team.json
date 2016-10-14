@@ -1,51 +1,58 @@
 [
   {
-    "id": 1,
+    "memberId": 0,
     "name": "Mikhail Voloshin",
     "position": "UI/UX Designer",
-    "previewImage": "photo1.jpg",
+    "avatar": "Avatar-3.png",
+    "fullImage": "photo1.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo2.jpg",
+    "memberId": 1,
+    "name": "Chuck Norris",
+    "position": "Texas Ranger",
+    "avatar": "Avatar-2.png",
+    "fullImage": "photo2.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo3.jpg",
+    "memberId": 2,
+    "name": "Batman",
+    "position": "I am Night",
+    "avatar": "Avatar-4.png",
+    "fullImage": "photo3.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo4.jpg",
+    "memberId": 3,
+    "name": "Mr. Creeper",
+    "position": "Kabooom!",
+    "avatar": "Avatar-5.png",
+    "fullImage": "photo4.jpg",
     "skills": ["UI/UX Design", "Web Design", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo1.jpg",
+    "memberId": 4,
+    "name": "Big brother",
+    "position": "I watching you!",
+    "avatar": "Avatar-7.png",
+    "fullImage": "photo1.jpg",
     "skills": ["UI/UX Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo2.jpg",
+    "memberId": 5,
+    "name": "Leelu Dallas",
+    "position": "Multipass",
+    "avatar": "Avatar-9.png",
+    "fullImage": "photo2.jpg",
     "skills": ["Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
-    "id": 1,
-    "name": "Mikhail Voloshin",
-    "position": "UI/UX Designer",
-    "previewImage": "photo3.jpg",
+    "memberId": 6,
+    "name": "Hodor",
+    "position": "Hodor",
+    "avatar": "Avatar-2.png",
+    "fullImage": "photo3.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics"]
   }
 ]

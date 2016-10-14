@@ -44,6 +44,15 @@ header {
     text-transform: uppercase;
 }
 
+.header__subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
 .header__text {
     position: absolute;
     background: #1d1d2b;

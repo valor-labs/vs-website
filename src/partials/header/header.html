@@ -3,7 +3,8 @@
         <div class="row">
             <div class="header__inner">
                 <h3 class="header__heading">{{title}}</h3>
-                <div class="header__text">
+                <p class="header__subtitle">{{subtitle}}</p>
+                <div *ngIf="text" class="header__text">
                     <p>{{text}}</p>
                 </div>
             </div>

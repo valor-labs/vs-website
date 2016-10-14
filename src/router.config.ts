@@ -21,7 +21,7 @@ export const routes:Routes = [
       {path: 'approach', component: ApproachComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'clients', component: ProjectsComponent},
-      {path: 'project/:projectId', component: ProjectComponent},
+      {path: 'project/:projectLink', component: ProjectComponent},
       {path: 'about', component: AboutComponent},
       {path: 'team', component: TeamComponent},
       {path: 'careers', component: CareersComponent},
