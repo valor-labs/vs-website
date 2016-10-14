@@ -196,6 +196,7 @@ canvas {
     display: flex;
     list-style: none;
     margin-bottom: 0;
+    padding-left: 35px;
     flex-wrap: wrap;
 }
 
@@ -203,7 +204,7 @@ canvas {
     font-size: 18px;
     font-weight: 300;
     line-height: 57px;
-    margin-right: 20px;
+    margin-right: 39px;
     position: relative;
 }
 
