@@ -3,6 +3,7 @@ import { Member }    from './classes/member';
 
 @Injectable()
 export class MainService {
+
   public getTeam(): Member[] {
     const team: Member[] = require('./collections/team.json');
     let copy = JSON.parse(JSON.stringify(team));

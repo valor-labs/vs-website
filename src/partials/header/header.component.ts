@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    console.log(this);
     if (this.bg.indexOf('/') === -1 ) {
       this.url = this.sanitize(this.bg);
     } else {

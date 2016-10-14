@@ -1,5 +1,34 @@
-team
+<header
+  [title]="'our ambitious team'"
+  [text]="'A community of passionate individuals whose purpose is to revolutionize software design, creation and delivery, while advocating for positive social change.'"
+  [bg]="'team/images/team.jpg'"
+>
+</header>
 
-{{team[0].name}}
+<div class="container">
+  <div class="row">
+    <div class="team-list">
+      <div *ngFor="let member of team" class="team-item">
+        <div class="team-item__preview-image">
+          <a href="">
+            <img [src]="getImage(member.fullImage)" alt="">
+          </a>
+        </div>
+        <a href="" class="team-item__name">{{member.name}}</a>
+        <span class="team-item__position">{{member.position}}</span>
+        <ul class="team-item__skills">
+          <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-{{team[1].name}}
+<section class="frame">
+  <div class="container">
+    <section-heading
+      [title]="'Want to join the team?'"
+      [description]="'We \'re looking for people who want to create powerful, beautiful and intuitive products who get bored when they\'re not challenged, continually seek opportunities for improvement and want to learn something new every day.'">
+    </section-heading>
+  </div>
+</section>

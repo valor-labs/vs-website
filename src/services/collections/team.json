@@ -4,6 +4,7 @@
     "name": "Mikhail Voloshin",
     "position": "UI/UX Designer",
     "avatar": "Avatar-3.png",
+    "fullImage": "photo1.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
@@ -11,6 +12,7 @@
     "name": "Chuck Norris",
     "position": "Texas Ranger",
     "avatar": "Avatar-2.png",
+    "fullImage": "photo2.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
@@ -18,6 +20,7 @@
     "name": "Batman",
     "position": "I am Night",
     "avatar": "Avatar-4.png",
+    "fullImage": "photo3.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Marketing"]
   },
   {
@@ -25,6 +28,7 @@
     "name": "Mr. Creeper",
     "position": "Kabooom!",
     "avatar": "Avatar-5.png",
+    "fullImage": "photo4.jpg",
     "skills": ["UI/UX Design", "Web Design", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
@@ -32,6 +36,7 @@
     "name": "Big brother",
     "position": "I watching you!",
     "avatar": "Avatar-7.png",
+    "fullImage": "photo1.jpg",
     "skills": ["UI/UX Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
@@ -39,6 +44,7 @@
     "name": "Leelu Dallas",
     "position": "Multipass",
     "avatar": "Avatar-9.png",
+    "fullImage": "photo2.jpg",
     "skills": ["Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
   },
   {
@@ -46,6 +52,7 @@
     "name": "Hodor",
     "position": "Hodor",
     "avatar": "Avatar-2.png",
+    "fullImage": "photo3.jpg",
     "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics"]
   }
 ]

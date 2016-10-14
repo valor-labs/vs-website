@@ -10,19 +10,19 @@ require('./forms.css');
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
-  private pageName: string;
-  private location: Location;
-  private urlEvents: Subject<any>;
-  private isContactForm: boolean = false;
-  private isCaseForm: boolean = false;
-  private isVacancyForm: boolean = false;
+  private pageName:string;
+  private location:Location;
+  private urlEvents:Subject<any>;
+  private isContactForm:boolean = false;
+  private isCaseForm:boolean = false;
+  private isVacancyForm:boolean = false;
 
-  public constructor(@Inject(Location) location: Location) {
+  public constructor(@Inject(Location) location:Location) {
     this.urlEvents = new Subject();
     this.location = location;
   }
 
-  public ngOnInit(): void {
+  public ngOnInit():void {
 
     if (this.pageName === 'Contact page') {
       this.isContactForm = true;
@@ -36,4 +36,6 @@ export class FormsComponent implements OnInit {
       this.isCaseForm = true;
     }
   }
+
+  public getImage = (img:string):string => require('./images/' + img);
 }

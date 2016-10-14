@@ -56,7 +56,6 @@ export class ProjectComponent implements OnInit {
       project.formattedMembers = formattedMembers;
 
       project.reference = this.mainService.getFeedbackForProject(project.projectId);
-      console.log(project.reference);
 
       this.project = project;
     });

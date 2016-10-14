@@ -1,19 +1,96 @@
-<!--<div class="intro">-->
-  <!--<div class="intro__overlay"></div>-->
-<!--</div>-->
+<header [title]="'Big challenges need a bold approach'"
+        [text]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'"
+        [bg]="'services/images/srv-header-bg.jpg'">
+</header>
 
-<!--<hr>-->
+<duplex-content [title]="'User expirience design'" [image]="'services/images/ux.jpg'" [textIsLeft]="true"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
+<hr>
+<duplex-content [title]="'Custom web development'" [image]="'services/images/web.jpg'"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
+<hr>
+<duplex-content [title]="'Mobile applications'" [image]="'services/images/mobile.jpg'" [textIsLeft]="true"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
+<hr>
+<duplex-content [title]="'Migration to node.js'" [image]="'services/images/nodejs.jpg'"
+                [text]="'We blend user experience expertise with Agile software development to form a single, cohesive team to design, implement and test results with actual customers.'"
+                [content]="[
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  },
+                  {
+                    title: 'Analysy and Design',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Ipmplement and Verify',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim arcu. Cras porta, massa non pulvinar.'
+                  },
+                  {
+                    title: 'Scope and Plan',
+                    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac dignissim.'
+                  }
+                ]">
+</duplex-content>
 
-<!--<button type="button" class="btn btn-primary"-->
-        <!--(click)="isCollapsed = !isCollapsed">Toggle collapse-->
-<!--</button>-->
-<!--<hr>-->
-<!--<div (collapsed)="collapsed($event)"-->
-     <!--(expanded)="expanded($event)"-->
-     <!--[collapse]="isCollapsed"-->
-     <!--class="card card-block card-header">-->
-  <!--<div class="well well-lg">Some content</div>-->
-<!--</div>-->
 <section class="frame frame_dark">
   <div class="container">
     <section-heading
@@ -25,3 +102,7 @@
     </div>
   </div>
 </section>
+
+<div class="row">
+  <feedback></feedback>
+</div>
