@@ -1,15 +1,25 @@
-
-<section class="frame frame_white">
-  <section-heading title="Want to join the team?" description="Like to be involved in different projects within your favorite technology?
-  We are glad to offer you employment opportunities you need. We believe that you are talented!">
-
-  </section-heading>
-  <div class="sound-like-you">
-    Sound like you? See our openings below
+<section class="frame">
+  <div class="container">
+    <section-heading
+      [title]="'Want to join the team?'"
+      [description]="'We \'re looking for people who want to create powerful, beautiful and intuitive products who get bored when they\'re not challenged, continually seek opportunities for improvement and want to learn something new every day.'"
+      [additionalText]="'Sound like you? See our openings below'"
+    >
+    </section-heading>
+    <vacancies class="row"></vacancies>
   </div>
-  <vacancies class="row"></vacancies>
+
 </section>
 
+<section class="frame">
+  <div class="container">
+    <div class="learn-more">
+      <div class="learn-more-text">
+        Learn more about our <a routerLink="/about">culture</a> and why Valor Software is Cool :)
+      </div>
+    </div>
+  </div>
 
+</section>
 
 
