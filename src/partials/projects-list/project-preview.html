@@ -7,6 +7,6 @@
   <p class="projects-preview__title">
     {{project.title}}
   </p>
-  <a [routerLink]="['/project', project.projectId]" class="projects-preview__link">View Case »</a>
-  <p class="projects-preview__description">{{project.description}}</p>
+  <a [routerLink]="['/project', project.link]" class="projects-preview__link">View Case »</a>
+  <p class="projects-preview__description">{{project.shortDescription}}</p>
 </div>

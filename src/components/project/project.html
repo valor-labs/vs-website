@@ -1,22 +1,158 @@
-One  Project # <b>{{projectId}}</b>
+<header
+  [title]="project.title"
+  [subtitle]="project.shortDescription"
+  [bg]=getImage(project.headerImage)
+>
+</header>
 
-<div class="frame frame_white">
-<div class="frame__top">
+<section class="frame_white">
   <div class="container">
-    <h2 class="frame__heading">Ready to take the next step?</h2>
-    <forms [pageName]="pageName"></forms>
-  </div>
-</div>
-</div>
 
-<section class="frame frame_white">
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Description</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+        {{project.description}}
+      </div>
+
+      <div class="col-lg-2 frame__text">
+        <div pageScroll href="#startForm">
+          <button>Start</button>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="frame row">
+      <div class="project-page-centered">
+        <img [src]=getImage(project.fullImage) width="800" height="500">
+      </div>
+
+      <div style="padding-top: 20px">
+        <a href="{{project.externalLink}}" style="color: #595959; font-size: 16px;" target="_blank">
+          View online »
+        </a>
+        <a href="{{project.externalLink}}" style="color: #595959; font-size: 16px;" target="_blank">
+          View presentation »
+        </a>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Tasks</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+        <ul class="project-page-list">
+          <li class="item" *ngFor="let task of project.details.tasks">
+            {{task}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Solutions</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+        <ul class="project-page-list">
+          <li class="item" *ngFor="let solution of project.details.solutions">
+            {{solution}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Outcome</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+          <p class="project-page-list" *ngFor="let item of project.details.outcome">
+            {{item}}
+          </p>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Technology</h5>
+      </div>
+      <div *ngFor="let row of project.formattedTechnologies" class="col-lg-2 frame__text">
+        <ul class="project-page-list">
+          <li class="item" *ngFor="let technology of row">
+            {{technology}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Members</h5>
+      </div>
+      <div *ngFor="let row of project.formattedMembers" class="col-lg-2 frame__text">
+        <ul style="list-style-type: none;">
+          <li *ngFor="let member of row">
+            <img [src]=getAvatarImage(member.avatar) width="100" height="100">
+            <p class="frame__text">{{member.name}}</p>
+            <p class="frame__text">{{member.position}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <h5 class="icon-block__title">Reference</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+        <img src="{{project.reference.photo}}" width="100" height="100">
+        <span class="frame__text">{{project.reference.name}}</span>
+        <span class="frame__text">{{project.reference.position}}</span>
+        <p class="frame__text">{{project.reference.text}}</p>
+      </div>
+    </div>
+
+    <hr class="projects-page-separator">
+
+  </div>
+</section>
+
+<div class="frame frame_projects">
   <div class="container">
     <section-heading
       [title]="'Similar projects'"
       [description]="'We perform a whole project lifecycle and stay after its launch to help you make the business really successful! These are public projects while the rest are under NDA'">
     </section-heading>
     <div class="row">
-      <projects-list class="projects-list" [maxItems] = "3" [similarTo]="projectId"></projects-list>
+      <projects-list class="projects-list" [maxItems]="3" [similarTo]="projectLink"></projects-list>
     </div>
   </div>
-</section>
+</div>
+
+<div class="frame frame_white" id="startForm">
+  <div class="frame__top">
+    <div class="container">
+      <h2 class="frame__heading">Ready to take the next step?</h2>
+      <forms [pageName]="pageName"></forms>
+    </div>
+  </div>
+</div>

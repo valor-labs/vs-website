@@ -2,22 +2,14 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import { ContentService } from '../../services/content.service';
 
-export class ContentItem {
-  public constructor(public contentId:number,
-                     public title: string,
-                     public description: string,
-                     public content: string,
-                     public linkText: string,
-                     public link: string) {
-  };
-}
+import { ContentItem } from '../../services/classes/content-item';
 
 @Component({
-  selector: 'content',
-  template: require('./content.html')
+  selector: 'single-content',
+  template: require('./single-content.html')
 })
 
-export class ContentComponent implements OnInit {
+export class SingleContentComponent implements OnInit {
   @Input() public contentId: string;
 
   public content: ContentItem;

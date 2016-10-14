@@ -11,7 +11,7 @@
       <div *ngFor="let member of team" class="team-item">
         <div class="team-item__preview-image">
           <a href="">
-            <img [src]="getImage(member.previewImage)" alt="">
+            <img [src]="getImage(member.fullImage)" alt="">
           </a>
         </div>
         <a href="" class="team-item__name">{{member.name}}</a>
