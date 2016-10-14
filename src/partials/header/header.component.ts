@@ -19,9 +19,12 @@ export class HeaderComponent implements OnInit {
   }
 
   public ngOnInit():void {
+
+    // already required image
     if (this.bg.indexOf('/') === -1 ) {
       this.url = this.sanitize(this.bg);
     } else {
+      // not required yet
       this.url = this.sanitize(require('../../components/' + this.bg));
     }
   }

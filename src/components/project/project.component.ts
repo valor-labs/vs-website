@@ -25,6 +25,8 @@ export class ProjectComponent implements OnInit {
 
   public getImage = (img:string):string => require('../../services/images/projects/' + img);
   public getAvatarImage = (img:string):string => require('../../services/images/members/' + img);
+
+  // todo: move feedback images to services folder
   public getFeedbackImage = (img:string):string => require('../../assets/images/' + img);
 
   public ngOnInit(): void {
@@ -35,16 +37,19 @@ export class ProjectComponent implements OnInit {
       /* tslint:enable */
       let project = this.projectsService.getByLink(this.projectLink);
 
+      // split items to 4 columns
       let formattedTechnologies: any = [[], [], [], []];
       project.technologies.forEach((technology: string, index: number) => {
         formattedTechnologies[index % 4].push(technology);
       });
       project.formattedTechnologies = formattedTechnologies;
 
+      // filter related(to this projects) members
       const members = this.mainService.getTeam().filter((member: Member) => {
         return project.members.indexOf(member.memberId) >= 0;
       });
 
+      // split items to 4 columns
       let formattedMembers: any = [[], [], [], []];
       members.forEach((member: Member, index: number) => {
         formattedMembers[index % 4].push({
