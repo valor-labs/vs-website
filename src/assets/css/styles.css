@@ -16,6 +16,14 @@ body {
     min-width: 320px;
 }
 
+section-heading {
+    display: block;
+}
+
+section-heading + * {
+    margin-top: 50px;
+}
+
 svg {
     width: 100%;
     max-width: 100%;
@@ -49,8 +57,10 @@ a:hover {
     padding-bottom: 7px;
 }
 
-.frame_border .frame__inner {
-    border-bottom: 1px solid #babfc4;
+.frame_border:after {
+    content: '';
+    position: absolute;
+
 }
 
 .frame_projects .projects-list {
@@ -58,7 +68,6 @@ a:hover {
 }
 
 .frame__top {
-    padding-bottom: 50px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -101,15 +110,16 @@ a:hover {
     margin: 0 auto;
 }
 
-.frame__additional-info {
+.frame__more {
     color: #1d1d2b;
     font-size: 22px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 32px;
+    margin-top: 5px;
 }
 
-.frame__additional-info a {
-    color: #cd151e;
+.frame_dark .frame__more {
+    color: #fff;
 }
 
 .frame_dark .frame__text {
@@ -150,7 +160,8 @@ a:hover {
     font-weight: 500;
     line-height: 30px;
     font-size: 18px;
-    padding: 8px 25px;
+    width: 202px;
+    padding: 8px 0;
 }
 
 .btn:after {
@@ -193,6 +204,14 @@ a:hover {
 
 .img-list img{
     width: 50%;
+}
+
+.sound-like-you {
+  color: #1d1d2b;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: -45px
 }
 
 /*=========================Projects styles start=======================*/
