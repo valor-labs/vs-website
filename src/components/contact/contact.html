@@ -3,17 +3,16 @@
         [bg]="'contact/images/contact.jpg'">
 </header>
 
-<div class="frame frame_white">
-  <div class="frame__top">
-    <div class="container">
+<div class="frame frame_border">
+  <div class="container">
+    <div class="frame__top">
       <h2 class="frame__heading frame__align-left">Apply</h2>
-
       <forms [pageName]="pageName"></forms>
     </div>
   </div>
 </div>
 
-<section class="frame">
+<section class="frame frame_border">
   <div class="container">
     <section-heading
       [title]="'Want to join the team?'"
@@ -21,7 +20,9 @@
       [additionalText]="'Sound like you? See our openings below'"
     >
     </section-heading>
-    <vacancies class="row"></vacancies>
+    <div class="row">
+      <vacancies></vacancies>
+    </div>
   </div>
 </section>
 

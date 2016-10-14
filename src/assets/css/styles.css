@@ -243,8 +243,13 @@ a:focus {
 /*=========================Projects styles start=======================*/
 .projects-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1399px) {
+  .projects-list {
+    justify-content: center;
+  }
 }
 
 .projects-list .frame__btn {
