@@ -11,8 +11,7 @@
     >
     </section-heading>
     <div class="about-story">
-      <div class="container">
-        <div class="about-story__inner">
+      <div class="about-story__inner">
           <div class="about-story__section">
             <div class="about-story__img">
               <img [src]="getImage('about-logo@2x.jpg')" alt="agile">
@@ -39,7 +38,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
@@ -54,10 +52,11 @@
     <section-heading
       [title]="'Want to join the team?'"
       [description]="'We \'re looking for people who want to create powerful, beautiful and intuitive products who get bored when they\'re not challenged, continually seek opportunities for improvement and want to learn something new every day.'"
-      [additionalText]="'Sound like you? See our openings below'"
     >
     </section-heading>
-    <vacancies class="row"></vacancies>
+    <div class="row">
+      <vacancies></vacancies>
+    </div>
   </div>
 </section>
 

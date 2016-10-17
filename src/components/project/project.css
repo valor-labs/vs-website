@@ -1,8 +1,115 @@
-.projects-page-separator {
-  border-top: 3px solid #eee;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.project__section {
+  border-bottom: 1px solid #babfc4;
+  overflow: hidden;
+  padding: 53px 0;
+  text-align: left;
 }
+
+.project__section:first-child {
+  padding-top: 0;
+}
+
+.project__heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.project__btn {
+  float: right;
+  margin: 10px -10px 0 0;
+}
+
+.project__member {
+  padding-top: 10px;
+}
+
+.project__member-name {
+  color: #1d1d2b;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+}
+
+.project__member-position {
+  color: #55555c;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+}
+
+.project__member img {
+  border-radius: 99px;
+  margin-bottom: 20px;
+}
+
+.project__reference-info {
+  display: table;
+  margin-bottom: 12px;
+}
+
+.project__reference-info > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.project__reference-name {
+  color: #1d1d2b;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.project__reference-position {
+  color: #55555c;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+}
+
+.project__reference-text {
+  color: #1d1d2b;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.project__section p {
+  color: #1d1d2b;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.project__section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project__section ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #1d1d2b;
+  line-height: 44px;
+}
+
+.project__section ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: #cd151e;
+  top: 20px;
+  border-radius: 99px;
+}
+
 
 .project-page-centered {
   float: none;
