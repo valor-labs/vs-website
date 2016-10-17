@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProjectsService } from '../../services/projects.service';
 import { Project } from '../../services/classes/project';
 
@@ -26,21 +27,29 @@ export class ProjectsListComponent implements OnInit {
   @Input() public similarTo:string;
 
   public ngOnInit():void {
-    // receiving All projects OR(if parameter similarTo specified) - similar projects only
-    let projects:Project[] = (this.similarTo) ?
-      this.projectsService.getSimilarTo(this.similarTo) :
-      this.projectsService.getAll();
 
-    // if param maxItems is specified - manage items number
-    if (this.maxItems && this.maxItems < projects.length) {
-      projects = projects.slice(0, this.maxItems);
-    }
+    // when click on project's link in similar projects block - ngOnInit will not invoked again
+    this.route.params.subscribe((params: any) => {
 
-    this.projects = projects;
+      /* tslint:disable */
+      const currentLink = params['projectLink'];
+      /* tslint:enable */
+      // receiving All projects OR(if parameter similarTo specified) - similar projects only
+      let projects:Project[] = (currentLink) ?
+        this.projectsService.getSimilarTo(currentLink) :
+        this.projectsService.getAll();
+
+      // if param maxItems is specified - manage items number
+      if (this.maxItems && this.maxItems < projects.length) {
+        projects = projects.slice(0, this.maxItems);
+      }
+
+      this.projects = projects;
+    });
 
   }
 
-  public constructor(public projectsService:ProjectsService) {
+  public constructor(public projectsService:ProjectsService, public route: ActivatedRoute) {
   }
 
 }
