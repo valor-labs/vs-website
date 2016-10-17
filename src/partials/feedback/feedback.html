@@ -4,7 +4,7 @@
       <div class="slide__item" *ngFor="let comment of slide">
         <div class="slide__left">
           <div class="slide__brand">
-            <img src="{{comment.image}}" alt="">
+            <img [src]=getImage(comment.image) alt="">
           </div>
           <strong>Industry</strong>
           <span>{{comment.industry}}</span>
@@ -14,7 +14,7 @@
         <div class="slide__right">
           <div class="slide__person">
             <div class="slide__avatar">
-              <img src="{{comment.photo}}" alt="">
+              <img [src]=getImage(comment.photo) alt="">
             </div>
             <strong class="slide__name">{{comment.name}}</strong>
             <span class="slide__position">{{comment.position}}</span>

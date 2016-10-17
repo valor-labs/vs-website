@@ -25,8 +25,6 @@ export class ProjectComponent implements OnInit {
 
   public getImage = (img:string):string => require('../../services/images/projects/' + img);
   public getAvatarImage = (img:string):string => require('../../services/images/members/' + img);
-
-  // todo: move feedback images to services folder
   public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
 
   public ngOnInit(): void {
