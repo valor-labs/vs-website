@@ -10,11 +10,11 @@
     <div class="team-list">
       <div *ngFor="let member of team" class="team-item">
         <div class="team-item__preview-image">
-          <a href="">
-            <img [src]="getImage(member.fullImage)" alt="">
+          <a [routerLink]="['/team', member.memberId]">
+            <img [src]="getImage(member.fullImage)" alt="{{member.name}}">
           </a>
         </div>
-        <a href="" class="team-item__name">{{member.name}}</a>
+        <a [routerLink]="['/team', member.memberId]" class="team-item__name">{{member.name}}</a>
         <span class="team-item__position">{{member.position}}</span>
         <ul class="team-item__skills">
           <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>

@@ -10,6 +10,10 @@ export class MainService {
     return copy;
   }
 
+  public getById(memberId: number): Member {
+    return this.getTeam()[memberId];
+  }
+
   public getFeedback():any[] {
     let feedback = require('./collections/feedback.json');
     const arrayCount = Math.ceil(feedback.length / 2);
