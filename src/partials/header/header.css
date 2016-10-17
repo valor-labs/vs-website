@@ -10,6 +10,23 @@ header {
     text-align: center;
 }
 
+.header_blog {
+    margin-bottom: 0;
+}
+
+.header_blog .header__inner{
+    flex-direction: column;
+    height: 100%;
+}
+
+.header_blog .header__subtitle {
+    position: static;
+    margin-top: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .header .container, .header .row {
     height: 100%;
 }
