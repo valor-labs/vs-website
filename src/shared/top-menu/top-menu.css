@@ -17,9 +17,6 @@
     background: -moz-linear-gradient(top,  #050508 0%, #13141f 30%, #141520 35%, #141520 100%);
     background: -webkit-linear-gradient(top,  #050508 0%,#13141f 30%,#141520 35%,#141520 100%);
     background: linear-gradient(to bottom,  #050508 0%,#13141f 30%,#141520 35%,#141520 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050508', endColorstr='#141520',GradientType=0 );
-
-
 }
 
 .introduction__header {

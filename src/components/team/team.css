@@ -5,6 +5,12 @@
     border-bottom: 1px solid #babfc4;
 }
 
+@media (max-width: 1399px) {
+    .team-list {
+        justify-content: center;
+    }
+}
+
 .team-item {
     max-width: 285px;
     margin: 0 30px 73px;
