@@ -112,7 +112,7 @@
       <div class="project__reference col-lg-9">
         <div class="project__reference-info">
           <div>
-            <img src="{{project.reference.photo}}" width="70" height="70">
+            <img [src]="getFeedbackImage(project.reference.photo)" width="70" height="70">
           </div>
           <div>
             <span class="project__reference-name">{{project.reference.name}}</span>

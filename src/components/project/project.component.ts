@@ -5,11 +5,8 @@ import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
 import { Project } from '../../services/classes/project';
 
-require('./project.css');
-
 @Component({
   selector: 'project',
-  // styles: [require('./project.css')],
   template: require('./project.html')
 })
 

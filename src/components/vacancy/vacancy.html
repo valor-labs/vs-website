@@ -1,16 +1,129 @@
 <header
-  [title]="'User Experience designer'"
-  [text]="'A community of passionate individuals whose purpose is to revolutionize software design, creation and delivery, while advocating for positive social change.'"
-  [bg]="'vacancy/images/vacancy.jpg'"
->
+  [title]="vacancy.name"
+  [bg]=getImage(vacancy.headerImage)>
 </header>
 
-<div class="frame frame_light">
-  <div class="frame__top">
-    <div class="container">
-      <h2 class="frame__heading frame__align-left">Apply</h2>
+<section class="frame_white frame_projects">
+  <div class="container">
 
-      <forms [pageName]="pageName"></forms>
+    <div class="project__section">
+      <div class="col-lg-2">
+        <h5 class="project__heading">Description</h5>
+      </div>
+      <div class="col-lg-7 frame__text">
+        {{vacancy.description}}
+      </div>
+      <div class="col-lg-1">
+        <button pageScroll href="#applyForm" class="btn btn_scroll btn_small project__btn">Apply</button>
+      </div>
+    </div>
+
+    <div class="project__section">
+      <div class="col-lg-2">
+        <h5 class="project__heading">Responsibilities</h5>
+      </div>
+      <div class="col-lg-9">
+        <ul class="project-page-list">
+          <li *ngFor="let item of vacancy.responsibilities">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project__section">
+      <div class="col-lg-2">
+        <h5 class="project__heading">Requirements</h5>
+      </div>
+      <div class="col-lg-9">
+        <ul class="project-page-list">
+          <li *ngFor="let item of vacancy.requirements">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project__section__borderless">
+      <div class="col-lg-2">
+        <h5 class="project__heading">Benefits</h5>
+      </div>
+      <div class="col-lg-9">
+        <div class="col-lg-4 frame__text">
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('edge.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Cutting Edge Technology</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+          <br>
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('learn.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Learning as a Part of Work</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 frame__text">
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('work-space.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Comfortable Workspace</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+          <br>
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('fun.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Work-Life Balance</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 frame__text">
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('flexible.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Flexible Hours</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+          <br>
+          <div class="icon-block">
+            <div class="icon-block__icon">
+              <img [src]="getStaticImage('staff.png')" alt="#">
+            </div>
+            <h5 class="icon-block__title">Friendly Staff</h5>
+            <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-bottom: 30px;">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9 frame__text">
+        <h3>Learn more about our <a routerLink="/about">culture</a> and why Valor Software is a great place to work</h3>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="frame frame_light" id="applyForm">
+  <div class="container">
+    <div class="frame__top">
+      <h2 class="frame__heading">Apply</h2>
+    </div>
+    <div class="row">
+      <div class="">
+        <forms [pageName]="pageName"></forms>
+      </div>
     </div>
   </div>
 </div>

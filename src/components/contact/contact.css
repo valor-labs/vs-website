@@ -1,0 +1,99 @@
+.let-s-talk {
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #55555c;
+  margin-bottom: -20px;
+}
+
+.let-s-talk__inner {
+  display: flex;
+}
+
+.let-s-talk__section {
+  width: 50%;
+  padding-left: 30px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.let-s-talk__section:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.let-s-talk__text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.let-s-talk__text div {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.let-s-talk__text div:nth-child(even) {
+  padding-left: 150px;
+}
+
+.let-s-talk__text h6 {
+  font-weight: 500;
+  color: #1d1d2b;
+  font-size: 18px;
+}
+
+.let-s-talk__text span {
+  color: #55555c;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.socials-block {
+  margin-top:65px;
+}
+
+.socials_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.socials-contact {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.socials__item-contact:not(:last-child) {
+  margin-right: 25px;
+}
+
+.socials__item-contact a {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.socials__item-contact + .behance a:hover svg {
+  fill: #1769ff;
+}
+
+.socials__item-contact + .fb a:hover svg {
+  fill: #3b5998
+}
+
+.socials__item-contact + .linkedin a:hover svg {
+  fill: #0077b5;
+}
+
+.socials__item-contact + .twitter a:hover svg {
+  fill: #55acee;
+}
