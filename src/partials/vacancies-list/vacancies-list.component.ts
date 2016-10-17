@@ -1,14 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { VacanciesService } from '../../services/vacancies.service';
-
-export class Vacancy {
-  public constructor(public projectId: number,
-                     public name: string,
-                     public description: string,
-                     public responsibilities: string[],
-                     public requirements: string[]) {
-  };
-}
+import { Vacancy } from '../../services/classes/vacancy';
 
 @Component({
   selector: 'vacancy-preview',
@@ -28,12 +20,10 @@ require('./vacancies.css');
 
 export class VacanciesListComponent implements OnInit {
 
-  public vacancies: any = [];
+  public vacancies: Vacancy[];
 
   public ngOnInit(): void {
-    let vacanciesList: any[];
-    vacanciesList = this.vacanciesService.getVacancies();
-    this.vacancies = vacanciesList;
+    this.vacancies = this.vacanciesService.getVacancies();
   }
 
   public constructor(public vacanciesService: VacanciesService) {
