@@ -19,7 +19,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/project/project.component';
 import { AboutComponent } from './components/about/about.component';
-import { TeamComponent } from './components/team/team.component';
+import { TeamComponent, MemberComponent } from './components/team/team.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VacancyComponent } from './components/vacancy/vacancy.component';
@@ -60,6 +60,8 @@ import { routing } from './router.config';
     FormsComponent,
     CareersComponent,
     ContactComponent,
+
+    MemberComponent,
 
     ProjectPreviewComponent,
     ProjectsListComponent,

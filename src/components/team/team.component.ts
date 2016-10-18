@@ -1,8 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
 require('./team.css');
+
+@Component({
+  selector: 'team-member',
+  template: require('./team-member.html')
+})
+
+export class MemberComponent implements OnInit {
+  public memberId: number;
+  public socials: any;
+  @Input() public member: Member;
+
+  public getImage = (img:string):string => require('../../services/images/members/'+img);
+
+  public constructor(private mainService: MainService, private route: ActivatedRoute) {}
+
+  public ngOnInit(): void {
+    this.route.params.subscribe((params: any) => {
+      this.memberId = params.memberId;
+      this.member = this.mainService.getById(this.memberId);
+      this.socials = this.member.socials;
+    });
+  }
+}
 
 @Component({
   selector: 'team',

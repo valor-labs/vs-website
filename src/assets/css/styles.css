@@ -352,6 +352,14 @@ a:focus {
   margin: 0;
 }
 
+.socials_colored .socials__item svg {
+  fill: #1d1d2b;
+}
+
+.socials_colored .socials__item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .socials__item:not(:last-child) {
   margin-right: 12px;
 }
@@ -369,6 +377,12 @@ a:focus {
 .socials__item a:hover svg {
   fill: #fff;
 }
+
+.socials__item_git a:hover svg {fill: #171515;}
+.socials__item_be a:hover svg {fill: #1769ff;}
+.socials__item_fb a:hover svg {fill: #3b5998;}
+.socials__item_tw a:hover svg {fill: #55acee;}
+.socials__item_li a:hover svg {fill: #0077b5;}
 
 /*=========================illustrated component start=======================*/
 
