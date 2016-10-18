@@ -46,6 +46,7 @@ a:hover {
 
 a:focus {
     text-decoration: none;
+    outline: none;
 }
 
 .frame {
@@ -132,10 +133,6 @@ a:focus {
 
 .frame_dark .frame__more {
   color: #fff;
-}
-
-.frame_dark .frame__text {
-  color: #babfc4;
 }
 
 .frame__btn {
@@ -314,10 +311,7 @@ a:focus {
 }
 
 .frame_dark .frame__text {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 32px;
-  color: #babfc4;
+  color: #fff;
 }
 
 .projects-preview__link {
