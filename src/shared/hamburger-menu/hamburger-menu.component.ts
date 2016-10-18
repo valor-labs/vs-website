@@ -1,49 +1,34 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, Event, NavigationEnd } from '@angular/router';
 require('./hamburger-menu.css');
 
 @Component({
   selector: 'hamburger-menu',
   template: require('./hamburger-menu.html')
 })
-export class HamburgerMenuComponent {
-    public isOpen: boolean = false;
-    private keys: any = {32: 1, 33: 1, 34: 1, 37: 1, 38: 1, 39: 1, 40: 1};
+
+export class HamburgerMenuComponent implements OnInit {
+  public isOpen: boolean = false;
+
+  public ngOnInit(): void {
+    this.router.events.subscribe((event:Event) => {
+      if(event instanceof NavigationEnd) {
+        window.scroll(0,0);
+        if(event.url !== '/') {
+          document.body.style.overflow = 'auto';
+          this.isOpen = false;
+        }
+      }
+    });
+  }
 
   public menuToggle():void {
     this.isOpen = !this.isOpen;
 
-    let preventDefault = (e:any) => {
-      e = e || window.event;
-      if (e.preventDefault) {
-        e.preventDefault();
-      }
-      e.returnValue = false;
-    };
-
-    let preventDefaultForScrollKeys = (e:any) => {
-      if (this.keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-      }
-    };
-
     if (this.isOpen) {
-      if (window.addEventListener) {
-        window.addEventListener('DOMMouseScroll', preventDefault, false);
-      }
-      window.onwheel = preventDefault;
-      window.onmousewheel = document.onmousewheel = preventDefault;
-      window.ontouchmove = preventDefault;
-      document.onkeydown = preventDefaultForScrollKeys;
+      document.body.style.overflow = 'hidden';
     } else {
-      if (window.removeEventListener) {
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-      }
-      window.onmousewheel = document.onmousewheel = null;
-      window.onwheel = null;
-      window.ontouchmove = null;
-      document.onkeydown = null;
+      document.body.style.overflow = 'auto';
     }
   }
 

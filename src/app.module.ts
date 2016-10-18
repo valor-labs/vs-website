@@ -62,7 +62,6 @@ import { routing } from './router.config';
     ContactComponent,
 
     MemberComponent,
-
     ProjectPreviewComponent,
     ProjectsListComponent,
     SingleContentComponent,
