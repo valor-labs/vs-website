@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
 
-branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
-echo $branch
-
-if [ "$branch" != "development" ]
-then
-  exit 0
-else
+#branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+#echo $branch
+#
+#if [ "$branch" != "development" ]
+#then
+#  exit 0
+#else
   echo "deploying to gh-pages..."
   SHA=`git rev-parse --verify HEAD`
   URL='git@github.com:VS-work/VS-work.github.io.git'
@@ -19,4 +19,4 @@ else
   echo -ne '\n' | ssh-add deploy_key
 
   ./node_modules/.bin/gh-pages -d dist -r "${URL}" -b master -m "Deploy to GitHub Pages: ${SHA}"
-fi
+#fi
