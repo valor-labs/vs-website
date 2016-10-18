@@ -30,7 +30,7 @@
                   </a>
                 </li>
                 <li class="socials__item-contact behance">
-                  <a target="_blank" href="#">
+                  <a target="_blank" href="https://www.behance.net/ValorSoftware">
                     <svg>
                       <use xlink:href="#icon-be"></use>
                     </svg>
@@ -97,7 +97,7 @@
   <div class="container">
     <div class="learn-more">
       <div class="learn-more-text">
-        Learn more about our <a routerLink="/about">culture</a> and why Valor Software is a great place to work :)
+        Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work :)
       </div>
     </div>
   </div>

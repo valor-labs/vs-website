@@ -11,7 +11,6 @@ export class ContactComponent implements OnInit {
   public location: any = {};
 
   public ngOnInit(): void {
-
     this.email.title = 'Contact e-mail:';
     this.email.text = 'hello@valor-software.com';
     this.location.title = 'Location:';
@@ -20,7 +19,6 @@ export class ContactComponent implements OnInit {
 
     this.content.push(this.email);
     this.content.push(this.location);
-
   }
 
 }

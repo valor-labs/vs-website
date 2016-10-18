@@ -14,7 +14,7 @@
         {{vacancy.description}}
       </div>
       <div class="col-lg-1">
-        <button pageScroll href="#applyForm" class="btn btn_scroll btn_small project__btn">Apply</button>
+        <button pageScroll (click)="scrollTo($event)" class="btn btn_scroll btn_small project__btn">Apply</button>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
     <div class="row" style="padding-bottom: 30px;">
       <div class="col-lg-3"></div>
       <div class="col-lg-9 frame__text">
-        <h3>Learn more about our <a routerLink="/about">culture</a> and why Valor Software is a great place to work</h3>
+        <h3>Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work</h3>
       </div>
     </div>
   </div>
