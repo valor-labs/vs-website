@@ -9,6 +9,7 @@ export class CareersComponent implements OnInit {
   public pageName: string;
 
   public ngOnInit(): void {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
 
     this.pageName = 'Careers page';
 

@@ -190,9 +190,6 @@ a:focus {
   top: 1px;
 }
 
-.btn:focus {
-  color: #fff;
-}
 
 .btn_transparent {
   border: 2px solid white;

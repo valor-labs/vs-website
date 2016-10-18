@@ -13,6 +13,7 @@ export class ApproachComponent implements OnInit {
   public noWrapSlides:boolean = false;
 
   public ngOnInit(): void {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.projects = this.projectsService.getAll();
   }
 
