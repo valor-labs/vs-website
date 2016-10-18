@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'services',
   // styles: [require('./services.css')],
   template: require('./services.html')
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent  {
   // public isCollapsed:boolean = false;
   //
   // public collapsed(event:any):void {
@@ -16,7 +16,4 @@ export class ServicesComponent implements OnInit {
   //   console.log(event);
   // }
 
-  public ngOnInit(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
 }

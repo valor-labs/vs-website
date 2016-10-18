@@ -39,7 +39,6 @@ export class TeamComponent implements OnInit {
   public getImage = (img:string):string => require('../../services/images/members/'+img);
 
   public ngOnInit():void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.team = this.mainService.getTeam();
   }
 

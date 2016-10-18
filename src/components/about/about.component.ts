@@ -20,7 +20,6 @@ export class AboutComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
     let urlPath = location.hash;
 
     if (urlPath.indexOf('culture') !== -1) {

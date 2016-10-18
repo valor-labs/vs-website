@@ -25,7 +25,6 @@ export class ProjectComponent implements OnInit {
   public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
 
   public ngOnInit(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.pageName = 'Project page';
     this.route.params.subscribe((params: any) => {
       /* tslint:disable */

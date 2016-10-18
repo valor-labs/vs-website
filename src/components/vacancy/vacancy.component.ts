@@ -16,7 +16,6 @@ export class VacancyComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.pageName = 'Vacancy page';
     this.route.params.subscribe((params: any) => {
       /* tslint:disable */
