@@ -11,4 +11,7 @@ chmod 600 deploy_key
 eval `ssh-agent -s`
 ssh-add deploy_key
 
+git config --global user.email "otelnov@gmail.com"
+git config --global user.name "Travis CI"
+
 ./node_modules/.bin/gh-pages -d dist -r "${URL}" -b master -m "Deploy to GitHub Pages: ${SHA}"
