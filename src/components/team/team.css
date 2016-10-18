@@ -20,6 +20,18 @@
     border-bottom: 3px solid #cd151e;
 }
 
+.team-item__preview-image {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    transition: all .25s ease-out;
+}
+
+.team-item__preview-image:hover {
+    transition: all .25s ease-out;
+    transform: scale(1.05);
+}
+
 .team-item__preview-image img{
     width: 100%;
 }
@@ -58,6 +70,82 @@
     border-radius: 3px;
     padding: 2px 5px;
     margin: 0 0 6px 6px;
+}
+
+/*========================= team-member =======================*/
+
+.team-member {
+
+}
+
+.team-member .socials {
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.team-member__avatar {
+    position: relative;
+    top: -160px;
+    max-width: 325px;
+    float: right;
+}
+
+.team-member__avatar img {
+    border-bottom: 3px solid #b8131a;
+    margin-bottom: 10px;
+}
+
+.team-member__info {
+    padding-left: 10px;
+}
+
+.team-member__name {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -75px;
+}
+
+.team-member__position {
+    color: #1d1d2b;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-bottom: 5px;
+}
+
+.team-member__description {
+    margin-bottom: 50px;
+}
+
+.team-member__skills {
+    margin-top: 17px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member__skill {
+    width: 25%;
+}
+
+.team-member__projects {
+    padding: 53px 0;
+}
+
+.team-member .projects-list {
+    margin: 31px 0 -40px;
+}
+
+.team-member .project-list__item {
+    padding: 0;
+    margin: 0 30px 60px 0;
+}
+
+.team-member .project-list__item:nth-child(odd) {
+    margin-right: 60px;
 }
 
 

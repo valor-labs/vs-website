@@ -48,6 +48,6 @@ export class HamburgerMenuComponent {
   }
 
   public constructor(public router:Router) {
-    console.log(router.routerState);
+
   }
 }

@@ -1,0 +1,74 @@
+<header class="header_blog"
+  [bg]="'team/images/team.jpg'"
+>
+</header>
+
+<div class="team-member">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="team-member__avatar">
+          <img [src]="getImage(member.fullImage)" alt="{{member.name}}" />
+          <div class="team-member__socials">
+            <ul class="socials socials_colored">
+              <li class="socials__item socials__item_git" *ngIf="socials.github">
+                <a target="_blank" href="{{socials.github}}">
+                  <svg>
+                    <use xlink:href="#icon-git"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item_be" *ngIf="socials.behance">
+                <a target="_blank" href="{{socials.behance}}">
+                  <svg>
+                    <use xlink:href="#icon-be"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item_fb" *ngIf="socials.facebook">
+                <a target="_blank" href="{{socials.facebook}}">
+                  <svg>
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item_tw" *ngIf="socials.twitter">
+                <a target="_blank" href="{{socials.twitter}}">
+                  <svg>
+                    <use xlink:href="#icon-tw"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item socials__item_li" *ngIf="socials.linkedin">
+                <a target="_blank" href="{{socials.linkedin}}">
+                  <svg>
+                    <use xlink:href="#icon-li"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="team-member__info">
+          <div class="content-section project__section">
+            <strong class="team-member__name">{{member.name}}</strong>
+            <h6 class="team-member__position">{{member.position}}</h6>
+            <div class="team-member__description">
+              <p *ngFor="let paragraph of member.description">{{paragraph}}</p>
+            </div>
+            <span class="project__heading">Skills</span>
+            <ul class="team-member__skills">
+              <li class="team-member__skill" *ngFor="let skill of member.skills">{{skill}}</li>
+            </ul>
+          </div>
+          <div class="team-member__projects">
+            <span class="project__heading">Took a part on projects</span>
+            <projects-list class="projects-list" [maxItems] = "4"></projects-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
