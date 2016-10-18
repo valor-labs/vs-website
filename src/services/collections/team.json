@@ -6,7 +6,14 @@
     "avatar": "Avatar-3.png",
     "fullImage": "photo.jpg",
     "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
-    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com",
+      "twitter": "https://twitter.com",
+      "linkedin": "https://linkedin.com"
+    }
   },
   {
     "memberId": 1,
@@ -14,7 +21,13 @@
     "position": "Texas Ranger",
     "avatar": "Avatar-2.png",
     "fullImage": "photo2.jpg",
-    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   },
   {
     "memberId": 2,
@@ -22,7 +35,13 @@
     "position": "I am Night",
     "avatar": "Avatar-4.png",
     "fullImage": "photo3.jpg",
-    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Marketing"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   },
   {
     "memberId": 3,
@@ -30,7 +49,13 @@
     "position": "Kabooom!",
     "avatar": "Avatar-5.png",
     "fullImage": "photo4.jpg",
-    "skills": ["UI/UX Design", "Web Design", "Graphic Design", "Web Analytics", "Web Marketing"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   },
   {
     "memberId": 4,
@@ -38,7 +63,13 @@
     "position": "I watching you!",
     "avatar": "Avatar-7.png",
     "fullImage": "photo1.jpg",
-    "skills": ["UI/UX Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   },
   {
     "memberId": 5,
@@ -46,7 +77,13 @@
     "position": "Multipass",
     "avatar": "Avatar-9.png",
     "fullImage": "photo2.jpg",
-    "skills": ["Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   },
   {
     "memberId": 6,
@@ -54,6 +91,12 @@
     "position": "Hodor",
     "avatar": "Avatar-2.png",
     "fullImage": "photo3.jpg",
-    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics"]
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."],
+    "skills": ["UI/UX Design", "Web Design", "Brand Consulting", "Graphic Design", "Web Analytics", "Web Marketing"],
+    "socials": {
+      "github": "https://github.com",
+      "behance": "https://www.behance.net",
+      "facebook": "https://facebook.com"
+    }
   }
 ]

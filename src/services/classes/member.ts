@@ -5,6 +5,7 @@ export class Member {
                      public description:string[],
                      public avatar:string,
                      public fullImage:string,
+                     public socials:any,
                      public skills:number[]) {
   };
 }

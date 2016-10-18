@@ -24,6 +24,12 @@
     width: 285px;
     height: 285px;
     overflow: hidden;
+    transition: all .25s ease-out;
+}
+
+.team-item__preview-image:hover {
+    transition: all .25s ease-out;
+    transform: scale(1.05);
 }
 
 .team-item__preview-image img{
@@ -70,6 +76,11 @@
 
 .team-member {
 
+}
+
+.team-member .socials {
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .team-member__avatar {

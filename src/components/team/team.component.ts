@@ -12,6 +12,7 @@ require('./team.css');
 
 export class MemberComponent implements OnInit {
   public memberId: number;
+  public socials: any;
   @Input() public member: Member;
 
   public getImage = (img:string):string => require('../../services/images/members/'+img);
@@ -22,6 +23,7 @@ export class MemberComponent implements OnInit {
     this.route.params.subscribe((params: any) => {
       this.memberId = params.memberId;
       this.member = this.mainService.getById(this.memberId);
+      this.socials = this.member.socials;
     });
   }
 }
