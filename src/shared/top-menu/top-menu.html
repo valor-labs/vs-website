@@ -7,11 +7,15 @@
         </a>
     </div>
     <div class="introduction__text">
-        <h2>
-            Using our intelligence<br>
-            we make the world <span class="introduction__text_red">better!</span>
-        </h2>
-        <p>We create smart web & mobile solutions</p>
+        <div class="introduction__text-table">
+            <div class="introduction__text-cell">
+                <h2>
+                    Using our intelligence<br>
+                    we make the world <span class="introduction__text_red">better!</span>
+                </h2>
+                <p>We create smart web & mobile solutions</p>
+            </div>
+        </div>
     </div>
     <div class="introduction__arrow" pageScroll href="#whatWeDo">
         <svg>
@@ -19,36 +23,43 @@
         </svg>
     </div>
 
-    <div id="particles-js"></div>
+    <div id="particles-js" class="introduction__particles"></div>
 </section>
 <div class="menu" [class.is-sticky]="isSticky" [class.not-home]="!isLanding">
     <div class="container">
-        <div class="menu__inner">
-            <div class="menu__inner">
-            <a routerLink="/" class="menu__logo"></a>
-            <ul class="menu__list">
-                <li routerLinkActive="active">
-                    <a routerLink="/services">Services</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/clients">Clients</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/about">About</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/approach">Approach</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/team">Team</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/careers">Careers</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a routerLink="/contact">Contact</a>
-                </li>
-            </ul>
+        <div class="menu__inner" [class.is-active]="isOpen">
+            <div class="menu__trigger" (click)="menuToggle()">
+                <div class="hamburger hamburger--spring" [class.is-active]="isOpen">
+                    <div class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__wrapper">
+                <a routerLink="/" class="menu__logo"></a>
+                <ul class="menu__list">
+                    <li routerLinkActive="active">
+                        <a routerLink="/services">Services</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/clients">Clients</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/about">About</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/approach">Approach</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/team">Team</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/careers">Careers</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="/contact">Contact</a>
+                    </li>
+                </ul>
             </div>
             <a class="menu__git" target="_blank" href="https://github.com/valor-software">
                 <svg>

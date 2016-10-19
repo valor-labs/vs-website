@@ -1,15 +1,1 @@
-.intro {;
-    height: 320px;
-    position: relative;
-    background: url(./images/srv-header-bg.jpg) center center;
-    background-size: cover;
-}
 
-.intro__overlay {
-    background: rgba(29,29,43,.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}

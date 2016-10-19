@@ -107,3 +107,26 @@
 .slide__text a {
   color: #cd151e;
 }
+
+@media (max-width:768px) {
+  .slide__inner {
+    display: block;
+  }
+  .slide__item, .slide__item:first-child, .slide__item:last-child {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .slide__left {
+    display: none;
+  }
+  .slide__right {
+    padding: 0;
+  }
+  .slide__person {
+    margin-bottom: 5px;
+  }
+  .slide__text p {
+    line-height: 22px;
+  }
+}

@@ -1,3 +1,8 @@
+hamburger-menu {
+    display: block;
+    background: transparent;
+}
+
 .logo {
     width: 139px;
     height: 79px;
@@ -29,15 +34,33 @@
     justify-content: space-between;
 }
 
+.introduction__particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
 .introduction__text {
     color: #fff;
-    height: 280px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto 0;
+    padding: 20px;
+}
+
+.introduction__text-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.introduction__text-cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .introduction__text h2 {
@@ -143,25 +166,9 @@
     color: #fff;
 }
 
-hamburger-menu {
-    display: block;
-    background: transparent;
-}
-
-/* ---- reset ---- */
-
 canvas {
     display: block;
     vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
 }
 
 .menu {
@@ -188,10 +195,14 @@ canvas {
     z-index: 30;
 }
 
-.menu__inner {
+.menu__inner, .menu__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.menu__trigger {
+    display: none;
 }
 
 .menu__logo {
@@ -261,4 +272,62 @@ canvas {
 
 .menu__git:hover svg {
     fill: #fff;
+}
+
+@media (max-width:1024px) {
+    .introduction__particles {
+        display: none;
+    }
+    .introduction__text h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .introduction__text p {
+        font-size: 22px;
+    }
+    .menu__trigger {
+        display: block;
+    }
+    .menu__inner.is-active .menu__trigger {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+    }
+    .menu__inner.is-active .menu__list{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1d1d2b;
+        z-index: 1000;
+        padding: 60px;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__list li {
+        line-height: 40px;
+        max-width: 130px;
+    }
+    .menu__list li.active:after, .menu__list li:hover:after {
+        bottom: 0;
+        height: 1px;
+    }
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 100px;
+        height: 55px;
+    }
+    .introduction__text h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .introduction__text p {
+        font-size: 18px;
+    }
 }

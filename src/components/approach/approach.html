@@ -42,7 +42,7 @@
         <slide *ngFor="let project of projects; let i=index" [active]="project.active">
           <div class="slide__inner">
             <div style="float: none; margin: 0 auto;">
-              <img [src]="getImage(project.fullImage)" width="800" height="500">
+              <img [src]="getImage(project.fullImage)" width="800">
               <h5 class="icon-block__title">{{project.title}}</h5>
               <a href="{{project.externalLink}}" target="_blank">View case »</a>
             </div>
