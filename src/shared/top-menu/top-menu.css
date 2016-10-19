@@ -262,3 +262,9 @@ canvas {
 .menu__git:hover svg {
     fill: #fff;
 }
+
+@media (max-width: 1023px) {
+ #particles-js {
+    display:none;
+  }
+}
