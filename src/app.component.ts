@@ -1,4 +1,5 @@
 require('./assets/css/styles.css');
+require('./assets/js/helper.js');
 import { Component } from '@angular/core';
 
 @Component({
