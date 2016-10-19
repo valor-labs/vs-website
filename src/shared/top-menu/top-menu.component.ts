@@ -1,4 +1,6 @@
 import { Component, Input, HostListener, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
 require('./top-menu.css');
 
 @Component({
@@ -10,6 +12,14 @@ export class TopMenuComponent implements OnInit {
   public isOpen: boolean = false;
   public startFixedPosition:number = window.innerHeight;
   @Input() public isLanding:boolean;
+
+  public constructor(public router:Router) {
+    this.router.events.subscribe((event:any) => {
+      if (event instanceof NavigationEnd) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+      }
+    });
+  }
 
   public menuToggle():void {
     this.isOpen = !this.isOpen;
@@ -32,6 +42,7 @@ export class TopMenuComponent implements OnInit {
       this.isSticky = true;
     } else {
       this.isSticky = false;
+
     }
   }
 }

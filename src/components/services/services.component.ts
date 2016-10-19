@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   // styles: [require('./services.css')],
   template: require('./services.html')
 })
-export class ServicesComponent {
+export class ServicesComponent  {
   // public isCollapsed:boolean = false;
   //
   // public collapsed(event:any):void {
@@ -15,4 +15,5 @@ export class ServicesComponent {
   // public expanded(event:any):void {
   //   console.log(event);
   // }
+
 }

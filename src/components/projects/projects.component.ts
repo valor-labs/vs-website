@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   // styles: [require('./projects.css')],
   template: require('./projects.html')
 })
-export class ProjectsComponent {
-
-}
+export class ProjectsComponent   {
+  }

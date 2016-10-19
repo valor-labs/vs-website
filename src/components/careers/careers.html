@@ -22,7 +22,7 @@
   <div class="container">
     <div class="learn-more">
       <div class="learn-more-text">
-        Learn more about our <a routerLink="/about">culture</a> and why Valor Software is Cool :)
+        Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}" >culture</a> and why Valor Software is Cool :)
       </div>
     </div>
   </div>
