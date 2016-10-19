@@ -16,7 +16,7 @@
     "flow.github-release": "conventional-github-releaser -p angular",
     "flow.build:prod": "NODE_ENV=production webpack --progress --color --display-error-details --display-cached",
     "flow.build:dev": "webpack --progress --color",
-    "flow.serve:dev": "webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
+    "flow.serve:dev": "webpack-dev-server --host 0.0.0.0 --hot --inline --colors --display-error-details --display-cached",
     "flow.serve:prod": "NODE_ENV=production webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
     "start": "npm run flow.serve:dev",
     "pretest": "npm run flow.lint",

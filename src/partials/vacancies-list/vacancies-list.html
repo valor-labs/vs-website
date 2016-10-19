@@ -1,3 +1,7 @@
-<div *ngFor="let vacancy of vacancies" >
-  <vacancy-preview  [vacancy]="vacancy"></vacancy-preview>
+<div class="container">
+<div class="row">
+  <div *ngFor="let vacancy of vacancies" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <vacancy-preview  [vacancy]="vacancy"></vacancy-preview>
+  </div>
+</div>
 </div>

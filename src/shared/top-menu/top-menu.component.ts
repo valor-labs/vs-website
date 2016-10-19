@@ -9,6 +9,7 @@ require('./top-menu.css');
 })
 export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
+  public isOpen: boolean = false;
   public startFixedPosition:number = window.innerHeight;
   @Input() public isLanding:boolean;
 
@@ -18,6 +19,16 @@ export class TopMenuComponent implements OnInit {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
     });
+  }
+
+  public menuToggle():void {
+    this.isOpen = !this.isOpen;
+
+    if (this.isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
 
   public ngOnInit():void {

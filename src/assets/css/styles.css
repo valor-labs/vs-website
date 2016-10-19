@@ -240,7 +240,6 @@ a:focus {
 
 .learn-more-text {
   height: 23px;
-  font-family: Roboto;
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
@@ -256,12 +255,6 @@ a:focus {
   flex-wrap: wrap;
 }
 
-@media (max-width: 1399px) {
-  .projects-list {
-    justify-content: center;
-  }
-}
-
 .projects-list .frame__btn {
   margin-top: 0;
   flex: 0 0 100%;
@@ -272,6 +265,21 @@ a:focus {
   padding: 0 25px 20px;
   min-width: 400px;
   margin-bottom: 43px;
+}
+@media (max-width:768px) {
+  .project-list__item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .img-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-list li{
+    flex: 0 0 33%;
+    margin-bottom: 15px;
+  }
 }
 
 .projects-preview {
@@ -655,3 +663,78 @@ a:focus {
   padding-bottom: 5px;
 }
 /*================Project and Vacancy pages END=========*/
+@media (max-width: 1399px) {
+  .projects-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frame {
+    padding: 60px 0;
+  }
+  .frame__btn {
+    margin-top: 40px;
+  }
+  .frame__heading {
+    font-size: 28px;
+  }
+  .icon-block__icon {
+    margin-bottom: 25px;
+  }
+  /*=========================illustrated component start=======================*/
+  .illustrated {
+    margin-bottom: 0;
+  }
+  .illustrated__inner {
+    display: block;
+  }
+  .illustrated__img {
+    margin-bottom: 20px;
+  }
+  .illustrated__section,.illustrated__section:nth-child(odd), .illustrated__section:nth-child(even) {
+    padding: 0;
+    width: 100%;
+  }
+  .illustrated__top {
+    margin-bottom: 20px;
+  }
+  /*=========================illustrated component end=======================*/
+}
+
+@media (max-width: 768px) {
+  .frame {
+    padding: 40px 0;
+  }
+  .frame__btn {
+    margin-top: 25px;
+  }
+  .frame__heading {
+    font-size: 26px;
+    padding: 0 0 30px;
+  }
+  .frame__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .icon-block {
+    margin-bottom: 20px;
+  }
+  .icon-block__icon {
+    margin-bottom: 10px;
+  }
+  .icon-block__text {
+    line-height: 24px;
+  }
+  /*=========================illustrated component start=======================*/
+  .illustrated {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .illustrated__text div, .illustrated__text div:nth-child(even) {
+    width: 100%;
+    padding: 0;
+  }
+  /*=========================illustrated component end=======================*/
+}
