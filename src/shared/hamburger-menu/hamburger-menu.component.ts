@@ -13,7 +13,6 @@ export class HamburgerMenuComponent implements OnInit {
   public ngOnInit(): void {
     this.router.events.subscribe((event:Event) => {
       if(event instanceof NavigationEnd) {
-        window.scroll(0,0);
         if(event.url !== '/') {
           document.body.style.overflow = 'auto';
           this.isOpen = false;

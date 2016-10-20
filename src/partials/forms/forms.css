@@ -5,21 +5,13 @@
   height: 155px;
 }
 
-#contact-form .send-red-button {
-  float:right;
+#contact-form input[type=submit] {
   width: 202px;
   height: 52px;
+  float:right;
   background-color: #cd151e;
   border: 1px solid #c3121a;
   border-radius: 1px;
-}
-
-#contact-form .send-red-button:hover {
-  background-color: #c3121a;
-  color:#fff;
-}
-
-#contact-form .send-red-button .text-button {
   color: white;
   font-family: Roboto;
   line-height: 50px;
@@ -27,10 +19,16 @@
   text-align: center;
 }
 
-#contact-form .send-red-button .text-button span .arrow {
-  font-size: 20px;
+#contact-form input[type=submit]:hover {
+  background-color: #c3121a;
+  color:#fff;
 }
 
+@media (max-width: 1023px) {
+  #contact-form .send-red-button {
+    width: 225px;
+  }
+}
 
 
 /**Styles for form on vacancies pages **/
@@ -40,20 +38,12 @@
   height: 155px;
 }
 
-#vacancy-form .send-red-button {
+#vacancy-form input[type=submit] {
   width: 202px;
   height: 52px;
   background-color: #cd151e;
   border: 1px solid #c3121a;
   border-radius: 1px;
-}
-
-#vacancy-form .send-red-button:hover {
-  background-color: #c3121a;
-  color:#fff;
-}
-
-#vacancy-form .send-red-button .text-button {
   color: white;
   font-family: Roboto;
   line-height: 50px;
@@ -61,10 +51,21 @@
   text-align: center;
 }
 
-#vacancy-form .send-red-button .text-button span .arrow {
-  font-size: 20px;
+#vacancy-form input[type=submit]:hover {
+  background-color: #c3121a;
+  color:#fff;
 }
 
+@media (max-width: 1023px) {
+  #vacancy-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #vacancy-form .form-padding {
+   padding-bottom:10px
+  }
+}
 
 /**Styles for form on case pages **/
 
@@ -90,20 +91,12 @@
   margin-top: -65px;
 }
 
-#case-form .send-red-button {
+#case-form input[type=submit] {
   width: 202px;
   height: 52px;
   background-color: #cd151e;
   border: 1px solid #c3121a;
   border-radius: 1px;
-}
-
-#case-form .send-red-button:hover {
-  background-color: #c3121a;
-  color:#fff;
-}
-
-#case-form .send-red-button .text-button {
   color: white;
   font-family: Roboto;
   line-height: 50px;
@@ -111,8 +104,22 @@
   text-align: center;
 }
 
-#case-form .send-red-button .text span .arrow {
-  font-size: 20px;
+#case-form input[type=submit]:hover {
+  background-color: #c3121a;
+  color:#fff;
+}
+
+
+
+@media (max-width: 1023px) {
+  #case-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #case-form .form-padding {
+    padding-bottom:80px
+  }
 }
 
 
@@ -147,6 +154,7 @@
 .drop-container:hover {
   background-color: #eef5f9;
   text-decoration: underline;
+  cursor:pointer;
 }
 
 .drop-container img {
@@ -162,6 +170,13 @@
   color: #55555c;
   text-align:left;
   padding-left:21px;
+}
+
+.drop-container .text-drop-mobile  {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 30px;
+  color: #55555c;
 }
 
 .drop-container span {

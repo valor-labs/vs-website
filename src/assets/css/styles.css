@@ -252,6 +252,19 @@ a:focus {
   padding: 36px 0;
 }
 
+@media (max-width:768px) {
+  .learn-more {
+    height: 60px;
+    background-color: #eef5f9;
+  }
+
+  .learn-more-text {
+    height: 23px;
+    font-size: 19px;
+    padding-top: 0;
+  }
+}
+
 /*=========================Learn-more block styles end=======================*/
 
 /*=========================Projects styles start=======================*/
@@ -807,4 +820,3 @@ a:focus {
     margin: 0 10px 0 0;
     font-size: 14px;
   }
-}

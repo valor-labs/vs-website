@@ -50,6 +50,8 @@ vacancy-preview {
     .vacancy-rectangle {
         width: auto;
         max-width: 100%;
+        border-left:1px solid #babfc4;
+
     }
     .vacancy-item:last-child .vacancy-rectangle{
         margin-bottom: 0;
