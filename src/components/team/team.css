@@ -5,12 +5,6 @@
     border-bottom: 1px solid #babfc4;
 }
 
-@media (max-width: 1399px) {
-    .team-list {
-        justify-content: center;
-    }
-}
-
 .team-item {
     max-width: 285px;
     margin: 0 30px 73px;
@@ -121,8 +115,8 @@
     margin-bottom: 50px;
 }
 
-.team-member__skills {
-    margin-top: 17px !important;
+.project__section .team-member__skills {
+    margin-top: 17px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -148,4 +142,42 @@
     margin-right: 60px;
 }
 
+@media (max-width: 1399px) {
+    .team-list {
+        justify-content: center;
+    }
+}
 
+@media (max-width: 768px) {
+    .team-member__avatar {
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+        top: 0;
+        margin-top: -160px;
+    }
+    .team-member__name {
+        top: 0;
+        position: static;
+        color: #1d1d2b;
+        font-size: 45px;
+        font-style: italic;
+        line-height: 1;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .team-member__position {
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .team-member__skill {
+        width: 50%;
+    }
+    .team-member__description {
+        margin-bottom: 20px;
+    }
+    .team-member .project-list__item:nth-child(odd), .team-member .project-list__item {
+        margin: 0 0 20px 0;
+    }
+}

@@ -51,4 +51,7 @@ vacancy-preview {
         width: auto;
         max-width: 100%;
     }
+    .vacancy-item:last-child .vacancy-rectangle{
+        margin-bottom: 0;
+    }
 }

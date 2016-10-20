@@ -43,11 +43,10 @@ export class ProjectComponent implements OnInit {
       const members = this.mainService.getTeam().filter((member: Member) => {
         return project.members.indexOf(member.memberId) >= 0;
       });
-
       // split items to 4 columns
-      let formattedMembers: any = [[], [], [], []];
-      members.forEach((member: Member, index: number) => {
-        formattedMembers[index % 4].push({
+      let formattedMembers: any = [];
+      members.forEach((member: Member) => {
+        formattedMembers.push({
           avatar: member.avatar,
           name: member.name,
           position: member.position

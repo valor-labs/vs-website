@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/bebasneuebold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -234,17 +241,15 @@ a:focus {
 
 /*=========================Learn-more block styles start=======================*/
 .learn-more {
-  height: 100px;
   background-color: #eef5f9;
 }
 
 .learn-more-text {
-  height: 23px;
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
   color: #1d1d2b;
-  padding-top: 38px;
+  padding: 36px 0;
 }
 
 /*=========================Learn-more block styles end=======================*/
@@ -537,6 +542,11 @@ a:focus {
   text-align: left;
 }
 
+.project__section:last-child {
+  padding-bottom: 0;
+  border: none
+}
+
 .project__section__borderless {
   overflow: hidden;
   padding: 53px 0;
@@ -560,6 +570,7 @@ a:focus {
 
 .project__member {
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .project__member-name {
@@ -701,10 +712,18 @@ a:focus {
   }
   /*=========================illustrated component end=======================*/
 }
+@media (max-width: 1024px) {
+  .project__btn {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
+  section-heading + * {
+    margin-top: 30px;
+  }
   .frame {
-    padding: 40px 0;
+    padding: 40px 5px;
   }
   .frame__btn {
     margin-top: 25px;
@@ -713,7 +732,7 @@ a:focus {
     font-size: 26px;
     padding: 0 0 30px;
   }
-  .frame__text {
+  .frame__text, .frame__more {
     font-size: 16px;
     line-height: 24px;
   }
@@ -736,5 +755,56 @@ a:focus {
     width: 100%;
     padding: 0;
   }
+  .illustrated__heading {
+    font-size: 26px;
+  }
   /*=========================illustrated component end=======================*/
+  .learn-more-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 0;
+  }
+  .project__section {
+    padding: 25px 0;
+  }
+  .project__heading {
+    font-size: 20px;
+  }
+  .project__member-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project__member {
+    flex: 0 0 50%;
+    min-width: 135px;
+  }
+  .project__member img {
+    margin-bottom: 10px;
+  }
+  .project__section p, .project__section ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .project__section ul li {
+    margin-bottom:10px;
+    padding: 0 10px 0 12px;
+  }
+  .project__section ul li:before {
+    top: 10px;
+  }
+  .project__section .icon-block {
+    text-align: center; 
+  }
+  .content-presentation {
+    margin-top: 25px;
+  }
+
+  .content-presentation__img {
+    margin-bottom: 20px;
+  }
+
+  .content-presentation__link {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+  }
 }
