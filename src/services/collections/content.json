@@ -2,29 +2,29 @@
   {
     "contentId": "directions",
     "title": "WHAT WE DO FOR YOUR SUCCESS",
-    "description": "Some cool description. Lorem ipsum dolor sit amet, consectetur adipisicing.",
+    "description": "Our highest priority is to meet client expectations with top technical expertise that consistently delivers innovative and high-quality technology solutions.",
     "link": "/approach",
     "linkText": "See how we do it",
     "columns": [
       {
         "image": "ui-ux.png",
         "title": "User Experience Design",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "Our UI/UX designers produce the most eye-catching designs for your product"
       },
       {
         "image": "web-dev.png",
         "title": "Custom Web Development",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We simply create the good-looking and functional websites using latest and greatest industry technologies and techniques"
       },
       {
         "image": "mobile-dev.png",
-        "title": "Mobile Application",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "title": "Mobile Application Development",
+        "text": "We provide effective mobile app development solutions, that you and your customers will love."
       },
       {
         "image": "node_js.png",
-        "title": "Migration To Node.JS",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "title": "Migration to Node.js",
+        "text": "Migrating your solutions to a scalable, fast, asynchronous and efficient Node.js architecture"
       }
     ]
   },
@@ -36,49 +36,49 @@
       {
         "image": "things.png",
         "title": "Make Great Things",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "Whatever project we're doing - we're always raising the quality bar."
       },
       {
         "image": "deliver.png",
         "title": "Deliver Results",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We serve people and organisations, and deliver results throughout the world. Timely."
       },
       {
         "image": "always-learn.png",
         "title": "Always Learn",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We learn, we progress, we move forward to make our clients happy!"
       },
       {
         "image": "fun.png",
         "title": "Have Fun",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "It's not about just work, it's pleasure for us to develop awesome products."
       }
     ]
   },
   {
     "contentId": "advantages",
-    "title": "Advantages of iterative development",
-    "description": "We stand by our values. From the way we work with our clients to the way we interact with each other, these four values influence everything that we do",
+    "title": "Advantages of our approach",
+    "description": "We help enterprises accelerate software-to-market by building collaborative relationships, using lean requirements and Agile methodologies. We guarantee value to our clients with our UX and engineering expertise.",
     "columns": [
       {
         "image": "transparency.png",
-        "title": "Transparency For Clients",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "title": "Transparency & Fairness",
+        "text": "Our transparency and risk-free environment makes you feel as a part of a team."
       },
       {
         "image": "focus.png",
         "title": "Focus On Business Value",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We're letting the client decide the priority of feature implementation, so the team knows what’s most important for the customer’s business, this way we provide the best business value."
       },
       {
         "image": "early.png",
         "title": "Early Predictable Delivery",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We divide project on two-week sprints, so new features are delivered quickly and frequently, with a high level of predictability."
       },
       {
         "image": "allows.png",
         "title": "Allows For Change",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+        "text": "We always provide an opportunity to refine and re-prioritize the overall product backlog. New or changed items can be can be properly planned for the next iteration to introduce changes within a few weeks."
       }
     ]
   }
