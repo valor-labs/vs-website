@@ -6,7 +6,7 @@
 >
 </header>
 
-<section class="frame frame_projects">
+<section class="frame frame_border">
   <div class="container">
     <div class="project__section">
       <div class="col-lg-2">
@@ -16,15 +16,15 @@
         <p>{{project.description}}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
-            <img [src]=getImage(project.fullImage) width="800" height="500">
+            <img [src]=getImage(project.fullImage) width="800">
           </div>
 
           <div class="content-presentation__links">
-            <a class="content-presentation__link" href="{{project.externalLink}}" style="color: #595959; font-size: 16px;" target="_blank">
+            <a class="content-presentation__link" href="{{project.externalLink}}" target="_blank">
               <span class="icon-link"></span>
               View Online »
             </a>
-            <a class="content-presentation__link" href="{{project.externalLink}}" style="color: #595959; font-size: 16px;" target="_blank">
+            <a class="content-presentation__link" href="{{project.externalLink}}" target="_blank">
               <span class="icon-be"></span>
               View presentation »
             </a>
@@ -95,8 +95,8 @@
         <h5 class="project__heading">Members</h5>
       </div>
       <div class="col-lg-9">
-        <div class="project__member col-lg-3" *ngFor="let row of project.formattedMembers">
-          <div *ngFor="let member of row">
+        <div class="project__member-list">
+          <div class="project__member col-lg-3 col-md-3 col-sm-3" *ngFor="let member of project.formattedMembers">
             <img [src]=getAvatarImage(member.avatar) width="70" height="70">
             <span class="project__member-name">{{member.name}}</span>
             <span class="project__member-position">{{member.position}}</span>
@@ -125,7 +125,7 @@
   </div>
 </section>
 
-<div class="frame frame_projects">
+<div class="frame frame_border">
   <div class="container">
     <section-heading
       [title]="'Similar projects'"
