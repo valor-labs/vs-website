@@ -50,5 +50,7 @@ vacancy-preview {
     .vacancy-rectangle {
         width: auto;
         max-width: 100%;
+        border-left:1px solid #babfc4;
+
     }
 }
