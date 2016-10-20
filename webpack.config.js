@@ -30,6 +30,11 @@ conf.module.loaders = [
     exclude: /node_modules/
   },
   {
+    test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+    loader : 'file-loader',
+    exclude: /node_modules/
+  },
+  {
     test: /\.(jpg|png|gif)$/,
     loader: 'url?limit=10000',
     exclude: /node_modules/

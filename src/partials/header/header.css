@@ -87,8 +87,20 @@ header {
 }
 
 @media (max-width:768px) {
+    header {
+        margin-bottom: 0;
+    }
+    .header__inner {
+        height: 100%;
+    }
     .header__heading {
-        font-size: 30px;
+        font-size: 36px;
         line-height: 1.2;
+    }
+    .header_blog .header__subtitle {
+        margin-top: 15px;
+    }
+    .header__text {
+        display: none;
     }
 }

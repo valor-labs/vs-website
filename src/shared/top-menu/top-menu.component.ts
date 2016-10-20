@@ -15,6 +15,7 @@ export class TopMenuComponent implements OnInit {
 
   public constructor(public router:Router) {
     this.router.events.subscribe((event:any) => {
+      this.isOpen = false;
       if (event instanceof NavigationEnd) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
