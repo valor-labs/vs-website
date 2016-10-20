@@ -15,6 +15,7 @@ export class FormsComponent implements OnInit {
   private urlEvents:Subject<any>;
   private isContactForm:boolean = false;
   private isCaseForm:boolean = false;
+  private isMobile:boolean = false;
   private isVacancyForm:boolean = false;
 
   public constructor(@Inject(Location) location:Location) {
@@ -23,7 +24,7 @@ export class FormsComponent implements OnInit {
   }
 
   public ngOnInit():void {
-
+    this.isMobile= window.isMobile();
     if (this.pageName === 'Contact page') {
       this.isContactForm = true;
     }

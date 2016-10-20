@@ -59,12 +59,12 @@
 
       <div class="form-group">
 
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-2 form-padding">
           <input id="candidate-name" name="name" type="text" placeholder="Your name.."
                  class="form-control border  placeholder-text input-md">
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" >
           <input id="candidate-e-mail" name="e-mail" type="email" placeholder="Your e-mail.."
                  class="form-control border placeholder-text input-md">
         </div>
@@ -72,7 +72,7 @@
       </div>
 
       <div class="form-group">
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-2 form-padding">
           <input id="candidate-city" name="city" type="text" placeholder="Your city.."
                  class="form-control border placeholder-text input-md">
         </div>
@@ -95,10 +95,15 @@
         <div class="col-md-6 col-md-offset-2">
           <div class="drop-container">
 
-            <div class="text-drop">
+            <div class="text-drop" *ngIf="!isMobile">
               <img [src]="getImage('upload-icon.png')" alt="Upload icon">
               Drag & drop files here to upload attachements or <span> browse the file </span></div>
+
+          <div class="text-drop-mobile" *ngIf="isMobile">
+            <span> Browse the file </span>
           </div>
+        </div>
+
         </div>
 
         <div class="col-md-2">
@@ -116,11 +121,12 @@
 
 <div id="case-form" *ngIf="isCaseForm">
 
-  <form class="form-horizontal">
+
+  <form class="form-horizontal" *ngIf="!isMobile">
     <fieldset>
 
       <div class="form-group">
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-2 form-padding">
           <input id="client-name" name="name" type="text" placeholder="Your name.."
                  style="height:50px" class="form-control border placeholder-text  input-md">
         </div>
@@ -132,19 +138,72 @@
       </div>
 
       <div class="form-group">
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-4 col-md-offset-2 form-padding">
           <input id="client-e-mail" name="e-mail" type="email" placeholder="Your e-mail.."
                  class="form-control placeholder-style border input-md">
         </div>
       </div>
 
       <div class="form-group">
-        <div class="col-md-6 col-md-offset-2">
+        <div class="col-md-6 col-md-offset-2 form-padding">
           <div class="drop-container">
 
-            <div class="text-drop">
+            <div class="text-drop" *ngIf=!isMobile>
               <img [src]="getImage('upload-icon.png')" alt="Upload icon">
-              Drag & drop files here to upload attachements or <span> browse the file </span></div>
+              Drag & drop files here to upload attachements or <span> browse the file </span>
+            </div>
+
+            <div class="text-drop-mobile" *ngIf="isMobile">
+              <span> Browse the file </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-2">
+          <div class="send-red-button">
+            <div class="text-button"> Send inquery <span class="arrow">»</span></div>
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+  <form class="form-horizontal" *ngIf="isMobile">
+    <fieldset>
+
+      <div class="form-group">
+        <div class="col-md-4 col-md-offset-2  form-padding">
+          <input id="client-name-mobile" name="name" type="text" placeholder="Your name.."
+                 style="height:50px" class="form-control border placeholder-text  input-md">
+        </div>
+
+           <div class="col-md-4 col-md-offset-2 ">
+            <input id="client-e-mail-mobile" name="e-mail" type="email" placeholder="Your e-mail.."
+                   class="form-control placeholder-style border input-md">
+          </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-4">
+          <textarea class="form-control field-height placeholder-text" id="client-textarea-mobile" placeholder="Message.."
+                    name="textarea"></textarea>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <div class="col-md-6 col-md-offset-2 ">
+          <div class="drop-container">
+
+            <div class="text-drop" *ngIf=!isMobile>
+              <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+              Drag & drop files here to upload attachements or <span> browse the file </span>
+            </div>
+
+            <div class="text-drop-mobile" *ngIf="isMobile">
+              <span> Browse the file </span>
+            </div>
           </div>
         </div>
 
