@@ -2,7 +2,7 @@
   <section-heading [title]="content.title" [description]="content.description"></section-heading>
 
   <div class="row">
-    <div *ngFor="let item of content.columns" class="col-lg-3">
+    <div *ngFor="let item of content.columns" class="col-lg-3 col-md-6 col-sm-6">
       <div class="icon-block">
         <div class="icon-block__icon">
           <img [src]="getImage(item.image)" alt="#">

@@ -2,56 +2,53 @@
         [text]="'Would you like to discuss how Valor Software can help with your ambitious software needs? Let us know by filling out the form directly below.'"
         [bg]="'contact/images/contact.jpg'">
 </header>
-<div id="contact-form-desktop">
-
-<section class="frame">
-  <div class="container">
-    <div class="let-s-talk__inner">
-      <div class="let-s-talk__section">
-        <div class="container">
-          <h2 class="frame__heading frame__align-left ">Let's talk</h2>
-          <div class="let-s-talk__text">
-            <div *ngFor="let block of content;">
-              <h6>{{block.title}}</h6>
-              <span>{{block.text}}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="socials-block">
-            <h2 class="frame__heading frame__align-left ">We are at social</h2>
-            <div class="__inner">
-              <ul class="socials-contact">
-                <li class="socials__item-contact ">
+<div id="contact-form-desktop" class="contact-form">
+  <section class="frame frame_border">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="let-s-talk">
+              <div class="let-s-talk__item">
+                <h2 class="frame__heading frame__align-left">Let's talk</h2>
+                <div class="let-s-talk__text">
+                  <div *ngFor="let block of content;">
+                    <h6>{{block.title}}</h6>
+                    <span>{{block.text}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="let-s-talk__item">
+                <h2 class="frame__heading frame__align-left">We are at social</h2>
+                <ul class="socials socials_colored">
+                <li class="socials__item socials__item_git">
                   <a target="_blank" href="https://github.com/valor-software">
                     <svg>
                       <use xlink:href="#icon-git"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item-contact behance">
+                <li class="socials__item socials__item_be">
                   <a target="_blank" href="https://www.behance.net/ValorSoftware">
                     <svg>
                       <use xlink:href="#icon-be"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item-contact fb">
+                <li class="socials__item socials__item_fb">
                   <a target="_blank" href="https://www.facebook.com/valorsoftware/">
                     <svg>
                       <use xlink:href="#icon-fb"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item-contact twitter">
+                <li class="socials__item socials__item_tw">
                   <a target="_blank" href="https://twitter.com/ValorSoft">
                     <svg>
                       <use xlink:href="#icon-tw"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="socials__item-contact linkedin">
+                <li class="socials__item socials__item_li">
                   <a target="_blank" href="https://www.linkedin.com/company/valor-software-solutions">
                     <svg>
                       <use xlink:href="#icon-li"></use>
@@ -59,110 +56,87 @@
                   </a>
                 </li>
               </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form__section">
-      <div class="container">
-        <h2 class="frame__heading frame__align-left">Apply</h2>
-        <forms [pageName]="pageName"></forms>
-      </div>
-      </div>
-
-
-    </div>
-
-  </div>
-
-
-</section>
-</div>
-
-<div id="contact-form-mobile">
-  <section class="frame">
-    <div class="container">
-      <div class="let-s-talk__inner">
-        <div class="let-s-talk__section">
-          <div class="container">
-            <h2 class="frame__heading ">Let's talk</h2>
-            <div class="let-s-talk__text">
-              <div *ngFor="let block of content;">
-                <h6>{{block.title}}</h6>
-                <span>{{block.text}}</span>
               </div>
             </div>
-          </div>
-
-          <div class="container">
-            <div class="socials-block">
-              <h2 class="frame__heading ">We are at social</h2>
-              <div class="__inner">
-                <ul class="socials-contact">
-                  <li class="socials__item-contact ">
-                    <a target="_blank" href="https://github.com/valor-software">
-                      <svg>
-                        <use xlink:href="#icon-git"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item-contact behance">
-                    <a target="_blank" href="https://www.behance.net/ValorSoftware">
-                      <svg>
-                        <use xlink:href="#icon-be"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item-contact fb">
-                    <a target="_blank" href="https://www.facebook.com/valorsoftware/">
-                      <svg>
-                        <use xlink:href="#icon-fb"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item-contact twitter">
-                    <a target="_blank" href="https://twitter.com/ValorSoft">
-                      <svg>
-                        <use xlink:href="#icon-tw"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials__item-contact linkedin">
-                    <a target="_blank" href="https://www.linkedin.com/company/valor-software-solutions">
-                      <svg>
-                        <use xlink:href="#icon-li"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-
-
-
         </div>
-
-
-
-      </div>
-      <div class="let-s-talk__inner">
-
-        <div class="contact-form__section">
-
-          <div class="container">
-            <h2 class="frame__heading">Apply</h2>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="contact-form__section">
+            <h2 class="frame__heading frame__align-left">Apply</h2>
             <forms [pageName]="pageName"></forms>
           </div>
         </div>
       </div>
     </div>
-
   </section>
-     </div>
+</div>
+
+<div id="contact-form-mobile" class="contact-form">
+  <section class="frame frame_border">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="let-s-talk">
+            <div class="let-s-talk__item">
+              <h2 class="frame__heading frame__align-left">Let's talk</h2>
+              <div class="let-s-talk__text">
+                <div *ngFor="let block of content;">
+                  <h6>{{block.title}}</h6>
+                  <span>{{block.text}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="let-s-talk__item">
+              <h2 class="frame__heading frame__align-left">We are at social</h2>
+              <ul class="socials socials_colored">
+                <li class="socials__item socials__item_git">
+                  <a target="_blank" href="https://github.com/valor-software">
+                    <svg>
+                      <use xlink:href="#icon-git"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item socials__item_be">
+                  <a target="_blank" href="https://www.behance.net/ValorSoftware">
+                    <svg>
+                      <use xlink:href="#icon-be"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item socials__item_fb">
+                  <a target="_blank" href="https://www.facebook.com/valorsoftware/">
+                    <svg>
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item socials__item_tw">
+                  <a target="_blank" href="https://twitter.com/ValorSoft">
+                    <svg>
+                      <use xlink:href="#icon-tw"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item socials__item_li">
+                  <a target="_blank" href="https://www.linkedin.com/company/valor-software-solutions">
+                    <svg>
+                      <use xlink:href="#icon-li"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="contact-form__section">
+            <h2 class="frame__heading frame__align-left">Apply</h2>
+            <forms [pageName]="pageName"></forms>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 
 <section class="frame frame_border">

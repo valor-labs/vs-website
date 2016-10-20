@@ -143,8 +143,18 @@
 }
 
 @media (max-width: 1399px) {
+    .team-list:after {
+        content: '';
+        margin: 0 15px;
+        max-width: 285px;
+        display: block;
+        width: 285px;
+    }
     .team-list {
-        justify-content: center;
+        justify-content: space-between;
+    }
+    .team-item {
+        margin: 0px 15px 73px;
     }
 }
 
@@ -159,9 +169,18 @@
         width: 33%;
         margin-bottom: 10px;
     }
+    .team-member .project-list__item {
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 768px) {
+    .team-list {
+        justify-content: center;
+    }
+    .team-item {
+        margin-bottom: 40px;
+    }
     .team-member__avatar {
         margin: 0 auto;
         width: 100%;
@@ -189,5 +208,8 @@
     }
     .team-member__description {
         margin-bottom: 20px;
+    }
+    .team-member .project-list__item {
+        flex: 0 0 100%;
     }
 }

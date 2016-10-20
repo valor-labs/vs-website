@@ -1,3 +1,17 @@
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  height: 50px;
+  box-shadow: none;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
 /**Styles for form on contact page **/
 
 
@@ -6,22 +20,7 @@
 }
 
 #contact-form input[type=submit] {
-  width: 202px;
-  height: 52px;
   float:right;
-  background-color: #cd151e;
-  border: 1px solid #c3121a;
-  border-radius: 1px;
-  color: white;
-  font-family: Roboto;
-  line-height: 50px;
-  font-size: 18px;
-  text-align: center;
-}
-
-#contact-form input[type=submit]:hover {
-  background-color: #c3121a;
-  color:#fff;
 }
 
 @media (max-width: 1023px) {
@@ -78,38 +77,12 @@
 }
 
 #case-form .field-height {
-  height: 120px;
-}
-
-#case-form .placeholder-style {
-  color: #55555c;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 30px;
-  height:50px;
-  margin-top: -65px;
+  height: 115px;
 }
 
 #case-form input[type=submit] {
-  width: 202px;
-  height: 52px;
-  background-color: #cd151e;
-  border: 1px solid #c3121a;
-  border-radius: 1px;
-  color: white;
-  font-family: Roboto;
-  line-height: 50px;
-  font-size: 18px;
-  text-align: center;
+  float: right;
 }
-
-#case-form input[type=submit]:hover {
-  background-color: #c3121a;
-  color:#fff;
-}
-
-
 
 @media (max-width: 1023px) {
   #case-form .send-red-button {
@@ -138,7 +111,6 @@
 
 .placeholder-text {
   color: #55555c;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
@@ -149,6 +121,7 @@
   border: 1px dashed #babfc4;
   border-radius: 4px;
   height:52px;
+  margin-bottom: 20px;
 }
 
 .drop-container:hover {

@@ -1,7 +1,13 @@
 .slide__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.slide__inner a {
+  font-size: 16px;
 }
 
 .slide__item {
@@ -108,6 +114,12 @@
   color: #cd151e;
 }
 
+@media (max-width: 1024px) {
+  .slide__left {
+    display: none;
+  }
+}
+
 @media (max-width:768px) {
   .slide__inner {
     display: block;
@@ -116,9 +128,6 @@
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
-  }
-  .slide__left {
-    display: none;
   }
   .slide__right {
     padding: 0;
