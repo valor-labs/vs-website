@@ -31,6 +31,11 @@
   font-size: 20px;
 }
 
+@media (max-width: 1023px) {
+  #contact-form .send-red-button {
+    width: 225px;
+  }
+}
 
 
 /**Styles for form on vacancies pages **/
@@ -65,6 +70,17 @@
   font-size: 20px;
 }
 
+
+@media (max-width: 1023px) {
+  #vacancy-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #vacancy-form .form-padding {
+   padding-bottom:10px
+  }
+}
 
 /**Styles for form on case pages **/
 
@@ -116,6 +132,19 @@
 }
 
 
+
+@media (max-width: 1023px) {
+  #case-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #case-form .form-padding {
+    padding-bottom:80px
+  }
+}
+
+
 /**Common styles for all pages **/
 
 
@@ -162,6 +191,13 @@
   color: #55555c;
   text-align:left;
   padding-left:21px;
+}
+
+.drop-container .text-drop-mobile  {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 30px;
+  color: #55555c;
 }
 
 .drop-container span {
