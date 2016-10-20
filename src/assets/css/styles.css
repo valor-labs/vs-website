@@ -729,35 +729,50 @@ a:focus {
   .project__btn {
     display: none;
   }
+  .project__section p, .project__section ul li {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .project__section ul li:before {
+    top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
   section-heading + * {
     margin-top: 30px;
   }
+
   .frame {
     padding: 40px 5px;
   }
+
   .frame__btn {
     margin-top: 25px;
   }
+
   .frame__heading {
     font-size: 26px;
     padding: 0 0 30px;
   }
+
   .frame__text, .frame__more {
     font-size: 16px;
     line-height: 24px;
   }
+
   .icon-block {
     margin-bottom: 20px;
   }
+
   .icon-block__icon {
     margin-bottom: 10px;
   }
+
   .icon-block__text {
     line-height: 24px;
   }
+
   /*=========================illustrated component start=======================*/
   .illustrated {
     font-size: 16px;
@@ -768,46 +783,58 @@ a:focus {
     width: 100%;
     padding: 0;
   }
+
   .illustrated__heading {
     font-size: 26px;
   }
+
   /*=========================illustrated component end=======================*/
   .learn-more-text {
     font-size: 16px;
     line-height: 24px;
     padding: 15px 0;
   }
+
   .project__section {
     padding: 25px 0;
   }
+
   .project__heading {
     font-size: 20px;
   }
+
   .project__member-list {
     display: flex;
     flex-wrap: wrap;
   }
+
   .project__member {
     flex: 0 0 50%;
     min-width: 135px;
   }
+
   .project__member img {
     margin-bottom: 10px;
   }
+
   .project__section p, .project__section ul li {
     font-size: 16px;
     line-height: 24px;
   }
+
   .project__section ul li {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     padding: 0 10px 0 12px;
   }
+
   .project__section ul li:before {
     top: 10px;
   }
+
   .project__section .icon-block {
-    text-align: center; 
+    text-align: center;
   }
+
   .content-presentation {
     margin-top: 25px;
   }
@@ -820,3 +847,4 @@ a:focus {
     margin: 0 10px 0 0;
     font-size: 14px;
   }
+}

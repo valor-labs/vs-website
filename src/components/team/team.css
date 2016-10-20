@@ -148,6 +148,19 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .team-member__name {
+        font-size: 45px;
+    }
+    .team-member .project-list__item:nth-child(odd), .team-member .project-list__item {
+        margin: 0 0 20px 0;
+    }
+    .team-member__skill {
+        width: 33%;
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .team-member__avatar {
         margin: 0 auto;
@@ -176,8 +189,5 @@
     }
     .team-member__description {
         margin-bottom: 20px;
-    }
-    .team-member .project-list__item:nth-child(odd), .team-member .project-list__item {
-        margin: 0 0 20px 0;
     }
 }
