@@ -28,6 +28,7 @@
     font-size: 75px;
     margin-right: 25px;
     width: 100px;
+    font-family: Bebas, sans-serif;
 }
 
 .about-story__fact-num span {
@@ -40,4 +41,54 @@
     font-weight: 500;
     text-transform: uppercase;
     line-height: 36px;
+}
+
+@media (max-width:768px) {
+    .about-story {
+        margin-top: 30px;
+    }
+    .about-story__inner {
+        display: block;
+    }
+    .about-story__section {
+        width: 100%;
+    }
+    .about-story__img {
+        display: none;
+    }
+    .about-story__fact-num {
+        font-size: 40px;
+        width: 60px;
+        margin-right: 0;
+    }
+    .about-story__fact-num span {
+        font-size: 20px;
+    }
+    .about-story__fact {
+        flex: 0 0 50%;
+    }
+    .about-story__fact-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:374px) {
+    .about-story__fact {
+        flex: 0 0 100%;
+    }
+    .about-story__fact-num {
+        font-size: 40px;
+        width: 75px;
+    }
+    .about-story__fact-num span {
+        font-size: 28px;
+    }
+    .about-story__fact-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .about-story__fact-text br {
+        display: none;
+    }
 }
