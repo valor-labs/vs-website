@@ -148,7 +148,7 @@
         <div class="col-md-6 col-md-offset-2 form-padding">
           <div class="drop-container">
 
-            <div class="text-drop" *ngIf=!isMobile>
+            <div class="text-drop" *ngIf="!isMobile">
               <img [src]="getImage('upload-icon.png')" alt="Upload icon">
               Drag & drop files here to upload attachements or <span> browse the file </span>
             </div>
@@ -196,7 +196,7 @@
         <div class="col-md-6 col-md-offset-2 ">
           <div class="drop-container">
 
-            <div class="text-drop" *ngIf=!isMobile>
+            <div class="text-drop" *ngIf="!isMobile">
               <img [src]="getImage('upload-icon.png')" alt="Upload icon">
               Drag & drop files here to upload attachements or <span> browse the file </span>
             </div>
