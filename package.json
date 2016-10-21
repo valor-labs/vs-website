@@ -9,6 +9,7 @@
     "flow.compile:system": "./.config/bundle-system.js",
     "flow.clean": "del bundles coverage dist",
     "deploy:gh-pages": "npm run flow.clean && npm run flow.build:prod && sh ./deploy.sh",
+    "manual.deploy:gh-pages": "npm run flow.clean && npm run flow.build:prod && gh-pages -d dist -r git@github.com:VS-work/VS-work.github.io.git -b master -m 'manual deploy to GitHub Pages'",
     "flow.eslint": "eslint --ignore-path .gitignore --ext js --fix . .config",
     "flow.tslint": "gulp lint",
     "flow.lint": "npm run flow.tslint",
