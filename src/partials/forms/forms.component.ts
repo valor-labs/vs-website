@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
+import { Subscription } from 'rxjs/Rx';
+import { FormsMailService } from '../../services/forms.service.ts';
 
 require('./forms.css');
 
@@ -10,21 +12,29 @@ require('./forms.css');
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
-  private pageName:string;
-  private location:Location;
-  private urlEvents:Subject<any>;
-  private isContactForm:boolean = false;
-  private isCaseForm:boolean = false;
-  private isMobile:boolean = false;
-  private isVacancyForm:boolean = false;
+  private pageName: string;
+  private location: Location;
+  private urlEvents: Subject<any>;
+  private isContactForm: boolean = false;
+  private isCaseForm: boolean = false;
+  private isMobile: boolean = false;
+  private isVacancyForm: boolean = false;
+  private formsMailServiceSubscribe: Subscription;
+  private formsMailService: FormsMailService;
+  private email: string = '';
+  private name: string = '';
+  private msg: string = '';
+  private city: string = '';
+  private phone: string = '';
 
-  public constructor(@Inject(Location) location:Location) {
+  public constructor(@Inject(Location) location: Location, formsMailService: FormsMailService) {
     this.urlEvents = new Subject();
     this.location = location;
+    this.formsMailService = formsMailService;
   }
 
-  public ngOnInit():void {
-    this.isMobile= window.isMobile();
+  public ngOnInit(): void {
+    this.isMobile = window.isMobile();
     if (this.pageName === 'Contact page') {
       this.isContactForm = true;
     }
@@ -38,5 +48,57 @@ export class FormsComponent implements OnInit {
     }
   }
 
-  public getImage = (img:string):string => require('./images/' + img);
+  public getImage = (img: string): string => require('./images/' + img);
+
+  public getDataFromTemplate(): void {
+    let typeOfEmail = '';
+
+    if (this.isCaseForm) {
+      typeOfEmail = 'client';
+      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+        email: this.email,
+        name: this.name,
+        msg: this.msg
+      }, typeOfEmail)
+        .subscribe((res: any) => {
+          if (res.err) {
+            console.error(res.err);
+            return;
+          }
+        });
+    }
+
+    if (this.isVacancyForm) {
+      typeOfEmail = 'vacancy';
+      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+        email: this.email,
+        name: this.name,
+        msg: this.msg,
+        city: this.city,
+        phone: this.phone
+      },typeOfEmail)
+        .subscribe((res: any) => {
+          if (res.err) {
+            console.error(res.err);
+            return;
+          }
+
+        });
+    }
+
+    if (this.isContactForm) {
+      typeOfEmail = 'contact';
+      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+        email: this.email,
+        name: this.name,
+        msg: this.msg
+      }, typeOfEmail)
+        .subscribe((res: any) => {
+          if (res.err) {
+            console.error(res.err);
+            return;
+          }
+        });
+    }
+  }
 }
