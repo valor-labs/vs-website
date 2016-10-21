@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
-require('./header.css');
 
 @Component({
   selector: 'header',
-  template: require('./header.html')
+  template: './header.html',
+  styleUrls: ['./header.css']
 })
 export class HeaderComponent implements OnInit {
   @Input() public title:string;
@@ -25,7 +25,8 @@ export class HeaderComponent implements OnInit {
       this.url = this.sanitize(this.bg);
     } else {
       // not required yet
-      this.url = this.sanitize(require('../../components/' + this.bg));
+      // this.url = this.sanitize(require('../../components/' + this.bg));
+      this.url = this.sanitize('');
     }
   }
 

@@ -5,7 +5,7 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'approach',
-  template: require('./approach.html')
+  template: './approach.html'
 })
 export class ApproachComponent implements OnInit {
   public projects: Project[];
@@ -17,7 +17,9 @@ export class ApproachComponent implements OnInit {
   }
 
   public getImage(img:string):string {
-    return require('../../services/images/projects/' + img);
+    //todo: what???
+    // return require('../../services/images/projects/' + img);
+    return '';
   }
 
   public constructor(private projectsService: ProjectsService) {}

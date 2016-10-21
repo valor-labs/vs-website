@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'vacancy',
-  template: require('./vacancy.html')
+  template: './vacancy.html'
 })
 export class VacancyComponent implements OnInit {
   public pageName: string;
@@ -26,8 +26,12 @@ export class VacancyComponent implements OnInit {
     });
   }
 
-  public getImage = (img: string): string => require('../../services/images/vacancies/' + img);
-  public getStaticImage = (img: string): string => require('./images/' + img);
+  // public getImage = (img: string): string => require('../../services/images/vacancies/' + img);
+  // public getStaticImage = (img: string): string => require('./images/' + img);
+
+  public getImage = (img: string): string => '';
+  public getStaticImage = (img: string): string => '';
+
   public scrollTo(e: MouseEvent): void {
     e.preventDefault();
     this.animateScroll('applyForm', 20, 1000);

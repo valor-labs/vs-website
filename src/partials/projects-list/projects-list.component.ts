@@ -5,18 +5,19 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'project-preview',
-  template: require('./project-preview.html')
+  template: './project-preview.html'
 })
 
 export class ProjectPreviewComponent {
   @Input() public project:Project;
 
-  public getImage = (img:string):string => require('../../services/images/projects/' + img);
+  // public getImage = (img:string):string => require('../../services/images/projects/' + img);
+  public getImage = (img:string):string => '';
 }
 
 @Component({
   selector: 'projects-list',
-  template: require('./projects-list.html')
+  template: './projects-list.html'
 })
 
 export class ProjectsListComponent implements OnInit {

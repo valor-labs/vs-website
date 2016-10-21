@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { MainService } from '../../services/main.service';
-require('./feedback.css');
 
 @Component({
   selector: 'feedback',
-  template: require('./feedback.html')
+  template: './feedback.html',
+  styleUrls: ['./feedback.css']
 })
 
 export class FeedbackComponent {
@@ -12,7 +12,8 @@ export class FeedbackComponent {
   public noWrapSlides:boolean = false;
   public slides:Array<Array<any>> = this.mainService.getFeedback();
 
-  public getImage = (img:string):string => require('../../services/images/feedback/' + img);
+  // public getImage = (img:string):string => require('../../services/images/feedback/' + img);
+  public getImage = (img:string):string => '';
 
   public constructor(public mainService:MainService) {
   }

@@ -4,18 +4,17 @@ import { Vacancy } from '../../services/classes/vacancy';
 
 @Component({
   selector: 'vacancy-preview',
-  template: require('./vacancy-preview.html')
+  template: './vacancy-preview.html',
+  styleUrls: ['./vacancies.css']
 })
 
 export class VacancyPreviewComponent {
   @Input() public vacancy: Vacancy;
 }
 
-require('./vacancies.css');
-
 @Component({
   selector: 'vacancies',
-  template: require('./vacancies-list.html')
+  template: './vacancies-list.html'
 })
 
 export class VacanciesListComponent implements OnInit {

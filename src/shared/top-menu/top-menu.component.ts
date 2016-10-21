@@ -1,11 +1,11 @@
 import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-require('./top-menu.css');
 
 @Component({
   selector: 'top-menu',
-  template: require('./top-menu.html')
+  template: './top-menu.html',
+  styleUrls: ['./top-menu.css']
 })
 export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;

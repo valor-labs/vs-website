@@ -4,11 +4,11 @@ import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
 import { MailService } from '../../services/mail.service.ts';
 
-require('./forms.css');
 
 @Component({
   selector: 'forms',
-  template: require('./forms.html')
+  template: './forms.html',
+  styleUrls: ['./forms.css']
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
@@ -48,7 +48,9 @@ export class FormsComponent implements OnInit {
     }
   }
 
-  public getImage = (img:string):string => require('./images/' + img);
+  // todo change this
+  // public getImage = (img:string):string => require('./images/' + img);
+  public getImage = (img:string):string => '';
 
   public getDataFromTemplate():void {
     let typeOfEmail = '';

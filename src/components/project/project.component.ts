@@ -7,7 +7,7 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'project',
-  template: require('./project.html')
+  template: './project.html'
 })
 
 export class ProjectComponent implements OnInit {
@@ -20,8 +20,12 @@ export class ProjectComponent implements OnInit {
                      private mainService: MainService) {
   }
 
-  public getImage = (img:string):string => require('../../services/images/projects/' + img);
-  public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
+  // todo change this
+ // public getImage = (img:string):string => require('../../services/images/projects/' + img);
+  // public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
+
+  public getImage = (img:string):string => '';
+  public getFeedbackImage = (img:string):string => '';
 
   public ngOnInit(): void {
     this.pageName = 'Project page';

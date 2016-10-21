@@ -4,7 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'main',
   // styles: [require('./main.css')],
-  template: require('./main.html')
+  template: './main.html'
 })
 export class MainComponent {
   public isLanding:boolean = false;

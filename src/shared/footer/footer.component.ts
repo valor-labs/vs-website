@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-require('./footer.css');
 
 @Component({
   selector: 'footer',
-  template: require('./footer.html')
+  template: './footer.html',
+  styleUrls: ['./footer.css']
 })
 export class FooterComponent {
 
