@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CarouselModule } from 'ng2-bootstrap/components/carousel';
-import { Ng2PageScrollModule } from 'ng2-page-scroll/src/ng2-page-scroll.module.ts';
+import { Ng2PageScrollModule } from './vendors/ng2-page-scroll/ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
