@@ -24,7 +24,7 @@ import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VacancyComponent } from './components/vacancy/vacancy.component';
 import { FormsComponent } from './partials/forms/forms.component';
-import { FormsMailService } from './services/forms.service';
+import { MailService } from './services/mail.service';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
@@ -88,7 +88,7 @@ import { routing } from './router.config';
     ProjectsService,
     ContentService,
     VacanciesService,
-    FormsMailService,
+    MailService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 

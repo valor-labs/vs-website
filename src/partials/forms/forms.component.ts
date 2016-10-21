@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
-import { FormsMailService } from '../../services/forms.service.ts';
+import { MailService } from '../../services/mail.service.ts';
 
 require('./forms.css');
 
@@ -19,18 +19,18 @@ export class FormsComponent implements OnInit {
   private isCaseForm: boolean = false;
   private isMobile: boolean = false;
   private isVacancyForm: boolean = false;
-  private formsMailServiceSubscribe: Subscription;
-  private formsMailService: FormsMailService;
+  private MailServiceSubscribe: Subscription;
+  private MailService: MailService;
   private email: string = '';
   private name: string = '';
   private msg: string = '';
   private city: string = '';
   private phone: string = '';
 
-  public constructor(@Inject(Location) location: Location, formsMailService: FormsMailService) {
+  public constructor(@Inject(Location) location: Location, MailService: MailService) {
     this.urlEvents = new Subject();
     this.location = location;
-    this.formsMailService = formsMailService;
+    this.MailService = MailService;
   }
 
   public ngOnInit(): void {
@@ -55,7 +55,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isCaseForm) {
       typeOfEmail = 'client';
-      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+      this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
         msg: this.msg
@@ -70,7 +70,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isVacancyForm) {
       typeOfEmail = 'vacancy';
-      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+      this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
         msg: this.msg,
@@ -88,7 +88,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isContactForm) {
       typeOfEmail = 'contact';
-      this.formsMailServiceSubscribe = this.formsMailService.sendEmail({
+      this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
         msg: this.msg

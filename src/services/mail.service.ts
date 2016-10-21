@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Config } from './config.service';
 
-export class FormsMailService {
+export class MailService {
   public http: Http;
 
   public constructor(@Inject(Http) http: Http, @Inject(Config) public config: any) {
