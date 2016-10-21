@@ -274,6 +274,10 @@ canvas {
     fill: #fff;
 }
 
+.menu__inner .hamburger-footer {
+    display: none;
+}
+
 @media (max-width:1024px) {
     .introduction__particles {
         display: none;
@@ -290,12 +294,18 @@ canvas {
     }
     .menu__inner.is-active .menu__trigger {
         position: fixed;
-        top: 20px;
+        top: 22px;
         left: 20px;
         z-index: 1001;
     }
+    .menu__inner.is-active .hamburger-footer {
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+    }
     .menu__inner.is-active .menu__list{
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
@@ -303,17 +313,32 @@ canvas {
         height: 100%;
         background: #1d1d2b;
         z-index: 1000;
-        padding: 60px;
+        padding: 60px 0 60px 83px;
+        align-content: flex-start;
     }
     .menu__list {
         display: none;
     }
     .menu__list li {
-        line-height: 40px;
-        max-width: 130px;
+        line-height: 43px;
+        max-width: 150px;
+        font-size: 30px;
+        padding: 5px 0;
+        font-weight: 500;
+    }
+    .menu__list li a {
+        color: #babfc4;
     }
     .menu__list li:hover:after {
         display: none;
+    }
+    .menu__list li:after {
+        background: #babfc4;
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        height: 1px;
     }
     .menu__list li.active:after {
         bottom: 0;
@@ -332,5 +357,8 @@ canvas {
     }
     .introduction__text p {
         font-size: 18px;
+    }
+    .menu__inner.is-active .hamburger-footer {
+        display: block;
     }
 }

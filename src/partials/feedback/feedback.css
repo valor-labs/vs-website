@@ -44,3 +44,9 @@
   background: #1d1d2b;
   margin: 0 10px;
 }
+
+@media (max-width: 767px) {
+  .carousel.slide {
+    padding: 0 30px 60px;
+  }
+}
