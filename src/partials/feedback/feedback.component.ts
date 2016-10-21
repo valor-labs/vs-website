@@ -8,7 +8,7 @@ require('./feedback.css');
 })
 
 export class FeedbackComponent {
-  public myInterval:number = 500000;
+  public myInterval:number = 15000;
   public noWrapSlides:boolean = false;
   public slides:Array<Array<any>> = this.mainService.getFeedback();
 

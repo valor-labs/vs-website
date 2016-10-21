@@ -125,17 +125,30 @@
     display: block;
   }
   .slide__item, .slide__item:first-child, .slide__item:last-child {
-    width: 100%;
+    width: 90%;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 0 auto;
   }
   .slide__right {
     padding: 0;
   }
   .slide__person {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .slide__avatar {
+    float: none;
+    margin: 0 auto;
+  }
+  .slide__text {
+    text-align: center;
   }
   .slide__text p {
     line-height: 22px;
+  }
+  .carousel-indicators {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
   }
 }

@@ -12,7 +12,7 @@
       <div class="col-lg-2">
         <h5 class="project__heading">Description</h5>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-md-11">
         <p>{{project.description}}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-1">
+      <div class="col-lg-1 col-md-1">
         <button pageScroll href="#startForm" class="btn btn_scroll btn_small project__btn">Start</button>
       </div>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <div class="col-lg-9">
         <div class="row">
-        <div *ngFor="let row of project.formattedTechnologies"  class="col-lg-3">
+        <div *ngFor="let row of project.formattedTechnologies"  class="col-lg-3 col-md-3 col-sm-3">
           <ul>
             <li *ngFor="let technology of row">
               {{technology}}
@@ -125,7 +125,7 @@
   </div>
 </section>
 
-<div class="frame frame_border">
+<div class="frame frame_border frame_projects">
   <div class="container">
     <section-heading
       [title]="'Similar projects'"

@@ -37,24 +37,6 @@ input, textarea {
   height: 155px;
 }
 
-#vacancy-form input[type=submit] {
-  width: 202px;
-  height: 52px;
-  background-color: #cd151e;
-  border: 1px solid #c3121a;
-  border-radius: 1px;
-  color: white;
-  font-family: Roboto;
-  line-height: 50px;
-  font-size: 18px;
-  text-align: center;
-}
-
-#vacancy-form input[type=submit]:hover {
-  background-color: #c3121a;
-  color:#fff;
-}
-
 @media (max-width: 1023px) {
   #vacancy-form .send-red-button {
     width:100%;
