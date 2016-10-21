@@ -1,16 +1,6 @@
-#contact-form-desktop .let-s-talk {
-  text-align: left;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 300;
-  color: #55555c;
-  margin-bottom: -20px;
+.let-s-talk {
+  margin-bottom: 30px;
 }
-
-#contact-form-desktop .let-s-talk__inner {
-  display: flex;
-}
-
 #contact-form-desktop .let-s-talk__section {
   width: 50%;
   padding-left: 30px;
@@ -27,10 +17,15 @@
   padding-right: 30px;
 }
 
-#contact-form-desktop .let-s-talk__text {
+.contact-form .socials {
+  margin-top: 10px;
+}
+
+.let-s-talk__text {
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
+  margin-bottom: 60px;
 }
 
 #contact-form-desktop .let-s-talk__text div {
@@ -54,57 +49,13 @@
   font-weight: 300;
 }
 
-#contact-form-desktop .socials-block {
-  margin-top:65px;
-}
-
-#contact-form-desktop .socials_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-}
-
-#contact-form-desktop .socials-contact {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0;
-}
-
-#contact-form-desktop .socials__item-contact:not(:last-child) {
-  margin-right: 25px;
-}
-
-#contact-form-desktop .socials__item-contact a {
-  display: block;
-  width: 28px;
-  height: 28px;
-}
-
-#contact-form-desktop .socials__item-contact + .behance a:hover svg {
-  fill: #1769ff;
-}
-
-#contact-form-desktop .socials__item-contact + .fb a:hover svg {
-  fill: #3b5998
-}
-
-#contact-form-desktop .socials__item-contact + .linkedin a:hover svg {
-  fill: #0077b5;
-}
-
-#contact-form-desktop .socials__item-contact + .twitter a:hover svg {
-  fill: #55acee;
-}
-
 #contact-form-mobile {
   display:none;
 }
 
 
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   #contact-form-desktop {
     display: none;
   }
@@ -113,17 +64,13 @@
     display:block;
   }
 
-  #contact-form-mobile .let-s-talk {
-    text-align: left;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 300;
-    color: #55555c;
-    margin-bottom: -20px;
-  }
-
-  #contact-form-mobile .let-s-talk__inner {
+  .let-s-talk {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .let-s-talk__item {
+    flex: 0 0 100%;
+    padding-right: 10px;
   }
 
   #contact-form-mobile .let-s-talk__section {
@@ -131,7 +78,6 @@
     vertical-align: middle;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     align-content: center;
     flex-direction: column;
   }
@@ -140,28 +86,14 @@
     padding-left: 0;
     padding-right: 30px;
   }
-
-  #contact-form-mobile .contact-form__section {
-    padding-left: 40px;
-    margin-top:40px;
+  
+  .let-s-talk__text {
+    margin-bottom: 20px;
+    text-align: left;
   }
 
-
-  #contact-form-mobile .let-s-talk__text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-  }
-
-  #contact-form-mobile .let-s-talk__text div {
-    padding-right: 40px;
-    padding-left: 40px;
-    margin: 0 auto ;
-
-  }
-
-  #contact-form-mobile .let-s-talk__text div:nth-child(even) {
-    margin: 0 auto ;
+  .let-s-talk__text div {
+    flex: 0 0 50%;
   }
 
   #contact-form-mobile .let-s-talk__text h6 {
@@ -175,49 +107,33 @@
     font-size: 16px;
     font-weight: 300;
   }
+}
 
-  #contact-form-mobile .socials-block {
-    margin-top:40px;
+@media (max-width: 768px) {
+  .let-s-talk__item {
+    flex: 0 0 50%;
   }
-
-  #contact-form-mobile .socials_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
+  .let-s-talk__text {
+    margin-bottom: 0;
   }
-
-  #contact-form-mobile .socials-contact {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0;
+  .let-s-talk__text div {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
   }
+}
 
-  #contact-form-mobile .socials__item-contact:not(:last-child) {
-    margin-right: 25px;
+@media (max-width: 767px) {
+  .let-s-talk {
+    margin-bottom: 0px;
   }
-
-  #contact-form-mobile .socials__item-contact a {
-    display: block;
-    width: 28px;
-    height: 28px;
+  .let-s-talk__item {
+    flex: 0 0 100%;
+    padding-right: 10px;
   }
-
-  #contact-form-mobile .socials__item-contact + .behance a:hover svg {
-    fill: #1769ff;
+  .let-s-talk__item:last-child {
+    display: none;
   }
-
-  #contact-form-mobile .socials__item-contact + .fb a:hover svg {
-    fill: #3b5998
+  .let-s-talk__text div {
+    flex: 0 0 100%;
   }
-
-  #contact-form-mobile .socials__item-contact + .linkedin a:hover svg {
-    fill: #0077b5;
-  }
-
-  #contact-form-mobile .socials__item-contact + .twitter a:hover svg {
-    fill: #55acee;
-  }
-
 }

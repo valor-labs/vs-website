@@ -3,17 +3,17 @@
   [bg]=getImage(vacancy.headerImage)>
 </header>
 
-<section class="frame">
+<section class="frame frame_projects">
   <div class="container">
 
     <div class="project__section">
       <div class="col-lg-2">
         <h5 class="project__heading">Description</h5>
       </div>
-      <div class="col-lg-7 frame__text">
-        {{vacancy.description}}
+      <div class="col-lg-9 col-md-11">
+        <p>{{vacancy.description}}</p>
       </div>
-      <div class="col-lg-1">
+      <div class="col-lg-1 col-md-1">
         <button pageScroll (click)="scrollTo($event)" class="btn btn_scroll btn_small project__btn">Apply</button>
       </div>
     </div>
@@ -50,7 +50,7 @@
       </div>
       <div class="col-lg-9">
         <div class="frame__text">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('edge.png')" alt="#">
             </div>
@@ -58,7 +58,7 @@
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('learn.png')" alt="#">
             </div>
@@ -66,7 +66,7 @@
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('work-space.png')" alt="#">
             </div>
@@ -74,7 +74,7 @@
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('fun.png')" alt="#">
             </div>
@@ -82,7 +82,7 @@
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('flexible.png')" alt="#">
             </div>
@@ -90,7 +90,7 @@
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 icon-block">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
               <img [src]="getStaticImage('staff.png')" alt="#">
             </div>
@@ -103,9 +103,10 @@
     </div>
 
     <div class="row" style="padding-bottom: 30px;">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-9 frame__text">
-        <h3>Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work</h3>
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+        <div class="frame__text">
+          <h3>Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work</h3>
+        </div>
       </div>
     </div>
   </div>

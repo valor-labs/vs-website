@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .about-story__fact-num {
@@ -43,6 +44,40 @@
     line-height: 36px;
 }
 
+@media (max-width:1399px) {
+    .about-story__fact-num {
+        width: 75px;
+        font-size: 65px;
+        margin-right: 0;
+    }
+    .about-story__fact-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .about-story__inner {
+        display: block;
+    }
+    .about-story__section {
+        width: 100%;
+    }
+    .about-story__img {
+        display: none;
+    }
+    .about-story__fact {
+        flex: 0 0 25%;
+        text-align: center;
+    }
+    .about-story__fact-num {
+        flex: 0 0 100%;
+    }
+    .about-story__fact-text {
+        flex: 0 0 100%;
+    }
+}
+
 @media (max-width:768px) {
     .about-story {
         margin-top: 30px;
@@ -53,23 +88,29 @@
     .about-story__section {
         width: 100%;
     }
-    .about-story__img {
-        display: none;
-    }
     .about-story__fact-num {
         font-size: 40px;
-        width: 60px;
+        width: 50px;
         margin-right: 0;
     }
     .about-story__fact-num span {
         font-size: 20px;
     }
     .about-story__fact {
-        flex: 0 0 50%;
+        flex: 0 0 25%;
     }
     .about-story__fact-text {
         font-size: 14px;
         line-height: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .about-story__fact {
+        flex: 0 0 50%;
+    }
+    .about-story__fact-num {
+        width: 60px;
     }
 }
 

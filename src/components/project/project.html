@@ -12,7 +12,7 @@
       <div class="col-lg-2">
         <h5 class="project__heading">Description</h5>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-md-11">
         <p>{{project.description}}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-1">
+      <div class="col-lg-1 col-md-1">
         <button pageScroll href="#startForm" class="btn btn_scroll btn_small project__btn">Start</button>
       </div>
     </div>
@@ -79,7 +79,7 @@
       </div>
       <div class="col-lg-9">
         <div class="row">
-        <div *ngFor="let row of project.formattedTechnologies"  class="col-lg-3">
+        <div *ngFor="let row of project.formattedTechnologies"  class="col-lg-3 col-md-3 col-sm-3">
           <ul>
             <li *ngFor="let technology of row">
               {{technology}}
@@ -96,7 +96,7 @@
       </div>
       <div class="col-lg-9">
         <div class="project__member-list">
-          <div class="project__member col-lg-3 col-md-3 col-sm-3" *ngFor="let member of project.formattedMembers">
+          <div class="project__member col-lg-3 col-md-3 col-sm-3 col-xs-6" *ngFor="let member of project.formattedMembers">
             <img [src]=getAvatarImage(member.avatar) width="70" height="70">
             <span class="project__member-name">{{member.name}}</span>
             <span class="project__member-position">{{member.position}}</span>
@@ -125,14 +125,14 @@
   </div>
 </section>
 
-<div class="frame frame_border">
+<div class="frame frame_border frame_projects">
   <div class="container">
     <section-heading
       [title]="'Similar projects'"
       [description]="'We perform a whole project lifecycle and stay after its launch to help you make the business really successful! These are public projects while the rest are under NDA'">
     </section-heading>
     <div class="row">
-      <projects-list class="projects-list" [maxItems]="3" [similarTo]="projectLink"></projects-list>
+      <projects-list class="projects-list projects-list_similar" [maxItems]="3" [similarTo]="projectLink"></projects-list>
     </div>
   </div>
 </div>
