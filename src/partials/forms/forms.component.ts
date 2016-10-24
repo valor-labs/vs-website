@@ -12,28 +12,28 @@ require('./forms.css');
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
-  private pageName: string;
-  private location: Location;
-  private urlEvents: Subject<any>;
-  private isContactForm: boolean = false;
-  private isCaseForm: boolean = false;
-  private isMobile: boolean = false;
-  private isVacancyForm: boolean = false;
-  private MailServiceSubscribe: Subscription;
-  private MailService: MailService;
-  private email: string = '';
-  private name: string = '';
-  private msg: string = '';
-  private city: string = '';
-  private phone: string = '';
+  private pageName:string;
+  private location:Location;
+  private urlEvents:Subject<any>;
+  private isContactForm:boolean = false;
+  private isCaseForm:boolean = false;
+  private isMobile:boolean = false;
+  private isVacancyForm:boolean = false;
+  private MailServiceSubscribe:Subscription;
+  private MailService:MailService;
+  private email:string = '';
+  private name:string = '';
+  private msg:string = '';
+  private city:string = '';
+  private phone:string = '';
 
-  public constructor(@Inject(Location) location: Location, MailService: MailService) {
+  public constructor(@Inject(Location) location:Location, MailService:MailService) {
     this.urlEvents = new Subject();
     this.location = location;
     this.MailService = MailService;
   }
 
-  public ngOnInit(): void {
+  public ngOnInit():void {
     this.isMobile = window.isMobile();
     if (this.pageName === 'Contact page') {
       this.isContactForm = true;
@@ -48,9 +48,9 @@ export class FormsComponent implements OnInit {
     }
   }
 
-  public getImage = (img: string): string => require('./images/' + img);
+  public getImage = (img:string):string => require('./images/' + img);
 
-  public getDataFromTemplate(): void {
+  public getDataFromTemplate():void {
     let typeOfEmail = '';
 
     if (this.isCaseForm) {
@@ -58,9 +58,9 @@ export class FormsComponent implements OnInit {
       this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
-        msg: this.msg
+        message: this.msg
       }, typeOfEmail)
-        .subscribe((res: any) => {
+        .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
             return;
@@ -73,16 +73,15 @@ export class FormsComponent implements OnInit {
       this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
-        msg: this.msg,
+        message: this.msg,
         city: this.city,
         phone: this.phone
-      },typeOfEmail)
-        .subscribe((res: any) => {
+      }, typeOfEmail)
+        .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
             return;
           }
-
         });
     }
 
@@ -91,13 +90,14 @@ export class FormsComponent implements OnInit {
       this.MailServiceSubscribe = this.MailService.sendEmail({
         email: this.email,
         name: this.name,
-        msg: this.msg
+        message: this.msg
       }, typeOfEmail)
-        .subscribe((res: any) => {
+        .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
             return;
           }
+          // TODO: empty form and notify user about send results
         });
     }
   }
