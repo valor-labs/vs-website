@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="team-member__avatar">
-          <img [src]="getImage(member.fullImage)" alt="{{member.name}}" />
+          <img [src]="member.fullImage" alt="{{member.name}}" />
           <div class="team-member__socials">
             <ul class="socials socials_colored">
               <li class="socials__item socials__item_git" *ngIf="socials.github">

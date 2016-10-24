@@ -15,8 +15,6 @@ export class MemberComponent implements OnInit {
   public socials: any;
   @Input() public member: Member;
 
-  public getImage = (img:string):string => require('../../services/images/members/'+img);
-
   public constructor(private mainService: MainService, private route: ActivatedRoute) {}
 
   public ngOnInit(): void {
@@ -35,8 +33,6 @@ export class MemberComponent implements OnInit {
 
 export class TeamComponent implements OnInit {
   public team:Member[];
-
-  public getImage = (img:string):string => require('../../services/images/members/'+img);
 
   public ngOnInit():void {
     this.team = this.mainService.getTeam();
