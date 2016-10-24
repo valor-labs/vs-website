@@ -3,7 +3,7 @@ import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'feedback',
-  template: './feedback.html',
+  templateUrl: './feedback.html',
   styleUrls: ['./feedback.css']
 })
 

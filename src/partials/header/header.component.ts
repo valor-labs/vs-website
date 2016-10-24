@@ -3,7 +3,7 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'header',
-  template: './header.html',
+  templateUrl: './header.html',
   styleUrls: ['./header.css']
 })
 export class HeaderComponent implements OnInit {

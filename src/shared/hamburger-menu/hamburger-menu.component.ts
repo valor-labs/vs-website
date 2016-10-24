@@ -3,7 +3,7 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'hamburger-menu',
-  template: './hamburger-menu.html',
+  templateUrl: './hamburger-menu.html',
   styleUrls: ['./hamburger-menu.css']
 })
 

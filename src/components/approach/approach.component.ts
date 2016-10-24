@@ -5,7 +5,7 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'approach',
-  template: './approach.html'
+  templateUrl: './approach.html'
 })
 export class ApproachComponent implements OnInit {
   public projects: Project[];

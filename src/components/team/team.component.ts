@@ -7,7 +7,7 @@ import { Member } from '../../services/classes/member';
 
 @Component({
   selector: 'team-member',
-  template: './team-member.html',
+  templateUrl: './team-member.html',
   styleUrls: ['./team.css']
 })
 

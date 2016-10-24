@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'vacancy',
-  template: './vacancy.html'
+  templateUrl: './vacancy.html'
 })
 export class VacancyComponent implements OnInit {
   public pageName: string;

@@ -7,7 +7,7 @@ import { MailService } from '../../services/mail.service.ts';
 
 @Component({
   selector: 'forms',
-  template: './forms.html',
+  templateUrl: './forms.html',
   styleUrls: ['./forms.css']
 })
 export class FormsComponent implements OnInit {

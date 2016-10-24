@@ -5,7 +5,7 @@ import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'about',
-  template: './about.html',
+  templateUrl: './about.html',
   styleUrls: ['./about.css']
 })
 export class AboutComponent implements OnInit {

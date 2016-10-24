@@ -4,7 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'top-menu',
-  template: './top-menu.html',
+  templateUrl: './top-menu.html',
   styleUrls: ['./top-menu.css']
 })
 export class TopMenuComponent implements OnInit {
@@ -36,7 +36,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    require('./particles-config');
+    // require('./particles-config');
   }
 
   // tslint:disable

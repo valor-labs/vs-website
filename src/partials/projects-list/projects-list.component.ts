@@ -5,7 +5,7 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'project-preview',
-  template: './project-preview.html'
+  templateUrl: './project-preview.html'
 })
 
 export class ProjectPreviewComponent {

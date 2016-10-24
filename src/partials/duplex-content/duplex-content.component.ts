@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'duplex-content',
-  template: './duplex-content.html'
+  templateUrl: './duplex-content.html'
 })
 
 export class DuplexContentComponent {
