@@ -24,7 +24,6 @@ import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VacancyComponent } from './components/vacancy/vacancy.component';
 import { FormsComponent } from './partials/forms/forms.component';
-import { MailService } from './services/mail.service';
 
 import { ProjectPreviewComponent, ProjectsListComponent } from './partials/projects-list/projects-list.component';
 import { FeedbackComponent } from './partials/feedback/feedback.component';
@@ -39,6 +38,7 @@ import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
 import { VacanciesService } from './services/vacancies.service';
 import { ContentService } from './services/content.service';
+import { MailService } from './services/mail.service';
 import { ConfigProvider } from './services/config.service';
 
 import { routing } from './router.config';
