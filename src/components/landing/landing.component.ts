@@ -12,7 +12,7 @@ export class LandingComponent implements OnInit {
     this.isMobile = window.isMobile();
   }
 
-  //todo: wat???
+  // todo: fix it
   // public getImage = (img:string):string => require('./images/' + img);
-  public getImage = (img:string):string => '';
+  public getImage = ():string => '';
 }

@@ -11,8 +11,9 @@ import { Project } from '../../services/classes/project';
 export class ProjectPreviewComponent {
   @Input() public project:Project;
 
+  // todo fix it
   // public getImage = (img:string):string => require('../../services/images/projects/' + img);
-  public getImage = (img:string):string => '';
+  public getImage = ():string => '';
 }
 
 @Component({

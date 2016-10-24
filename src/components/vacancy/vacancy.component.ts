@@ -26,11 +26,12 @@ export class VacancyComponent implements OnInit {
     });
   }
 
+  // todo fix it
   // public getImage = (img: string): string => require('../../services/images/vacancies/' + img);
   // public getStaticImage = (img: string): string => require('./images/' + img);
 
-  public getImage = (img: string): string => '';
-  public getStaticImage = (img: string): string => '';
+  public getImage = (): string => '';
+  public getStaticImage = (): string => '';
 
   public scrollTo(e: MouseEvent): void {
     e.preventDefault();

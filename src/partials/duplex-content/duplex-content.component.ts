@@ -14,7 +14,7 @@ export class DuplexContentComponent {
   @Input() public dark:boolean;
   @Input() public textIsLeft:boolean = false;
 
-  public getImage(img:string):string {
+  public getImage():string {
     // return require('../../components/' + img);
     return '';
   }

@@ -1,7 +1,6 @@
 import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-
 @Component({
   selector: 'top-menu',
   templateUrl: './top-menu.html',
@@ -36,7 +35,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    //todo import?
+    // todo import?
     require('./particles-config');
   }
 

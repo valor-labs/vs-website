@@ -16,8 +16,8 @@ export class ApproachComponent implements OnInit {
     this.projects = this.projectsService.getAll();
   }
 
-  public getImage(img:string):string {
-    //todo: what???
+  public getImage():string {
+    // todo: what???
     // return require('../../services/images/projects/' + img);
     return '';
   }

@@ -12,8 +12,9 @@ export class FeedbackComponent {
   public noWrapSlides:boolean = false;
   public slides:Array<Array<any>> = this.mainService.getFeedback();
 
+  // todo fix it
   // public getImage = (img:string):string => require('../../services/images/feedback/' + img);
-  public getImage = (img:string):string => '';
+  public getImage = ():string => '';
 
   public constructor(public mainService:MainService) {
   }

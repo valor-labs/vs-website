@@ -24,8 +24,8 @@ export class ProjectComponent implements OnInit {
  // public getImage = (img:string):string => require('../../services/images/projects/' + img);
   // public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
 
-  public getImage = (img:string):string => '';
-  public getFeedbackImage = (img:string):string => '';
+  public getImage = ():string => '';
+  public getFeedbackImage = ():string => '';
 
   public ngOnInit(): void {
     this.pageName = 'Project page';

@@ -14,7 +14,7 @@ export class SingleContentComponent implements OnInit {
 
   public content: ContentItem;
 
-  public getImage(img:string):string {
+  public getImage():string {
     // return require('./images/' + img);
     return '';
   }

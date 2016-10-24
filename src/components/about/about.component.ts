@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
 
   // todo: what???
   //  public getImage = (img: string): string => require('./images/' + img);
-   public getImage = (img: string): string => '';
+   public getImage = (): string => '';
 
   public constructor(@Inject(Location) location: Location) {
     this.urlEvents = new Subject();

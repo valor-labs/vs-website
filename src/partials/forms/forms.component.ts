@@ -50,7 +50,7 @@ export class FormsComponent implements OnInit {
 
   // todo change this
   // public getImage = (img:string):string => require('./images/' + img);
-  public getImage = (img:string):string => '';
+  public getImage = ():string => '';
 
   public getDataFromTemplate():void {
     let typeOfEmail = '';
