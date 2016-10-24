@@ -38,6 +38,7 @@ import { MainService } from './services/main.service';
 import { ProjectsService } from './services/projects.service';
 import { VacanciesService } from './services/vacancies.service';
 import { ContentService } from './services/content.service';
+import { MailService } from './services/mail.service';
 import { ConfigProvider } from './services/config.service';
 
 import { routing } from './router.config';
@@ -60,7 +61,6 @@ import { routing } from './router.config';
     FormsComponent,
     CareersComponent,
     ContactComponent,
-
     MemberComponent,
     ProjectPreviewComponent,
     ProjectsListComponent,
@@ -88,6 +88,7 @@ import { routing } from './router.config';
     ProjectsService,
     ContentService,
     VacanciesService,
+    MailService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
 

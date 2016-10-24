@@ -6,24 +6,43 @@
 
         <!-- Text input-->
         <div class="col-md-12">
-          <input id="contact-name" name="name" type="text" placeholder="Your name.."
-                 class="input form-control border placeholder-text input-md">
+          <input id="contact-name"
+                 name="name"
+                 type="text"
+                 placeholder="Your name.."
+                 class="input form-control border placeholder-text input-md"
+                 #contactName
+                 [value]="name"
+                 (input)="name = contactName.value">
         </div>
       </div>
 
       <!-- Text input-->
       <div class="form-group">
         <div class="col-md-12">
-          <input id="contact-e-mail" name="e-mail" type="email" placeholder="Your e-mail.."
-                 class="input form-control border placeholder-text input-md">
+          <input id="contact-e-mail"
+                 name="e-mail"
+                 type="email"
+                 placeholder="Your e-mail.."
+                 class="input form-control border placeholder-text input-md"
+                 #contactEmail
+                 [value]="email"
+                 (input)="email = contactEmail.value">
         </div>
       </div>
 
       <!-- Textarea -->
       <div class="form-group">
         <div class="col-md-12">
-          <textarea class="textarea form-control field-height placeholder-text" id="contact-textarea" placeholder="Message.."
-                    name="textarea"></textarea>
+          <textarea
+            class="textarea form-control field-height placeholder-text"
+            id="contact-textarea"
+            placeholder="Message.."
+            name="textarea"
+            #contactMsg
+            [value]="msg"
+            (input)="msg = contactMsg.value">
+          </textarea>
         </div>
       </div>
 
@@ -41,7 +60,7 @@
 
       <div class="form-group">
         <div class="col-md-12">
-          <input type="submit" class="btn" value="Send inquery »"/>
+          <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
         </div>
       </div>
 
@@ -58,23 +77,47 @@
         <div class="form-group clearfix">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <input id="candidate-name" name="name" type="text" placeholder="Your name.."
-                     class="input form-control border  placeholder-text input-md">
+              <input id="candidate-name"
+                     name="name"
+                     type="text"
+                     placeholder="Your name.."
+                     class="input form-control border  placeholder-text input-md"
+                     #candidateName
+                     [value]="name"
+                     (input)="name = candidateName.value">
             </div>
             <div class="form-group">
-              <input id="candidate-city" name="city" type="text" placeholder="Your city.."
-                     class="input form-control border placeholder-text input-md">
+              <input id="candidate-city"
+                     name="city"
+                     type="text"
+                     placeholder="Your city.."
+                     class="input form-control border placeholder-text input-md"
+                     #candidateCity
+                     [value]="city"
+                     (input)="city = candidateCity.value">
             </div>
             <div></div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <input id="candidate-e-mail" name="e-mail" type="email" placeholder="Your e-mail.."
-                     class="input form-control border placeholder-text input-md">
+              <input id="candidate-e-mail"
+                     name="e-mail"
+                     type="email"
+                     placeholder="Your e-mail.."
+                     class="input form-control border placeholder-text input-md"
+                     #candidateEmail
+                     [value]="email"
+                     (input)="email = candidateEmail.value">
             </div>
             <div class="form-group">
-              <input id="candidate-phone" name="phone" type="number" placeholder="Your phone.."
-                     class="input form-control border placeholder-text input-md">
+              <input id="candidate-phone"
+                     name="phone"
+                     type="number"
+                     placeholder="Your phone.."
+                     class="input form-control border placeholder-text input-md"
+                     #candidatePhone
+                     [value]="phone"
+                     (input)="phone = candidatePhone.value">
             </div>
             <div></div>
           </div>
@@ -82,30 +125,36 @@
         <div class="form-group clearfix">
           <div class="col-lg-12">
             <div class="form-group">
-              <textarea class="form-control field-height placeholder-text" id="candidate-textarea" placeholder="Message.."
-                        name="textarea"></textarea>
+              <textarea class="form-control field-height placeholder-text"
+                        id="candidate-textarea"
+                        placeholder="Message.."
+                        name="textarea"
+                        #candidateMsg
+                        [value]="msg"
+                        (input)="msg = candidateMsg.value">
+              </textarea>
             </div>
             <div></div>
           </div>
         </div>
-          <div class="form-group clearfix">
-            <div class="col-lg-9 col-md-9">
-              <div class="drop-container">
-                <div class="text-drop" *ngIf="!isMobile">
-                  <img [src]="getImage('upload-icon.png')" alt="Upload icon">
-                  Drag & drop files here to upload attachements or <span> browse the file </span>
-                </div>
-                <div class="text-drop-mobile" *ngIf="isMobile">
-                  <span> Browse the file </span>
-                </div>
+        <div class="form-group clearfix">
+          <div class="col-lg-9 col-md-9">
+            <div class="drop-container">
+              <div class="text-drop" *ngIf="!isMobile">
+                <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+                Drag & drop files here to upload attachements or <span> browse the file </span>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-              <div class="row">
-                <input type="submit" class="btn" value="Send inquery »"/>
+              <div class="text-drop-mobile" *ngIf="isMobile">
+                <span> Browse the file </span>
               </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="row">
+              <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
+            </div>
+          </div>
+        </div>
       </fieldset>
     </form>
   </div>
@@ -118,19 +167,37 @@
         <div class="form-group clearfix">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <input id="client-name" name="name" type="text" placeholder="Your name.."
-                     class="input form-control border placeholder-text">
+              <input id="client-name"
+                     name="name"
+                     type="text"
+                     placeholder="Your name.."
+                     class="input form-control border placeholder-text"
+                     #clientName
+                     [value]="name"
+                     (input)="name = clientName.value">
             </div>
             <div class="form-group">
-              <input id="client-e-mail" name="e-mail" type="email" placeholder="Your e-mail.."
-                     class="input form-control placeholder-style border">
+              <input id="client-e-mail"
+                     name="e-mail"
+                     type="email"
+                     placeholder="Your e-mail.."
+                     class="input form-control placeholder-style border"
+                     #clientEmail
+                     [value]="email"
+                     (input)="email = clientEmail.value">
             </div>
             <div></div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <textarea class="form-control field-height placeholder-text" id="client-textarea" placeholder="Message.."
-                        name="textarea"></textarea>
+              <textarea class="form-control field-height placeholder-text"
+                        id="client-textarea"
+                        placeholder="Message.."
+                        name="textarea"
+                        #clientMsg
+                        [value]="msg"
+                        (input)="msg = clientMsg.value">
+              </textarea>
             </div>
           </div>
         </div>
@@ -147,54 +214,72 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3">
-            <input type="submit" class="btn" value="Send inquery »"/>
+            <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
           </div>
         </div>
       </fieldset>
     </form>
     <form class="form-horizontal" *ngIf="isMobile">
-    <fieldset>
-      <div class="form-group clearfix">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <div class="form-group">
-            <input id="client-name-mobile" name="name" type="text" placeholder="Your name.."
-                 class="input form-control border placeholder-text">
-          </div>
-          <div class="form-group">
-            <input id="client-e-mail-mobile" name="e-mail" type="email" placeholder="Your e-mail.."
-                   class="input form-control placeholder-style border">
-          </div>
-          <div></div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <div class="form-group">
-            <textarea class="form-control field-height placeholder-text" id="client-textarea-mobile" placeholder="Message.."
-                      name="textarea"></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="form-group clearfix">
-        <div class="col-lg-9 col-md-9">
-          <div class="row">
-            <div class="drop-container">
-            <div class="text-drop" *ngIf="!isMobile">
-              <img [src]="getImage('upload-icon.png')" alt="Upload icon">
-              Drag & drop files here to upload attachements or <span> browse the file </span>
+      <fieldset>
+        <div class="form-group clearfix">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+              <input id="client-name-mobile"
+                     name="name"
+                     type="text"
+                     placeholder="Your name.."
+                     class="input form-control border placeholder-text"
+                     #clientName
+                     [value]="name"
+                     (input)="name = clientName.value">
             </div>
-            <div class="text-drop-mobile" *ngIf="isMobile">
-              <span> Browse the file </span>
+            <div class="form-group">
+              <input id="client-e-mail-mobile"
+                     name="e-mail"
+                     type="email"
+                     placeholder="Your e-mail.."
+                     class="input form-control placeholder-style border"
+                     #clientEmail
+                     [value]="email"
+                     (input)="email = clientEmail.value">
+            </div>
+            <div></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group">
+            <textarea class="form-control field-height placeholder-text"
+                      id="client-textarea-mobile"
+                      placeholder="Message.."
+                      name="textarea"
+                      #clientMsg
+                      [value]="msg"
+                      (input)="msg = clientMsg.value">
+            </textarea>
             </div>
           </div>
+        </div>
+        <div class="form-group clearfix">
+          <div class="col-lg-9 col-md-9">
+            <div class="row">
+              <div class="drop-container">
+                <div class="text-drop" *ngIf="!isMobile">
+                  <img [src]="getImage('upload-icon.png')" alt="Upload icon">
+                  Drag & drop files here to upload attachements or <span> browse the file </span>
+                </div>
+                <div class="text-drop-mobile" *ngIf="isMobile">
+                  <span> Browse the file </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="row">
+              <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3">
-          <div class="row">
-            <input type="submit" class="btn" value="Send inquery »"/>
-          </div>
-        </div>
-      </div>
-    </fieldset>
-  </form>
+      </fieldset>
+    </form>
   </div>
 </div>
 
