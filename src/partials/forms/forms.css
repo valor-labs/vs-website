@@ -48,6 +48,17 @@ input, textarea {
   }
 }
 
+@media (max-width: 1023px) {
+  #vacancy-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #vacancy-form .form-padding {
+   padding-bottom:10px
+  }
+}
+
 /**Styles for form on case pages **/
 
 
@@ -65,6 +76,19 @@ input, textarea {
 #case-form input[type=submit] {
   float: right;
 }
+
+@media (max-width: 1023px) {
+  #case-form .send-red-button {
+    width:100%;
+    margin-top: 25px
+  }
+
+  #case-form .form-padding {
+    padding-bottom:80px
+  }
+}
+
+
 
 @media (max-width: 1023px) {
   #case-form .send-red-button {

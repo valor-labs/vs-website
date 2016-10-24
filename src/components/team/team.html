@@ -11,7 +11,7 @@
       <div *ngFor="let member of team" class="team-item">
         <div class="team-item__preview-image">
           <a [routerLink]="['/team', member.memberId]">
-            <img [src]="getImage(member.fullImage)" alt="{{member.name}}">
+            <img [src]="member.fullImage" alt="{{member.name}}">
           </a>
         </div>
         <a [routerLink]="['/team', member.memberId]" class="team-item__name">{{member.name}}</a>
