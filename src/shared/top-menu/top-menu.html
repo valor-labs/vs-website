@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div class="introduction__arrow" pageScroll href="#whatWeDo">
+    <div class="introduction__arrow" pageScroll [pageScrollOffset]=[menuHeight] href="#whatWeDo">
         <svg>
           <use xlink:href="#icon-scroll-arrow"></use>
         </svg>
@@ -25,7 +25,7 @@
 
     <div id="particles-js" class="introduction__particles"></div>
 </section>
-<div class="menu" [class.is-sticky]="isSticky" [class.not-home]="!isLanding">
+<div class="menu" [class.is-sticky]="isSticky" [class.is-active]="isOpen" [class.not-home]="!isLanding">
     <div class="container">
         <div class="menu__inner" [class.is-active]="isOpen">
             <div class="menu__trigger" (click)="menuToggle()">
