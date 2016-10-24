@@ -25,17 +25,9 @@ export class HamburgerMenuComponent implements OnInit {
   public menuToggle():void {
     this.isOpen = !this.isOpen;
 
-    let preventTouchMove = (e:any) => {
-      e = e || window.event;
-      if (e.preventDefault) {
-        e.preventDefault();
-      }
-      e.returnValue = false;
-    };
-
     if (this.isOpen) {
       document.body.style.overflow = 'hidden';
-      window.ontouchmove = preventTouchMove;
+      window.ontouchmove = window.preventTouchMove;
     } else {
       document.body.style.overflow = 'auto';
       window.ontouchmove = null;

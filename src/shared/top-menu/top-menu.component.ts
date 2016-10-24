@@ -11,7 +11,7 @@ export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
   public isOpen: boolean = false;
   public startFixedPosition:number = window.innerHeight;
-  public menuHeight: number;
+  public elHeight: number;
   @Input() public isLanding:boolean;
 
   public constructor(public router:Router) {
@@ -26,16 +26,8 @@ export class TopMenuComponent implements OnInit {
   public menuToggle():void {
     this.isOpen = !this.isOpen;
 
-    let preventTouchMove = (e:any) => {
-      e = e || window.event;
-      if (e.preventDefault) {
-        e.preventDefault();
-      }
-      e.returnValue = false;
-    };
-
     if (this.isOpen) {
-      window.ontouchmove = preventTouchMove;
+      window.ontouchmove = window.preventTouchMove;
       document.body.style.overflow = 'hidden';
     } else {
       window.ontouchmove = null;
@@ -44,8 +36,6 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    let menuItem: any = document.getElementsByClassName('menu')[0];
-    this.menuHeight = menuItem.offsetHeight;
     require('./particles-config');
   }
 
@@ -56,7 +46,6 @@ export class TopMenuComponent implements OnInit {
       this.isSticky = true;
     } else {
       this.isSticky = false;
-
     }
   }
 }
