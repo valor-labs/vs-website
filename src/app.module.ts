@@ -33,7 +33,10 @@ import { ContentService } from './services/content.service';
 import { MailService } from './services/mail.service';
 import { ConfigProvider } from './services/config.service';
 
-import { routing } from './router.config';
+import { RouterModule } from '@angular/router';
+import { routes } from './router.config';
+
+const routing = RouterModule.forRoot(routes);
 
 @NgModule({
   declarations: [
