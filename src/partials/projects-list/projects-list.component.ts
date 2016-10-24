@@ -17,7 +17,7 @@ export class ProjectPreviewComponent {
 
 @Component({
   selector: 'projects-list',
-  template: './projects-list.html'
+  templateUrl: './projects-list.html'
 })
 
 export class ProjectsListComponent implements OnInit {

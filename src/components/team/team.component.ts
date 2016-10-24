@@ -29,7 +29,7 @@ export class MemberComponent implements OnInit {
 
 @Component({
   selector: 'team',
-  template: './team.html'
+  templateUrl: './team.html'
 })
 
 export class TeamComponent implements OnInit {

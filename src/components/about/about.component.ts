@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 
-
 @Component({
   selector: 'about',
   templateUrl: './about.html',
@@ -12,7 +11,7 @@ export class AboutComponent implements OnInit {
   private location: Location;
   private urlEvents: Subject<any>;
 
-  //todo: what???
+  // todo: what???
   //  public getImage = (img: string): string => require('./images/' + img);
    public getImage = (img: string): string => '';
 

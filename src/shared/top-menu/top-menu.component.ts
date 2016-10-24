@@ -36,7 +36,8 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    // require('./particles-config');
+    //todo import?
+    require('./particles-config');
   }
 
   // tslint:disable

@@ -14,7 +14,7 @@ export class VacancyPreviewComponent {
 
 @Component({
   selector: 'vacancies',
-  template: './vacancies-list.html'
+  templateUrl: './vacancies-list.html'
 })
 
 export class VacanciesListComponent implements OnInit {
