@@ -1,11 +1,9 @@
 import { Component, Input, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-require('./top-menu.css');
-
 @Component({
   selector: 'top-menu',
-  template: require('./top-menu.html')
+  templateUrl: 'src/shared/top-menu/top-menu.html'
 })
 export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
@@ -33,7 +31,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    require('./particles-config');
+    window.initParticles();
   }
 
   // tslint:disable

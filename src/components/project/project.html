@@ -1,7 +1,7 @@
 <header
   [title]="project.title"
   [subtitle]="project.shortDescription"
-  [bg]=getImage(project.headerImage)
+  [bg]="project.headerImage"
   [class.header_blog]="project.shortDescription"
 >
 </header>
@@ -16,7 +16,7 @@
         <p>{{project.description}}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
-            <img [src]=getImage(project.fullImage) width="800">
+            <img [src]="project.fullImage" width="800">
           </div>
 
           <div class="content-presentation__links">
@@ -112,7 +112,7 @@
       <div class="project__reference col-lg-9">
         <div class="project__reference-info">
           <div>
-            <img [src]="getFeedbackImage(project.reference.photo)" width="70" height="70">
+            <img [src]="project.reference.photo" width="70" height="70">
           </div>
           <div>
             <span class="project__reference-name">{{project.reference.name}}</span>

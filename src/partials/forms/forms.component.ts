@@ -4,11 +4,9 @@ import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
 import { MailService } from '../../services/mail.service.ts';
 
-require('./forms.css');
-
 @Component({
   selector: 'forms',
-  template: require('./forms.html')
+  templateUrl: 'src/partials/forms/forms.html'
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
@@ -47,8 +45,6 @@ export class FormsComponent implements OnInit {
       this.isCaseForm = true;
     }
   }
-
-  public getImage = (img:string):string => require('./images/' + img);
 
   public getDataFromTemplate():void {
     let typeOfEmail = '';

@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'projects',
-  // styles: [require('./projects.css')],
-  template: require('./projects.html')
+  templateUrl: 'src/components/projects/projects.html'
 })
-export class ProjectsComponent   {
-  }
+export class ProjectsComponent {}

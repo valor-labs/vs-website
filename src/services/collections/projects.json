@@ -4,9 +4,9 @@
     "title": "First blog project",
     "shortDescription": "First blog is an ugliest blog solution evert",
     "description": "First blog is an ugliest blog solution evert blog is an ugliest bloirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution ever",
-    "previewImage": "article-1.jpg",
-    "fullImage": "article-1.jpg",
-    "headerImage": "article-1.jpg",
+    "previewImage": "assets/images/projects/article-1.jpg",
+    "fullImage": "assets/images/projects/article-1.jpg",
+    "headerImage": "assets/images/projects/article-1.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -38,9 +38,9 @@
     "title": "Second blog project",
     "shortDescription": "Second blog is better, than first, but not awesome",
     "description": "Second blog is better, than first, but not awesome",
-    "previewImage": "article-2.jpg",
-    "fullImage": "article-2.jpg",
-    "headerImage": "article-2.jpg",
+    "previewImage": "assets/images/projects/article-2.jpg",
+    "fullImage": "assets/images/projects/article-2.jpg",
+    "headerImage": "assets/images/projects/article-2.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -68,9 +68,9 @@
     "title": "Third blog project",
     "shortDescription": "Third blog is not bad",
     "description": "Third blog is not bad",
-    "previewImage": "article-3.jpg",
-    "fullImage": "article-3.jpg",
-    "headerImage": "article-3.jpg",
+    "previewImage": "assets/images/projects/article-3.jpg",
+    "fullImage": "assets/images/projects/article-3.jpg",
+    "headerImage": "assets/images/projects/article-3.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -98,9 +98,9 @@
     "title": "Fourth strange project",
     "shortDescription": "Fourth WTF",
     "description": "Fourth WTF",
-    "previewImage": "article-4.jpg",
-    "fullImage": "article-4.jpg",
-    "headerImage": "article-4.jpg",
+    "previewImage": "assets/images/projects/article-4.jpg",
+    "fullImage": "assets/images/projects/article-4.jpg",
+    "headerImage": "assets/images/projects/article-4.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -128,9 +128,9 @@
     "title": "First blog project",
     "shortDescription": "First blog is an ugliest blog solution ever",
     "description": "First blog is an ugliest blog solution ever",
-    "previewImage": "buyer.jpg",
-    "fullImage": "buyer.jpg",
-    "headerImage": "buyer.jpg",
+    "previewImage": "assets/images/projects/buyer.jpg",
+    "fullImage": "assets/images/projects/buyer.jpg",
+    "headerImage": "assets/images/projects/buyer.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -158,9 +158,9 @@
     "title": "Second blog project",
     "shortDescription": "Second blog is better, than first, but not awesome",
     "description": "Second blog is better, than first, but not awesome",
-    "previewImage": "hand1.jpg",
-    "fullImage": "hand1.jpg",
-    "headerImage": "hand1.jpg",
+    "previewImage": "assets/images/projects/hand1.jpg",
+    "fullImage": "assets/images/projects/hand1.jpg",
+    "headerImage": "assets/images/projects/hand1.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -188,9 +188,9 @@
     "title": "Third blog project",
     "shortDescription": "Third blog is not bad",
     "description": "Third blog is not bad",
-    "previewImage": "how.png",
-    "fullImage": "how.png",
-    "headerImage": "how.png",
+    "previewImage": "assets/images/projects/how.png",
+    "fullImage": "assets/images/projects/how.png",
+    "headerImage": "assets/images/projects/how.png",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [
@@ -218,9 +218,9 @@
     "title": "Another strange project",
     "shortDescription": "Fourth WTF",
     "description": "Fourth WTF",
-    "previewImage": "seller.jpg",
-    "fullImage": "seller.jpg",
-    "headerImage": "seller.jpg",
+    "previewImage": "assets/images/projects/seller.jpg",
+    "fullImage": "assets/images/projects/seller.jpg",
+    "headerImage": "assets/images/projects/seller.jpg",
     "externalLink": "http://google.com",
     "details": {
       "tasks": [

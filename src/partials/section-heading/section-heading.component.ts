@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'section-heading',
-  template: require('./section-heading.html')
+  templateUrl: 'src/partials/section-heading/section-heading.html'
 })
 
 export class SectionHeadingComponent {

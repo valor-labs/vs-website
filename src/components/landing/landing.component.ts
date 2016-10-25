@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-require('./landing.css');
 
 @Component({
   selector: 'landing',
-  template: require('./landing.html')
+  templateUrl: 'src/components/landing/landing.html'
 })
 export class LandingComponent implements OnInit {
   public isMobile: boolean;
@@ -11,6 +10,4 @@ export class LandingComponent implements OnInit {
   public ngOnInit(): void {
     this.isMobile = window.isMobile();
   }
-
-  public getImage = (img:string):string => require('./images/' + img);
 }

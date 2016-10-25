@@ -3,11 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 
 import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
-require('./team.css');
 
 @Component({
   selector: 'team-member',
-  template: require('./team-member.html')
+  templateUrl: 'src/components/team/team-member.html'
 })
 
 export class MemberComponent implements OnInit {
@@ -28,7 +27,7 @@ export class MemberComponent implements OnInit {
 
 @Component({
   selector: 'team',
-  template: require('./team.html')
+  templateUrl: 'src/components/team/team.html'
 })
 
 export class TeamComponent implements OnInit {
