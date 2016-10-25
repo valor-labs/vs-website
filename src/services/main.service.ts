@@ -1,12 +1,12 @@
 import { Injectable }    from '@angular/core';
 import { Member }    from './classes/member';
+import { feedbacks } from './collections/feedback';
+import { team } from './collections/team';
 
 @Injectable()
 export class MainService {
 
   public getTeam(): Member[] {
-    const team: Member[] = [];
-    // const team: Member[] = require('./collections/team.json');
     let copy = JSON.parse(JSON.stringify(team));
     return copy;
   }
@@ -16,8 +16,7 @@ export class MainService {
   }
 
   public getFeedback():any[] {
-    let feedback = [];
-    // let feedback = require('./collections/feedback.json');
+    let feedback = JSON.parse(JSON.stringify(feedbacks));
     const arrayCount = Math.ceil(feedback.length / 2);
     let slides:Array<any> = [];
     if(!window.isMobile()) {
@@ -38,8 +37,6 @@ export class MainService {
   }
 
   public getFeedbackForProject(projectId: number): any {
-    const feedbacksList = [];
-    // const feedbacksList = require('./collections/feedback.json');
-    return feedbacksList.find((feedback: any) => projectId === feedback.projectId);
+    return feedbacks.find((feedback: any) => projectId === feedback.projectId);
   }
 }

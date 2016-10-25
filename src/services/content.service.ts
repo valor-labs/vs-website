@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
+import { content } from './collections/content';
 
 @Injectable()
 export class ContentService {
   public getContent(id: string): any {
-    // const content = require('./collections/content.json');
-    const content = [];
     return content.find((item: any) => id === item.contentId);
   }
 }

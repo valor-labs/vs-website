@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Vacancy } from './classes/vacancy';
+import { vacancies } from './collections/vacancies';
 
 @Injectable()
 export class VacanciesService {
   public getVacancies(): Vacancy[] {
-    const vacancies: any[] = [];
-    // const vacancies: any[] = require('./collections/vacancies.json');
     let copy = JSON.parse(JSON.stringify(vacancies));
     return copy;
   }

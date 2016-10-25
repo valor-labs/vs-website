@@ -1,24 +1,18 @@
-import { Injectable }    from '@angular/core';
-import { Project }    from '../services/classes/project';
+import { Injectable } from '@angular/core';
+import { Project } from '../services/classes/project';
+import { projects } from '../services/collections/projects';
 
 @Injectable()
 export class ProjectsService {
 
   public getAll(): Project[] {
-    const projects: Project[] = [];
-    // const projects: Project[] = require('./collections/projects.json');
-    let projectsList: Project[] = [];
-
-    projects.forEach((project: Project) => {
-      projectsList.push(Object.assign({}, project));
-    });
-    return projectsList;
+    let copy = JSON.parse(JSON.stringify(projects));
+    return copy;
   }
 
   public getByLink(projectLink: string): any {
     const projects: Project[] = this.getAll();
-    // todo: add Project type
-    return projects.find((project: any) => projectLink === project.link);
+    return projects.find((project: Project) => projectLink === project.link);
   }
 
   /**

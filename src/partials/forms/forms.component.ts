@@ -18,17 +18,17 @@ export class FormsComponent implements OnInit {
   private isMobile:boolean = false;
   private isVacancyForm:boolean = false;
   private MailServiceSubscribe:Subscription;
-  private MailService:MailService;
+  private mailService:MailService;
   private email:string = '';
   private name:string = '';
   private msg:string = '';
   private city:string = '';
   private phone:string = '';
 
-  public constructor(@Inject(Location) location:Location, MailService:MailService) {
+  public constructor(@Inject(Location) location:Location, mailService:MailService) {
     this.urlEvents = new Subject();
     this.location = location;
-    this.MailService = MailService;
+    this.mailService = mailService;
   }
 
   public ngOnInit():void {
@@ -51,7 +51,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isCaseForm) {
       typeOfEmail = 'client';
-      this.MailServiceSubscribe = this.MailService.sendEmail({
+      this.MailServiceSubscribe = this.mailService.sendEmail({
         email: this.email,
         name: this.name,
         message: this.msg
@@ -66,7 +66,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isVacancyForm) {
       typeOfEmail = 'vacancy';
-      this.MailServiceSubscribe = this.MailService.sendEmail({
+      this.MailServiceSubscribe = this.mailService.sendEmail({
         email: this.email,
         name: this.name,
         message: this.msg,
@@ -83,7 +83,7 @@ export class FormsComponent implements OnInit {
 
     if (this.isContactForm) {
       typeOfEmail = 'contact';
-      this.MailServiceSubscribe = this.MailService.sendEmail({
+      this.MailServiceSubscribe = this.mailService.sendEmail({
         email: this.email,
         name: this.name,
         message: this.msg

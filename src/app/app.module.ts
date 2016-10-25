@@ -31,6 +31,7 @@ import { ProjectsService } from '../services/projects.service';
 import { VacanciesService } from '../services/vacancies.service';
 import { ContentService } from '../services/content.service';
 import { ConfigProvider } from '../services/config.service';
+import { MailService } from '../services/mail.service';
 
 import { RouterModule } from '@angular/router';
 import { routes } from '../router.config';
@@ -74,7 +75,8 @@ const routing = RouterModule.forRoot(routes);
     ProjectsService,
     ContentService,
     VacanciesService,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+    MailService
   ],
 
   bootstrap: [AppComponent]
