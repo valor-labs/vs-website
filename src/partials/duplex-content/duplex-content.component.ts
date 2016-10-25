@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'duplex-content',
   templateUrl: './duplex-content.html'
+  // templateUrl: 'src/partials/duplex-content/duplex-content.html'
 })
 
 export class DuplexContentComponent {
@@ -13,9 +14,4 @@ export class DuplexContentComponent {
   @Input() public content:Array<any>;
   @Input() public dark:boolean;
   @Input() public textIsLeft:boolean = false;
-
-  public getImage():string {
-    // return require('../../components/' + img);
-    return '';
-  }
 }

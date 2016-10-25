@@ -4,8 +4,7 @@ import { Vacancy } from '../../services/classes/vacancy';
 
 @Component({
   selector: 'vacancy-preview',
-  templateUrl: './vacancy-preview.html',
-  styleUrls: ['./vacancies.css']
+  templateUrl: 'src/partials/vacancies-list/vacancy-preview.html'
 })
 
 export class VacancyPreviewComponent {
@@ -15,6 +14,7 @@ export class VacancyPreviewComponent {
 @Component({
   selector: 'vacancies',
   templateUrl: './vacancies-list.html'
+  // templateUrl: 'src/partials/vacancies-list/vacancies-list.html'
 })
 
 export class VacanciesListComponent implements OnInit {

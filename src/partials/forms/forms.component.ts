@@ -2,12 +2,11 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
-import { MailService } from '../../services/mail.service';
+import { MailService } from '../../services/mail.service.ts';
 
 @Component({
   selector: 'forms',
-  templateUrl: './forms.html',
-  styleUrls: ['./forms.css']
+  templateUrl: 'src/partials/forms/forms.html'
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
@@ -46,10 +45,6 @@ export class FormsComponent implements OnInit {
       this.isCaseForm = true;
     }
   }
-
-  // todo change this
-  // public getImage = (img:string):string => require('./images/' + img);
-  public getImage = ():string => '';
 
   public getDataFromTemplate():void {
     let typeOfEmail = '';

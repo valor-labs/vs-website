@@ -3,8 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'top-menu',
-  templateUrl: './top-menu.html',
-  styleUrls: ['./top-menu.css']
+  templateUrl: 'src/shared/top-menu/top-menu.html'
 })
 export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
@@ -35,8 +34,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   public ngOnInit():void {
-    // todo import?
-    require('./particles-config');
+    window.initParticles();
   }
 
   // tslint:disable

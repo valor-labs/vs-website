@@ -3,18 +3,13 @@ import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'feedback',
-  templateUrl: './feedback.html',
-  styleUrls: ['./feedback.css']
+  templateUrl: 'src/partials/feedback/feedback.html'
 })
 
 export class FeedbackComponent {
   public myInterval:number = 15000;
   public noWrapSlides:boolean = false;
   public slides:Array<Array<any>> = this.mainService.getFeedback();
-
-  // todo fix it
-  // public getImage = (img:string):string => require('../../services/images/feedback/' + img);
-  public getImage = ():string => '';
 
   public constructor(public mainService:MainService) {
   }

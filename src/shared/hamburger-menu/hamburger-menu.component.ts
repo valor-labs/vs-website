@@ -3,8 +3,7 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'hamburger-menu',
-  templateUrl: './hamburger-menu.html',
-  styleUrls: ['./hamburger-menu.css']
+  templateUrl: 'src/shared/hamburger-menu/hamburger-menu.html'
 })
 
 export class HamburgerMenuComponent implements OnInit {

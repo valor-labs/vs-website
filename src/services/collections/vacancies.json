@@ -19,7 +19,7 @@
       "An obsessive eye for visual and interaction details;",
       "An obsessive eye for visual and interaction details;"
     ],
-    "headerImage": "vacancy.jpg"
+    "headerImage": "assets/images/vacancy/vacancy.jpg"
   },
   {
     "vacancyId": 1,
@@ -40,7 +40,7 @@
       "An obsessive eye for visual and interaction details;",
       "An obsessive eye for visual and interaction details;"
     ],
-    "headerImage": "vacancy.jpg"
+    "headerImage": "assets/images/vacancy/vacancy.jpg"
   },
   {
     "vacancyId": 2,
@@ -61,7 +61,7 @@
       "An obsessive eye for visual and interaction details;",
       "An obsessive eye for visual and interaction details;"
     ],
-    "headerImage": "vacancy.jpg"
+    "headerImage": "assets/images/vacancy/vacancy.jpg"
   },
   {
     "vacancyId": 3,
@@ -82,7 +82,7 @@
       "An obsessive eye for visual and interaction details;",
       "An obsessive eye for visual and interaction details;"
     ],
-    "headerImage": "vacancy.jpg"
+    "headerImage": "assets/images/vacancy/vacancy.jpg"
   },
   {
     "vacancyId": 4,
@@ -103,7 +103,7 @@
       "An obsessive eye for visual and interaction details;",
       "An obsessive eye for visual and interaction details;"
     ],
-    "headerImage": "vacancy.jpg"
+    "headerImage": "assets/images/vacancy/vacancy.jpg"
   }
 ]
 

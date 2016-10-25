@@ -7,17 +7,13 @@ import { ContentItem } from '../../services/classes/content-item';
 @Component({
   selector: 'single-content',
   templateUrl: './single-content.html'
+  // templateUrl: 'src/partials/single-content/single-content.html'
 })
 
 export class SingleContentComponent implements OnInit {
   @Input() public contentId: string;
 
   public content: ContentItem;
-
-  public getImage():string {
-    // return require('./images/' + img);
-    return '';
-  }
 
   public ngOnInit(): void {
     const content: any = this.contentService.getContent(this.contentId);

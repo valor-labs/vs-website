@@ -4,16 +4,11 @@ import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'about',
-  templateUrl: './about.html',
-  styleUrls: ['./about.css']
+  templateUrl: 'src/components/about/about.html'
 })
 export class AboutComponent implements OnInit {
   private location: Location;
   private urlEvents: Subject<any>;
-
-  // todo: what???
-  //  public getImage = (img: string): string => require('./images/' + img);
-   public getImage = (): string => '';
 
   public constructor(@Inject(Location) location: Location) {
     this.urlEvents = new Subject();
@@ -21,7 +16,7 @@ export class AboutComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    let urlPath = location.hash;
+    let urlPath = location['hash'];
 
     if (urlPath.indexOf('culture') !== -1) {
       document.getElementById('our-culture').scrollIntoView();

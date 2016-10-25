@@ -3,8 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'main',
-  styleUrls: ['./main.css'],
-  templateUrl: './main.html'
+  templateUrl: 'src/components/main/main.html'
 })
 export class MainComponent {
   public isLanding:boolean = false;

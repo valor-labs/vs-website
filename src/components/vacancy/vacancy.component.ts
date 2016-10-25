@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'vacancy',
   templateUrl: './vacancy.html'
+  // templateUrl: 'src/components/vacancy/vacancy.html'
 })
 export class VacancyComponent implements OnInit {
   public pageName: string;
@@ -25,13 +26,6 @@ export class VacancyComponent implements OnInit {
       this.vacancy = this.vacanciesService.getById(this.vacancyId);
     });
   }
-
-  // todo fix it
-  // public getImage = (img: string): string => require('../../services/images/vacancies/' + img);
-  // public getStaticImage = (img: string): string => require('./images/' + img);
-
-  public getImage = (): string => '';
-  public getStaticImage = (): string => '';
 
   public scrollTo(e: MouseEvent): void {
     e.preventDefault();

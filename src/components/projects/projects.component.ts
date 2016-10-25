@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'projects',
-  styleUrls: ['./projects.css'],
-  templateUrl: './projects.html'
+  templateUrl: 'src/components/projects/projects.html'
 })
-export class ProjectsComponent   {
-  }
+export class ProjectsComponent {}

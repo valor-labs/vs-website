@@ -8,6 +8,7 @@ import { Project } from '../../services/classes/project';
 @Component({
   selector: 'project',
   templateUrl: './project.html'
+  // templateUrl: 'src/components/project/project.html'
 })
 
 export class ProjectComponent implements OnInit {
@@ -19,13 +20,6 @@ export class ProjectComponent implements OnInit {
                      public projectsService:ProjectsService,
                      private mainService: MainService) {
   }
-
-  // todo change this
- // public getImage = (img:string):string => require('../../services/images/projects/' + img);
-  // public getFeedbackImage = (img:string):string => require('../../services/images/feedback/' + img);
-
-  public getImage = ():string => '';
-  public getFeedbackImage = ():string => '';
 
   public ngOnInit(): void {
     this.pageName = 'Project page';

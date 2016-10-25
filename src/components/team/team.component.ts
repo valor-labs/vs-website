@@ -6,8 +6,7 @@ import { Member } from '../../services/classes/member';
 
 @Component({
   selector: 'team-member',
-  templateUrl: './team-member.html',
-  styleUrls: ['./team.css']
+  templateUrl: 'src/components/team/team-member.html'
 })
 
 export class MemberComponent implements OnInit {
@@ -33,13 +32,11 @@ export class MemberComponent implements OnInit {
 @Component({
   selector: 'team',
   templateUrl: './team.html'
+  // templateUrl: 'src/components/team/team.html'
 })
 
 export class TeamComponent implements OnInit {
   public team:Member[];
-
-  // public getImage = (img:string):string => require('../../services/images/members/'+img);
-   public getImage = ():string => '';
 
   public ngOnInit():void {
     this.team = this.mainService.getTeam();

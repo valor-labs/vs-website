@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'careers',
-  styleUrls: ['./careers.css'],
-  templateUrl: './careers.html'
+  templateUrl: 'src/components/careers/careers.html'
 })
 export class CareersComponent implements OnInit {
   public pageName: string;
