@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { VsWebsitePage } from './app.po';
 
 describe('vs-website App', function() {
@@ -12,3 +13,4 @@ describe('vs-website App', function() {
     expect(page.getParagraphText()).toEqual('app works!');
   });
 });
+/* tslint:enable */

@@ -19,7 +19,7 @@
     ]
   },
   "exclude": [
-    "node_modules", "bundles", "dist", "./src/vendors"
+    "node_modules", "bundles", "dist"
   ],
   "files": [
     "./src/custom-typings.d.ts"

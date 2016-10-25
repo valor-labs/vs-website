@@ -1,3 +1,4 @@
+/* tslint:disable */
 import { browser, element, by } from 'protractor';
 
 export class VsWebsitePage {
@@ -9,3 +10,4 @@ export class VsWebsitePage {
     return element(by.css('app-root h1')).getText();
   }
 }
+/* tslint:enable */
