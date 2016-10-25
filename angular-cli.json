@@ -18,7 +18,18 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "./assets/css/styles.css"
+        "assets/css/styles.css",
+        "assets/css/feedback.css",
+        "assets/css/hamburger-menu.css",
+        "assets/css/footer.css",
+        "assets/css/landing.css",
+        "assets/css/forms.css",
+        "assets/css/vacancies.css",
+        "assets/css/team.css",
+        "assets/css/header.css",
+        "assets/css/top-menu.css",
+        "assets/css/contact.css",
+        "assets/css/about.css"
       ],
       "scripts": [],
       "environments": {
