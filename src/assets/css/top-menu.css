@@ -7,7 +7,7 @@ hamburger-menu {
     width: 139px;
     height: 79px;
     display: block;
-    background: url('./images/logo-first-screen.png');
+    background: url('../images/menu/logo-first-screen.png');
     background-size: cover;
     position: relative;
     z-index: 100;
@@ -217,7 +217,7 @@ canvas {
     min-width: 100px;
     height: 57px;
     display: block;
-    background: url('./images/logo-white-menu.png');
+    background: url('../images/menu/logo-white-menu.png');
     background-size: cover;
 }
 

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
-require('./hamburger-menu.css');
 
 @Component({
   selector: 'hamburger-menu',
-  template: require('./hamburger-menu.html')
+  templateUrl: './hamburger-menu.html'
 })
 
 export class HamburgerMenuComponent implements OnInit {
