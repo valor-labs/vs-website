@@ -2,8 +2,7 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
-import { MailService } from '../../services/mail.service.ts';
-
+import { MailService } from '../../services/mail.service';
 
 @Component({
   selector: 'forms',
