@@ -5,7 +5,7 @@ import { Project } from '../../services/classes/project';
 
 @Component({
   selector: 'approach',
-  template: require('./approach.html')
+  templateUrl: './approach.html'
 })
 export class ApproachComponent implements OnInit {
   public projects: Project[];
@@ -14,10 +14,6 @@ export class ApproachComponent implements OnInit {
 
   public ngOnInit(): void {
     this.projects = this.projectsService.getAll();
-  }
-
-  public getImage(img:string):string {
-    return require('../../services/images/projects/' + img);
   }
 
   public constructor(private projectsService: ProjectsService) {}

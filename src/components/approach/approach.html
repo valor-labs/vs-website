@@ -1,6 +1,6 @@
 <header [title]="'Listen. Agile. Deliver'"
         [text]="'We apply the industry best practices to help you succeed in your business. We involve you in the process to find out the best possible solution.'"
-        [bg]="'approach/images/approach.jpg'">
+        [bg]="'assets/images/header/approach.jpg'">
 </header>
 
 <section class="frame">
@@ -8,7 +8,7 @@
 </section>
 
 <div class="frame frame_dark">
-  <duplex-content [title]="'Iterative process'" [image]="'approach/images/sprint.png'" [dark]="true"
+  <duplex-content [title]="'Iterative process'" [image]="'assets/images/approach/sprint.png'" [dark]="true"
                   [text]="'We blend user experience expertise with our software development approach to form a single, cohesive team to design, implement and test results with actual customers.'"
                   [content]="[
                     {
@@ -42,7 +42,7 @@
         <slide *ngFor="let project of projects; let i=index" [active]="project.active">
           <div class="slide__inner">
             <div style="float: none; margin: 0 auto;">
-              <img [src]="getImage(project.fullImage)" width="800">
+              <img [src]="project.fullImage" width="800">
               <h5 class="icon-block__title">{{project.title}}</h5>
               <a href="{{project.externalLink}}" target="_blank">View case study »</a>
             </div>
