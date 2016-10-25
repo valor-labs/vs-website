@@ -6,7 +6,7 @@ import { ContentItem } from '../../services/classes/content-item';
 
 @Component({
   selector: 'single-content',
-  template: require('./single-content.html')
+  templateUrl: './single-content.html'
 })
 
 export class SingleContentComponent implements OnInit {
@@ -14,8 +14,9 @@ export class SingleContentComponent implements OnInit {
 
   public content: ContentItem;
 
-  public getImage(img:string):string {
-    return require('./images/' + img);
+  public getImage():string {
+    // return require('./images/' + img);
+    return '';
   }
 
   public ngOnInit(): void {

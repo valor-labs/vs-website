@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-require('./contact.css');
+
 @Component({
   selector: 'contact',
-  template: require('./contact.html')
+  templateUrl: './contact.html',
+  styleUrls: ['./contact.css']
 })
 export class ContactComponent implements OnInit {
   public pageName: string;

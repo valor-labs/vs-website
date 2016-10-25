@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'services',
-  // styles: [require('./services.css')],
-  template: require('./services.html')
+  styleUrls: ['./services.css'],
+  templateUrl: './services.html'
 })
 export class ServicesComponent  {
   // public isCollapsed:boolean = false;

@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { MainComponent } from './components/main/main.component';
 import { LandingComponent } from './components/landing/landing.component';
@@ -37,4 +37,4 @@ export const routes:Routes = [
   }
 ];
 
-export const routing = RouterModule.forRoot(routes);
+ // export const routing = RouterModule.forRoot(routes);

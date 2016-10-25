@@ -3,17 +3,21 @@ import { ActivatedRoute } from '@angular/router';
 
 import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
-require('./team.css');
 
 @Component({
   selector: 'team-member',
-  template: require('./team-member.html')
+  templateUrl: './team-member.html',
+  styleUrls: ['./team.css']
 })
 
 export class MemberComponent implements OnInit {
   public memberId: number;
   public socials: any;
   @Input() public member: Member;
+
+  // todo fix it
+  // public getImage = (img:string):string => require('../../services/images/members/'+img);
+  public getImage = ():string => '';
 
   public constructor(private mainService: MainService, private route: ActivatedRoute) {}
 
@@ -28,11 +32,14 @@ export class MemberComponent implements OnInit {
 
 @Component({
   selector: 'team',
-  template: require('./team.html')
+  templateUrl: './team.html'
 })
 
 export class TeamComponent implements OnInit {
   public team:Member[];
+
+  // public getImage = (img:string):string => require('../../services/images/members/'+img);
+   public getImage = ():string => '';
 
   public ngOnInit():void {
     this.team = this.mainService.getTeam();

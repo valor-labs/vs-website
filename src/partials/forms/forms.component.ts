@@ -2,13 +2,12 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
-import { MailService } from '../../services/mail.service.ts';
-
-require('./forms.css');
+import { MailService } from '../../services/mail.service';
 
 @Component({
   selector: 'forms',
-  template: require('./forms.html')
+  templateUrl: './forms.html',
+  styleUrls: ['./forms.css']
 })
 export class FormsComponent implements OnInit {
   @Input('pageName')
@@ -48,7 +47,9 @@ export class FormsComponent implements OnInit {
     }
   }
 
-  public getImage = (img:string):string => require('./images/' + img);
+  // todo change this
+  // public getImage = (img:string):string => require('./images/' + img);
+  public getImage = ():string => '';
 
   public getDataFromTemplate():void {
     let typeOfEmail = '';

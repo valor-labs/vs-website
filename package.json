@@ -58,7 +58,18 @@
     "systemjs-builder": "0.15.32",
     "tslint-config-valorsoft": "1.1.1",
     "typescript": "2.0.3",
-    "url-loader": "0.5.7"
+    "url-loader": "0.5.7",
+    "angular-cli": "1.0.0-beta.18",
+    "jasmine-core": "2.4.1",
+    "jasmine-spec-reporter": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.2.1",
+    "protractor": "4.0.9",
+    "ts-node": "1.6.0",
+    "tslint": "3.13.0"
   },
   "dependencies": {
     "@angular/common": "2.1.1",
@@ -71,7 +82,7 @@
     "@angular/router": "3.1.1",
     "core-js": "2.4.1",
     "ng2-bootstrap": "1.1.14",
-    "ng2-page-scroll": "3.1.6",
+    "ng2-page-scroll": "3.2.0",
     "particles.js": "2.0.0",
     "reflect-metadata": "0.1.8",
     "rxjs": "5.0.0-beta.12",
