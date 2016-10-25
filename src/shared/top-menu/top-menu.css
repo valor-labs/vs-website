@@ -179,6 +179,7 @@ canvas {
     top: 100%;
     left: 0;
     right: 0;
+    transform: translate3d(0,0,0)
 }
 
 .menu.not-home {
@@ -193,6 +194,13 @@ canvas {
     top: 0;
     width: 100%;
     z-index: 30;
+}
+
+.menu.is-active {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    height: 100%;
 }
 
 .menu__inner, .menu__wrapper {

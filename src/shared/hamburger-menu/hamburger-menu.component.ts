@@ -15,6 +15,7 @@ export class HamburgerMenuComponent implements OnInit {
       if(event instanceof NavigationEnd) {
         if(event.url !== '/') {
           document.body.style.overflow = 'auto';
+          window.ontouchmove = null;
           this.isOpen = false;
         }
       }
@@ -26,8 +27,10 @@ export class HamburgerMenuComponent implements OnInit {
 
     if (this.isOpen) {
       document.body.style.overflow = 'hidden';
+      window.ontouchmove = window.preventTouchMove;
     } else {
       document.body.style.overflow = 'auto';
+      window.ontouchmove = null;
     }
   }
 
