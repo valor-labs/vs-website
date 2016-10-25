@@ -11,6 +11,7 @@ export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
   public isOpen: boolean = false;
   public startFixedPosition:number = window.innerHeight;
+  public elHeight: number;
   @Input() public isLanding:boolean;
 
   public constructor(public router:Router) {
@@ -26,8 +27,10 @@ export class TopMenuComponent implements OnInit {
     this.isOpen = !this.isOpen;
 
     if (this.isOpen) {
+      window.ontouchmove = window.preventTouchMove;
       document.body.style.overflow = 'hidden';
     } else {
+      window.ontouchmove = null;
       document.body.style.overflow = 'auto';
     }
   }
@@ -43,7 +46,6 @@ export class TopMenuComponent implements OnInit {
       this.isSticky = true;
     } else {
       this.isSticky = false;
-
     }
   }
 }

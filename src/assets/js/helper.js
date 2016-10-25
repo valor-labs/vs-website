@@ -8,3 +8,11 @@ window.isMobile = function () {
   return regexp1.test(argument) || regexp2.test(argument.substr(0,4));
 
 };
+
+window.preventTouchMove = function(e) {
+  e = e || window.event;
+  if (e.preventDefault) {
+    e.preventDefault();
+  }
+  e.returnValue = false;
+};
