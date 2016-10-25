@@ -4,7 +4,7 @@ import { Vacancy } from '../../services/classes/vacancy';
 
 @Component({
   selector: 'vacancy-preview',
-  templateUrl: 'src/partials/vacancies-list/vacancy-preview.html'
+  templateUrl: './vacancy-preview.html'
 })
 
 export class VacancyPreviewComponent {

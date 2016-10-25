@@ -4,7 +4,7 @@ import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'about',
-  templateUrl: 'src/components/about/about.html'
+  templateUrl: './about.html'
 })
 export class AboutComponent implements OnInit {
   private location: Location;
@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    let urlPath = location['hash'];
+    let urlPath = location.hash;
 
     if (urlPath.indexOf('culture') !== -1) {
       document.getElementById('our-culture').scrollIntoView();

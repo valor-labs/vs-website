@@ -5,7 +5,8 @@ import { Member }    from './classes/member';
 export class MainService {
 
   public getTeam(): Member[] {
-    const team: Member[] = require('./collections/team.json');
+    const team: Member[] = [];
+    // const team: Member[] = require('./collections/team.json');
     let copy = JSON.parse(JSON.stringify(team));
     return copy;
   }
@@ -15,7 +16,8 @@ export class MainService {
   }
 
   public getFeedback():any[] {
-    let feedback = require('./collections/feedback.json');
+    let feedback = [];
+    // let feedback = require('./collections/feedback.json');
     const arrayCount = Math.ceil(feedback.length / 2);
     let slides:Array<any> = [];
     if(!window.isMobile()) {
@@ -36,7 +38,8 @@ export class MainService {
   }
 
   public getFeedbackForProject(projectId: number): any {
-    const feedbacksList = require('./collections/feedback.json');
+    const feedbacksList = [];
+    // const feedbacksList = require('./collections/feedback.json');
     return feedbacksList.find((feedback: any) => projectId === feedback.projectId);
   }
 }

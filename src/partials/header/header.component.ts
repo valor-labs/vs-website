@@ -4,7 +4,6 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 @Component({
   selector: 'header',
   templateUrl: './header.html'
-  // templateUrl: 'src/partials/header/header.html'
 })
 export class HeaderComponent implements OnInit {
   @Input() public title:string;

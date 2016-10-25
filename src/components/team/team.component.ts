@@ -6,7 +6,7 @@ import { Member } from '../../services/classes/member';
 
 @Component({
   selector: 'team-member',
-  templateUrl: 'src/components/team/team-member.html'
+  templateUrl: './team-member.html'
 })
 
 export class MemberComponent implements OnInit {
@@ -32,7 +32,6 @@ export class MemberComponent implements OnInit {
 @Component({
   selector: 'team',
   templateUrl: './team.html'
-  // templateUrl: 'src/components/team/team.html'
 })
 
 export class TeamComponent implements OnInit {

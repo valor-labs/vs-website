@@ -7,7 +7,6 @@ import { ContentItem } from '../../services/classes/content-item';
 @Component({
   selector: 'single-content',
   templateUrl: './single-content.html'
-  // templateUrl: 'src/partials/single-content/single-content.html'
 })
 
 export class SingleContentComponent implements OnInit {

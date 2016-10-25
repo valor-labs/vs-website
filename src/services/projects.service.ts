@@ -5,7 +5,8 @@ import { Project }    from '../services/classes/project';
 export class ProjectsService {
 
   public getAll(): Project[] {
-    const projects: Project[] = require('./collections/projects.json');
+    const projects: Project[] = [];
+    // const projects: Project[] = require('./collections/projects.json');
     let projectsList: Project[] = [];
 
     projects.forEach((project: Project) => {

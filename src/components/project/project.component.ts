@@ -8,7 +8,6 @@ import { Project } from '../../services/classes/project';
 @Component({
   selector: 'project',
   templateUrl: './project.html'
-  // templateUrl: 'src/components/project/project.html'
 })
 
 export class ProjectComponent implements OnInit {

@@ -3,7 +3,7 @@ import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'feedback',
-  templateUrl: 'src/partials/feedback/feedback.html'
+  templateUrl: './feedback.html'
 })
 
 export class FeedbackComponent {

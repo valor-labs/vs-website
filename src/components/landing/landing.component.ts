@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'landing',
-  templateUrl: 'src/components/landing/landing.html'
+  templateUrl: './landing.html'
 })
 
 export class LandingComponent implements OnInit {

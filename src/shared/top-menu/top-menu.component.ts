@@ -3,7 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'top-menu',
-  templateUrl: 'src/shared/top-menu/top-menu.html'
+  templateUrl: './top-menu.html'
 })
 export class TopMenuComponent implements OnInit {
   public isSticky:boolean = false;
