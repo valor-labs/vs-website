@@ -72,7 +72,7 @@
 
 <div id="vacancy-form" *ngIf="isVacancyForm">
   <div class="col-lg-8 col-lg-offset-2">
-    <form>
+    <form [class.form-horizontal]="isMobile">
       <fieldset>
         <div class="form-group clearfix">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -139,13 +139,15 @@
         </div>
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
-            <div class="drop-container">
-              <div class="text-drop" *ngIf="!isMobile">
-                <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                Drag & drop files here to upload attachements or <span> browse the file </span>
-              </div>
-              <div class="text-drop-mobile" *ngIf="isMobile">
-                <span> Browse the file </span>
+            <div class="row">
+              <div class="drop-container">
+                <div class="text-drop" *ngIf="!isMobile">
+                  <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
+                  Drag & drop files here to upload attachements or <span> browse the file </span>
+                </div>
+                <div class="text-drop-mobile" *ngIf="isMobile">
+                  <span> Browse the file </span>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +183,7 @@
                      name="e-mail"
                      type="email"
                      placeholder="Your e-mail.."
-                     class="input form-control placeholder-style border"
+                     class="input form-control placeholder-text border"
                      #clientEmail
                      [value]="email"
                      (input)="email = clientEmail.value">
@@ -238,7 +240,7 @@
                      name="e-mail"
                      type="email"
                      placeholder="Your e-mail.."
-                     class="input form-control placeholder-style border"
+                     class="input form-control placeholder-text border"
                      #clientEmail
                      [value]="email"
                      (input)="email = clientEmail.value">

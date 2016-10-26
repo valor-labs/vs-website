@@ -20,11 +20,11 @@
           </div>
 
           <div class="content-presentation__links">
-            <a class="content-presentation__link" href="{{project.externalLink}}" target="_blank">
+            <a class="content-presentation__link" *ngIf="project.externalLink" href="{{project.externalLink}}" target="_blank">
               <span class="icon-link"></span>
               View Online »
             </a>
-            <a class="content-presentation__link" href="{{project.externalLink}}" target="_blank">
+            <a class="content-presentation__link" *ngIf="project.behanceLink" href="{{project.behanceLink}}" target="_blank">
               <span class="icon-be"></span>
               View presentation »
             </a>
@@ -142,10 +142,8 @@
     <div class="frame__top">
       <h2 class="frame__heading">Ready to take the next step?</h2>
     </div>
-    <div class="row">
-      <div class="">
+    <div>
       <forms [pageName]="pageName"></forms>
-      </div>
     </div>
   </div>
 </div>

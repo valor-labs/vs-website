@@ -72,6 +72,7 @@
     "fullImage": "assets/images/projects/article-3.jpg",
     "headerImage": "assets/images/projects/article-3.jpg",
     "externalLink": "http://google.com",
+    "behanceLink": "http://behance.net",
     "details": {
       "tasks": [
         "Optimization of architecture and code;",

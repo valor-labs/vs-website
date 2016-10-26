@@ -18,7 +18,8 @@ export const vacancies: any[] =   [
       'An obsessive eye for visual and interaction details;',
       'An obsessive eye for visual and interaction details;'
     ],
-    headerImage: 'assets/images/vacancy/vacancy.jpg'
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
   },
   {
     vacancyId: 1,

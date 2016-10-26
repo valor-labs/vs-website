@@ -147,7 +147,7 @@ a:focus {
 }
 
 .icon-block__icon {
-  height: 56px;
+  height: 52px;
   margin-bottom: 33px;
 }
 
@@ -189,9 +189,15 @@ a:focus {
   background: #c3121a;
 }
 
+.btn:focus, .btn:active:focus {
+  color: #fff;
+  outline: none;
+}
+
 .btn:active {
   position: relative;
   top: 1px;
+  box-shadow: none;
 }
 
 
@@ -201,7 +207,7 @@ a:focus {
   background: transparent;
 }
 
-.btn_transparent:hover {
+.btn_transparent:hover, .btn_transparent:focus, .btn_transparent:focus:active {
   background: #fff;
   color: #cd151e;
 }
@@ -221,7 +227,7 @@ a:focus {
   color: #1d1d2b;
 }
 
-.btn_scroll:hover {
+.btn_scroll:hover, .btn_scroll:focus, .btn_scroll:focus:active {
   background: #fafcfd;
   color: #1d1d2b;
 }
@@ -296,10 +302,91 @@ a:focus {
   margin-bottom: 20px;
   max-height: 234px;
   overflow: hidden;
+  position: relative;
 }
 
 .projects-preview__image img {
   max-width: 100%;
+  transition: all .6s ease-in-out;
+}
+
+.projects-preview__image:hover .projects-preview__overlay {
+  background: rgba(29, 29, 43, .45);
+  transition: all .3s ease-in-out;
+}
+
+.projects-preview__image:hover img{
+  transform: scale(1.05);
+  transition: all .6s ease-in-out;
+}
+
+.projects-preview__image:hover .projects-preview__plus {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+
+.projects-preview__image:hover + .projects-preview__bottom .projects-preview__link {
+  text-decoration: underline;
+}
+
+.projects-preview__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 29, 43, 0);
+  transition: all .3s ease-in-out;
+}
+
+.projects-preview__plus {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -24px;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.projects-preview__plus span {
+  display: block;
+  background: #fff;
+  position: absolute;
+}
+
+.projects-preview__plus span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #000;
+}
+
+.projects-preview__plus span:first-child{
+  width: 1px;
+  height: 100%;
+  left: calc(50% - 1px);
+}
+
+.projects-preview__plus span:first-child:after {
+  height: 100%;
+  width: 1px;
+  left: 2px;
+  top: 1px;
+}
+
+.projects-preview__plus span:last-child{
+  width: 100%;
+  height: 1px;
+  top: calc(50% - 1px);
+}
+
+.projects-preview__plus span:last-child:after {
+  height: 1px;
+  width: 100%;
+  left: 1px;
+  top: 2px;
 }
 
 .projects-preview__bottom {
@@ -561,19 +648,21 @@ a:focus {
   text-align: left;
 }
 
+.project__section_borderless {
+  border: none;
+}
+
 .project__section:last-child {
   padding-bottom: 0;
   border: none
 }
 
-.project__section__borderless {
-  overflow: hidden;
-  padding: 53px 0;
-  text-align: left;
-}
-
 .project__section:first-child {
   padding-top: 0;
+}
+
+.project__section .icon-block {
+  margin-bottom: 30px;
 }
 
 .project__heading {
@@ -609,11 +698,17 @@ a:focus {
 .project__member img {
   border-radius: 99px;
   margin-bottom: 20px;
+  box-shadow: 0 0 0 1px #babfc4;
 }
 
 .project__reference-info {
   display: table;
   margin-bottom: 12px;
+}
+
+.project__reference-info img {
+  box-shadow: 0 0 0 1px #babfc4;
+  border-radius: 99px;
 }
 
 .project__reference-info > div {
@@ -699,6 +794,12 @@ a:focus {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .icon-block {
+    margin-bottom: 20px;
+  }
+  .project__heading {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -722,9 +823,14 @@ a:focus {
   }
   .illustrated__inner {
     display: block;
+    text-align: center;
   }
   .illustrated__img {
     margin-bottom: 20px;
+  }
+  .illustrated__img img {
+    width: 500px;
+    margin: 0 auto;
   }
   .illustrated__section,.illustrated__section:nth-child(odd), .illustrated__section:nth-child(even) {
     padding: 0;
@@ -732,6 +838,10 @@ a:focus {
   }
   .illustrated__top {
     margin-bottom: 20px;
+  }
+  .illustrated__heading:after {
+    left: 50%;
+    margin-left: -15px;
   }
   .project-list__item {
     -webkit-box-flex: 0;
@@ -871,6 +981,7 @@ a:focus {
 
   .project__section .icon-block {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .content-presentation {

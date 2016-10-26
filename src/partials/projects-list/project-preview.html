@@ -1,6 +1,12 @@
 <div class="projects-preview__image">
   <a [routerLink]="['/project', project.link]">
     <img [src]="project.previewImage">
+    <div class="projects-preview__overlay">
+      <div class="projects-preview__plus">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </a>
 </div>
 <div class="projects-preview__bottom">

@@ -1,5 +1,5 @@
 .hamburger {
-    padding: 15px 15px 15px 0;
+    padding: 10px 15px 10px 0;
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -37,7 +37,7 @@
 }
 
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-    width: 26px;
+    width: 22px;
     height: 2px;
     background-color: #fff;
     border-radius: 4px;
@@ -215,5 +215,17 @@
     }
     .hamburger-footer .socials {
         float: right;
+    }
+    .hamburger-box {
+        height: 18px;
+    }
+    .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+        width: 22px;
+    }
+    .hamburger--spring .hamburger-inner:before {
+        top: 8px;
+    }
+    .hamburger--spring .hamburger-inner:after {
+        top: 16px;
     }
 }
