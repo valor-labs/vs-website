@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   @Input() public subtitle:string;
   @Input() public text:string;
   @Input() public bg:string;
+  @Input() public location:string;
 
   public url:SafeStyle;
 

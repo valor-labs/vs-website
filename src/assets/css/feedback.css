@@ -47,6 +47,10 @@
 
 @media (max-width: 767px) {
   .carousel.slide {
-    padding: 0 30px 60px;
+    padding: 0 30px 20px;
+  }
+
+  .carousel-indicators {
+    display: none;
   }
 }

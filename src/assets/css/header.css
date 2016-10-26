@@ -1,7 +1,7 @@
 header {
     display: block;
     margin-bottom: 57px;
-    padding-top: 71px;
+    padding-top: 64px;
 }
 .header {
     position: relative;
@@ -63,12 +63,25 @@ header {
 }
 
 .header__subtitle {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: absolute;
-  bottom: 10%;
-  left: 40%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+.header__location {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 60px;
+    display: block;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAmCAYAAADX7PtfAAAC/ElEQVRYR7WX61VUQRCEqzIgBIhAiECIAIgAiECMQIlAjUCIAI0AjECIQDIQI2jPd+25Z/bufe6u82fP7s5M9auqe6wZKyIOJZ1KOpa0J4nvrCdJr5IeJX23zffR5bF/I+JC0kdJ+5KeJX3L/QCwMIB1JumNpBf2274burcXMCIA+JoX3ki6tc1lgyvPXEt6lx5f9Z1ZA4wIrL5Pjy6ngLoWJPBtenxuu0Sj2boCmGAPkr7YxtqNV0QASkpOatAWMAsDMJJ/uTFSdTBBKTZAm4KqAQGz7VIIu8BURBDSsH3SAkYEHlEkB0tzNmVV5vSXJIrotvEwIvjhzjYU2PmKCO69sH3gzN3POd5FxAdJRAPasKAKlIE6U5TBqSMAP8M320U9eg9GBCE/l8T+mvhU873tqwlQiuYRQA4/joUzQ8LFGLYiX1WE3tvGmCGDCesxgIST/I1tJhzQpZebGaVTcjQBeApgdMnZPTS1pwgGnBoBhG4PuwJEvMnjLMCi8EjRUPzJ29OQAqWiHI4VXkSQjms8pOW8jGlnJQyIcWlRjXER0XhHBXf/q61Po/YApHpI+NFEWRcx5rOmBbyk6Eb1txWXhcTHG0LzNo37AS/HPMsoIBT/iJ8/FMX4X9IG5c5s7xfAplOP8WgbgY2I35Ju4HoBZDDCy2sUfZvLezhMbvFw3/Zr3Q9bRd8x4EonqgGLl0xdgzK3xJjkXjP14R1nuzMNfzJ10YibDZuuiMABvGM+aouxb2ojl3SPreaaJDrdpfTOxvahMZH5ZmXaWuJpNf2t3TE0CCNfTNJHS0OboaTlPdtGKFbWEGApIMaHRfNp9kaAEPO1OphsJ1Oi3BHoIuSD6Zh6zEAPpmdCO+dtQShXqnJWSDtW0wvLVNBLlcwbhfZnapAe9TCFveRzcDKrJrqW4ENVPQmYoIyQhGttMks1+ZRh3+5B2glteQ60nb3q9s0YP4erszwsF2XJN0+w/I280e1nU2cRYIYXT3iCsRY/7RYDJihK9LqJ3v4FveKvpTzREdkAAAAASUVORK5CYII=);
+    background-position: left 17px;
+    background-size: 14px 19px;
 }
 
 .header__text {
@@ -89,6 +102,9 @@ header {
 @media (max-width:768px) {
     header {
         margin-bottom: 0;
+    }
+    .header {
+        height: 220px;
     }
     .header__inner {
         height: 100%;
