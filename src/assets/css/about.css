@@ -1,5 +1,6 @@
 .about-story__inner {
     display: flex;
+    align-items: center;
 }
 
 .about-story__section {
@@ -26,15 +27,15 @@
 
 .about-story__fact-num {
     color: #cd151e;
-    font-size: 75px;
+    font-size: 80px;
     margin-right: 25px;
     width: 100px;
     font-family: Bebas, sans-serif;
 }
 
-.about-story__fact-num span {
-    font-size: 30px;
-}
+.about-story__fact-num_sm span{font-size: 30px}
+.about-story__fact-num_md span{font-size: 48px}
+.about-story__fact-num_lg span{font-size: 60px}
 
 .about-story__fact-text {
     color: #1d1d2b;
@@ -47,12 +48,15 @@
 @media (max-width:1399px) {
     .about-story__fact-num {
         width: 75px;
-        font-size: 65px;
+        font-size: 60px;
         margin-right: 0;
     }
+    .about-story__fact-num_sm span{font-size: 25px}
+    .about-story__fact-num_md span{font-size: 32px}
+    .about-story__fact-num_lg span{font-size: 48px}
     .about-story__fact-text {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 24px;
     }
 }
 
@@ -93,9 +97,11 @@
         width: 50px;
         margin-right: 0;
     }
-    .about-story__fact-num span {
-        font-size: 20px;
-    }
+
+    .about-story__fact-num_sm span{font-size: 20px}
+    .about-story__fact-num_md span{font-size: 32px}
+    .about-story__fact-num_lg span{font-size: 40px}
+
     .about-story__fact {
         flex: 0 0 25%;
     }
@@ -121,9 +127,6 @@
     .about-story__fact-num {
         font-size: 40px;
         width: 75px;
-    }
-    .about-story__fact-num span {
-        font-size: 28px;
     }
     .about-story__fact-text {
         font-size: 16px;

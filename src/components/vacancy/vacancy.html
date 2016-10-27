@@ -46,15 +46,15 @@
       </div>
     </div>
 
-    <div class="project__section__borderless">
+    <div class="project__section project__section_borderless">
       <div class="col-lg-2">
-        <h5 class="project__heading">Benefits</h5>
+        <h5 class="project__heading project__heading_mb">Benefits</h5>
       </div>
       <div class="col-lg-9">
-        <div class="frame__text">
+        <div class="project__benefits">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/edge.png'" alt="#">
+              <img [src]="'assets/images/vacancy/edge.png'" width="56" height="52"  alt="icon">
             </div>
             <h5 class="icon-block__title">Cutting Edge Technology</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
@@ -62,7 +62,7 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/learn.png'" alt="#">
+              <img [src]="'assets/images/vacancy/learn.png'" width="56" height="51" alt="icon">
             </div>
             <h5 class="icon-block__title">Learning as a Part of Work</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
@@ -70,7 +70,7 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/work-space.png'" alt="#">
+              <img [src]="'assets/images/vacancy/work-space.png'" width="56" height="54" alt="icon">
             </div>
             <h5 class="icon-block__title">Comfortable Workspace</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
@@ -78,7 +78,7 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/fun.png'" alt="#">
+              <img [src]="'assets/images/vacancy/fun.png'" width="60" height="48" alt="icon">
             </div>
             <h5 class="icon-block__title">Work-Life Balance</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
@@ -86,7 +86,7 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/flexible.png'" alt="#">
+              <img [src]="'assets/images/vacancy/flexible.png'" width="50" height="50" alt="icon">
             </div>
             <h5 class="icon-block__title">Flexible Hours</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
@@ -94,20 +94,17 @@
 
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/staff.png'" alt="#">
+              <img [src]="'assets/images/vacancy/staff.png'" width="58" height="50" alt="icon">
             </div>
             <h5 class="icon-block__title">Friendly Staff</h5>
             <p class="icon-block__text">The best candidates possess the skill and personality to drive your product's most important initiatives.</p>
           </div>
 
         </div>
-      </div>
-    </div>
-
-    <div class="row" style="padding-bottom: 30px;">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-        <div class="frame__text">
-          <h3>Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work</h3>
+        <div class="learn-more learn-more_project">
+          <div class="learn-more-text">
+            Learn more about our <a [routerLink]="['/about']" [queryParams]="{section:'culture'}">culture</a> and why Valor Software is a great place to work
+          </div>
         </div>
       </div>
     </div>
@@ -120,10 +117,8 @@
     <div class="frame__top">
       <h2 class="frame__heading">Apply</h2>
     </div>
-    <div class="row">
-      <div class="">
-        <forms [pageName]="pageName"></forms>
-      </div>
+    <div>
+      <forms [pageName]="pageName"></forms>
     </div>
   </div>
 </div>

@@ -151,10 +151,6 @@ a:focus {
   margin-bottom: 33px;
 }
 
-.icon-block__icon img {
-  height: 100%;
-}
-
 .icon-block__title {
   font-size: 20px;
   font-weight: 500;
@@ -178,6 +174,7 @@ a:focus {
   font-size: 18px;
   width: 202px;
   padding: 8px 0;
+  transition: all .3s;
 }
 
 .btn:after {
@@ -187,6 +184,7 @@ a:focus {
 .btn:hover {
   color: #fff;
   background: #c3121a;
+  transition: all .3s;
 }
 
 .btn:focus, .btn:active:focus {
@@ -252,8 +250,13 @@ a:focus {
 
 /*=========================Learn-more block styles start=======================*/
 .learn-more {
-  background-color: #eef5f9;
+  background: #eef5f9;
   padding: 0 10px;
+  text-align: center;
+}
+
+.learn-more_project {
+  margin-bottom: 10px;
 }
 
 .learn-more-text {
@@ -419,7 +422,7 @@ a:focus {
   width: 50%;
   text-align: right;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 22px;
   font-weight: 300;
 }
 
@@ -468,10 +471,12 @@ a:focus {
 
 .socials__item svg {
   fill: #babfc4;
+  transition: all .3s;
 }
 
 .socials__item a:hover svg {
   fill: #fff;
+  transition: all .3s;
 }
 
 .socials__item_git a:hover svg {fill: #171515;}
@@ -671,6 +676,14 @@ a:focus {
   line-height: 20px;
 }
 
+.project__heading_mb {
+  margin-bottom: 30px;
+}
+
+.project__benefits {
+  overflow: hidden;
+}
+
 .project__btn {
   float: right;
   margin: 10px -10px 0 0;
@@ -798,7 +811,10 @@ a:focus {
     margin-bottom: 20px;
   }
   .project__heading {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+  }
+  .project__heading_mb {
+    margin-bottom: 30px;
   }
 }
 
@@ -858,12 +874,15 @@ a:focus {
   .project__btn {
     display: none;
   }
+  .project__section {
+    padding: 40px 0;
+  }
   .project__section p, .project__section ul li {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 28px;
   }
   .project__section ul li:before {
-    top: 10px;
+    top: 11px;
   }
 }
 
@@ -916,6 +935,10 @@ a:focus {
     font-size: 26px;
   }
 
+  .learn-more_project {
+    margin-bottom: 0;
+  }
+
   .learn-more-text {
     font-size: 16px;
     line-height: 24px;
@@ -944,6 +967,10 @@ a:focus {
     font-size: 20px;
   }
 
+  .project__heading_mb {
+    margin-bottom: 22px;
+  }
+
   .project__member-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -954,6 +981,7 @@ a:focus {
 
   .projects-preview__image {
     max-height: none;
+    margin-bottom: 10px;
   }
 
   .project__member {
@@ -997,6 +1025,10 @@ a:focus {
     font-size: 14px;
   }
 
+  .projects-preview__description {
+    display: none;
+  }
+
   .projects-list_similar .project-list__item{
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -1016,6 +1048,7 @@ a:focus {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
+    margin-bottom: 10px;
   }
   .project-list__item:last-child {
     margin-bottom: 0;

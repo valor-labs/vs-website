@@ -52,7 +52,8 @@
           <div class="drop-container">
             <div class="text-drop">
               <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-              <span> Add Document </span></div>
+              <span> Add Document </span>
+            </div>
           </div>
 
         </div>
@@ -139,7 +140,7 @@
         </div>
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
-            <div class="row">
+            <div [class.row]="isMobile">
               <div class="drop-container">
                 <div class="text-drop" *ngIf="!isMobile">
                   <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
@@ -152,7 +153,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3">
-            <div class="row">
+            <div [class.row]="isMobile">
               <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
             </div>
           </div>
