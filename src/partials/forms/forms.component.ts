@@ -10,7 +10,6 @@ import { MailService } from '../../services/mail.service';
 })
 export class FormsComponent implements OnInit {
   public fileName:string;
-  public test:any;
   @Input('pageName')
   private pageName:string;
   private location:Location;
