@@ -9,6 +9,7 @@ import { MailService } from '../../services/mail.service';
   templateUrl: './forms.html'
 })
 export class FormsComponent implements OnInit {
+  public fileName:string;
   @Input('pageName')
   private pageName:string;
   private location:Location;
@@ -47,16 +48,29 @@ export class FormsComponent implements OnInit {
     }
   }
 
+  public fileChange(event: any):void {
+    let fileList: FileList = event.target.files;
+    if(fileList.length > 0) {
+      let file: File = fileList[0];
+      this.file = file;
+      this.fileName = file.name;
+    }
+  }
+
   public getDataFromTemplate():void {
+
     let typeOfEmail = '';
 
     if (this.isCaseForm) {
+      let formData: FormData = new FormData();
+      formData.append('name', this.name);
+      formData.append('email',  this.email);
+      formData.append('message', this.msg);
+      if(this.file) {
+        formData.append('attachment', this.file);
+      }
       typeOfEmail = 'client';
-      this.MailServiceSubscribe = this.mailService.sendEmail({
-        email: this.email,
-        name: this.name,
-        message: this.msg
-      }, typeOfEmail)
+      this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
@@ -66,14 +80,17 @@ export class FormsComponent implements OnInit {
     }
 
     if (this.isVacancyForm) {
+      let formData: FormData = new FormData();
+      formData.append('name', this.name);
+      formData.append('city', this.city);
+      formData.append('email',  this.email);
+      formData.append('phone',  this.phone);
+      formData.append('message', this.msg);
+      if(this.file) {
+        formData.append('attachment', this.file);
+      }
       typeOfEmail = 'vacancy';
-      this.MailServiceSubscribe = this.mailService.sendEmail({
-        email: this.email,
-        name: this.name,
-        message: this.msg,
-        city: this.city,
-        phone: this.phone
-      }, typeOfEmail)
+      this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
@@ -83,13 +100,16 @@ export class FormsComponent implements OnInit {
     }
 
     if (this.isContactForm) {
+      let formData: FormData = new FormData();
+      if(this.file) {
+        formData.append('attachment', this.file);
+      }
+      formData.append('email',  this.email);
+      formData.append('name', this.name);
+      formData.append('message', this.msg);
+
       typeOfEmail = 'contact';
-      this.MailServiceSubscribe = this.mailService.sendEmail({
-        email: this.email,
-        name: this.name,
-        file: this.file,
-        message: this.msg
-      }, typeOfEmail)
+      this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe((res:any) => {
           if (res.err) {
             console.error(res.err);
