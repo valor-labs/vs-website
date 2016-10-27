@@ -84,7 +84,7 @@ export class FormsComponent implements OnInit {
       formData.append('name', this.name);
       formData.append('city', this.city);
       formData.append('email',  this.email);
-      formData.append('email',  this.phone);
+      formData.append('phone',  this.phone);
       formData.append('message', this.msg);
       if(this.file) {
         formData.append('attachment', this.file);
