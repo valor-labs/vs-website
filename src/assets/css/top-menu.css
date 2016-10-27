@@ -15,7 +15,6 @@ hamburger-menu {
 
 .introduction {
     height: 100vh;
-    transition: height 999999s;
     background-size: cover;
     position: relative;
     text-align: center;
@@ -104,7 +103,6 @@ hamburger-menu {
 }
 
 .contact-btn {
-    border-bottom: 1px solid #fff;
     text-transform: uppercase;
     position: relative;
     line-height: 24px;
@@ -115,12 +113,17 @@ hamburger-menu {
     text-decoration: none;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
     z-index: 100;
+    transition: all .3s;
+}
+
+.contact-btn:hover {
+    transition: all .3s;
+    box-shadow: inset 0 -1px 0 0 #fff;
 }
 
 .contact-btn span {
     position: relative;
     display: inline-block;
-    padding: 0 8px;
     background: transparent;
 }
 
@@ -292,7 +295,7 @@ canvas {
         height: 100%;
         background: #1d1d2b;
         z-index: 1000;
-        padding: 60px 0 60px 83px;
+        padding: 60px 0 60px 60px;
         align-content: flex-start;
     }
     .menu__list {

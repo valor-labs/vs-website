@@ -5,7 +5,7 @@
     <div *ngFor="let item of content.columns" class="col-lg-3 col-md-6 col-sm-6">
       <div class="icon-block">
         <div class="icon-block__icon">
-          <img [src]="item.image" alt="#">
+          <img width="{{item.width}}" height="{{item.height}}" [src]="item.image" alt="icon">
         </div>
         <h5 class="icon-block__title">{{item.title}}</h5>
         <p class="icon-block__text">{{item.text}}</p>

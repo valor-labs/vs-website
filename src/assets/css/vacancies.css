@@ -8,10 +8,12 @@ vacancy-preview {
 
 .vacancies-link:hover .vacancy-preview__link {
     text-decoration: underline;
+    transition: all .3s;
 }
 
 .vacancies-link:hover .vacancy-rectangle {
     background-color: #eef5f9;
+    transition: all .3s;
 }
 
 .vacancy-rectangle {
@@ -23,6 +25,7 @@ vacancy-preview {
     border-left: 3px solid #55555c;
     border-radius: 4px;
     margin-bottom: 30px;
+    transition: all .3s;
 }
 
 .vacancy-preview__title {
@@ -50,7 +53,6 @@ vacancy-preview {
     .vacancy-rectangle {
         width: auto;
         max-width: 100%;
-        border-left:1px solid #babfc4;
 
     }
     .vacancy-item:last-child .vacancy-rectangle{

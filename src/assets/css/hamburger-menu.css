@@ -121,7 +121,14 @@
 
 .hamburger-overlay.is-active {
     display: block;
-    background: #1d1d2b;
+}
+
+.menu-opened .logo,
+.menu-opened .contact-btn,
+.menu-opened .introduction__text,
+.menu-opened .introduction__arrow{
+    visibility: hidden;
+    transition: all 0s;
 }
 
 .hamburger-list {
@@ -192,7 +199,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1d1d2b;
+    font-weight: 300;
+}
+@media (max-width: 1024px) {
+    .hamburger-list li a {
+        font-size: 30px;
+    }
 }
 
 @media (max-width:768px) {
@@ -214,7 +226,7 @@
         display: none;
     }
     .hamburger-footer .socials {
-        float: right;
+        justify-content: center;
     }
     .hamburger-box {
         height: 18px;

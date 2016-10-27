@@ -24,6 +24,7 @@ export class FormsComponent implements OnInit {
   private msg:string = '';
   private city:string = '';
   private phone:string = '';
+  private file:any;
 
   public constructor(@Inject(Location) location:Location, mailService:MailService) {
     this.urlEvents = new Subject();
@@ -86,6 +87,7 @@ export class FormsComponent implements OnInit {
       this.MailServiceSubscribe = this.mailService.sendEmail({
         email: this.email,
         name: this.name,
+        file: this.file,
         message: this.msg
       }, typeOfEmail)
         .subscribe((res:any) => {
