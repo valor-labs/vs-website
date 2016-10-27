@@ -1,5 +1,5 @@
 <div id="contact-form" *ngIf="isContactForm">
-  <form class="form-horizontal">
+  <form class="form-horizontal" (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
     <fieldset>
       <!-- Form Name -->
       <div class="form-group">
@@ -50,10 +50,14 @@
         <div class="col-md-12">
 
           <div class="drop-container">
-            <div class="text-drop">
-              <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-              <span> Add Document </span>
-            </div>
+            <label class="drop-label">
+              <div class="text-drop">
+                <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
+                <span *ngIf="!this.fileName"> Add Document </span>
+                <span *ngIf="this.fileName">{{this.fileName}}</span>
+              </div>
+            </label>
           </div>
 
         </div>
@@ -69,7 +73,6 @@
 
   </form>
 </div>
-
 
 <div id="vacancy-form" *ngIf="isVacancyForm">
   <div class="col-lg-8 col-lg-offset-2">
@@ -141,14 +144,20 @@
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
             <div [class.row]="isMobile">
+
               <div class="drop-container">
-                <div class="text-drop" *ngIf="!isMobile">
-                  <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                  Drag & drop files here to upload attachements or <span> browse the file </span>
-                </div>
-                <div class="text-drop-mobile" *ngIf="isMobile">
-                  <span> Browse the file </span>
-                </div>
+                <label class="drop-label">
+                  <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                  <div class="text-drop" *ngIf="!isMobile">
+                    <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
+                    <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
+                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                  </div>
+                  <div class="text-drop-mobile" *ngIf="isMobile">
+                    <span *ngIf="!this.fileName"> Browse the file </span>
+                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
@@ -207,13 +216,18 @@
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
             <div class="drop-container">
-              <div class="text-drop" *ngIf="!isMobile">
-                <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                Drag & drop files here to upload attachements or <span> browse the file </span>
-              </div>
-              <div class="text-drop-mobile" *ngIf="isMobile">
-                <span> Browse the file </span>
-              </div>
+              <label class="drop-label">
+                <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                <div class="text-drop" *ngIf="!isMobile">
+                  <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
+                  <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
+                  <span *ngIf="this.fileName">{{this.fileName}}</span>
+                </div>
+                <div class="text-drop-mobile" *ngIf="isMobile">
+                  <span *ngIf="!this.fileName"> Browse the file </span>
+                  <span *ngIf="this.fileName">{{this.fileName}}</span>
+                </div>
+              </label>
             </div>
           </div>
           <div class="col-lg-3 col-md-3">
@@ -265,13 +279,18 @@
           <div class="col-lg-9 col-md-9">
             <div class="row">
               <div class="drop-container">
-                <div class="text-drop" *ngIf="!isMobile">
-                  <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                  Drag & drop files here to upload attachements or <span> browse the file </span>
-                </div>
-                <div class="text-drop-mobile" *ngIf="isMobile">
-                  <span> Browse the file </span>
-                </div>
+                <label class="drop-label">
+                  <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                  <div class="text-drop" *ngIf="!isMobile">
+                    <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
+                    <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
+                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                  </div>
+                  <div class="text-drop-mobile" *ngIf="isMobile">
+                    <span *ngIf="!this.fileName"> Browse the file </span>
+                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
