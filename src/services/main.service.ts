@@ -17,6 +17,7 @@ export class MainService {
 
   public getFeedback():any[] {
     let feedback = JSON.parse(JSON.stringify(feedbacks));
+
     const arrayCount = Math.ceil(feedback.length / 2);
     let slides:Array<any> = [];
     if(!window.isMobile()) {
