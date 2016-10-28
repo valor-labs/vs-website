@@ -11,7 +11,7 @@ export const content: any[] = [
         width: '52',
         height: '54',
         title: 'User Experience Design',
-        text: 'Our UI/UX designers produce the most eye-catching designs for your product'
+        text: 'Our UI/UX designers produce the most attractive and polished designs for your product'
       },
       {
         image: 'assets/images/content/web-dev.png',
@@ -74,7 +74,7 @@ export const content: any[] = [
   {
     contentId: 'advantages',
     title: 'Advantages of our approach',
-    description: 'We help enterprises accelerate software-to-market by building collaborative relationships, using lean requirements and Agile methodologies. We guarantee value to our clients with our UX and engineering expertise.',
+    description: 'We help enterprises accelerate software-to-market by building collaborative relationships, using lean requirements and effective methodologies. We guarantee value to our clients with our UX and engineering expertise.',
     columns: [
       {
         image: 'assets/images/content/transparency.png',
@@ -88,7 +88,7 @@ export const content: any[] = [
         width: '56',
         height: '56',
         title: 'Focus On Business Value',
-        text: 'We\'re letting the client decide the priority of feature implementation, so the team knows what’s most important for the customer’s business, this way we provide the best business value.'
+        text: 'We\'re letting the client decide the priority of feature implementation, this way we can provide the best business value.'
       },
       {
         image: 'assets/images/content/early.png',
@@ -102,7 +102,7 @@ export const content: any[] = [
         width: '56',
         height: '56',
         title: 'Allows For Change',
-        text: 'We always provide an opportunity to refine and re-prioritize the overall product backlog. New or changed items can be can be properly planned for the next iteration to introduce changes within a few weeks.'
+        text: 'We always provide an opportunity to refine the product backlog. Our team will plan the next iteration to introduce new changes within a few weeks.'
       }
     ]
   }
