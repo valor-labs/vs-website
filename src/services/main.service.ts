@@ -17,6 +17,13 @@ export class MainService {
 
   public getFeedback():any[] {
     let feedback = JSON.parse(JSON.stringify(feedbacks));
+
+    for(let i = 0; i < feedback.length; i++) {
+
+      feedback[i].shortText = feedback[i].text.length > 130 ? feedback[i].text.substring(0, 130) + '...' : feedback[i].text;
+
+    }
+
     const arrayCount = Math.ceil(feedback.length / 2);
     let slides:Array<any> = [];
     if(!window.isMobile()) {
