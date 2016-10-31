@@ -2,7 +2,7 @@ export const projects: any[] = [
   {
       projectId: 0,
       title: 'Dollar Street',
-      shortDescription: 'First blog is an ugliest blog solution evert',
+      shortDescription: 'Social project',
       description: 'First blog is an ugliest blog solution evert blog is an ugliest bloirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution everFirst blog is an ugliest blog solution ever',
       previewImage: 'assets/images/projects/ds.jpg',
       fullImage: 'assets/images/projects/ds-m.jpg',
@@ -36,7 +36,7 @@ export const projects: any[] = [
   {
       projectId: 1,
       title: 'Gapminder',
-      shortDescription: 'Second blog is better, than first, but not awesome',
+      shortDescription: 'Social project',
       description: 'Second blog is better, than first, but not awesome',
       previewImage: 'assets/images/projects/gapminder.jpg',
       fullImage: 'assets/images/projects/gapminder-m.jpg',
@@ -66,7 +66,7 @@ export const projects: any[] = [
   {
       projectId: 2,
       title: 'Vizabi tools',
-      shortDescription: 'Third blog is not bad',
+      shortDescription: 'Social project',
       description: 'Third blog is not bad',
       previewImage: 'assets/images/projects/vizabi.jpg',
       fullImage: 'assets/images/projects/vizabi-m.jpg',
@@ -97,11 +97,12 @@ export const projects: any[] = [
   {
       projectId: 3,
       title: 'Tables Ready',
-      shortDescription: 'Fourth WTF',
+      shortDescription: 'Industry software',
       description: 'Fourth WTF',
       previewImage: 'assets/images/projects/tables-ready.jpg',
       fullImage: 'assets/images/projects/tables-ready-m.jpg',
       headerImage: 'assets/images/projects/tables-ready-header.jpg',
+      video: 'https://player.vimeo.com/video/44085692',
       externalLink: 'http://google.com',
       details: {
         tasks: [
@@ -127,7 +128,7 @@ export const projects: any[] = [
   {
       projectId: 4,
       title: 'Priceshredder',
-      shortDescription: 'First blog is an ugliest blog solution ever',
+      shortDescription: 'Insurance',
       description: 'First blog is an ugliest blog solution ever',
       previewImage: 'assets/images/projects/priceshredder.jpg',
       fullImage: 'assets/images/projects/priceshredder-m.jpg',
@@ -157,7 +158,7 @@ export const projects: any[] = [
   {
       projectId: 5,
       title: 'Souqalmal',
-      shortDescription: 'Second blog is better, than first, but not awesome',
+      shortDescription: 'TODO',
       description: 'Second blog is better, than first, but not awesome',
       previewImage: 'assets/images/projects/souqalmal.jpg',
       fullImage: 'assets/images/projects/souqalmal-m.jpg',

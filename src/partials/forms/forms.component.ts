@@ -9,7 +9,9 @@ import { MailService } from '../../services/mail.service';
   templateUrl: './forms.html'
 })
 export class FormsComponent implements OnInit {
+  public success:boolean = false;
   public fileName:string;
+
   @Input('pageName')
   private pageName:string;
   private location:Location;
@@ -48,6 +50,11 @@ export class FormsComponent implements OnInit {
     }
   }
 
+  public onSubmit(event: any):void {
+    event.target.reset();
+    this.fileName = '';
+  }
+
   public fileChange(event: any):void {
     let fileList: FileList = event.target.files;
     if(fileList.length > 0) {
@@ -75,6 +82,10 @@ export class FormsComponent implements OnInit {
           if (res.err) {
             console.error(res.err);
             return;
+          } else {
+            let successTime = 3000;
+            this.success = true;
+            setTimeout(() => this.success = false, successTime);
           }
         });
     }
@@ -95,6 +106,10 @@ export class FormsComponent implements OnInit {
           if (res.err) {
             console.error(res.err);
             return;
+          } else {
+            let successTime = 3000;
+            this.success = true;
+            setTimeout(() => this.success = false, successTime);
           }
         });
     }
@@ -114,8 +129,11 @@ export class FormsComponent implements OnInit {
           if (res.err) {
             console.error(res.err);
             return;
+          } else {
+            let successTime = 3000;
+            this.success = true;
+            setTimeout(() => this.success = false, successTime);
           }
-          // TODO: empty form and notify user about send results
         });
     }
   }

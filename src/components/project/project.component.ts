@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ProjectsService } from '../../services/projects.service';
 import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
@@ -17,6 +18,7 @@ export class ProjectComponent implements OnInit {
   public project: Project;
   public constructor(public route: ActivatedRoute,
                      public projectsService:ProjectsService,
+                     private sanitizer: DomSanitizer,
                      private mainService: MainService) {
   }
 
@@ -51,7 +53,9 @@ export class ProjectComponent implements OnInit {
       project.formattedMembers = formattedMembers;
 
       project.reference = this.mainService.getFeedbackForProject(project.projectId);
-
+      if(project.video) {
+        project.video = this.sanitizer.bypassSecurityTrustResourceUrl(project.video);
+      }
       this.project = project;
     });
   }

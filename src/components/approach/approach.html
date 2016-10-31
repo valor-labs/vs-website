@@ -42,9 +42,10 @@
         <slide *ngFor="let project of projects; let i=index" [active]="project.active">
           <div class="slide__inner">
             <div style="float: none; margin: 0 auto;">
-              <img [src]="project.fullImage" width="800">
+              <img *ngIf="!project.video" [src]="project.fullImage" width="800">
+              <iframe *ngIf="project.video" [src]="project.video" width="954" height="532" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <h5 class="icon-block__title">{{project.title}}</h5>
-              <a href="{{project.externalLink}}" target="_blank">View case study »</a>
+              <a href="#/project/{{project.link}}">View case study »</a>
             </div>
           </div>
         </slide>

@@ -16,9 +16,9 @@
         <p>{{project.description}}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
-            <img [src]="project.fullImage" width="800">
+            <img *ngIf="!project.video" [src]="project.fullImage" width="800">
+            <iframe *ngIf="project.video" [src]="project.video" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
-
           <div class="content-presentation__links">
             <a class="content-presentation__link" *ngIf="project.externalLink" href="{{project.externalLink}}" target="_blank">
               <span class="icon-link"></span>

@@ -1,54 +1,66 @@
 <div id="contact-form" *ngIf="isContactForm">
-  <form class="form-horizontal">
+  <form *ngIf="!success" novalidate class="form-horizontal" (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
     <fieldset>
-      <!-- Form Name -->
       <div class="form-group">
-
-        <!-- Text input-->
         <div class="col-md-12">
           <input id="contact-name"
-                 name="name"
                  type="text"
                  placeholder="Your name.."
-                 class="input form-control border placeholder-text input-md"
-                 #contactName
-                 [value]="name"
-                 (input)="name = contactName.value">
+                 class="input form-control border placeholder-text"
+
+                 pattern="[a-zA-Zа-яА-ЯёЁ ]*"
+                 minlength="1"
+
+                 name="name"
+                 #userName="ngModel"
+                 [(ngModel)]="name">
+          <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
+               class="alert alert-danger">
+            <div [hidden]="!userName.errors.pattern">
+              Use valid name
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Text input-->
       <div class="form-group">
         <div class="col-md-12">
-          <input id="contact-e-mail"
-                 name="e-mail"
+          <input
                  type="email"
                  placeholder="Your e-mail.."
-                 class="input form-control border placeholder-text input-md"
-                 #contactEmail
-                 [value]="email"
-                 (input)="email = contactEmail.value">
+                 class="input form-control border placeholder-text"
+
+                 pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,10}$"
+                 required
+
+                 name="email"
+                 #userEmail="ngModel"
+                 [(ngModel)]="email">
+          <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+               class="alert alert-danger">
+            <div [hidden]="!userEmail.errors.required">
+              Email is required
+            </div>
+            <div [hidden]="!userEmail.errors.pattern">
+              Use valid email
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Textarea -->
       <div class="form-group">
         <div class="col-md-12">
           <textarea
             class="textarea form-control field-height placeholder-text"
-            id="contact-textarea"
             placeholder="Message.."
+
+            maxlength="1000"
+
             name="textarea"
-            #contactMsg
-            [value]="msg"
-            (input)="msg = contactMsg.value">
-          </textarea>
+            #usserMessage="ngModel"
+            [(ngModel)]="msg"></textarea>
         </div>
       </div>
-
       <div class="form-group">
         <div class="col-md-12">
-
           <div class="drop-container">
             <label class="drop-label">
               <div class="text-drop">
@@ -59,83 +71,129 @@
               </div>
             </label>
           </div>
-
         </div>
       </div>
-
       <div class="form-group">
         <div class="col-md-12">
-          <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
+          <input type="submit" [disabled]="!contactForm.form.valid" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
         </div>
       </div>
-
     </fieldset>
-
   </form>
+  <div *ngIf="success" class="alert alert-success">
+    <strong>Success!</strong>
+  </div>
 </div>
 
 <div id="vacancy-form" *ngIf="isVacancyForm">
   <div class="col-lg-8 col-lg-offset-2">
-    <form [class.form-horizontal]="isMobile">
+    <form *ngIf="!success" [class.form-horizontal]="isMobile" (ngSubmit)="onSubmit($event)" #vacancyForm="ngForm">
       <fieldset>
-        <div class="form-group clearfix">
+        <div class="clearfix">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <input id="candidate-name"
-                     name="name"
-                     type="text"
-                     placeholder="Your name.."
-                     class="input form-control border  placeholder-text input-md"
-                     #candidateName
-                     [value]="name"
-                     (input)="name = candidateName.value">
-            </div>
-            <div class="form-group">
-              <input id="candidate-city"
-                     name="city"
-                     type="text"
-                     placeholder="Your city.."
-                     class="input form-control border placeholder-text input-md"
-                     #candidateCity
-                     [value]="city"
-                     (input)="city = candidateCity.value">
+            <div class="form-group clearfix">
+              <input
+               type="text"
+               placeholder="Your name.."
+               class="input form-control border placeholder-text"
+
+               pattern="[a-zA-Zа-яА-ЯёЁ ]*"
+               minlength="1"
+
+               name="name"
+               #userName="ngModel"
+               [(ngModel)]="name">
+              <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userName.errors.pattern">
+                   Use valid name
+                </div>
+              </div>
             </div>
             <div></div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <input id="candidate-e-mail"
-                     name="e-mail"
-                     type="email"
-                     placeholder="Your e-mail.."
-                     class="input form-control border placeholder-text input-md"
-                     #candidateEmail
-                     [value]="email"
-                     (input)="email = candidateEmail.value">
+            <div class="form-group clearfix">
+              <input
+                type="email"
+                placeholder="Your e-mail.."
+                class="input form-control border placeholder-text"
+
+                pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,10}$"
+                required
+
+                name="email"
+                #userEmail="ngModel"
+                [(ngModel)]="email">
+              <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userEmail.errors.required">
+                  Email is required
+                </div>
+                <div [hidden]="!userEmail.errors.pattern">
+                  Use valid email
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <input id="candidate-phone"
-                     name="phone"
-                     type="number"
-                     placeholder="Your phone.."
-                     class="input form-control border placeholder-text input-md"
-                     #candidatePhone
-                     [value]="phone"
-                     (input)="phone = candidatePhone.value">
+            <div></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group clearfix">
+            <input
+               type="text"
+               placeholder="Your phone.."
+               class="input form-control border placeholder-text"
+
+               maxlength="14"
+               pattern="^\+?[0-9]{3,14}$"
+
+               name="phone"
+               #userPhone="ngModel"
+               [(ngModel)]="phone">
+              <div *ngIf="userPhone.errors && (userPhone.dirty || userPhone.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userPhone.errors.pattern">
+                  Use valid phone number
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group clearfix">
+            <input
+              type="text"
+              placeholder="Your city.."
+              class="input form-control border placeholder-text"
+
+              pattern="[a-zA-Zа-яА-ЯёЁ ]*"
+              minlength="1"
+
+              name="city"
+              #userCity="ngModel"
+              [(ngModel)]="city">
+              <div *ngIf="userCity.errors && (userCity.dirty || userCity.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userCity.errors.pattern">
+                  Use valid city name
+                </div>
+              </div>
             </div>
             <div></div>
           </div>
         </div>
         <div class="form-group clearfix">
           <div class="col-lg-12">
-            <div class="form-group">
-              <textarea class="form-control field-height placeholder-text"
-                        id="candidate-textarea"
-                        placeholder="Message.."
-                        name="textarea"
-                        #candidateMsg
-                        [value]="msg"
-                        (input)="msg = candidateMsg.value">
+            <div class="form-group ">
+              <textarea
+                  class="form-control field-height placeholder-text"
+                  placeholder="Message.."
+
+                  maxlength="1000"
+
+                  name="textarea"
+                  #userText="ngModel"
+                  [(ngModel)]="msg">
               </textarea>
             </div>
             <div></div>
@@ -144,17 +202,12 @@
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
             <div [class.row]="isMobile">
-
               <div class="drop-container">
                 <label class="drop-label">
-                  <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
-                  <div class="text-drop" *ngIf="!isMobile">
+                  <div class="text-drop">
+                    <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                    <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
-                    <span *ngIf="this.fileName">{{this.fileName}}</span>
-                  </div>
-                  <div class="text-drop-mobile" *ngIf="isMobile">
-                    <span *ngIf="!this.fileName"> Browse the file </span>
+                    <span *ngIf="!this.fileName"> Add Document </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
                   </div>
                 </label>
@@ -163,131 +216,91 @@
           </div>
           <div class="col-lg-3 col-md-3">
             <div [class.row]="isMobile">
-              <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
+              <input type="submit" [disabled]="!vacancyForm.form.valid" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
             </div>
           </div>
         </div>
       </fieldset>
     </form>
+    <div *ngIf="success" class="alert alert-success">
+      <strong>Success!</strong>
+    </div>
   </div>
 </div>
 
 <div id="case-form" *ngIf="isCaseForm">
   <div class="col-lg-8 col-lg-offset-2">
-    <form *ngIf="!isMobile">
+    <form *ngIf="!success" [class.form-horizontal]="isMobile" (ngSubmit)="onSubmit($event)" #caseForm="ngForm">
       <fieldset>
         <div class="form-group clearfix">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <input id="client-name"
-                     name="name"
+              <input
                      type="text"
                      placeholder="Your name.."
                      class="input form-control border placeholder-text"
-                     #clientName
-                     [value]="name"
-                     (input)="name = clientName.value">
+
+                     pattern="[a-zA-Zа-яА-ЯёЁ ]*"
+                     minlength="1"
+
+                     name="name"
+                     #userName="ngModel"
+                     [(ngModel)]="name">
+              <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userName.errors.pattern">
+                  Use valid name
+                </div>
+              </div>
             </div>
             <div class="form-group">
-              <input id="client-e-mail"
-                     name="e-mail"
-                     type="email"
-                     placeholder="Your e-mail.."
-                     class="input form-control placeholder-text border"
-                     #clientEmail
-                     [value]="email"
-                     (input)="email = clientEmail.value">
+              <input
+                 type="email"
+                 placeholder="Your e-mail.."
+                 class="input form-control placeholder-text border"
+
+                 pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,10}$"
+                 required
+
+                 name="email"
+                 #userEmail="ngModel"
+                 [(ngModel)]="email">
+              <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+                   class="alert alert-danger">
+                <div [hidden]="!userEmail.errors.required">
+                  Email is required
+                </div>
+                <div [hidden]="!userEmail.errors.pattern">
+                  Use valid email
+                </div>
+              </div>
             </div>
             <div></div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="form-group">
-              <textarea class="form-control field-height placeholder-text"
-                        id="client-textarea"
-                        placeholder="Message.."
-                        name="textarea"
-                        #clientMsg
-                        [value]="msg"
-                        (input)="msg = clientMsg.value">
-              </textarea>
+              <textarea
+                class="form-control field-height placeholder-text"
+                placeholder="Message.."
+
+                maxlength="1000"
+
+                name="textarea"
+                #userText="ngModel"
+                [(ngModel)]="msg"
+              ></textarea>
             </div>
           </div>
         </div>
         <div class="form-group clearfix">
           <div class="col-lg-9 col-md-9">
-            <div class="drop-container">
-              <label class="drop-label">
-                <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
-                <div class="text-drop" *ngIf="!isMobile">
-                  <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                  <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
-                  <span *ngIf="this.fileName">{{this.fileName}}</span>
-                </div>
-                <div class="text-drop-mobile" *ngIf="isMobile">
-                  <span *ngIf="!this.fileName"> Browse the file </span>
-                  <span *ngIf="this.fileName">{{this.fileName}}</span>
-                </div>
-              </label>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3">
-            <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-    <form class="form-horizontal" *ngIf="isMobile">
-      <fieldset>
-        <div class="form-group clearfix">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <input id="client-name-mobile"
-                     name="name"
-                     type="text"
-                     placeholder="Your name.."
-                     class="input form-control border placeholder-text"
-                     #clientName
-                     [value]="name"
-                     (input)="name = clientName.value">
-            </div>
-            <div class="form-group">
-              <input id="client-e-mail-mobile"
-                     name="e-mail"
-                     type="email"
-                     placeholder="Your e-mail.."
-                     class="input form-control placeholder-text border"
-                     #clientEmail
-                     [value]="email"
-                     (input)="email = clientEmail.value">
-            </div>
-            <div></div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-            <textarea class="form-control field-height placeholder-text"
-                      id="client-textarea-mobile"
-                      placeholder="Message.."
-                      name="textarea"
-                      #clientMsg
-                      [value]="msg"
-                      (input)="msg = clientMsg.value">
-            </textarea>
-            </div>
-          </div>
-        </div>
-        <div class="form-group clearfix">
-          <div class="col-lg-9 col-md-9">
-            <div class="row">
+            <div [class.row]="isMobile">
               <div class="drop-container">
                 <label class="drop-label">
-                  <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
-                  <div class="text-drop" *ngIf="!isMobile">
+                  <div class="text-drop">
+                    <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                    <strong *ngIf="!this.fileName">Drag & drop files here to upload attachements or <span> browse the file </span></strong>
-                    <span *ngIf="this.fileName">{{this.fileName}}</span>
-                  </div>
-                  <div class="text-drop-mobile" *ngIf="isMobile">
-                    <span *ngIf="!this.fileName"> Browse the file </span>
+                    <span *ngIf="!this.fileName"> Add Document </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
                   </div>
                 </label>
@@ -295,13 +308,16 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3">
-            <div class="row">
-              <input type="submit" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
+            <div [class.row]="isMobile">
+              <input type="submit" [disabled]="!caseForm.form.valid" (click)="getDataFromTemplate()" class="btn" value="Send inquery »"/>
             </div>
           </div>
         </div>
       </fieldset>
     </form>
+    <div *ngIf="success" class="alert alert-success">
+      <strong>Success!</strong>
+    </div>
   </div>
 </div>
 
