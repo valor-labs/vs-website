@@ -214,7 +214,7 @@ export const team: any[] = [
         position: 'Software engineer',
         avatar: 'assets/images/team/Avatar-2.png',
         fullImage: 'assets/images/team/photo3.jpg',
-        description: ['Software development as a hobby, it\'s about me. I try always aware of the latest trends in programming, tools and IT in whole, can learn new technology "just for fun". I participate in open source projects and listen drum and bass while coding.'],
+        description: ['Software development as a hobby, it\'s about me. I always try to be aware of the latest trends in programming, tools and IT in general. For me it\'s ok to learn new technology "just for fun" because I really enjoy what I do. I participate in open source projects and listen drum and bass while coding.'],
         skills: ['MEAN stack', 'Hybrid development'],
         socials: {
             github: 'https://github.com/otelnov',
