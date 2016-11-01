@@ -73,18 +73,15 @@ export class FormsComponent implements OnInit {
     let typeOfEmail = '';
     let self = this;
 
-    /* tslint:disable */
     function mailCallback (res:any):void {
       if (res.err) {
         console.error(res.err);
         return;
-      } else {
-        let successTime = 3000;
-        self.success = true;
-        setTimeout(() => self.success = false, successTime);
       }
+      let successTime = 3000;
+      self.success = true;
+      setTimeout(() => self.success = false, successTime);
     }
-    /* tslint:enable */
 
     if (this.isCaseForm) {
       let formData: FormData = new FormData();
