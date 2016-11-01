@@ -1,7 +1,7 @@
 .let-s-talk {
   margin-bottom: 30px;
 }
-#contact-form-desktop .let-s-talk__section {
+.let-s-talk__section {
   width: 50%;
   padding-left: 30px;
   vertical-align: middle;
@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-#contact-form-desktop .let-s-talk__section:nth-child(odd) {
+.let-s-talk__section:nth-child(odd) {
   padding-left: 0;
   padding-right: 30px;
 }
@@ -28,42 +28,26 @@
   margin-bottom: 60px;
 }
 
-#contact-form-desktop .let-s-talk__text div {
+.let-s-talk__text div {
   text-align: left;
   padding-right: 20px;
 }
 
-#contact-form-desktop .let-s-talk__text div:nth-child(even) {
-  padding-left: 100px;
-}
-
-#contact-form-desktop .let-s-talk__text h6 {
+.let-s-talk__text h6 {
   font-weight: 500;
   color: #1d1d2b;
   font-size: 18px;
 }
 
-#contact-form-desktop .let-s-talk__text span {
+.let-s-talk__text span {
   color: #55555c;
   font-size: 16px;
   font-weight: 300;
 }
 
-#contact-form-mobile {
-  display:none;
-}
-
 
 
 @media (max-width: 1024px) {
-  #contact-form-desktop {
-    display: none;
-  }
-
-  #contact-form-mobile {
-    display:block;
-  }
-
   .let-s-talk {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +57,7 @@
     padding-right: 10px;
   }
 
-  #contact-form-mobile .let-s-talk__section {
+  .let-s-talk__section {
     padding-left: 30px;
     vertical-align: middle;
     display: flex;
@@ -82,7 +66,7 @@
     flex-direction: column;
   }
 
-  #contact-form-mobile .let-s-talk__section:nth-child(odd) {
+  .let-s-talk__section:nth-child(odd) {
     padding-left: 0;
     padding-right: 30px;
   }
@@ -96,13 +80,13 @@
     flex: 0 0 50%;
   }
 
-  #contact-form-mobile .let-s-talk__text h6 {
+  .let-s-talk__text h6 {
     font-weight: 500;
     color: #1d1d2b;
     font-size: 18px;
   }
 
-  #contact-form-mobile .let-s-talk__text span {
+  .let-s-talk__text span {
     color: #55555c;
     font-size: 16px;
     font-weight: 300;
@@ -124,7 +108,7 @@
 
 @media (max-width: 767px) {
   .let-s-talk {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .let-s-talk__item {
     flex: 0 0 100%;

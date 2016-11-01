@@ -7,6 +7,7 @@ export class Project {
                      public fullImage:string,
                      public externalLink:string,
                      public headerImage:string,
+                     public video:any,
                      public details:any[],
                      public technology:string[],
                      public similarTo:number[],

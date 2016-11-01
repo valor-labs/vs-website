@@ -178,7 +178,10 @@
     }
     .team-member .project-list__item:nth-child(odd), .team-member .project-list__item {
         margin: 0 0 20px 0;
-        min-width: auto;
+        min-width: 0;
+    }
+    .team-member .projects-preview {
+        width: auto;
     }
     .team-member__skill {
         width: 33%;

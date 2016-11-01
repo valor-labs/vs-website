@@ -298,7 +298,9 @@ a:focus {
 
 .projects-preview {
   width: 400px;
-  height: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .projects-preview__image {
@@ -1053,5 +1055,8 @@ a:focus {
   .project-list__item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  .projects-preview {
+    width: 100%;
   }
 }

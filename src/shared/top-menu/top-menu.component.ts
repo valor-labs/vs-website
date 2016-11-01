@@ -17,6 +17,14 @@ export class TopMenuComponent implements OnInit {
       this.isOpen = false;
       if (event instanceof NavigationEnd) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          const el = document.querySelector('#' + tree.fragment) as HTMLElement;
+          if (el) {
+            let elPosition = el.offsetTop;
+            document.body.scrollTop = document.documentElement.scrollTop = elPosition - this.elHeight;
+          }
+        }
       }
     });
   }

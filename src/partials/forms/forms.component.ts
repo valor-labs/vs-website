@@ -9,7 +9,9 @@ import { MailService } from '../../services/mail.service';
   templateUrl: './forms.html'
 })
 export class FormsComponent implements OnInit {
+  public success:boolean = false;
   public fileName:string;
+
   @Input('pageName')
   private pageName:string;
   private location:Location;
@@ -48,6 +50,16 @@ export class FormsComponent implements OnInit {
     }
   }
 
+  public onSubmit(event: any):void {
+    event.target.reset();
+    this.fileName = '';
+  }
+
+  public removeFile(input: any):void {
+    input.value = '';
+    this.fileName = '';
+  }
+
   public fileChange(event: any):void {
     let fileList: FileList = event.target.files;
     if(fileList.length > 0) {
@@ -58,8 +70,18 @@ export class FormsComponent implements OnInit {
   }
 
   public getDataFromTemplate():void {
-
     let typeOfEmail = '';
+    let self = this;
+
+    function mailCallback (res:any):void {
+      if (res.err) {
+        console.error(res.err);
+        return;
+      }
+      let successTime = 3000;
+      self.success = true;
+      setTimeout(() => self.success = false, successTime);
+    }
 
     if (this.isCaseForm) {
       let formData: FormData = new FormData();
@@ -70,13 +92,9 @@ export class FormsComponent implements OnInit {
         formData.append('attachment', this.file);
       }
       typeOfEmail = 'client';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          }
-        });
+        .subscribe(mailCallback);
     }
 
     if (this.isVacancyForm) {
@@ -90,13 +108,9 @@ export class FormsComponent implements OnInit {
         formData.append('attachment', this.file);
       }
       typeOfEmail = 'vacancy';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          }
-        });
+        .subscribe(mailCallback);
     }
 
     if (this.isContactForm) {
@@ -109,14 +123,9 @@ export class FormsComponent implements OnInit {
       formData.append('message', this.msg);
 
       typeOfEmail = 'contact';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          }
-          // TODO: empty form and notify user about send results
-        });
+        .subscribe(mailCallback);
     }
   }
 }

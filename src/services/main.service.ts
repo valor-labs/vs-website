@@ -16,7 +16,14 @@ export class MainService {
   }
 
   public getFeedback():any[] {
+    const maxSymbols = 130;
+    const trail = '...';
     let feedback = JSON.parse(JSON.stringify(feedbacks));
+
+    for(let i = 0; i < feedback.length; i++) {
+      let text = feedback[i].text;
+      feedback[i].shortText = text.length > maxSymbols ? text.substring(0, maxSymbols) + trail : text;
+    }
 
     const arrayCount = Math.ceil(feedback.length / 2);
     let slides:Array<any> = [];
