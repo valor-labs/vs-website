@@ -95,6 +95,7 @@ export class FormsComponent implements OnInit {
         formData.append('attachment', this.file);
       }
       typeOfEmail = 'client';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe(mailCallback);
     }
@@ -110,6 +111,7 @@ export class FormsComponent implements OnInit {
         formData.append('attachment', this.file);
       }
       typeOfEmail = 'vacancy';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe(mailCallback);
     }
@@ -124,6 +126,7 @@ export class FormsComponent implements OnInit {
       formData.append('message', this.msg);
 
       typeOfEmail = 'contact';
+      this.success = false;
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
         .subscribe(mailCallback);
     }
