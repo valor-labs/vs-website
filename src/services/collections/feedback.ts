@@ -50,7 +50,7 @@ export const feedbacks: any[] = [
     location: 'United States',
     industry: 'Insurance',
     image: 'assets/images/feedback/priceshredder-logo.jpg',
-    text: 'Really nice to work with this client! Great team to work with over the last 10 months.',
+    text: 'Really nice to work with this client! Great team to work with over the last 10 months. Looking forward for future cooperation!',
     link: '#/project/priceshredder',
     projectId: 4
   },

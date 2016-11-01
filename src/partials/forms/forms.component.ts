@@ -55,6 +55,11 @@ export class FormsComponent implements OnInit {
     this.fileName = '';
   }
 
+  public removeFile(input: any):void {
+    input.value = '';
+    this.fileName = '';
+  }
+
   public fileChange(event: any):void {
     let fileList: FileList = event.target.files;
     if(fileList.length > 0) {
@@ -65,8 +70,21 @@ export class FormsComponent implements OnInit {
   }
 
   public getDataFromTemplate():void {
-
     let typeOfEmail = '';
+    let self = this;
+
+    /* tslint:disable */
+    function mailCallback (res:any):void {
+      if (res.err) {
+        console.error(res.err);
+        return;
+      } else {
+        let successTime = 3000;
+        self.success = true;
+        setTimeout(() => self.success = false, successTime);
+      }
+    }
+    /* tslint:enable */
 
     if (this.isCaseForm) {
       let formData: FormData = new FormData();
@@ -78,16 +96,7 @@ export class FormsComponent implements OnInit {
       }
       typeOfEmail = 'client';
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          } else {
-            let successTime = 3000;
-            this.success = true;
-            setTimeout(() => this.success = false, successTime);
-          }
-        });
+        .subscribe(mailCallback);
     }
 
     if (this.isVacancyForm) {
@@ -102,16 +111,7 @@ export class FormsComponent implements OnInit {
       }
       typeOfEmail = 'vacancy';
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          } else {
-            let successTime = 3000;
-            this.success = true;
-            setTimeout(() => this.success = false, successTime);
-          }
-        });
+        .subscribe(mailCallback);
     }
 
     if (this.isContactForm) {
@@ -125,16 +125,7 @@ export class FormsComponent implements OnInit {
 
       typeOfEmail = 'contact';
       this.MailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe((res:any) => {
-          if (res.err) {
-            console.error(res.err);
-            return;
-          } else {
-            let successTime = 3000;
-            this.success = true;
-            setTimeout(() => this.success = false, successTime);
-          }
-        });
+        .subscribe(mailCallback);
     }
   }
 }

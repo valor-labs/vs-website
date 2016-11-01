@@ -7,7 +7,7 @@ export const projects: any[] = [
       previewImage: 'assets/images/projects/ds.jpg',
       fullImage: 'assets/images/projects/ds-m.jpg',
       headerImage: 'assets/images/projects/ds-header.jpg',
-      externalLink: 'http://google.com',
+      externalLink: 'http://www.gapminder.org/dollar-street',
       details: {
         tasks: [
           'Optimization of architecture and code;',
@@ -103,7 +103,7 @@ export const projects: any[] = [
       fullImage: 'assets/images/projects/tables-ready-m.jpg',
       headerImage: 'assets/images/projects/tables-ready-header.jpg',
       video: 'https://player.vimeo.com/video/44085692',
-      externalLink: 'http://google.com',
+      externalLink: 'http://tablesready.com/',
       details: {
         tasks: [
           'Optimization of architecture and code;',
@@ -133,7 +133,7 @@ export const projects: any[] = [
       previewImage: 'assets/images/projects/priceshredder.jpg',
       fullImage: 'assets/images/projects/priceshredder-m.jpg',
       headerImage: 'assets/images/projects/priceshredder-header.jpg',
-      externalLink: 'http://google.com',
+      externalLink: 'https://priceshredder.com/',
       details: {
         tasks: [
           'Optimization of architecture and code;',
@@ -163,7 +163,7 @@ export const projects: any[] = [
       previewImage: 'assets/images/projects/souqalmal.jpg',
       fullImage: 'assets/images/projects/souqalmal-m.jpg',
       headerImage: 'assets/images/projects/souqalmal-header.jpg',
-      externalLink: 'http://google.com',
+      externalLink: 'https://www.souqalmal.com/ae-en',
       details: {
         tasks: [
           'Optimization of architecture and code;',

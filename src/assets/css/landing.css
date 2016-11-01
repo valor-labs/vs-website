@@ -24,7 +24,7 @@
 }
 
 .slide__left {
-  text-align: left;
+  text-align: right;
   width: 140px;
   display: table-cell;
   vertical-align: top;

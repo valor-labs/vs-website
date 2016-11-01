@@ -64,12 +64,13 @@
           <div class="drop-container">
             <label class="drop-label">
               <div class="text-drop">
-                <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
                 <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                 <span *ngIf="!this.fileName"> Add Document </span>
                 <span *ngIf="this.fileName">{{this.fileName}}</span>
               </div>
             </label>
+            <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>
           </div>
         </div>
       </div>
@@ -80,8 +81,13 @@
       </div>
     </fieldset>
   </form>
-  <div *ngIf="success" class="alert alert-success">
-    <strong>Success!</strong>
+  <div *ngIf="success" class="success-message">
+    <div class="alert alert-success">
+      <strong>Your email has been sent.</strong>
+    </div>
+    <span class="frame__text">
+      Thank you for interested in our company. Our managers will contact you within 24 hours.
+    </span>
   </div>
 </div>
 
@@ -205,12 +211,13 @@
               <div class="drop-container">
                 <label class="drop-label">
                   <div class="text-drop">
-                    <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                    <input style="display: none;" #input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                     <span *ngIf="!this.fileName"> Add Document </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
                   </div>
                 </label>
+                <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>
               </div>
             </div>
           </div>
@@ -222,8 +229,13 @@
         </div>
       </fieldset>
     </form>
-    <div *ngIf="success" class="alert alert-success">
-      <strong>Success!</strong>
+    <div *ngIf="success" class="success-message">
+      <div class="alert alert-success">
+        <strong>Your email has been sent.</strong>
+      </div>
+      <span class="frame__text">
+        Thank you for interested in our company. Our managers will contact you within 24 hours.
+      </span>
     </div>
   </div>
 </div>
@@ -298,12 +310,13 @@
               <div class="drop-container">
                 <label class="drop-label">
                   <div class="text-drop">
-                    <input style="display: none;" type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                    <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                     <span *ngIf="!this.fileName"> Add Document </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
                   </div>
                 </label>
+                <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>
               </div>
             </div>
           </div>
@@ -315,8 +328,13 @@
         </div>
       </fieldset>
     </form>
-    <div *ngIf="success" class="alert alert-success">
-      <strong>Success!</strong>
+    <div *ngIf="success" class="success-message">
+      <div class="alert alert-success">
+        <strong>Your email has been sent.</strong>
+      </div>
+      <span class="frame__text">
+      Thank you for interested in our company. Our managers will contact you within 24 hours.
+    </span>
     </div>
   </div>
 </div>

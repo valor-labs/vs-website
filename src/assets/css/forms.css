@@ -30,7 +30,6 @@ input, textarea {
 }
 /**Styles for form on contact page **/
 
-
 #contact-form .field-height {
   height: 155px;
 }
@@ -150,11 +149,39 @@ input, textarea {
   border-radius: 4px;
   height:52px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .drop-container:hover {
   background-color: #eef5f9;
   text-decoration: underline;
+}
+
+.drop-container__remove {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  margin-top: -11px;
+  cursor: pointer;
+}
+.drop-container__remove:after,
+.drop-container__remove:before {
+  content: '';
+  width: 2px;
+  height: 22px;
+  background: #cd151e;
+  position: absolute;
+  top: 0;
+  right: 11px;
+}
+.drop-container__remove:after {
+  transform: rotate(45deg);
+}
+
+.drop-container__remove:before {
+  transform: rotate(-45deg);
 }
 
 .drop-container img {
