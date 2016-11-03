@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Vacancy } from '../../services/classes/vacancy';
 import { VacanciesService } from '../../services/vacancies.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'vacancy',
@@ -12,7 +13,7 @@ export class VacancyComponent implements OnInit {
   public vacancy: Vacancy;
   public vacancyId: number;
 
-  public constructor(private vacanciesService: VacanciesService, private route: ActivatedRoute) {
+  public constructor(private vacanciesService: VacanciesService, private route: ActivatedRoute, private _titleService: Title) {
   }
 
   public ngOnInit(): void {
@@ -23,6 +24,9 @@ export class VacancyComponent implements OnInit {
       /* tslint:enable */
 
       this.vacancy = this.vacanciesService.getById(this.vacancyId);
+
+      // setting up <title> and tab name
+      this._titleService.setTitle('Vacancy: '+ this.vacancy.name);
     });
   }
 
