@@ -1,3 +1,10 @@
+<div class="spinner" *ngIf="preloader">
+  <div class="spinner-circle">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+
 <div id="contact-form" *ngIf="isContactForm">
   <form *ngIf="!success" novalidate class="form-horizontal" (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
     <fieldset>
@@ -34,8 +41,12 @@
 
                  name="email"
                  #userEmail="ngModel"
+
+                 (blur)="onBlur(userEmail)"
+                 (focus)="onFocus(userEmail)"
+
                  [(ngModel)]="email">
-          <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+          <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
                class="alert alert-danger">
             <div [hidden]="!userEmail.errors.required">
               Email is required
@@ -52,11 +63,12 @@
             class="textarea form-control field-height placeholder-text"
             placeholder="Message.."
 
-            maxlength="1000"
+            maxlength="10000"
 
             name="textarea"
             #usserMessage="ngModel"
-            [(ngModel)]="msg"></textarea>
+            [(ngModel)]="msg"
+          ></textarea>
         </div>
       </div>
       <div class="form-group">
@@ -128,10 +140,13 @@
                 pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,10}$"
                 required
 
+                (blur)="onBlur(userEmail)"
+                (focus)="onFocus(userEmail)"
+
                 name="email"
                 #userEmail="ngModel"
                 [(ngModel)]="email">
-              <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+              <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
                    class="alert alert-danger">
                 <div [hidden]="!userEmail.errors.required">
                   Email is required
@@ -152,12 +167,19 @@
 
                maxlength="14"
                pattern="^\+?[0-9]{3,14}$"
+               required
+
+               (blur)="onBlur(userEmail)"
+               (focus)="onFocus(userEmail)"
 
                name="phone"
                #userPhone="ngModel"
                [(ngModel)]="phone">
-              <div *ngIf="userPhone.errors && (userPhone.dirty || userPhone.touched)"
+              <div *ngIf="userPhone.errors && isBlured && (userPhone.dirty || userPhone.touched)"
                    class="alert alert-danger">
+                <div [hidden]="!userPhone.errors.required">
+                  Phone number is required
+                </div>
                 <div [hidden]="!userPhone.errors.pattern">
                   Use valid phone number
                 </div>
@@ -195,12 +217,11 @@
                   class="form-control field-height placeholder-text"
                   placeholder="Message.."
 
-                  maxlength="1000"
+                  maxlength="10000"
 
                   name="textarea"
                   #userText="ngModel"
-                  [(ngModel)]="msg">
-              </textarea>
+                  [(ngModel)]="msg"></textarea>
             </div>
             <div></div>
           </div>
@@ -274,10 +295,13 @@
                  pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,10}$"
                  required
 
+                 (blur)="onBlur(userEmail)"
+                 (focus)="onFocus(userEmail)"
+
                  name="email"
                  #userEmail="ngModel"
                  [(ngModel)]="email">
-              <div *ngIf="userEmail.errors && (userEmail.dirty || userEmail.touched)"
+              <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
                    class="alert alert-danger">
                 <div [hidden]="!userEmail.errors.required">
                   Email is required
@@ -295,12 +319,11 @@
                 class="form-control field-height placeholder-text"
                 placeholder="Message.."
 
-                maxlength="1000"
+                maxlength="10000"
 
                 name="textarea"
                 #userText="ngModel"
-                [(ngModel)]="msg"
-              ></textarea>
+                [(ngModel)]="msg"></textarea>
             </div>
           </div>
         </div>

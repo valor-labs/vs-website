@@ -1,3 +1,9 @@
+vacancies {
+    display: block;
+    overflow: hidden;
+    margin-bottom: -30px;
+}
+
 vacancy-preview {
     display: block;
 }
@@ -56,6 +62,9 @@ vacancy-preview {
 
     }
     .vacancy-item:last-child .vacancy-rectangle{
+        margin-bottom: 0;
+    }
+    vacancies {
         margin-bottom: 0;
     }
 }

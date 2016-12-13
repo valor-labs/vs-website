@@ -10,6 +10,8 @@ import { MailService } from '../../services/mail.service';
 })
 export class FormsComponent implements OnInit {
   public success:boolean = false;
+  public preloader:boolean = false;
+  public isBlured:boolean = true;
   public fileName:string;
 
   @Input('pageName')
@@ -50,8 +52,17 @@ export class FormsComponent implements OnInit {
     }
   }
 
+  public onBlur():void {
+    this.isBlured = true;
+  }
+
+  public onFocus():void  {
+    this.isBlured = false;
+  }
+
   public onSubmit(event: any):void {
     event.target.reset();
+    this.preloader = true;
     this.fileName = '';
   }
 
@@ -75,12 +86,17 @@ export class FormsComponent implements OnInit {
 
     function mailCallback (res:any):void {
       if (res.err) {
+        self.preloader = false;
+        alert('Something goes wrong');
         console.error(res.err);
         return;
       }
       let successTime = 3000;
       self.success = true;
-      setTimeout(() => self.success = false, successTime);
+      self.preloader = false;
+      setTimeout(() => {
+        self.success = false;
+      }, successTime);
     }
 
     if (this.isCaseForm) {

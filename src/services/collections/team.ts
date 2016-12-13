@@ -237,7 +237,7 @@ export const team: any[] = [
     },
     {
         memberId: 19,
-        name: 'Betrozov Yura',
+        name: 'Betrozov Yury',
         position: 'JS Developer',
         avatar: 'assets/images/team/Avatar-2.png',
         fullImage: 'assets/images/team/photo3.jpg',
