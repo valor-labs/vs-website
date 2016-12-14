@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.18",
+    "version": "1.0.0-beta.22-1",
     "name": "vs-website"
   },
   "apps": [
@@ -31,7 +31,10 @@
         "assets/css/contact.css",
         "assets/css/about.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/particles.js/particles.js",
+        "assets/js/helper.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
