@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { VacanciesListComponent, VacancyPreviewComponent } from './vacancies-list/vacancies-list.component';
 import { FormsComponent } from './forms/forms.component';
 
-export const partials:Array<any> = [
+export const partials:any[] = [
   ProjectPreviewComponent,
   ProjectsListComponent,
   FeedbackComponent,

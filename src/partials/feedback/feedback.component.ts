@@ -7,9 +7,8 @@ import { MainService } from '../../services/main.service';
 })
 
 export class FeedbackComponent {
-  public myInterval:number = 15000;
   public noWrapSlides:boolean = false;
-  public slides:Array<Array<any>> = this.mainService.getFeedback();
+  public slides:any[] = this.mainService.getFeedback();
 
   public constructor(public mainService:MainService) {
   }

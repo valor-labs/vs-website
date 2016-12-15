@@ -23,5 +23,5 @@ export class ApproachComponent implements OnInit {
     });
   }
 
-  public constructor(private projectsService: ProjectsService, private sanitizer: DomSanitizer,) {}
+  public constructor(private projectsService: ProjectsService, private sanitizer: DomSanitizer) {}
 }
