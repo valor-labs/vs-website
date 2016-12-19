@@ -33,13 +33,13 @@ export const feedbacks: any[] = [
     projectId: 2
   },
   {
-    name: 'Robert',
+    name: 'Robert Shaw',
     photo: 'assets/images/feedback/robert.jpg',
     position: 'CEO at Table\'s Ready',
-    location: 'TODO',
+    location: 'United States',
     industry: 'Industry software',
     image: 'assets/images/feedback/tables-ready-logo.jpg',
-    text: 'TODO',
+    text: 'Dima and team were fantastic to work with - smart, reliable, and familiar with a variety of web technologies. They were quick to pickup new concepts and extremely proactive in developing features.',
     link: '#/project/tables-ready',
     projectId: 3
   },
@@ -59,7 +59,7 @@ export const feedbacks: any[] = [
     photo: 'assets/images/feedback/irakli.jpg',
     position: 'Tech Team Lead',
     location: 'Dubai',
-    industry: 'TODO',
+    industry: 'Comparison website',
     image: 'assets/images/feedback/souqalmal-logo.jpg',
     text: 'Valor Software were fantastic to work with - smart, reliable, and familiar with a variety of web technologies. They were quick to pickup new concepts and extremely proactive in developing features.',
     link: '#/project/souqalmal',

@@ -5,7 +5,7 @@
 >
 </header>
 
-<section class="frame frame_projects">
+<section class="frame">
   <div class="container">
 
     <div class="project__section">
@@ -17,19 +17,6 @@
       </div>
       <div class="col-lg-1 col-md-1">
         <button pageScroll (click)="scrollTo($event)" class="btn btn_scroll btn_small project__btn">Apply</button>
-      </div>
-    </div>
-
-    <div class="project__section">
-      <div class="col-lg-2">
-        <h5 class="project__heading">Responsibilities</h5>
-      </div>
-      <div class="col-lg-9">
-        <ul class="project-page-list">
-          <li *ngFor="let item of vacancy.responsibilities">
-            {{item}}
-          </li>
-        </ul>
       </div>
     </div>
 
@@ -51,6 +38,19 @@
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <div class="project__section">
+      <div class="col-lg-2">
+        <h5 class="project__heading">Responsibilities</h5>
+      </div>
+      <div class="col-lg-9">
+        <ul class="project-page-list">
+          <li *ngFor="let item of vacancy.responsibilities">
+            {{item}}
+          </li>
+        </ul>
       </div>
     </div>
 

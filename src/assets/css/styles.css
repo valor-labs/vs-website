@@ -198,7 +198,6 @@ a:focus {
   box-shadow: none;
 }
 
-
 .btn_transparent {
   border: 2px solid white;
   border-radius: 4px;
@@ -248,6 +247,10 @@ a:focus {
   width: 50%;
 }
 
+.single-content {
+  padding: 0 15px;
+}
+
 /*=========================Learn-more block styles start=======================*/
 .learn-more {
   background: #eef5f9;
@@ -292,7 +295,7 @@ a:focus {
   -ms-flex: 0 0 33.333%;
   flex: 0 0 33.333%;
   padding: 0 25px 20px;
-  min-width: 400px;
+  min-width: 320px;
   margin-bottom: 43px;
 }
 
@@ -409,6 +412,7 @@ a:focus {
   font-weight: 500;
   font-size: 16px;
   color: #1d1d2b;
+  margin-bottom: 6px;
 }
 
 .projects-list_dark .projects-preview__title {
@@ -946,6 +950,20 @@ a:focus {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1399px){
+  .container {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .container {
+    width: 100%;
+    padding: 0 19px;
+  }
+}
+
 @media (max-width: 768px) {
   section-heading + * {
     margin-top: 30px;
@@ -1116,5 +1134,8 @@ a:focus {
   }
   .projects-preview {
     width: 100%;
+  }
+  .menu .container {
+    padding: 0 19px;
   }
 }

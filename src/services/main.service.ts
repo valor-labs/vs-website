@@ -12,7 +12,14 @@ export class MainService {
   }
 
   public getById(memberId: number): Member {
-    return this.getTeam()[memberId];
+    let team = this.getTeam();
+    let i;
+    team.forEach((member: Member, index:number) => {
+      if(member.memberId === memberId) {
+        i=index;
+      }
+    });
+    return this.getTeam()[i];
   }
 
   public getFeedback():any[] {

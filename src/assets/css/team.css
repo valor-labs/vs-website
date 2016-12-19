@@ -101,7 +101,7 @@
     line-height: 70px;
     text-transform: uppercase;
     position: absolute;
-    top: -75px;
+    bottom: 100%;
 }
 
 .team-member__position {
@@ -123,7 +123,7 @@
 }
 
 .team-member__skill {
-    width: 25%;
+    width: 50%;
 }
 
 .team-member__projects {
@@ -137,6 +137,7 @@
 .team-member .project-list__item {
     padding: 0;
     margin: 0 30px 60px 0;
+    min-width: 400px;
 }
 
 .team-member .project-list__item:nth-child(odd) {
@@ -164,7 +165,7 @@
         justify-content: space-between;
     }
     .team-member__projects .project-list__item {
-        min-width: 280px;
+        min-width: 46%;
         margin: 0 0 30px 0;
     }
     .team-member__projects .project-list__item:nth-child(odd) {
@@ -210,7 +211,6 @@
         margin-top: -160px;
     }
     .team-member__name {
-        top: 0;
         position: static;
         color: #1d1d2b;
         font-size: 45px;
