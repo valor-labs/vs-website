@@ -65,7 +65,7 @@ const routing = RouterModule.forRoot(routes);
     FormsModule,
     HttpModule,
     routing,
-    Ng2PageScrollModule,
+    Ng2PageScrollModule.forRoot(),
     CarouselModule
   ],
 

@@ -1,4 +1,4 @@
-<carousel *ngIf="!isMobile" [interval]="myInterval" [noWrap]="noWrapSlides">
+<carousel *ngIf="!isMobile" [interval]="false" [noWrap]="noWrapSlides">
   <slide *ngFor="let slide of slides; let i=index" [active]="slide.active">
     <div class="slide__inner">
       <div class="slide__item" *ngFor="let comment of slide">

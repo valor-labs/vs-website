@@ -9,7 +9,7 @@ import { MainService } from '../../services/main.service';
 export class FeedbackComponent {
   public myInterval:boolean = false;
   public noWrapSlides:boolean = false;
-  public slides:Array<Array<any>> = this.mainService.getFeedback();
+  public slides:any[] = this.mainService.getFeedback();
 
   public constructor(public mainService:MainService) {
   }

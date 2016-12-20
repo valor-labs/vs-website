@@ -33,7 +33,7 @@ export class VacancyComponent implements OnInit {
   public scrollTo(e: MouseEvent): void {
     e.preventDefault();
     this.animateScroll('applyForm', 20, 1000);
-  };
+  }
 
   public  animateScroll(id: string, inc: number, duration: number): any {
     const elem = document.getElementById(id);

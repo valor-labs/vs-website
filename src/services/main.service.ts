@@ -27,13 +27,13 @@ export class MainService {
     const trail = '...';
     let feedback = JSON.parse(JSON.stringify(feedbacks));
 
-    for(let i = 0; i < feedback.length; i++) {
-      let text = feedback[i].text;
-      feedback[i].shortText = text.length > maxSymbols ? text.substring(0, maxSymbols) + trail : text;
+    for(let item of feedback) {
+      let text = item.text;
+      item.shortText = text.length > maxSymbols ? text.substring(0, maxSymbols) + trail : text;
     }
 
     const arrayCount = Math.ceil(feedback.length / 2);
-    let slides:Array<any> = [];
+    let slides:any[] = [];
     if(!window.isMobile()) {
       for (let i = 0; i < arrayCount; i++) {
         let left = feedback[((i + 1) * 2 - 1) - 1];

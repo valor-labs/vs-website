@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   public pageName: string;
-  public content: Array<any> = [];
+  public content: any[] = [];
   public email: any = {};
   public location: any = {};
 
