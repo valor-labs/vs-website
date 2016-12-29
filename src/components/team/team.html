@@ -8,18 +8,20 @@
 <div class="container">
   <div class="row">
     <div class="team-list">
-      <div *ngFor="let member of team" class="team-item">
-        <div class="team-item__preview-image">
-          <a [routerLink]="['/team', member.memberId]">
-            <img [src]="member.fullImage" alt="{{member.name}}">
-          </a>
+      <template ngFor let-member [ngForOf]="team">
+        <div *ngIf="member.show" class="team-item">
+          <div class="team-item__preview-image">
+            <a [routerLink]="['/team', member.memberId]">
+              <img [src]="member.fullImage" alt="{{member.name}}">
+            </a>
+          </div>
+          <a [routerLink]="['/team', member.memberId]" class="team-item__name">{{member.name}}</a>
+          <span class="team-item__position">{{member.position}}</span>
+          <ul class="team-item__skills">
+            <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
+          </ul>
         </div>
-        <a [routerLink]="['/team', member.memberId]" class="team-item__name">{{member.name}}</a>
-        <span class="team-item__position">{{member.position}}</span>
-        <ul class="team-item__skills">
-          <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
-        </ul>
-      </div>
+      </template>
     </div>
   </div>
 </div>

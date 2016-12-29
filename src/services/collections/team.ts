@@ -1,26 +1,37 @@
 export const team: any[] = [
     {
         memberId: 0,
+        show: true,
         name: 'Dmitriy Shekhovtsov',
-        position: 'Master',
-        avatar: 'assets/images/team/Avatar-3.png',
-        fullImage: 'assets/images/team/photo1.jpg',
-        description: ['Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
-        skills: ['UI/UX Design', 'Web Design', 'Brand Consulting', 'Graphic Design', 'Web Analytics', 'Web Marketing'],
+        position: 'CTO',
+        avatar: 'assets/images/team/ava-shekhovtsov.jpg',
+        fullImage: 'assets/images/team/shekhovtsov.jpg',
+        description: ['Hello! I always wanted to create a fun and comfortable place and gather a bunch of smart people who can also be friends, so we can create the most innovative and cutting-edge products on the market. And i think i have succeeded at this, Valor Software became a place where people work, learn and feel themselves like at home'],
+        skills: ['Angular2', 'Node.js', 'REST API', 'Typescript', 'MongoDB', 'ElasticSearch', 'Redis', 'Nginx', 'Ava', 'Mocha'],
         socials: {
-            github: 'https://github.com',
-            behance: 'https://www.behance.net',
-            facebook: 'https://facebook.com',
-            twitter: 'https://twitter.com',
-            linkedin: 'https://linkedin.com'
+            github: 'https://github.com/valorkin/',
+            twitter: 'https://twitter.com/valorkin/',
+            linkedin: 'https://www.linkedin.com/in/valorkin'
         }
     },
     {
+        memberId: 9,
+        show: true,
+        name: 'Andrii Glukhi',
+        position: 'Head of Delivery',
+        avatar: 'assets/images/team/ava-glukhi.jpg',
+        fullImage: 'assets/images/team/glukhi.jpg',
+        description: ['Hello All. More than 16 years of working experience in IT industry. Expertise in project management, process management, problem-solving, managing multiple tasks (often with competing deadlines), quick-learner, self-motivated, responsible, result-oriented, accurate.', 'Skills in IT support, communication infrastructure design, construction and deploying. My motto: Transparency. Pace. Control. Quality.'],
+        skills: ['Project management', 'Process Management', 'Problem Management', 'Business development', 'Agile Trainer', 'Negotiations'],
+        socials: {}
+    },
+    {
         memberId: 1,
+        show: true,
         name: 'Bogdan Katrych',
         position: 'Project manager',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo2.jpg',
+        avatar: 'assets/images/team/ava-katrych.jpg',
+        fullImage: 'assets/images/team/katrych.jpg',
         description: ['Hello everyone. In my opinion, the best way to evaluate the person, is to look at results of his work.', 'My achievements have not fallen to me from the sky. These are result of hard work, self-education, and faith in success. Never give up, and you will receive what you desire.'],
         skills: ['Project and Product Management', 'Business development', 'Scrum Master', 'Sales', 'Negotiations'],
         socials: {
@@ -30,21 +41,12 @@ export const team: any[] = [
         }
     },
     {
-        memberId: 2,
-        name: 'Valeriy Trots',
-        position: 'QA Engineer',
-        avatar: 'assets/images/team/Avatar-4.png',
-        fullImage: 'assets/images/team/photo3.jpg',
-        description: ['For me the quality of software is everything. We do our best to deliver the best and most reliable software for our customers.'],
-        skills: ['Manual/Automation testing'],
-        socials: {}
-    },
-    {
         memberId: 3,
+        show: true,
         name: 'Denys Pereverziev',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-5.png',
-        fullImage: 'assets/images/team/photo4.jpg',
+        avatar: 'assets/images/team/ava-pereverziev.jpg',
+        fullImage: 'assets/images/team/pereverziev.jpg',
         description: ['Focus on overcoming yourself, but not the others.'],
         skills: ['Angular2', 'JavaScript', 'Jquery', 'HTML', 'CSS', 'Stylus', 'SASS', 'LESS', 'gulp'],
         socials: {
@@ -54,9 +56,10 @@ export const team: any[] = [
     },
     {
         memberId: 4,
+        show: false,
         name: 'Nataliya Soloviova',
         position: 'Front-end developer',
-        avatar: 'assets/images/team/Avatar-7.png',
+        avatar: 'assets/images/team/ava-katrych.jpg',
         fullImage: 'assets/images/team/photo1.jpg',
         description: ['One should always strive for perfection, because perfection is impossible to achieve, but the desire will allow us to become better.'],
         skills: ['HTML', 'CSS', 'Stylus', 'Bootstrap', 'JavaScript', 'Node.js', 'Angular', 'Angular2'],
@@ -67,10 +70,11 @@ export const team: any[] = [
     },
     {
         memberId: 5,
+        show: true,
         name: 'Dmitriy Mihaylenko',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-9.png',
-        fullImage: 'assets/images/team/photo2.jpg',
+        avatar: 'assets/images/team/ava-mihaylenko.jpg',
+        fullImage: 'assets/images/team/mihaylenko.jpg',
         description: ['You must understand the ground of problem to resolve it successfully. It is the only right way to make the right decision.'],
         skills: ['JavaScript', 'Angular2', 'Node.js', 'WebPack', 'Stylus', 'LESS', 'SASS', 'HTML', 'CSS'],
         socials: {
@@ -79,10 +83,11 @@ export const team: any[] = [
     },
     {
         memberId: 6,
+        show: true,
         name: 'Dmitriy Danilov',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-danilov.jpg',
+        fullImage: 'assets/images/team/danilov.jpg',
         description: ['2+ years of web development experience I have an experience in back-end development (Node.js) and front-end development (Angular 2, React). I love cats, cookies and listening to rock music :)', 'My motto: Never stop exploring.'],
         skills: ['JavaScript', 'Node.js', 'TypeScript', 'Angular2', 'React.js', 'gulp', 'HTML', 'CSS', 'SQL'],
         socials: {
@@ -92,10 +97,11 @@ export const team: any[] = [
     },
     {
         memberId: 7,
+        show: false,
         name: 'Serhii Kuriatnyk',
         position: 'Space QA Engineer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-danilov.jpg',
+        fullImage: 'assets/images/team/danilov.jpg',
         description: ['Hates bad software, eats bugs at breakfast and striving to make the world better. Sleeps at the office.'],
         skills: ['Prevention bug multiplication', 'Creating test documentation', 'Manual/Automation testing'],
         socials: {
@@ -105,30 +111,22 @@ export const team: any[] = [
     },
     {
         memberId: 8,
+        show: true,
         name: 'Oleg Rybnikov',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-rybnikov.jpg',
+        fullImage: 'assets/images/team/rybnikov.jpg',
         description: ['It doesn\'t matter what you do, but if you\'re enjoying the process, it means you\'re walking the right direction. (Sure, if you are mentally healthy)'],
         skills: ['JavaScript', 'Angular', 'Angular2', 'NodeJS', 'ExpressJS', 'MongoDB', 'Redis', 'MySQL'],
         socials: {}
     },
     {
-        memberId: 9,
-        name: 'Andrii Glukhi',
-        position: 'Head of Delivery',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
-        description: ['Hello All. More than 16 years of working experience in IT industry. Expertise in project management, process management, problem-solving, managing multiple tasks (often with competing deadlines), quick-learner, self-motivated, responsible, result-oriented, accurate.', 'Skills in IT support, communication infrastructure design, construction and deploying. My motto: Transparency. Pace. Control. Quality.'],
-        skills: ['Project management', 'Process Management', 'Problem Management', 'Business development', 'Agile Trainer', 'Negotiations'],
-        socials: {}
-    },
-    {
         memberId: 10,
+        show: true,
         name: 'Mikhail Voloshin',
         position: 'UI/UX Designer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-voloshin.jpg',
+        fullImage: 'assets/images/team/voloshin.jpg',
         description: ['I am a web design addict. I am a one man army that will solve your problems, whether it is user interface design, user experience design or brand design.', 'Do you need to get the job done? Trust me. Just do it, and I’ll do the rest.'],
         skills: ['User interface design', 'Web design', 'Graphic design', 'Web Analytics', 'Brand Marketing'],
         socials: {
@@ -139,10 +137,11 @@ export const team: any[] = [
     },
     {
         memberId: 11,
+        show: true,
         name: 'Oleksandra Kalinina',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-kalinina.jpg',
+        fullImage: 'assets/images/team/kalinina.jpg',
         description: ['7+ years of web development and programming experience. Well skilled in web development: backend using Node.js and frontend using many famous and trendy js frameworks and libs.', 'Excellent experience in writing unit/integration tests using mocha/chai/sinon/ava. Strong experience in major web development technologies, design patterns, DB design, algorithms development.', 'Some experience in project specification and technical documentation development. Upper Intermediate English, reading tech docs.', 'I like JavaScript, homemade cookies, Nespresso coffee and hard sarcasm towards colleagues.'],
         skills: ['JavaScript', 'Node.js', 'Angular', 'Angular2', 'Typescript', 'Neo4J', 'MongoDB', 'ElasticSearch', 'Redis', 'Nginx', 'Ava', 'Mocha', 'Unit testing', 'Functional testing', 'Big Data', 'Versioning'],
         socials: {
@@ -152,20 +151,22 @@ export const team: any[] = [
     },
     {
         memberId: 12,
+        show: true,
         name: 'Georgii Rychko',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-rychko.jpg',
+        fullImage: 'assets/images/team/rychko.jpg',
         description: ['I like learning, programming and clever books.'],
         skills: ['JavaScript', 'Node.js', 'Angular2', 'Typescript', 'Neo4J', 'MongoDB', 'Redis', 'Nginx', 'Ava', 'Mocha', 'Unit testing', 'Integration testing', 'Big Data', 'Versioning'],
         socials: {}
     },
     {
         memberId: 13,
+        show: true,
         name: 'Vyacheslav Panchenko',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-panchenko.jpg',
+        fullImage: 'assets/images/team/panchenko.jpg',
         description: ['Doing my best'],
         skills: ['JavaScript', 'Angular', 'Node.js', 'Nginx', 'MySQL', 'HTML', 'CSS'],
         socials: {
@@ -174,20 +175,22 @@ export const team: any[] = [
     },
     {
         memberId: 14,
+        show: false,
         name: 'Alexandr Tsap',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-tsap.jpg',
+        fullImage: 'assets/images/team/tsap.jpg',
         description: ['In progress...'],
         skills: ['JavaScript', 'Node.js', 'MongoDB', 'Ava', 'Unit testing', 'HTML', 'CSS'],
         socials: {}
     },
     {
         memberId: 15,
+        show: true,
         name: 'Vyacheslav Chub',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-chub.jpg',
+        fullImage: 'assets/images/team/chub.jpg',
         description: ['A passionate, hands-on professional, I have over 16 years’ experience in development covering multiple technologies. I keep atop of new developments within the industry and can adapt quickly to new coding conventions. I am happy working independently or in a close team environment, and apply a positive attitude to every task I undertake.'],
         skills: ['JavaScript', 'Node.js', 'Angular2', 'Typescript', 'MongoDB', 'Postgres', 'Neo4J', 'Redis', 'ElasticSearch', 'Electron', 'Nginx', 'Ava', 'Mocha', 'Unit testing'],
         socials: {
@@ -197,10 +200,11 @@ export const team: any[] = [
     },
     {
         memberId: 16,
+        show: false,
         name: 'Maxim Ugnichenko',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-ugnichenko.jpg',
+        fullImage: 'assets/images/team/ugnichenko.jpg',
         description: ['Love my job, learning, programming using edge technologies, self education and like people. :)'],
         skills: ['JavaScript', 'Typescript', 'Node.js', 'Angular', 'Angular2', 'MongoDB', 'Testing', 'UI/UX', 'HTML', 'CSS', 'Twilio', 'Recurly', 'Gulp', 'Bootstrap', 'Socket.io', 'Firebase', 'Heroku', 'Testlodge'],
         socials: {
@@ -210,10 +214,11 @@ export const team: any[] = [
     },
     {
         memberId: 17,
+        show: true,
         name: 'Oleksandr Telnov',
         position: 'Software engineer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-telnov.jpg',
+        fullImage: 'assets/images/team/telnov.jpg',
         description: ['Software development as a hobby, it\'s about me. I always try to be aware of the latest trends in programming, tools and IT in general. For me it\'s ok to learn new technology "just for fun" because I really enjoy what I do. I participate in open source projects and listen drum and bass while coding.'],
         skills: ['MEAN stack', 'Hybrid development'],
         socials: {
@@ -225,10 +230,11 @@ export const team: any[] = [
     },
     {
         memberId: 18,
+        show: true,
         name: 'Ludmila Nesvitiy',
         position: 'QA Automation Engineer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-nesvitiy.jpg',
+        fullImage: 'assets/images/team/nesvitiy.jpg',
         description: ['Hello! I am a Quality assurance automation engineer. My main tasks are creating automated tests for checking projects and manual testing. The big goal which i follow is making projects more qualitative and usefull.  In my work has many positive sides: i get a new interesting tasks and should understand all micro nuances in new features; i should create most important test cases, which will be using every future user of project; i should create stability automated tests for quickly checking new changes and i should be a part of all team always. Main in our team work - common desire to make a qualitative project. And we do it!'],
         skills: ['Functional testing', 'Regression testing', 'Smoke testing', 'Automation testing'],
         socials: {
@@ -237,10 +243,11 @@ export const team: any[] = [
     },
     {
         memberId: 19,
+        show: true,
         name: 'Betrozov Yury',
         position: 'JS Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-betrozov.jpg',
+        fullImage: 'assets/images/team/betrozov.jpg',
         description: ['I like learning, programming and using edge technologies.'],
         skills: ['JavaScript', 'Node.js', 'Angular', 'Angular2', 'Typescript', 'MongoDB', 'HTML', 'CSS'],
         socials: {
@@ -249,10 +256,11 @@ export const team: any[] = [
     },
     {
         memberId: 20,
+        show: true,
         name: 'Nikita Demchenko',
         position: 'Technical Writer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-demchenko.jpg',
+        fullImage: 'assets/images/team/demchenko.jpg',
         description: ['I’m all about writing texts. You need a translation, product requirements, installation/deployment/admin/user guides? Maybe some manuals, how-to’s, release notes, documentation design, technical documentation, application localization - talk to me and i’ll do the job. L.o.v.e it!'],
         skills: ['Technical Writing', 'Customer Service', 'Localization', 'Community Management'],
         socials: {
@@ -261,10 +269,11 @@ export const team: any[] = [
     },
     {
         memberId: 21,
+        show: true,
         name: 'Surmay Ilya',
         position: 'Front-end Developer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-surmay.jpg',
+        fullImage: 'assets/images/team/surmay.jpg',
         description: ['I like to create nice and useful products using my skills. Also I like playing guitar, drums, travelling and Rubik’s cubes.'],
         skills: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Angular', 'Angular2', 'LESS', 'SASS', 'Bootstrap'],
         socials: {
@@ -273,14 +282,29 @@ export const team: any[] = [
     },
     {
         memberId: 22,
+        show: true,
         name: 'Plehanov Svyatoslav',
         position: 'Software engineer',
-        avatar: 'assets/images/team/Avatar-2.png',
-        fullImage: 'assets/images/team/photo3.jpg',
+        avatar: 'assets/images/team/ava-plehanov.jpg',
+        fullImage: 'assets/images/team/plehanov.jpg',
         description: ['Awesome'],
         skills: ['MEAN stack'],
         socials: {
             linkedin: 'http://linkedin.com/in/svyatoslav-plehanov'
+        }
+    },
+    {
+        memberId: 23,
+        show: true,
+        name: 'Yuriy Mysienko',
+        position: 'Front-End',
+        avatar: 'assets/images/team/ava-mysienko.jpg',
+        fullImage: 'assets/images/team/mysienko.jpg',
+        description: ['I like to solve important problems via сompetent ways and convinient tools. Always free to learn the modern approaches, methodologies, tools and introduce it in my work.'],
+        skills: ['Node.js', 'REST API', 'Angular2', 'Typescript', 'Module Bundlers', 'Pre-processors', 'MVC Architecture', 'Unit/Integration testing', 'CI'],
+        socials: {
+            linkedin: 'https://www.linkedin.com/in/yuriy-musienko-956107b0/',
+            github: 'https://github.com/musienkoyuriy'
         }
     }
 ];

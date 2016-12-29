@@ -9,27 +9,32 @@ import { MailService } from '../../services/mail.service';
   templateUrl: './forms.html'
 })
 export class FormsComponent implements OnInit {
+  @Input('pageName') public pageName:string;
   public success:boolean = false;
   public preloader:boolean = false;
   public isBlured:boolean = true;
   public fileName:string;
-
-  @Input('pageName')
-  private pageName:string;
+  public email: string = '';
+  public name:string = '';
+  public msg:string = '';
+  public city:string = '';
+  public phone:string = '';
+  public userName: string = '';
+  public userEmail: string = '';
+  public userPhone: string = '';
+  public userCity: string = '';
+  public vacancyForm:any;
+  public caseForm:any;
+  public contactForm:any;
+  public isMobile:boolean = false;
+  public file:any;
   private location:Location;
   private urlEvents:Subject<any>;
   private isContactForm:boolean = false;
   private isCaseForm:boolean = false;
-  private isMobile:boolean = false;
   private isVacancyForm:boolean = false;
   private MailServiceSubscribe:Subscription;
   private mailService:MailService;
-  private email:string = '';
-  private name:string = '';
-  private msg:string = '';
-  private city:string = '';
-  private phone:string = '';
-  private file:any;
 
   public constructor(@Inject(Location) location:Location, mailService:MailService) {
     this.urlEvents = new Subject();

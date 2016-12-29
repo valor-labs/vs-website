@@ -5,7 +5,7 @@
   </div>
 </div>
 
-<div id="contact-form" *ngIf="isContactForm">
+<div id="contact-form" class="form form_contact" *ngIf="isContactForm">
   <form *ngIf="!success" novalidate class="form-horizontal" (ngSubmit)="onSubmit($event)" #contactForm="ngForm">
     <fieldset>
       <div class="form-group">
@@ -22,7 +22,7 @@
                  #userName="ngModel"
                  [(ngModel)]="name">
           <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
-               class="alert alert-danger">
+               class="form-error">
             <div [hidden]="!userName.errors.pattern">
               Use valid name
             </div>
@@ -47,7 +47,7 @@
 
                  [(ngModel)]="email">
           <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
-               class="alert alert-danger">
+               class="form-error">
             <div [hidden]="!userEmail.errors.required">
               Email is required
             </div>
@@ -76,7 +76,7 @@
           <div class="drop-container">
             <label class="drop-label">
               <div class="text-drop">
-                <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                 <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                 <span *ngIf="!this.fileName"> Add Document </span>
                 <span *ngIf="this.fileName">{{this.fileName}}</span>
@@ -94,7 +94,7 @@
     </fieldset>
   </form>
   <div *ngIf="success" class="success-message">
-    <div class="alert alert-success">
+    <div class="form-error">
       <strong>Your email has been sent.</strong>
     </div>
     <span class="frame__text">
@@ -103,7 +103,7 @@
   </div>
 </div>
 
-<div id="vacancy-form" *ngIf="isVacancyForm">
+<div id="vacancy-form" class="form form_vacancy" *ngIf="isVacancyForm">
   <div class="col-lg-8 col-lg-offset-2">
     <form *ngIf="!success" [class.form-horizontal]="isMobile" (ngSubmit)="onSubmit($event)" #vacancyForm="ngForm">
       <fieldset>
@@ -122,7 +122,7 @@
                #userName="ngModel"
                [(ngModel)]="name">
               <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userName.errors.pattern">
                    Use valid name
                 </div>
@@ -147,7 +147,7 @@
                 #userEmail="ngModel"
                 [(ngModel)]="email">
               <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userEmail.errors.required">
                   Email is required
                 </div>
@@ -176,7 +176,7 @@
                #userPhone="ngModel"
                [(ngModel)]="phone">
               <div *ngIf="userPhone.errors && isBlured && (userPhone.dirty || userPhone.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userPhone.errors.required">
                   Phone number is required
                 </div>
@@ -201,7 +201,7 @@
               #userCity="ngModel"
               [(ngModel)]="city">
               <div *ngIf="userCity.errors && (userCity.dirty || userCity.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userCity.errors.pattern">
                   Use valid city name
                 </div>
@@ -232,9 +232,10 @@
               <div class="drop-container">
                 <label class="drop-label">
                   <div class="text-drop">
-                    <input style="display: none;" #input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                    <input style="display: none;" #input type="file" (change)="fileChange($event)" placeholder="Upload file"
+                           accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
-                    <span *ngIf="!this.fileName"> Add Document </span>
+                    <span *ngIf="!this.fileName"> Add resume </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
                   </div>
                 </label>
@@ -251,7 +252,7 @@
       </fieldset>
     </form>
     <div *ngIf="success" class="success-message">
-      <div class="alert alert-success">
+      <div class="form-error">
         <strong>Your email has been sent.</strong>
       </div>
       <span class="frame__text">
@@ -261,7 +262,7 @@
   </div>
 </div>
 
-<div id="case-form" *ngIf="isCaseForm">
+<div id="case-form" class="form form_case" *ngIf="isCaseForm">
   <div class="col-lg-8 col-lg-offset-2">
     <form *ngIf="!success" [class.form-horizontal]="isMobile" (ngSubmit)="onSubmit($event)" #caseForm="ngForm">
       <fieldset>
@@ -280,7 +281,7 @@
                      #userName="ngModel"
                      [(ngModel)]="name">
               <div *ngIf="userName.errors && (userName.dirty || userName.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userName.errors.pattern">
                   Use valid name
                 </div>
@@ -302,7 +303,7 @@
                  #userEmail="ngModel"
                  [(ngModel)]="email">
               <div *ngIf="userEmail.errors && isBlured && (userEmail.dirty || userEmail.touched)"
-                   class="alert alert-danger">
+                   class="form-error">
                 <div [hidden]="!userEmail.errors.required">
                   Email is required
                 </div>
@@ -333,7 +334,7 @@
               <div class="drop-container">
                 <label class="drop-label">
                   <div class="text-drop">
-                    <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+                    <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                     <span *ngIf="!this.fileName"> Add Document </span>
                     <span *ngIf="this.fileName">{{this.fileName}}</span>
@@ -352,7 +353,7 @@
       </fieldset>
     </form>
     <div *ngIf="success" class="success-message">
-      <div class="alert alert-success">
+      <div class="form-error">
         <strong>Your email has been sent.</strong>
       </div>
       <span class="frame__text">

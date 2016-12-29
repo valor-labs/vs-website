@@ -6,6 +6,7 @@
     "no-parameter-properties": false,
     "no-null-keyword": false,
     "only-arrow-functions": false,
-    "max-classes-per-file": false
+    "max-classes-per-file": false,
+    "max-file-line-count": [true, 1000]
   }
 }
