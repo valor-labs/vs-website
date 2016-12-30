@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { CarouselModule } from 'ng2-bootstrap/components/carousel';
+import { CarouselModule } from 'ng2-bootstrap/carousel';
 import { Ng2PageScrollModule } from 'ng2-page-scroll/src/ng2-page-scroll.module';
 
 import { AppComponent } from './app.component';
@@ -19,7 +19,8 @@ import { ServicesComponent } from '../components/services/services.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { ProjectComponent } from '../components/project/project.component';
 import { AboutComponent } from '../components/about/about.component';
-import { TeamComponent, MemberComponent } from '../components/team/team.component';
+import { TeamComponent } from '../components/team/team.component';
+import { MemberComponent } from '../components/team/team-member.component';
 import { CareersComponent } from '../components/careers/careers.component';
 import { ContactComponent } from '../components/contact/contact.component';
 import { VacancyComponent } from '../components/vacancy/vacancy.component';
@@ -53,9 +54,9 @@ const routing = RouterModule.forRoot(routes);
     ProjectComponent,
     AboutComponent,
     TeamComponent,
+    MemberComponent,
     CareersComponent,
     ContactComponent,
-    MemberComponent,
     VacancyComponent,
 
     ...partials
@@ -66,7 +67,7 @@ const routing = RouterModule.forRoot(routes);
     HttpModule,
     routing,
     Ng2PageScrollModule.forRoot(),
-    CarouselModule
+    CarouselModule.forRoot()
   ],
 
   providers: [

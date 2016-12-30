@@ -1,14 +1,11 @@
-<header class="header_blog"
-  [bg]="'assets/images/header/team.jpg'"
->
-</header>
+<header class="header_blog" [bg]="'assets/images/header/team.jpg'"></header>
 
 <div class="team-member">
   <div class="container">
-    <div class="row">
+    <div class="row" *ngIf="member">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="team-member__avatar">
-          <img [src]="member.fullImage" alt="{{member.name}}" />
+          <img [src]="member.fullImage" alt="{{member.name}}"/>
           <div class="team-member__socials">
             <ul class="socials socials_colored">
               <li class="socials__item socials__item_git" *ngIf="socials.github">
@@ -65,7 +62,7 @@
           </div>
           <div class="team-member__projects">
             <span class="project__heading">Took a part on projects</span>
-            <projects-list class="projects-list" [maxItems] = "4"></projects-list>
+            <projects-list class="projects-list" [maxItems]="4"></projects-list>
           </div>
         </div>
       </div>

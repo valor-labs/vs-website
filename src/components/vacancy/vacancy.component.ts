@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Vacancy } from '../../services/classes/vacancy';
-import { VacanciesService } from '../../services/vacancies.service';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+
+import { Vacancy } from '@services/classes/vacancy';
+import { VacanciesService } from '@services/vacancies.service';
 
 @Component({
   selector: 'vacancy',

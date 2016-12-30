@@ -44,7 +44,7 @@ export class ProjectComponent implements OnInit {
 
       // filter related(to this projects) members
       const members = this.mainService.getTeam().filter((member: Member) => {
-        return project.members.indexOf(member.memberId) >= 0;
+        return project.members.indexOf(member.memberId) >= 0 && member.show;
       });
       // split items to 4 columns
       let formattedMembers: any = [];
@@ -52,7 +52,8 @@ export class ProjectComponent implements OnInit {
         formattedMembers.push({
           avatar: member.avatar,
           name: member.name,
-          position: member.position
+          position: member.position,
+          url: member.url
         });
       });
       project.formattedMembers = formattedMembers;

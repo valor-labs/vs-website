@@ -700,11 +700,20 @@ a:focus {
   margin-bottom: 10px;
 }
 
+.project__member img {
+  cursor: pointer;
+}
+
 .project__member-name {
   color: #1d1d2b;
   font-size: 16px;
   line-height: 18px;
   display: block;
+}
+
+.project__member-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .project__member-position {

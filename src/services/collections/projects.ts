@@ -118,7 +118,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['HTML 5, CSS 3', 'MongoDB', 'Node.js', 'AngularJS'],
-      members: [16, 0],
+      members: [16, 1],
       similarTo: [7],
       link: 'tables-ready'
   },
@@ -181,7 +181,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['Node.js', 'AngularJS', 'MongoDB', 'ElasticSearch', 'Redis Database', 'Nginx', 'Amazon S3'],
-      members: [0, 11, 4, 15],
+      members: [1, 11, 4, 15],
       similarTo: [4,6],
       link: 'souqalmal'
   }
