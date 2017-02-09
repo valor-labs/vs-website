@@ -18,6 +18,10 @@
     overflow: visible;
 }
 
+.hamburger.is-active {
+  padding-left: 10px;
+}
+
 .hamburger:hover {
     opacity: 0.7;
 }

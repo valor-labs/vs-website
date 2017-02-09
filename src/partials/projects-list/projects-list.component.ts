@@ -23,6 +23,10 @@ export class ProjectsListComponent implements OnInit {
   @Input() public maxItems:number;
   @Input() public hasButton:boolean;
   @Input() public similarTo:string;
+  @Input() public memberId:number;
+
+  public constructor(public projectsService:ProjectsService, public route: ActivatedRoute) {
+  }
 
   public ngOnInit():void {
 
@@ -33,8 +37,8 @@ export class ProjectsListComponent implements OnInit {
       const currentLink = params['projectLink'];
       /* tslint:enable */
       // receiving All projects OR(if parameter similarTo specified) - similar projects only
-      let projects:Project[] = (currentLink) ?
-        this.projectsService.getSimilarTo(currentLink) :
+      let projects:Project[] = (currentLink) ? this.projectsService.getSimilarTo(currentLink) :
+        (this.memberId >= 0) ? this.projectsService.getParticipant(this.memberId) :
         this.projectsService.getAll();
 
       // if param maxItems is specified - manage items number
@@ -46,8 +50,4 @@ export class ProjectsListComponent implements OnInit {
     });
 
   }
-
-  public constructor(public projectsService:ProjectsService, public route: ActivatedRoute) {
-  }
-
 }

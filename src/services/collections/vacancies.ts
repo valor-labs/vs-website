@@ -1,25 +1,40 @@
 export const vacancies: any[] =   [
   {
     vacancyId: 0,
-    name: 'Sales Manager',
-    description: 'The sales analyst is responsible for leads generation process, analyzing sales force realignment requests, acting as liaison on sales automation issues, developing distribution capability for promotional materials, designing and maintaining sales reports, and evaluating third-party solutions for appropriate sales operations functions.',
+    name: 'Front-End developer',
+    description: 'Company seeks hard working, motivated individual to develop interactive web sites. Applicants should have multiple years experience writing custom HTML, CSS3, and JavaScript' +
+    ' (ES6, TypeScript). Expertise writing semantic, modular front end code using HTML5, CSS3, and W3C coding practices a must. Understanding of the concepts of progressive enhancement, mobile first and future friendly design highly encouraged.',
     responsibilities: [
-      'Lead generation (from gathering information about responsible person till the first contact)',
-      'Ability to work with Hubspot CRM',
-      'Ability to work in team (the full project lifecycle in an Agile/SCRUM environment)',
-      'Make an analysis of funnel sales at first levels of interaction with leads',
-      'Ability to write cold e-mails and calls',
-      'Creating Proposal presentation decks (PowerPoint), presenting proposals to customers',
-      'Communication with foreign customers',
-      'Willing to bear a comprehensive liability for result'
+      'Producing Markup;',
+      'New features implementation;',
+      'Requirements analysis and estimation;',
+      'Client communication (written and/or spoken);'
+    ],
+    offer: [
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Partial grant of the cost of certification and related conferences;',
+      'The possibility of professional growth and growth of skills;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Good coffee;'
     ],
     requirements: [
-      'One year of IT sales experience',
-      'Strong written and oral English to catch the customer idea from title of e-mail',
-      'Identify needs of potential business partners',
-      'Conduct an analysis and be aware of the latest tendencies of market',
-      'Figure out customer’s value and form their interests to our company’s services according to with regular interaction with them',
-      'Basic technical knowledge in IT'
+      '2+ years of similar experience;',
+      'Knowledge of HTML5, CSS3, LESS (SASS or Stylus), Bootstrap;',
+      'Knowledge of JS (ES6 and TypeScript is a plus);',
+      'Experience with Angular or similar (Angular2 knowledge is a plus );',
+      'Experience building modern JavaScript web-applications (SPA) with rich and complex UI;',
+      'Cross-browser and cross-platform support (Ionic, NativeScript, Electron);',
+      'Experience with Photoshop, Fireworks and related tools;',
+      'Experience with version control systems (git, github);',
+      'Knowledge of continuous integration (CI\\CD);',
+      'Attention to details and focus on quality of work;',
+      'Familiarity and understanding of Agile methodologies;',
+      'Good level of responsibility, flexibility, communication;',
+      'Good written and verbal English is an important condition;'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
@@ -37,6 +52,17 @@ export const vacancies: any[] =   [
       'Bugs reporting and bug fix verification',
       'Preparation of testing result reports',
       'Work planning and estimation'
+    ],
+    offer: [
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Partial grant of the cost of certification and related conferences;',
+      'The possibility of professional growth and growth of skills;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Good coffee;'
     ],
     requirements: [
       '2+ years of manual testing / automation testing experience',
@@ -58,17 +84,24 @@ export const vacancies: any[] =   [
   {
     vacancyId: 2,
     name: 'NodeJS / Angular2 Developer',
-    description: 'Our Node.js / Angular 2 position implies that you can do both server-side web application logic in JavaScript and/orTypeScript and actually know AngularJS inside-out, and not just be a great JavaScript programmer. AngularJS requires the developer to do things the “Angular” way, which is a set of rules and practices that allow developers to make the best use of the framework and build robust efficient web applications.',
+    description: 'Our Node.js / Angular 2 position implies that you can do both server-side web application logic in JavaScript and/or TypeScript and actually know AngularJS inside-out, and not just be a great JavaScript programmer. AngularJS requires the developer to do things the “Angular” way, which is a set of rules and practices that allow developers to make the best use of the framework and build robust efficient web applications.',
     responsibilities: [
       'Write well designed, testable, efficient code by using best software development practices',
       'Work closely with other members of the team to ensure timely completion of deliverables'
+    ],
+    offer: [
+      'Knowledgeable & fun team to work with;',
+      'Competitive salary;',
+      'Partial grant of the cost of certification and related conferences;',
+      'Non-stop professional growth and actually interesting projects;',
+      'Extremely good coffee;'
     ],
     requirements: [
       'Minimum 2 years of experience in a similar position',
       'Backend development experience (Node.JS/Express/MongoDB)',
       'Solid understanding in Object Oriented and Functional Programming preferably in Javascript',
       'Experience with npm||Webpack||Gulp and associated modules',
-      'Experience and knowledge of web services (REST||GraphQL)',
+      'Experience and knowledge of web services (REST || GraphQL)',
       'Strong ability to learn and undertake',
       'Candidate must have a strong understanding of general web principles and standards',
       'Languages: Intermediate English (written and oral)'

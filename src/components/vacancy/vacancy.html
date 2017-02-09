@@ -54,6 +54,19 @@
       </div>
     </div>
 
+    <div class="project__section">
+      <div class="col-lg-2">
+        <h5 class="project__heading">We offer</h5>
+      </div>
+      <div class="col-lg-9">
+        <ul class="project-page-list">
+          <li *ngFor="let item of vacancy.offer">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="project__section project__section_borderless">
       <div class="col-lg-2">
         <h5 class="project__heading project__heading_mb">Benefits</h5>

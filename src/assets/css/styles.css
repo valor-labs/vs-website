@@ -14,11 +14,6 @@ main {
   height: 100%;
 }
 
-landing {
-  margin-top: 71px;
-  display: block;
-}
-
 img {
   max-width: 100%;
 }
@@ -700,20 +695,24 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.project__member img {
-  cursor: pointer;
-}
-
 .project__member-name {
   color: #1d1d2b;
   font-size: 16px;
   line-height: 18px;
   display: block;
+  cursor: pointer;
 }
 
 .project__member-name:hover {
   text-decoration: underline;
-  cursor: pointer;
+}
+
+.project__member_exmember .project__member-name {
+  cursor: default;
+}
+
+.project__member_exmember .project__member-name:hover {
+  text-decoration: none;
 }
 
 .project__member-position {
@@ -727,6 +726,11 @@ a:focus {
   border-radius: 99px;
   margin-bottom: 20px;
   box-shadow: 0 0 0 1px #babfc4;
+  cursor: pointer;
+}
+
+.project__member_exmember img {
+  cursor: default;
 }
 
 .project__reference-info {

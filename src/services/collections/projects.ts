@@ -8,6 +8,7 @@ export const projects: any[] = [
       fullImage: 'assets/images/projects/ds-m.jpg',
       headerImage: 'assets/images/projects/ds-header.jpg',
       externalLink: 'http://www.gapminder.org/dollar-street',
+      behanceLink: 'https://www.behance.net/gallery/44886893/Get-ready-Dollar-Street-Go-Live',
       details: {
         tasks: [
           'Optimization of architecture and code;',
@@ -26,7 +27,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['HTML 5, CSS 3', 'Angular 2', 'Node.js', 'MongoDB', 'Amazon AWS', 'Express', 'TypeScript'],
-      members: [19, 6, 18, 17, 2, 16],
+      members: [19, 6, 5, 18, 12, 1, 17, 16, 10, 9, 24],
       similarTo: [2, 3],
       link: 'dollar-street'
   },
@@ -38,6 +39,7 @@ export const projects: any[] = [
       previewImage: 'assets/images/projects/gapminder.jpg',
       fullImage: 'assets/images/projects/gapminder-m.jpg',
       headerImage: 'assets/images/projects/gapminder-header.jpg',
+      externalLink: 'http://www.gapminder.org',
       details: {
         tasks: [
           'Building modular infrastructure with tight integration between components;',
@@ -54,7 +56,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['TypeScript', 'Node.js', 'AngularJS 2', 'MongoDB', 'Redis', 'Nginx'],
-      members: [13,22,12,4,2,10],
+      members: [15, 5, 13, 12, 1, 4, 10, 9, 24],
       similarTo: [1,3],
       link: 'gapminder'
   },
@@ -66,8 +68,7 @@ export const projects: any[] = [
       previewImage: 'assets/images/projects/vizabi.jpg',
       fullImage: 'assets/images/projects/vizabi-m.jpg',
       headerImage: 'assets/images/projects/vizabi-header.jpg',
-      externalLink: 'http://google.com',
-      behanceLink: 'http://behance.net',
+      externalLink: 'https://www.gapminder.org/tools/#_chart-type=bubbles',
       details: {
         tasks: [
           'Embeddable tools with customization',
@@ -88,7 +89,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['AngularJS', 'Node.js', 'Electron', 'TypeScript'],
-      members: [15, 5, 13, 22, 12, 4, 2, 14, 10, 11],
+      members: [15, 11, 5, 13, 22, 12, 1, 14, 10, 9, 24],
       similarTo: [1,2],
       link: 'vizabi-tools'
   },
@@ -118,7 +119,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['HTML 5, CSS 3', 'MongoDB', 'Node.js', 'AngularJS'],
-      members: [16, 1],
+      members: [3],
       similarTo: [7],
       link: 'tables-ready'
   },
@@ -149,14 +150,14 @@ export const projects: any[] = [
       ]
     },
       technologies: ['Amazon EC2', 'Nginx (Proxy server)', 'Amazon S3', 'CloudFlare', 'Prerender.io', 'Node.js', 'Express', 'MongoDB', 'Redis', 'Ionic Framework', 'AngularJS', 'Webpack', 'UI Bootstrap'],
-      members: [19,7,18,22,8,17,2,16],
+      members: [19, 2, 7, 18, 22, 8, 17, 16, 10, 24],
       similarTo: [5,6],
       link: 'priceshredder'
   },
   {
       projectId: 5,
       title: 'Souqalmal',
-      shortDescription: 'TODO',
+      shortDescription: 'Comparison website',
       description: 'Souqalmal.com is the leading comparison website in the Middle East and lets compare, search and get information on financial products.',
       previewImage: 'assets/images/projects/souqalmal.jpg',
       fullImage: 'assets/images/projects/souqalmal-m.jpg',
@@ -181,7 +182,7 @@ export const projects: any[] = [
       ]
     },
       technologies: ['Node.js', 'AngularJS', 'MongoDB', 'ElasticSearch', 'Redis Database', 'Nginx', 'Amazon S3'],
-      members: [1, 11, 4, 15],
+      members: [15, 11, 1, 15],
       similarTo: [4,6],
       link: 'souqalmal'
   }

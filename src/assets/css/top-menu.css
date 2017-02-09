@@ -14,7 +14,8 @@ hamburger-menu {
 }
 
 .introduction {
-    height: 100%;
+    height: 500px;
+    margin-top: 71px;
     background-size: cover;
     position: relative;
     text-align: center;
@@ -150,12 +151,10 @@ canvas {
 .menu {
     background: #1d1d2b;
     padding: 7px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 100%;
-    left: 0;
-    right: 0;
-    transform: translate3d(0,0,0)
+    top: 0;
+    z-index: 100;
 }
 
 .menu.not-home {
@@ -329,6 +328,9 @@ canvas {
 }
 
 @media (max-width:768px) {
+    .introduction {
+      margin-top: 64px;
+    }
     .contact-btn {
         visibility: hidden;
         opacity: 0;
@@ -354,4 +356,10 @@ canvas {
     .menu__inner.is-active .hamburger-footer {
         display: block;
     }
+}
+
+@media (max-width:768px) and (orientation:landscape) {
+  .introduction {
+      height: 280px;
+  }
 }
