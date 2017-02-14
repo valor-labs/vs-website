@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-
 import { MainService } from '@services/main.service';
+import { ProjectsService } from '@services/projects.service';
 import { Member } from '@services/classes/member';
 
 @Component({
@@ -10,11 +10,13 @@ import { Member } from '@services/classes/member';
   templateUrl: './team-member.html'
 })
 
-export class MemberComponent {
+export class MemberComponent implements OnInit {
   public socials:any = {};
   public member:Member;
+  public projects: any;
+  public projectsService: ProjectsService;
 
-  public constructor(private mainService:MainService, private router:Router, private route:ActivatedRoute, private _titleService:Title) {
+  public constructor(private mainService:MainService, private router:Router, private route:ActivatedRoute, private _titleService:Title, projectsService: ProjectsService) {
     this.route.params.subscribe((params:{memberUrl:string}) => {
       let member = this.mainService.getMemberByUrl(params.memberUrl);
       if (!member) {
@@ -24,5 +26,10 @@ export class MemberComponent {
       this.socials = member.socials;
       this._titleService.setTitle(member.name);
     });
+    this.projectsService = projectsService;
+  }
+
+  public ngOnInit():void {
+    this.projects = this.projectsService.getParticipant(this.member.memberId);
   }
 }

@@ -12,8 +12,6 @@ after_success:
   - test $TRAVIS_BRANCH = "master" && npm run deploy:gh-pages
 
 addons:
-  # sauce labs tunel connector (read more https://docs.travis-ci.com/user/sauce-connect/ )
-  sauce_connect: true
   firefox: "42.0"
   apt:
     sources:

@@ -60,9 +60,9 @@
               <li class="team-member__skill" *ngFor="let skill of member.skills">{{skill}}</li>
             </ul>
           </div>
-          <div class="team-member__projects">
+          <div class="team-member__projects" *ngIf="projects.length > 0">
             <span class="project__heading">Took a part on projects</span>
-            <projects-list class="projects-list" [maxItems]="4"></projects-list>
+            <projects-list class="projects-list" [maxItems]="4" [memberId]="member.memberId"></projects-list>
           </div>
         </div>
       </div>

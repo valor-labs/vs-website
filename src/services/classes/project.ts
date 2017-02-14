@@ -11,6 +11,7 @@ export class Project {
                      public details:any[],
                      public technology:string[],
                      public similarTo:number[],
+                     public members:number[],
                      public link:string) {
   };
 }

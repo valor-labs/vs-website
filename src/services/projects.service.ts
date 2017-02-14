@@ -30,6 +30,16 @@ export class ProjectsService {
     return this.shuffleArray(projects);
   }
 
+  public getParticipant(memberId: number): Project[] {
+    let participatedProjects: Project[] = [];
+    this.getAll().forEach((project: Project) => {
+      if(project.members.indexOf(memberId) !== -1) {
+        participatedProjects.push(project);
+      }
+    });
+    return participatedProjects;
+  }
+
   /**
    * Shuffles array
    * @param array<T>
@@ -54,5 +64,4 @@ export class ProjectsService {
 
     return array;
   }
-
 }

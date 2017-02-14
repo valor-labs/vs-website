@@ -58,7 +58,7 @@ export const team: any[] = [
             linkedin: 'https://www.linkedin.com/in/denis-kelevra-4b94b2b2'
         }
     },
-    {
+    /*{
         memberId: 4,
         show: false,
         name: 'Nataliya Soloviova',
@@ -72,7 +72,7 @@ export const team: any[] = [
             linkedin: 'https://www.linkedin.com/in/natalia-soloviova-8ba76748',
             facebook: ' https://www.facebook.com/natali.solovjova.98'
         }
-    },
+    },*/
     {
         memberId: 5,
         show: true,
@@ -102,7 +102,7 @@ export const team: any[] = [
             facebook: 'https://www.facebook.com/d.danilov13'
         }
     },
-    {
+    /*{
         memberId: 7,
         show: false,
         name: 'Serhii Kuriatnyk',
@@ -116,7 +116,7 @@ export const team: any[] = [
             linkedin: 'https://www.linkedin.com/in/sergey-kuryatnick-128a07106',
             facebook: 'https://www.facebook.com/diversonn'
         }
-    },
+    },*/
     {
         memberId: 8,
         show: true,
@@ -185,7 +185,7 @@ export const team: any[] = [
         socials: {
             linkedin: 'https://ua.linkedin.com/in/vyacheslav-panchenko-9313b162'
         }
-    },
+    },/*
     {
         memberId: 14,
         show: false,
@@ -197,7 +197,7 @@ export const team: any[] = [
         description: ['In progress...'],
         skills: ['JavaScript', 'Node.js', 'MongoDB', 'Ava', 'Unit testing', 'HTML', 'CSS'],
         socials: {}
-    },
+    },*/
     {
         memberId: 15,
         show: true,
@@ -211,21 +211,6 @@ export const team: any[] = [
         socials: {
             linkedin: 'https://ua.linkedin.com/in/slavachub',
             facebook: 'https://www.facebook.com/slava.chub.1'
-        }
-    },
-    {
-        memberId: 16,
-        show: false,
-        name: 'Maxim Ugnichenko',
-        url: 'ugnichenko',
-        position: 'JS Developer',
-        avatar: 'assets/images/team/ava-ugnichenko.jpg',
-        fullImage: 'assets/images/team/ugnichenko.jpg',
-        description: ['Love my job, learning, programming using edge technologies, self education and like people. :)'],
-        skills: ['JavaScript', 'Typescript', 'Node.js', 'Angular', 'Angular2', 'MongoDB', 'Testing', 'UI/UX', 'HTML', 'CSS', 'Twilio', 'Recurly', 'Gulp', 'Bootstrap', 'Socket.io', 'Firebase', 'Heroku', 'Testlodge'],
-        socials: {
-            linkedin: 'https://www.linkedin.com/in/maxim-ugnichenko-0a8283b1',
-            facebook: 'https://www.facebook.com/profile.php?id=100006716438302 '
         }
     },
     {
@@ -329,5 +314,17 @@ export const team: any[] = [
             linkedin: 'https://www.linkedin.com/in/yuriy-musienko-956107b0/',
             github: 'https://github.com/musienkoyuriy'
         }
+    },
+    {
+        memberId: 24,
+        show: false,
+        name: 'Valeriy Trots',
+        url: '',
+        position: 'QA Engineer',
+        avatar: 'assets/images/team/ava-trots-2.jpg',
+        fullImage: '',
+        description: [],
+        skills: [],
+        socials: {}
     }
 ];

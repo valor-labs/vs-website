@@ -6,6 +6,7 @@ import { MainService } from '../../services/main.service';
 import { Member } from '../../services/classes/member';
 import { Project } from '../../services/classes/project';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'project',
@@ -19,6 +20,7 @@ export class ProjectComponent implements OnInit {
   public project: Project;
   public constructor(public route: ActivatedRoute,
                      public projectsService:ProjectsService,
+                     private router: Router,
                      private sanitizer: DomSanitizer,
                      private mainService: MainService,
                      private _titleService: Title) {
@@ -44,7 +46,7 @@ export class ProjectComponent implements OnInit {
 
       // filter related(to this projects) members
       const members = this.mainService.getTeam().filter((member: Member) => {
-        return project.members.indexOf(member.memberId) >= 0 && member.show;
+        return project.members.indexOf(member.memberId) >= 0;
       });
       // split items to 4 columns
       let formattedMembers: any = [];
@@ -64,5 +66,11 @@ export class ProjectComponent implements OnInit {
       }
       this.project = project;
     });
+  }
+
+  public goToMember(memberUrl: string): void {
+    if(memberUrl) {
+      this.router.navigate(['./team/' + memberUrl]);
+    }
   }
 }
