@@ -44,18 +44,16 @@ export const vacancies: any[] =   [
     name: 'QA',
     description: 'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.',
     responsibilities: [
-      'Participating in the development and delivery of testing including functional testing, integration testing, and regression testing as well as automated testing and UAT',
-      'Automate manual test cases',
-      'Build robust test suites that run stable in any environment',
-      'Automation test case creation and execution',
-      'Extending and maintain of existing testing framework',
-      'Bugs reporting and bug fix verification',
-      'Preparation of testing result reports',
-      'Work planning and estimation'
+      'Participating in the development and delivery of testing including functional testing, integration testing, and regression testing as well as automated testing and UAT;',
+      'Automate manual test cases;',
+      'Build robust test suites that run stable in any environment;',
+      'Automation test case creation and execution;',
+      'Extending and maintain of existing testing framework;',
+      'Bugs reporting and bug fix verification;',
+      'Preparation of testing result reports;',
+      'Work planning and estimation;'
     ],
     offer: [
-      'Competitive salary depending on experience and skills;',
-      'Timely salary payment;',
       'Competitive salary depending on experience and skills;',
       'Timely salary payment;',
       'Partial grant of the cost of certification and related conferences;',
@@ -65,29 +63,33 @@ export const vacancies: any[] =   [
       'Good coffee;'
     ],
     requirements: [
-      '2+ years of manual testing / automation testing experience',
-      'Web Applications and UI testing in projects developed by Company',
-      'Good software testing background',
-      'Good knowledge of test automation approaches',
-      'Experience with Test documentation: test cases, test plans, estimations and status reporting',
-      'Client side knowledge - HTML, CSS, JavaScript',
-      'Fluent knowledge of tools for testing automation',
-      'Experience with version control systems (git)',
-      'Knowledge of continuous integration servers (CI\CD)',
-      'Familiarity and understanding of Agile methodologies',
-      'Excellent written and verbal communication skills',
-      'Good level of responsibility, flexibility, communication',
-      'Excellent written and spoken English is necessary'
+      '2+ years of manual testing / automation testing experience;',
+      'Good software testing background;',
+      'Good knowledge of test automation approaches;',
+      'Experience with version control systems (git);',
+      'Knowledge of JavaScript testing tools: Protractor, Jasmine, Karma, etc;',
+      'Client side knowledge - HTML, CSS;',
+      'Fluent knowledge of tools for testing automation;',
+      'Experience with version control systems (git);',
+      'Knowledge of continuous integration servers (CI\CD);',
+      'Familiarity and understanding of Agile methodologies;',
+      'Good written and verbal communication skills;',
+      'Good level of responsibility, flexibility, communication;',
+      'Good written and verbal English is necessary'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg'
   },
   {
     vacancyId: 2,
-    name: 'NodeJS / Angular2 Developer',
-    description: 'Our Node.js / Angular 2 position implies that you can do both server-side web application logic in JavaScript and/or TypeScript and actually know AngularJS inside-out, and not just be a great JavaScript programmer. AngularJS requires the developer to do things the “Angular” way, which is a set of rules and practices that allow developers to make the best use of the framework and build robust efficient web applications.',
+    name: 'Software Engineer (angular + node.js stack)',
+    description: 'Our Node.js/Angular position implies that you can do both server-side web application logic in JavaScript and/or TypeScript and actually know AngularJS inside-out, and not just be a great JavaScript programmer. AngularJS requires the developer to do things the “Angular” way, which is a set of rules and practices that allow developers to make the best use of the framework and build robust efficient web applications.',
     responsibilities: [
-      'Write well designed, testable, efficient code by using best software development practices',
-      'Work closely with other members of the team to ensure timely completion of deliverables'
+      'Producing Angular and node.js code;',
+      'Producing Markup;',
+      'Write well designed, testable and efficient code using latest and greatest development practices;',
+      'Implementation of new features into existing projects;',
+      'Requirements analysis and estimation;',
+      'Close communication with team and the customers, both written and oral;'
     ],
     offer: [
       'Knowledgeable & fun team to work with;',
@@ -97,21 +99,22 @@ export const vacancies: any[] =   [
       'Extremely good coffee;'
     ],
     requirements: [
-      'Minimum 2 years of experience in a similar position',
-      'Backend development experience (Node.JS/Express/MongoDB)',
-      'Solid understanding in Object Oriented and Functional Programming preferably in Javascript',
-      'Experience with npm||Webpack||Gulp and associated modules',
-      'Experience and knowledge of web services (REST || GraphQL)',
-      'Strong ability to learn and undertake',
-      'Candidate must have a strong understanding of general web principles and standards',
-      'Languages: Intermediate English (written and oral)'
+      'Minimum 2 years of experience in similar position;',
+      'Good understanding of front-end technologies (Angular or similar);',
+      'Good understanding of backend technologies (Node.js/MongoDB/Express);',
+      'RESTful API services background;',
+      'Experience with npm, webpack, or similar modules;'
     ],
     requirementsPlus: [
-      'Master degree in Computer Science or equivalent',
-      'Problem-solving mindset',
-      'Autonomous team-player',
-      'Having knowledge in an Angular2 (or similar), Typescript (ECMA Script 6,7), frontend',
-      'having knowledge of eslint\\tslint rules'
+      'Experience in writing single page applications is a plus;',
+      'GraphQL knowledge is a plus;',
+      'UX principles;',
+      'HTML5, responsiveness;',
+      'Continuous integration experience;',
+      'Familiarity and understanding of Agile Methodologies;',
+      'Experience in building modern web-apps with cross-browser support (i.e NativeScript, Ionic, Electron);',
+      'Intermediate+ written and oral English;',
+      'Experience with VCS (git, github);'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg'
   }
