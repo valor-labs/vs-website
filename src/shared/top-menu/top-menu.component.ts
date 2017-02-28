@@ -1,5 +1,6 @@
 import { Component, Input, HostListener, OnInit, Renderer } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'top-menu',
@@ -12,7 +13,7 @@ export class TopMenuComponent implements OnInit {
   public elHeight: number;
   @Input() public isLanding:boolean;
 
-  public constructor(public router:Router, public renderer: Renderer) {
+  public constructor(public router:Router, public renderer: Renderer, public location: Location) {
     this.router.events.subscribe((event:any) => {
       document.body.style.overflow = 'auto';
       document.body.className = '';

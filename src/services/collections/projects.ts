@@ -44,12 +44,12 @@ export const projects: any[] = [
         tasks: [
           'Building modular infrastructure with tight integration between components;',
           'Analytical visualization tools;',
-          'Improving internal architecture'
+          'Improving internal architecture;'
       ],
         solutions: [
           'Test Driven Development;',
           'CVS databases to store all data;',
-          'ng2-contentful'
+          'ng2-contentful;'
       ],
         outcome : [
           'Complete and production-ready website that acts a single place for other parts of the project, such as Dollar Street and Vizabi Tools.'
@@ -71,18 +71,18 @@ export const projects: any[] = [
       externalLink: 'https://www.gapminder.org/tools/#_chart-type=bubbles',
       details: {
         tasks: [
-          'Embeddable tools with customization',
-          'Responsive layout',
-          'Support for UI Controls & Interaction',
-          'Translation & Localization',
-          'Unified data-schema for multidimensional statistics.'
+          'Embeddable tools with customization;',
+          'Responsive layout;',
+          'Support for UI Controls & Interaction;',
+          'Translation & Localization;',
+          'Unified data-schema for multidimensional statistics;'
       ],
         solutions: [
           'Test Driven Development;',
           'CVS databases to store all data;',
           'Electron framework for offline version of application;',
           'DDFcsv reader for DDF data reading;',
-          'WS reader for querying data on WS by DDFQL'
+          'WS reader for querying data on WS by DDFQL;'
       ],
         outcome : [
           'Online and offline visualization tool for various metrics and statistics.'
@@ -138,7 +138,7 @@ export const projects: any[] = [
           'Create design for buyer profile;',
           'Seller/Buyer Dashboard;',
           'Themes support;',
-          'New design development',
+          'New design development;',
           'Blog implementation;'
       ],
         solutions: [

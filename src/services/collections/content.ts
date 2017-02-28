@@ -53,14 +53,14 @@ export const content: any[] = [
         width: '60',
         height: '48',
         title: 'Deliver Results',
-        text: 'We serve people and organisations, and deliver results throughout the world. Timely.'
+        text: 'We serve people and organizations and deliver results throughout the world. Timely.'
       },
       {
         image: 'assets/images/content/always-learn.png',
         width: '50',
         height: '55',
         title: 'Always Learn',
-        text: 'We learn, we progress, we move forward to make our clients happy!'
+        text: 'We learn we progress, we move forward to make our clients happy!'
       },
       {
         image: 'assets/images/content/fun.png',
