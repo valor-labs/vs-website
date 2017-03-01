@@ -1151,4 +1151,14 @@ a:focus {
   .menu .container {
     padding: 0 19px;
   }
+  .content-presentation__img iframe{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .content-presentation__img iframe{
+    width: 100%;
+    height: 300px;
+  }
 }
