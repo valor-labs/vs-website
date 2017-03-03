@@ -2,7 +2,8 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { Location } from '@angular/common';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Rx';
-import { MailService } from '../../services/mail.service';
+
+import { MailService } from '@services/mail.service';
 
 @Component({
   selector: 'forms',
@@ -28,11 +29,11 @@ export class FormsComponent implements OnInit {
   public contactForm:any;
   public isMobile:boolean = false;
   public file:any;
+  public isContactForm:boolean = false;
+  public isCaseForm:boolean = false;
+  public isVacancyForm:boolean = false;
   private location:Location;
   private urlEvents:Subject<any>;
-  private isContactForm:boolean = false;
-  private isCaseForm:boolean = false;
-  private isVacancyForm:boolean = false;
   private MailServiceSubscribe:Subscription;
   private mailService:MailService;
 

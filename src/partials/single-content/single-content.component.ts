@@ -1,8 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { ContentService } from '../../services/content.service';
-
-import { ContentItem } from '../../services/classes/content-item';
+import { ContentService } from '@services/content.service';
+import { ContentItem } from '@services/classes/content-item';
 
 @Component({
   selector: 'single-content',
