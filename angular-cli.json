@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.24",
+    "version": "1.0.0-rc.0",
     "name": "vs-website"
   },
   "apps": [
@@ -13,6 +13,7 @@
       ],
       "index": "index.html",
       "main": "main.ts",
+      "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "app",
@@ -35,8 +36,8 @@
         "../node_modules/particles.js/particles.js",
         "assets/js/helper.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }

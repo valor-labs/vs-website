@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
-import { ProjectsService } from '../../services/projects.service';
-import { Project } from '../../services/classes/project';
+import { ProjectsService } from '@services/projects.service';
+import { Project } from '@services/classes/project';
 
 @Component({
   selector: 'approach',

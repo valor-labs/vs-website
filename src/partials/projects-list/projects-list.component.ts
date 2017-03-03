@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectsService } from '../../services/projects.service';
-import { Project } from '../../services/classes/project';
+
+import { ProjectsService } from '@services/projects.service';
+import { Project } from '@services/classes/project';
 
 @Component({
   selector: 'project-preview',

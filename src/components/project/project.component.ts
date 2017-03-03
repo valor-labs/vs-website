@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DomSanitizer } from '@angular/platform-browser';
-import { ProjectsService } from '../../services/projects.service';
-import { MainService } from '../../services/main.service';
-import { Member } from '../../services/classes/member';
-import { Project } from '../../services/classes/project';
-import { Title } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+
+import { ProjectsService } from '@services/projects.service';
+import { MainService } from '@services/main.service';
+import { Member } from '@services/classes/member';
+import { Project } from '@services/classes/project';
 
 @Component({
   selector: 'project',
