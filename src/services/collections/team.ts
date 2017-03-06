@@ -303,7 +303,7 @@ export const team: any[] = [
     },
     {
         memberId: 22,
-        show: true,
+        show: false,
         name: 'Plehanov Svyatoslav',
         position: 'Software engineer',
         avatar: 'assets/images/team/ava-plehanov.jpg',
