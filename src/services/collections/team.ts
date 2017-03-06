@@ -305,7 +305,6 @@ export const team: any[] = [
         memberId: 22,
         show: true,
         name: 'Plehanov Svyatoslav',
-        url: 'svyatoslav',
         position: 'Software engineer',
         avatar: 'assets/images/team/ava-plehanov.jpg',
         fullImage: 'assets/images/team/plehanov.jpg',
