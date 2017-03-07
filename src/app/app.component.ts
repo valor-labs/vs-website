@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app',
   templateUrl: './app.component.html'
-
 })
 export class AppComponent {
   public constructor(private _titleService: Title, private _router: Router) {
-    _router.events.subscribe((date: any) => {
-      if (date.constructor.name === 'NavigationStart') {
+    _router.events.subscribe((data: any) => {
+      if (data instanceof NavigationStart) {
         try {
           let title = 'Valor Software';
-          const url = date.url;
+          const url = data.url;
 
           // /about -> About. /some-link -> Some Link
           // Team member's, project's and other dynamic page's titles sets up in their own components
