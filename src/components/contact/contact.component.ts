@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   public ngOnInit(): void {
     this.email.title = 'Contact e-mail:';
-    this.email.text = 'hello@valor-software.com';
+    this.email.text = 'contact@valor-software.com';
     this.location.title = 'Location:';
     this.location.text = 'Ukraine, Kharkiv';
     this.pageName = 'Contact page';
