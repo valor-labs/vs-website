@@ -8,18 +8,16 @@ export const vacancies: any[] =   [
       'Producing Markup;',
       'New features implementation;',
       'Requirements analysis and estimation;',
-      'Client communication (written and/or spoken);'
+      'Client communication (written and/or spoken).'
     ],
     offer: [
-      'Competitive salary depending on experience and skills;',
-      'Timely salary payment;',
       'Competitive salary depending on experience and skills;',
       'Timely salary payment;',
       'Partial grant of the cost of certification and related conferences;',
       'The possibility of professional growth and growth of skills;',
       'Friendly and relaxed atmosphere;',
       'Flexible working hours;',
-      'Good coffee;'
+      'Good coffee.'
     ],
     requirements: [
       '2+ years of similar experience;',
@@ -34,7 +32,7 @@ export const vacancies: any[] =   [
       'Attention to details and focus on quality of work;',
       'Familiarity and understanding of Agile methodologies;',
       'Good level of responsibility, flexibility, communication;',
-      'Good written and verbal English is an important condition;'
+      'Good written and verbal English is an important condition.'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
@@ -51,7 +49,7 @@ export const vacancies: any[] =   [
       'Extending and maintain of existing testing framework;',
       'Bugs reporting and bug fix verification;',
       'Preparation of testing result reports;',
-      'Work planning and estimation;'
+      'Work planning and estimation.'
     ],
     offer: [
       'Competitive salary depending on experience and skills;',
@@ -60,7 +58,7 @@ export const vacancies: any[] =   [
       'The possibility of professional growth and growth of skills;',
       'Friendly and relaxed atmosphere;',
       'Flexible working hours;',
-      'Good coffee;'
+      'Good coffee.'
     ],
     requirements: [
       '2+ years of manual testing / automation testing experience;',
@@ -75,7 +73,7 @@ export const vacancies: any[] =   [
       'Familiarity and understanding of Agile methodologies;',
       'Good written and verbal communication skills;',
       'Good level of responsibility, flexibility, communication;',
-      'Good written and verbal English is necessary'
+      'Good written and verbal English is necessary.'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg'
   },
@@ -89,21 +87,21 @@ export const vacancies: any[] =   [
       'Write well designed, testable and efficient code using latest and greatest development practices;',
       'Implementation of new features into existing projects;',
       'Requirements analysis and estimation;',
-      'Close communication with team and the customers, both written and oral;'
+      'Close communication with team and the customers, both written and oral.'
     ],
     offer: [
       'Knowledgeable & fun team to work with;',
       'Competitive salary;',
       'Partial grant of the cost of certification and related conferences;',
       'Non-stop professional growth and actually interesting projects;',
-      'Extremely good coffee;'
+      'Extremely good coffee.'
     ],
     requirements: [
       'Minimum 2 years of experience in similar position;',
       'Good understanding of front-end technologies (Angular or similar);',
       'Good understanding of backend technologies (Node.js/MongoDB/Express);',
       'RESTful API services background;',
-      'Experience with npm, webpack, or similar modules;'
+      'Experience with npm, webpack, or similar modules.'
     ],
     requirementsPlus: [
       'Experience in writing single page applications is a plus;',
@@ -114,7 +112,7 @@ export const vacancies: any[] =   [
       'Familiarity and understanding of Agile Methodologies;',
       'Experience in building modern web-apps with cross-browser support (i.e NativeScript, Ionic, Electron);',
       'Intermediate+ written and oral English;',
-      'Experience with VCS (git, github);'
+      'Experience with VCS (git, github).'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg'
   }
