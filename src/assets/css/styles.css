@@ -142,8 +142,13 @@ a:focus {
 }
 
 .icon-block__icon {
+  display: inline-block;
   height: 52px;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
+}
+
+.icon-block__icon img {
+ width: calc(100% / 2)
 }
 
 .icon-block__title {
