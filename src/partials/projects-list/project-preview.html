@@ -1,6 +1,6 @@
 <div class="projects-preview__image">
-  <a class="projects-preview__image-link" [routerLink]="['/project', project.link]">
-    <img [src]="project.previewImage">
+  <a class="projects-preview__image-link" [routerLink]="['/project', project.slug]">
+    <img [src]="project.thumb.url">
     <div class="projects-preview__overlay">
       <div class="projects-preview__plus">
         <span></span>
@@ -11,8 +11,8 @@
 </div>
 <div class="projects-preview__bottom">
   <p class="projects-preview__title">
-    {{project.title}}
+    {{project.name}}
   </p>
-  <a [routerLink]="['/project', project.link]" class="projects-preview__link">View Case »</a>
-  <p class="projects-preview__description">{{project.shortDescription}}</p>
+  <a [routerLink]="['/project', project.slug]" class="projects-preview__link">View Case »</a>
+  <p class="projects-preview__description">{{project.industry}}</p>
 </div>

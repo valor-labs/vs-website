@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { Http } from '@angular/http';
 
-import { Vacancy } from '@services/classes/vacancy';
 import { VacanciesService } from '@services/vacancies.service';
 import { Observable } from 'rxjs/Observable';
-import { WebflowService } from '@app/services/webflow-api.service';
 
 @Component({
   selector: 'vacancy',
@@ -32,7 +29,6 @@ export class VacancyComponent implements OnInit {
 
       this.vacanciesSubscribe = this.vacanciesService.getVacancies();
       this.vacanciesSubscribe.subscribe((vacancies: any) => {
-        console.log(vacancies);
         this.vacancy = vacancies.items.find((obj: any) => {
           return obj.slug === this.vacancyId;
         });
@@ -45,7 +41,6 @@ export class VacancyComponent implements OnInit {
         benefits.items.sort((a:any, b:any) => {
           return new Date(a['created-on']).getTime() - new Date(b['created-on']).getTime();
         });
-        console.log(2222,benefits.items);
         this.benefits = benefits.items;
       });
     });

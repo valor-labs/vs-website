@@ -4,7 +4,7 @@ import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 import { ProjectsService } from '@services/projects.service';
-import { MainService } from '@services/main.service';
+import { WebflowService } from '@app/services/webflow-api.service';
 import { Member } from '@services/classes/member';
 import { Project } from '@services/classes/project';
 
@@ -14,62 +14,51 @@ import { Project } from '@services/classes/project';
 })
 
 export class ProjectComponent implements OnInit {
-
   public projectLink: string;
   public pageName: string;
   public project: Project;
+  public members: Member[];
   public constructor(public route: ActivatedRoute,
                      public projectsService:ProjectsService,
+                     public webflowService:WebflowService,
                      private router: Router,
                      private sanitizer: DomSanitizer,
-                     private mainService: MainService,
                      private _titleService: Title) {
   }
 
   public ngOnInit(): void {
     this.pageName = 'Project page';
     this.route.params.subscribe((params: any) => {
-      /* tslint:disable */
-      this.projectLink = params['projectLink'];
-      /* tslint:enable */
-      let project = this.projectsService.getByLink(this.projectLink);
+      this.projectLink = params.projectLink;
+      this.projectsService.getByLink(this.projectLink).subscribe((data:any) => {
+        this.project = data;
+        // setting up <title> and tab name
+        this._titleService.setTitle('Project: ' + this.project.name);
 
-      // setting up <title> and tab name
-      this._titleService.setTitle('Project: ' + project.title);
+        if (this.project['video-link']) {
+          this.project['video-link'] = this.sanitizer.bypassSecurityTrustResourceUrl(this.project['video-link']);
+        }
 
-      // split items to 4 columns
-      let formattedTechnologies: any = [[], [], [], []];
-      project.technologies.forEach((technology: string, index: number) => {
-        formattedTechnologies[index % 4].push(technology);
-      });
-      project.formattedTechnologies = formattedTechnologies;
+        // filter related(to this projects) members
+        this.webflowService.getEmployeesItems().subscribe((mData:any) => {
+          let projectMember;
+          this.members = mData.items.filter((member: Member) => {
+            if (member.projects) {
+              projectMember = member.projects.find((projectId: string) => projectId === this.project._id);
+            }
+            return projectMember;
+          });
+        });
 
-      // filter related(to this projects) members
-      const members = this.mainService.getTeam().filter((member: Member) => {
-        return project.members.indexOf(member.memberId) >= 0;
-      });
-      // split items to 4 columns
-      let formattedMembers: any = [];
-      members.forEach((member: Member) => {
-        formattedMembers.push({
-          avatar: member.avatar,
-          name: member.name,
-          position: member.position,
-          url: member.url
+        this.webflowService.getReferencesItems().subscribe((rData: any) => {
+          this.project.reference = rData.items.find((ref: any) => ref._id === this.project['reference-2']);
         });
       });
-      project.formattedMembers = formattedMembers;
-
-      project.reference = this.mainService.getFeedbackForProject(project.projectId);
-      if(project.video) {
-        project.video = this.sanitizer.bypassSecurityTrustResourceUrl(project.video);
-      }
-      this.project = project;
     });
   }
 
-  public goToMember(memberUrl: string): void {
-    if(memberUrl) {
+  public goToMember(memberPublic: boolean, memberUrl: string): void {
+    if(memberPublic && memberUrl) {
       this.router.navigate(['./team/' + memberUrl]);
     }
   }

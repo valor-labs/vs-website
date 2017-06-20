@@ -9,17 +9,15 @@
   <div class="row">
     <div class="team-list">
       <template ngFor let-member [ngForOf]="team">
-        <div *ngIf="member.show" class="team-item">
+        <div *ngIf="member.public" class="team-item">
           <div class="team-item__preview-image">
-            <a [routerLink]="['/team', member.url]">
-              <img [src]="member.fullImage" alt="{{member.name}}">
+            <a [routerLink]="['/team', member.slug]">
+              <img src="{{ member['full-photo'].url }}" alt="{{ member.name }}">
             </a>
           </div>
-          <a [routerLink]="['/team', member.url]" class="team-item__name">{{member.name}}</a>
-          <span class="team-item__position">{{member.position}}</span>
-          <ul class="team-item__skills">
-            <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
-          </ul>
+          <a [routerLink]="['/team', member.slug]" class="team-item__name">{{ member.name }}</a>
+          <span class="team-item__position">{{ member.position }}</span>
+          <div class="team-item__skills" innerHTML="{{ member['skills-2'] }}"></div>
         </div>
       </template>
     </div>
