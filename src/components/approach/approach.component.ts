@@ -14,12 +14,14 @@ export class ApproachComponent implements OnInit {
   public noWrapSlides:boolean = false;
 
   public ngOnInit():void {
-    this.projects = this.projectsService.getAll();
+    this.projectsService.getAll().subscribe((data:any) => {
+      this.projects = data;
 
-    this.projects.forEach((item:any) => {
-      if (item.video) {
-        item.video = this.sanitizer.bypassSecurityTrustResourceUrl(item.video);
-      }
+      this.projects.forEach((item:any) => {
+        if (item['video-link']) {
+          item['video-link'] = this.sanitizer.bypassSecurityTrustResourceUrl(item['video-link']);
+        }
+      });
     });
   }
 

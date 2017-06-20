@@ -39,15 +39,15 @@
     </section-heading>
     <div class="row">
       <carousel class="hide-carousel-indicators" [interval]="myInterval" [noWrap]="noWrapSlides">
-        <slide *ngFor="let project of projects; let i=index" [active]="project.active">
+        <slide *ngFor="let project of projects;" [active]="project.active">
           <div class="slide__inner">
             <div style="float: none; margin: 0 auto;">
-              <a *ngIf="!project.video" href="#/project/{{project.link}}">
-                <img [src]="project.fullImage" width="800">
+              <a *ngIf="!project['video-link']" href="#/project/{{project.slug}}">
+                <img [src]="project['project-img'].url" width="800">
               </a>
-              <iframe *ngIf="project.video" [src]="project.video" width="954" height="532" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              <h5 class="icon-block__title">{{project.title}}</h5>
-              <a href="#/project/{{project.link}}">View case study »</a>
+              <iframe *ngIf="project['video-link']" [src]="project['video-link']" width="954" height="532" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <h5 class="icon-block__title">{{project.name}}</h5>
+              <a href="#/project/{{project.slug}}">View case study »</a>
             </div>
           </div>
         </slide>
