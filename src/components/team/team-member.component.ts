@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { MainService } from '@services/main.service';
-import { ProjectsService } from '@services/projects.service';
+
+import { WebflowService } from '@app/services/webflow-api.service';
 import { Member } from '@services/classes/member';
 
 @Component({
@@ -10,26 +11,31 @@ import { Member } from '@services/classes/member';
   templateUrl: './team-member.html'
 })
 
-export class MemberComponent implements OnInit {
-  public socials:any = {};
-  public member:Member;
+export class MemberComponent {
+  public socials: any = {};
+  public member: Member;
   public projects: any;
-  public projectsService: ProjectsService;
+  public employeesSubscribe: Observable<any>;
+  public socialsSubscribe: Observable<any>;
 
-  public constructor(private mainService:MainService, private router:Router, private route:ActivatedRoute, private _titleService:Title, projectsService: ProjectsService) {
-    this.route.params.subscribe((params:{memberUrl:string}) => {
-      let member = this.mainService.getMemberByUrl(params.memberUrl);
-      if (!member) {
-        return this.router.navigate(['/team']);
-      }
-      this.member = member;
-      this.socials = member.socials;
-      this._titleService.setTitle(member.name);
+  public constructor(public webflowService: WebflowService, private router:Router, private route:ActivatedRoute, private _titleService:Title) {
+    this.route.params.subscribe((params:any) => {
+      this.employeesSubscribe = this.webflowService.getEmployeesItems();
+      this.employeesSubscribe.subscribe((data: any) => {
+        let member = data.items.find((m: Member) => params.memberUrl === m.slug);
+        if (!member) {
+          return this.router.navigate(['/team']);
+        }
+        this.member = member;
+        this._titleService.setTitle(member.name);
+      });
+
+      this.socialsSubscribe = this.webflowService.getSocialsItems();
+      this.socialsSubscribe.subscribe((data: any) => {
+        let socials = data.items.find((m: Member) => params.memberUrl === m.slug);
+
+        this.socials = socials || {};
+      });
     });
-    this.projectsService = projectsService;
-  }
-
-  public ngOnInit():void {
-    this.projects = this.projectsService.getParticipant(this.member.memberId);
   }
 }

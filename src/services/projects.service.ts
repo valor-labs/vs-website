@@ -1,18 +1,23 @@
 import { Injectable } from '@angular/core';
+
 import { Project } from '../services/classes/project';
-import { projects } from '../services/collections/projects';
+import { WebflowService } from '@app/services/webflow-api.service';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ProjectsService {
+  public constructor(public webflowService: WebflowService) {}
 
-  public getAll(): Project[] {
-    let copy = JSON.parse(JSON.stringify(projects));
-    return copy;
+  public getAll(): Observable<any> {
+    return this.webflowService.geProjectsItems().map((data: any) => {
+      return data.items;
+    });
   }
 
   public getByLink(projectLink: string): any {
-    const projects: Project[] = this.getAll();
-    return projects.find((project: Project) => projectLink === project.link);
+    return this.webflowService.geProjectsItems().map((data: any) => {
+      return data.items.find((project: Project) => projectLink === project.slug);
+    });
   }
 
   /**
@@ -21,23 +26,28 @@ export class ProjectsService {
    * @returns {Project[]}
    */
 
-  public getSimilarTo(projectLink: string): Project[] {
-    let projects: Project[] = this.getAll()
-      .filter((project: Project) => {
-        return projectLink !== project.link;
+  public getSimilarTo(projectLink: string): Observable<any> {
+    let projects = [];
+    return this.webflowService.geProjectsItems().map((data: any) => {
+      projects = data.items.filter((project: Project) => {
+        return projectLink !== project.slug;
       });
-
-    return this.shuffleArray(projects);
+      return this.shuffleArray(projects);
+    });
   }
 
-  public getParticipant(memberId: number): Project[] {
-    let participatedProjects: Project[] = [];
-    this.getAll().forEach((project: Project) => {
-      if(project.members.indexOf(memberId) !== -1) {
-        participatedProjects.push(project);
-      }
+  public getParticipant(memberProjectsIds: string[]): Observable<any> {
+    let projects = [];
+    return this.webflowService.geProjectsItems().map((data: any) => {
+      memberProjectsIds.forEach((projectId: string) => {
+        data.items.forEach((project: Project) => {
+          if (project._id.indexOf(projectId) !== -1) {
+            projects.push(project);
+          }
+        });
+      });
+      return projects;
     });
-    return participatedProjects;
   }
 
   /**

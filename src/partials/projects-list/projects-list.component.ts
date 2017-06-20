@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ProjectsService } from '@services/projects.service';
+import { WebflowService } from '@app/services/webflow-api.service';
 import { Project } from '@services/classes/project';
 
 @Component({
@@ -24,9 +25,18 @@ export class ProjectsListComponent implements OnInit {
   @Input() public maxItems:number;
   @Input() public hasButton:boolean;
   @Input() public similarTo:string;
-  @Input() public memberId:number;
+  @Input() public memberProjectsIds:string[];
 
-  public constructor(public projectsService:ProjectsService, public route: ActivatedRoute) {
+  public constructor(public webflowService: WebflowService, public projectsService:ProjectsService, public route: ActivatedRoute) {
+    this.projects = [];
+  }
+
+  public maxItemsCheck(projects: Project[]): Project[] {
+    // if param maxItems is specified - manage items number
+    if (this.maxItems && this.maxItems < projects.length) {
+      projects = projects.slice(0, this.maxItems);
+    }
+    return projects;
   }
 
   public ngOnInit():void {
@@ -37,17 +47,23 @@ export class ProjectsListComponent implements OnInit {
       /* tslint:disable */
       const currentLink = params['projectLink'];
       /* tslint:enable */
-      // receiving All projects OR(if parameter similarTo specified) - similar projects only
-      let projects:Project[] = (currentLink) ? this.projectsService.getSimilarTo(currentLink) :
-        (this.memberId >= 0) ? this.projectsService.getParticipant(this.memberId) :
-        this.projectsService.getAll();
 
-      // if param maxItems is specified - manage items number
-      if (this.maxItems && this.maxItems < projects.length) {
-        projects = projects.slice(0, this.maxItems);
+      if (currentLink) {
+        // receiving similar projects
+        this.projectsService.getSimilarTo(currentLink).subscribe((data:any) => {
+          this.projects = this.maxItemsCheck(data);
+        });
+      } else if (this.memberProjectsIds) {
+        // receiving projects for specific member
+        this.projectsService.getParticipant(this.memberProjectsIds).subscribe((data:any) => {
+          this.projects = this.maxItemsCheck(data);
+        });
+      } else {
+        // receiving All projects
+        this.projectsService.getAll().subscribe((data:any) => {
+          this.projects = this.maxItemsCheck(data);
+        });
       }
-
-      this.projects = projects;
     });
 
   }

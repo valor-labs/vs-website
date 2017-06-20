@@ -49,13 +49,13 @@
     font-weight: 300;
 }
 
-.team-item__skills {
+.team-item__skills ul {
     margin: 15px 0 0 -6px;
     padding: 0;
     list-style: none;
 }
 
-.team-item__skill {
+.team-item__skills li {
     display: inline-block;
     color: #55555c;
     font-size: 12px;
@@ -116,13 +116,13 @@
     margin-bottom: 50px;
 }
 
-.project__section .team-member__skills {
+.project__section .team-member__skills ul {
     margin: 17px 0 -11px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.team-member__skill {
+.team-member__skills li {
     width: 50%;
 }
 
