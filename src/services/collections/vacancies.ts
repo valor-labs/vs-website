@@ -75,33 +75,34 @@ export const vacancies: any[] =   [
       'Good level of responsibility, flexibility, communication;',
       'Good written and verbal English is necessary.'
     ],
-    headerImage: 'assets/images/vacancy/vacancy.jpg'
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
   },
   {
     vacancyId: 2,
-    name: 'Software Engineer (angular + node.js stack)',
-    description: 'Our Node.js/Angular position implies that you can do both server-side web application logic in JavaScript and/or TypeScript and actually know AngularJS inside-out, and not just be a great JavaScript programmer. AngularJS requires the developer to do things the “Angular” way, which is a set of rules and practices that allow developers to make the best use of the framework and build robust efficient web applications.',
+    name: 'JavaScript Developer',
+    description: 'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create a pleasant experience for users and are easy to maintain. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
-      'Producing Angular and node.js code;',
-      'Producing Markup;',
-      'Write well designed, testable and efficient code using latest and greatest development practices;',
-      'Implementation of new features into existing projects;',
-      'Requirements analysis and estimation;',
-      'Close communication with team and the customers, both written and oral.'
+      'Write clean and well-structured code;',
+      'Contribute ideas for new features and identify areas for improvement proactively.'
     ],
     offer: [
-      'Knowledgeable & fun team to work with;',
+      'Knowledgeable & casually team to work with;',
       'Competitive salary;',
+      'Casual work environment;',
       'Partial grant of the cost of certification and related conferences;',
       'Non-stop professional growth and actually interesting projects;',
-      'Extremely good coffee.'
+      'Huge books library;',
+      'Regular internal workshops with non-boring speakers;'
     ],
     requirements: [
-      'Minimum 2 years of experience in similar position;',
-      'Good understanding of front-end technologies (Angular or similar);',
-      'Good understanding of backend technologies (Node.js/MongoDB/Express);',
-      'RESTful API services background;',
-      'Experience with npm, webpack, or similar modules.'
+      '2+ years of web development experience;',
+      'Ability to interact with third-party APIs and build RESTful web services using Node.js;',
+      'Willing to to create well-designed UIs using Angular v4+ (experience with other modern JS frameworks is a plus);',
+      'Ability to solve problems quickly and independently;',
+      'Experience with npm, webpack or similar modules;',
+      'CSS and responsive web design;',
+      'Strong written and verbal communication skills.'
     ],
     requirementsPlus: [
       'Experience in writing single page applications is a plus;',
@@ -109,11 +110,53 @@ export const vacancies: any[] =   [
       'UX principles;',
       'HTML5, responsiveness;',
       'Continuous integration experience;',
-      'Familiarity and understanding of Agile Methodologies;',
-      'Experience in building modern web-apps with cross-browser support (i.e NativeScript, Ionic, Electron);',
-      'Intermediate+ written and oral English;',
+      'Intermediate+ written and verbal English;',
       'Experience with VCS (git, github).'
     ],
-    headerImage: 'assets/images/vacancy/vacancy.jpg'
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 3,
+    name: 'Project Manager',
+    description: 'We are seeking for an ambitious self-starter with a positive attitude. The right Project Manager must have excellent communication skills, written as well as verbal as you would be liaising with both internal and external stakeholders and maintain close contact with team members. Technical proficiency, and ability to handle any technical queries effectively for Project Manager is a must. This role would be a big step on your way to becoming a Senior Project Manager position within a truly pioneering IT company. ',
+    responsibilities: [
+      'Typical activities within this project support role include: generation and maintenance of cross functional project plans, organization, and documentation of project meetings, creation / analysis / reporting of project metrics, coordination with stakeholders;',
+      'Leads critical project governance activities, including facilitating project meetings, progressing projects through life cycle transitions, and ensuring quality standards are maintained through quality assurance activities;',
+      'Develops and implements risk assessment, change management, quality assurance, performance, and control measures to ensures completion of projects by established standards;',
+      'Early identification of issues and/or concerns that either has the potential or will impact the project baseline;',
+      'Providing accurate and timely information, data and reports regarding the project status, activities and performance.'
+    ],
+    offer: [
+      'Passionate & fun team to work with;',
+      'Competitive salary;',
+      'Fast, professional growth and lots and lots of new experience are guaranteed;',
+      'Partial grant of the cost of certification and related conferences;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Extremely good coffee.'
+    ],
+    requirements: [
+      'At least one year of experience in managing technology/online/business projects in a professional environment involving multiple stakeholders;',
+      'At least one year experience in managing teams;',
+      'Knowledge of IT operation processes such as risk management;',
+      'Strong estimation skills;',
+      'Knowledge of Agile project management approaches;',
+      'Excellent time management, organizational skills and communication skills;',
+      'Competent in managing multiple projects and client relationships at one time;',
+      'Strong understanding of the need for Quality within the project environment;',
+      'Excellent english communication skills (Intermediate+);',
+      'Knowledge of Agile project management approaches;',
+      'Experience dealing with a range of customers;',
+      'Excellent problem-solving skills;'
+    ],
+    requirementsPlus: [
+      'Knowledge of what Waterfall approach is;',
+      'Proven records of education in project management area;',
+      'Experience in managing web development projects;'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
   }
+
 ];
