@@ -1,8 +1,7 @@
 <header class="header_blog"
-  [title]="vacancy.name"
-  [location]="vacancy.location"
-  [bg]="vacancy.headerImage"
->
+        [title]="vacancy.name"
+        [location]="vacancy.location"
+        [bg]="vacancy.headerImage">
 </header>
 
 <section class="frame">
@@ -24,20 +23,7 @@
       <div class="col-lg-2">
         <h5 class="project__heading">Requirements</h5>
       </div>
-      <div class="col-lg-9">
-        <ul class="project-page-list">
-          <li *ngFor="let item of vacancy.requirements">
-            {{item}}
-          </li>
-        </ul>
-        <div *ngIf="vacancy.requirementsPlus">
-          <p>Will be a plus:</p>
-          <ul class="project-page-list">
-            <li *ngFor="let item of vacancy.requirementsPlus">
-              {{item}}
-            </li>
-          </ul>
-        </div>
+      <div class="col-lg-9" innerHTML="{{ vacancy.requirements}}">
       </div>
     </div>
 
@@ -45,12 +31,7 @@
       <div class="col-lg-2">
         <h5 class="project__heading">Responsibilities</h5>
       </div>
-      <div class="col-lg-9">
-        <ul class="project-page-list">
-          <li *ngFor="let item of vacancy.responsibilities">
-            {{item}}
-          </li>
-        </ul>
+      <div class="col-lg-9" innerHTML="{{ vacancy.responsibilities}}">
       </div>
     </div>
 
@@ -58,12 +39,7 @@
       <div class="col-lg-2">
         <h5 class="project__heading">We offer</h5>
       </div>
-      <div class="col-lg-9">
-        <ul class="project-page-list">
-          <li *ngFor="let item of vacancy.offer">
-            {{item}}
-          </li>
-        </ul>
+      <div class="col-lg-9" innerHTML="{{ vacancy['we-offer'] }}">
       </div>
     </div>
 
@@ -71,62 +47,26 @@
       <div class="col-lg-2">
         <h5 class="project__heading project__heading_mb">Benefits</h5>
       </div>
+
       <div class="col-lg-9">
         <div class="project__benefits">
-          <div class="project__icon-block icon-block">
+          <div *ngFor="let benefit of benefits" class="project__icon-block icon-block">
             <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/edge.png'" width="56" height="52"  alt="icon">
+              <img [src]=benefit.icon.url alt="icon">
             </div>
-            <h5 class="icon-block__title">Cutting Edge Technology</h5>
-            <p class="icon-block__text">You will have a chance to learn and instantly use state-of-the-art technologies in your work to solve technical problems innovatively.</p>
+            <h5 class="icon-block__title"> {{benefit.name}} </h5>
+            <p class="icon-block__text">{{benefit.desc}}</p>
           </div>
-
-          <div class="project__icon-block icon-block">
-            <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/learn.png'" width="56" height="51" alt="icon">
-            </div>
-            <h5 class="icon-block__title">Learning as a Part of Job</h5>
-            <p class="icon-block__text">We believe, that working is not about earning money, it’s a meaningful learning opportunity. We're holding a Speaking/Reading clubs, conferences and so on.</p>
-          </div>
-
-          <div class="project__icon-block icon-block">
-            <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/work-space.png'" width="56" height="54" alt="icon">
-            </div>
-            <h5 class="icon-block__title">Comfortable Workspace</h5>
-            <p class="icon-block__text">We designed our office to suite everyones needs. Valor Mother Base is a comfortable and calming place to work at.</p>
-          </div>
-
-          <div class="project__icon-block icon-block">
-            <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/fun.png'" width="60" height="48" alt="icon">
-            </div>
-            <h5 class="icon-block__title">Work-Life Balance</h5>
-            <p class="icon-block__text">We believe that employee's career should not overwhelm the individual's ability to enjoy a satisfying personal life outside of the business environment.</p>
-          </div>
-
-          <div class="project__icon-block icon-block">
-            <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/flexible.png'" width="50" height="50" alt="icon">
-            </div>
-            <h5 class="icon-block__title">Flexible Hours</h5>
-            <p class="icon-block__text">Work according to your lifestyle: work early and go home early or stay late and arrive late or take extra time at lunch. Whatever rows your boat.</p>
-          </div>
-
-          <div class="project__icon-block icon-block">
-            <div class="icon-block__icon">
-              <img [src]="'assets/images/vacancy/staff.png'" width="58" height="50" alt="icon">
-            </div>
-            <h5 class="icon-block__title">Friendly Staff</h5>
-            <p class="icon-block__text">Valor Software is more than just a team of coworkers. We value our culture, we're like a big friendly family ;)</p>
-          </div>
-
         </div>
+
+
         <div class="learn-more learn-more_project">
           <div class="learn-more-text">
-            Learn more about our <a [routerLink]="['/about']" fragment="our-culture">culture</a> and why Valor Software is a great place to work
+            Learn more about our <a [routerLink]="['/about']" fragment="our-culture">culture</a> and why Valor Software
+            is a great place to work
           </div>
         </div>
+
       </div>
     </div>
   </div>

@@ -5,25 +5,25 @@
     <div class="row" *ngIf="member">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="team-member__avatar">
-          <img [src]="member.fullImage" alt="{{member.name}}"/>
+          <img src="{{ member['full-photo'].url }}" alt="{{ member.name }}"/>
           <div class="team-member__socials">
             <ul class="socials socials_colored">
               <li class="socials__item socials__item_git" *ngIf="socials.github">
-                <a target="_blank" href="{{socials.github}}">
+                <a target="_blank" href="{{ socials.github }}">
                   <svg>
                     <use xlink:href="#icon-git"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item socials__item_be" *ngIf="socials.behance">
-                <a target="_blank" href="{{socials.behance}}">
+                <a target="_blank" href="{{ socials.behance }}">
                   <svg>
                     <use xlink:href="#icon-be"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item socials__item_fb" *ngIf="socials.facebook">
-                <a target="_blank" href="{{socials.facebook}}">
+                <a target="_blank" href="{{ socials.facebook }}">
                   <svg>
                     <use xlink:href="#icon-fb"></use>
                   </svg>
@@ -37,7 +37,7 @@
                 </a>
               </li>
               <li class="socials__item socials__item_li" *ngIf="socials.linkedin">
-                <a target="_blank" href="{{socials.linkedin}}">
+                <a target="_blank" href="{{ socials.linkedin }}">
                   <svg>
                     <use xlink:href="#icon-li"></use>
                   </svg>
@@ -50,19 +50,17 @@
       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
         <div class="team-member__info">
           <div class="content-section project__section">
-            <strong class="team-member__name">{{member.name}}</strong>
-            <h6 class="team-member__position">{{member.position}}</h6>
+            <strong class="team-member__name">{{ member.name }}</strong>
+            <h6 class="team-member__position">{{ member.position }}</h6>
             <div class="team-member__description">
-              <p *ngFor="let paragraph of member.description">{{paragraph}}</p>
+              <p>{{ member.overview }}</p>
             </div>
             <span class="project__heading">Skills</span>
-            <ul class="team-member__skills">
-              <li class="team-member__skill" *ngFor="let skill of member.skills">{{skill}}</li>
-            </ul>
+            <div [innerHTML]="member['skills-2']" class="team-member__skills"></div>
           </div>
-          <div class="team-member__projects" *ngIf="projects.length > 0">
+          <div class="team-member__projects" *ngIf="member.projects && member.projects.length > 0">
             <span class="project__heading">Took a part in projects</span>
-            <projects-list class="projects-list" [maxItems]="4" [memberId]="member.memberId"></projects-list>
+            <projects-list *ngIf="member.projects" class="projects-list" [maxItems]="4" [memberProjectsIds]="member.projects"></projects-list>
           </div>
         </div>
       </div>

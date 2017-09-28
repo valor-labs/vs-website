@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { VacanciesService } from '@services/vacancies.service';
-import { Vacancy } from '@services/classes/vacancy';
+import { WebflowService } from '@app/services/webflow-api.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'vacancies',
@@ -9,12 +9,16 @@ import { Vacancy } from '@services/classes/vacancy';
 })
 
 export class VacanciesListComponent implements OnInit {
-  public vacancies: Vacancy[];
+  public vacancies: any;
+  public vacanciesSubscribe: Observable<any>;
 
   public ngOnInit(): void {
-    this.vacancies = this.vacanciesService.getVacancies();
+    this.vacanciesSubscribe = this.webflowService.getVacanciesItems();
+    this.vacanciesSubscribe.subscribe((data: any) => {
+      this.vacancies = data.items;
+    });
   }
 
-  public constructor(public vacanciesService: VacanciesService) {
+  public constructor(public webflowService: WebflowService) {
   }
 }

@@ -8,5 +8,5 @@ import { Vacancy } from '@services/classes/vacancy';
 })
 
 export class VacancyPreviewComponent {
-  @Input() public vacancy: Vacancy;
+  @Input() public vacancy: any;
 }

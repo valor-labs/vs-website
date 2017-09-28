@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
-import { MainService } from '@services/main.service';
 import { Member } from '@services/classes/member';
+import { WebflowService } from '@app/services/webflow-api.service';
 
 @Component({
   selector: 'team',
@@ -9,13 +10,16 @@ import { Member } from '@services/classes/member';
 })
 
 export class TeamComponent implements OnInit {
-  public team:Member[];
+  public team: Member[];
+  public employeesSubscribe: Observable<any>;
 
   public ngOnInit():void {
-    this.team = this.mainService.getTeam();
+    this.employeesSubscribe = this.webflowService.getEmployeesItems();
+    this.employeesSubscribe.subscribe((data: any) => {
+      this.team = data.items;
+    });
   }
 
-  public constructor(public mainService:MainService) {
-
+  public constructor(public webflowService: WebflowService) {
   }
 }

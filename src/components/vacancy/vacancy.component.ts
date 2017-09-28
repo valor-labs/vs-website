@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
-import { Vacancy } from '@services/classes/vacancy';
 import { VacanciesService } from '@services/vacancies.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'vacancy',
@@ -11,8 +11,11 @@ import { VacanciesService } from '@services/vacancies.service';
 })
 export class VacancyComponent implements OnInit {
   public pageName: string;
-  public vacancy: Vacancy;
-  public vacancyId: number;
+  public vacancy: any = {};
+  public vacancyId: string;
+  public benefits: any = [];
+  public vacanciesSubscribe: Observable<any>;
+  public benefitsSubscribe: Observable<any>;
 
   public constructor(private vacanciesService: VacanciesService, private route: ActivatedRoute, private _titleService: Title) {
   }
@@ -24,11 +27,24 @@ export class VacancyComponent implements OnInit {
       this.vacancyId = params['vacancyId'];
       /* tslint:enable */
 
-      this.vacancy = this.vacanciesService.getById(this.vacancyId);
+      this.vacanciesSubscribe = this.vacanciesService.getVacancies();
+      this.vacanciesSubscribe.subscribe((vacancies: any) => {
+        this.vacancy = vacancies.items.find((obj: any) => {
+          return obj.slug === this.vacancyId;
+        });
+        this._titleService.setTitle('Vacancy: ' + this.vacancy.name);
+        this.vacancy.headerImage = 'assets/images/vacancy/vacancy.jpg';
+      });
 
-      // setting up <title> and tab name
-      this._titleService.setTitle('Vacancy: '+ this.vacancy.name);
+      this.benefitsSubscribe = this.vacanciesService.getBenefits();
+      this.benefitsSubscribe.subscribe((benefits: any) => {
+        benefits.items.sort((a:any, b:any) => {
+          return new Date(a['created-on']).getTime() - new Date(b['created-on']).getTime();
+        });
+        this.benefits = benefits.items;
+      });
     });
+
   }
 
   public scrollTo(e: MouseEvent): void {
