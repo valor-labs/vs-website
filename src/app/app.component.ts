@@ -17,7 +17,7 @@ export class AppComponent {
           // /about -> About. /some-link -> Some Link
           // Team member's, project's and other dynamic page's titles sets up in their own components
           const titlePositionStart = url.lastIndexOf('/');
-          if (titlePositionStart === 0) {
+          if (titlePositionStart === 0 && url !== '/')  {
             title = url.substr(titlePositionStart + 1)
               .replace(/-/g, ' ')
               .replace(/\w\S*/g, (txt: any) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
