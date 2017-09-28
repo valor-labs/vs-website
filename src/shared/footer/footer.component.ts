@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './footer.html'
 })
 export class FooterComponent {
-  public year:number = new Date().getFullYear();
+  public year: number = new Date().getFullYear();
 }

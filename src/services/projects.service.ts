@@ -6,13 +6,15 @@ import { projects } from '../services/collections/projects';
 export class ProjectsService {
 
   public getAll(): Project[] {
-    let copy = JSON.parse(JSON.stringify(projects));
+    const copy = JSON.parse(JSON.stringify(projects));
+
     return copy;
   }
 
   public getByLink(projectLink: string): any {
-    const projects: Project[] = this.getAll();
-    return projects.find((project: Project) => projectLink === project.link);
+    const parsedProjects: Project[] = this.getAll();
+
+    return parsedProjects.find((project: Project) => projectLink === project.link);
   }
 
   /**
@@ -22,46 +24,47 @@ export class ProjectsService {
    */
 
   public getSimilarTo(projectLink: string): Project[] {
-    let projects: Project[] = this.getAll()
+    const parsedProjects: Project[] = this.getAll()
       .filter((project: Project) => {
         return projectLink !== project.link;
       });
 
-    return this.shuffleArray(projects);
+    return shuffleArray(parsedProjects);
   }
 
   public getParticipant(memberId: number): Project[] {
-    let participatedProjects: Project[] = [];
+    const participatedProjects: Project[] = [];
     this.getAll().forEach((project: Project) => {
-      if(project.members.indexOf(memberId) !== -1) {
+      if (project.members.indexOf(memberId) !== -1) {
         participatedProjects.push(project);
       }
     });
+
     return participatedProjects;
   }
+}
 
-  /**
-   * Shuffles array
-   * @param array<T>
-   * @returns {array<T>}
-   */
-  private shuffleArray(array: any[]): any[] {
-    let counter = array.length;
+/**
+ * Shuffles array
+ * @param array<T>
+ * @returns {array<T>}
+ */
+function shuffleArray(array: any[]): any[] {
+  let counter = array.length;
 
-    // While there are elements in the array
-    while (counter > 0) {
-      // Pick a random index
-      const index = Math.floor(Math.random() * counter);
+  // While there are elements in the array
+  while (counter > 0) {
+    // Pick a random index
+    const index = Math.floor(Math.random() * counter);
 
-      // Decrease counter by 1
-      counter--;
+    // Decrease counter by 1
+    counter--;
 
-      // And swap the last element with it
-      const temp = array[counter];
-      array[counter] = array[index];
-      array[index] = temp;
-    }
-
-    return array;
+    // And swap the last element with it
+    const temp = array[counter];
+    array[counter] = array[index];
+    array[index] = temp;
   }
+
+  return array;
 }

@@ -79,7 +79,7 @@
                 <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                 <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                 <span *ngIf="!this.fileName"> Add Document </span>
-                <span *ngIf="this.fileName">{{this.fileName}}</span>
+                <span *ngIf="this.fileName">{{ this.fileName }}</span>
               </div>
             </label>
             <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>
@@ -236,7 +236,7 @@
                            accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                     <span *ngIf="!this.fileName"> Add resume </span>
-                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                    <span *ngIf="this.fileName">{{ this.fileName }}</span>
                   </div>
                 </label>
                 <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>
@@ -337,7 +337,7 @@
                     <input style="display: none;" type="file" #input (change)="fileChange($event)" placeholder="Upload file" accept=".txt,.doc,.exel,.pdf,.docx,.csv,.png,.jpg,.jpeg">
                     <img [src]="'assets/images/forms/upload-icon.png'" alt="Upload icon">
                     <span *ngIf="!this.fileName"> Add Document </span>
-                    <span *ngIf="this.fileName">{{this.fileName}}</span>
+                    <span *ngIf="this.fileName">{{ this.fileName }}</span>
                   </div>
                 </label>
                 <span *ngIf="this.fileName" (click)="removeFile(input)" class="drop-container__remove"></span>

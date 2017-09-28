@@ -50,14 +50,14 @@
       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
         <div class="team-member__info">
           <div class="content-section project__section">
-            <strong class="team-member__name">{{member.name}}</strong>
-            <h6 class="team-member__position">{{member.position}}</h6>
+            <strong class="team-member__name">{{ member.name }}</strong>
+            <h6 class="team-member__position">{{ member.position }}</h6>
             <div class="team-member__description">
-              <p *ngFor="let paragraph of member.description">{{paragraph}}</p>
+              <p *ngFor="let paragraph of member.description">{{ paragraph }}</p>
             </div>
             <span class="project__heading">Skills</span>
             <ul class="team-member__skills">
-              <li class="team-member__skill" *ngFor="let skill of member.skills">{{skill}}</li>
+              <li class="team-member__skill" *ngFor="let skill of member.skills">{{ skill }}</li>
             </ul>
           </div>
           <div class="team-member__projects" *ngIf="projects.length > 0">

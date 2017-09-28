@@ -13,7 +13,7 @@
         <h5 class="project__heading">Description</h5>
       </div>
       <div class="col-lg-9 col-md-11">
-        <p>{{vacancy.description}}</p>
+        <p>{{ vacancy.description }}</p>
       </div>
       <div class="col-lg-1 col-md-1">
         <button pageScroll (click)="scrollTo($event)" class="btn btn_scroll btn_small project__btn">Apply</button>
@@ -27,14 +27,14 @@
       <div class="col-lg-9">
         <ul class="project-page-list">
           <li *ngFor="let item of vacancy.requirements">
-            {{item}}
+            {{ item }}
           </li>
         </ul>
         <div *ngIf="vacancy.requirementsPlus">
           <p>Will be a plus:</p>
           <ul class="project-page-list">
             <li *ngFor="let item of vacancy.requirementsPlus">
-              {{item}}
+              {{ item }}
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
       <div class="col-lg-9">
         <ul class="project-page-list">
           <li *ngFor="let item of vacancy.responsibilities">
-            {{item}}
+            {{ item }}
           </li>
         </ul>
       </div>
@@ -61,7 +61,7 @@
       <div class="col-lg-9">
         <ul class="project-page-list">
           <li *ngFor="let item of vacancy.offer">
-            {{item}}
+            {{ item }}
           </li>
         </ul>
       </div>

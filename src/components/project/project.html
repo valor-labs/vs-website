@@ -13,18 +13,18 @@
         <h5 class="project__heading">Description</h5>
       </div>
       <div class="col-lg-9 col-md-11">
-        <p>{{project.description}}</p>
+        <p>{{ project.description }}</p>
         <div class="content-presentation">
           <div class="content-presentation__img">
             <img *ngIf="!project.video" [src]="project.fullImage" width="800">
             <iframe *ngIf="project.video" [src]="project.video" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
           <div class="content-presentation__links">
-            <a class="content-presentation__link" *ngIf="project.externalLink" href="{{project.externalLink}}" target="_blank">
+            <a class="content-presentation__link" *ngIf="project.externalLink" href="{{ project.externalLink }}" target="_blank">
               <span class="icon-link"></span>
               View Online »
             </a>
-            <a class="content-presentation__link" *ngIf="project.behanceLink" href="{{project.behanceLink}}" target="_blank">
+            <a class="content-presentation__link" *ngIf="project.behanceLink" href="{{ project.behanceLink }}" target="_blank">
               <span class="icon-be"></span>
               View presentation »
             </a>
@@ -43,7 +43,7 @@
       <div class="col-lg-9">
         <ul>
           <li *ngFor="let task of project.details.tasks">
-            {{task}}
+            {{ task }}
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
       <div class="col-lg-9">
         <ul>
           <li *ngFor="let solution of project.details.solutions">
-            {{solution}}
+            {{ solution }}
           </li>
         </ul>
       </div>
@@ -68,7 +68,7 @@
       </div>
       <div class="col-lg-9">
           <p *ngFor="let item of project.details.outcome">
-              {{item}}
+              {{ item }}
           </p>
       </div>
     </div>
@@ -82,7 +82,7 @@
         <div *ngFor="let row of project.formattedTechnologies"  class="col-lg-3 col-md-3 col-sm-3">
           <ul>
             <li *ngFor="let technology of row">
-              {{technology}}
+              {{ technology }}
             </li>
           </ul>
         </div>
@@ -96,13 +96,13 @@
       </div>
       <div class="col-lg-9">
         <div class="project__member-list">
-          <template ngFor let-member [ngForOf]="project.formattedMembers">
+          <ng-template ngFor let-member [ngForOf]="project.formattedMembers">
             <div [ngClass]="{'project__member_exmember': !member.url}" class="project__member col-lg-3 col-md-3 col-sm-3 col-xs-6">
               <img (click)="goToMember(member.url)" [src]="member.avatar" width="70" height="70">
-              <span (click)="goToMember(member.url)" class="project__member-name">{{member.name}}</span>
-              <span class="project__member-position">{{member.position}}</span>
+              <span (click)="goToMember(member.url)" class="project__member-name">{{ member.name }}</span>
+              <span class="project__member-position">{{ member.position }}</span>
             </div>
-          </template>
+          </ng-template>
         </div>
       </div>
     </div>
@@ -117,11 +117,11 @@
             <img [src]="project.reference.photo" width="70" height="70">
           </div>
           <div>
-            <span class="project__reference-name">{{project.reference.name}}</span>
-            <span class="project__reference-position">{{project.reference.position}}</span>
+            <span class="project__reference-name">{{ project.reference.name }}</span>
+            <span class="project__reference-position">{{ project.reference.position }}</span>
           </div>
         </div>
-        <span class="project__reference-text">{{project.reference.text}}</span>
+        <span class="project__reference-text">{{ project.reference.text }}</span>
       </div>
     </div>
   </div>

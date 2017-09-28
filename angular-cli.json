@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-rc.0",
+    "version": "1.0.0",
     "name": "vs-website"
   },
   "apps": [
@@ -34,7 +34,7 @@
         "assets/css/about.css"
       ],
       "scripts": [
-        "../node_modules/particles.js/particles.js",
+        "assets/js/particles.js",
         "assets/js/helper.js"
       ],
       "environmentSource": "environments/environment.ts",
@@ -56,6 +56,11 @@
       "config": "./karma.conf.js"
     }
   },
+  "lint": [
+    {
+      "project": "src/tsconfig.json"
+    }
+  ],
   "defaults": {
     "styleExt": "css",
     "prefixInterfaces": false,

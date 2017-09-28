@@ -7,14 +7,14 @@ import { Location } from '@angular/common';
   templateUrl: './top-menu.html'
 })
 export class TopMenuComponent implements OnInit {
-  public isSticky:boolean = false;
-  public isOpen: boolean = false;
-  public startFixedPosition:number = window.innerHeight;
+  public isSticky = false;
+  public isOpen = false;
+  public startFixedPosition: number = window.innerHeight;
   public elHeight: number;
-  @Input() public isLanding:boolean;
+  @Input() public isLanding: boolean;
 
-  public constructor(public router:Router, public renderer: Renderer, public location: Location) {
-    this.router.events.subscribe((event:any) => {
+  public constructor(public router: Router, public renderer: Renderer, public location: Location) {
+    this.router.events.subscribe((event: any) => {
       document.body.style.overflow = 'auto';
       document.body.className = '';
       window.ontouchmove = null;
@@ -23,9 +23,9 @@ export class TopMenuComponent implements OnInit {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         const tree = router.parseUrl(router.url);
         if (tree.fragment) {
-          const el = document.querySelector('#' + tree.fragment) as HTMLElement;
+          const el = document.querySelector(`#${tree.fragment}`) as HTMLElement;
           if (el) {
-            let elPosition = el.offsetTop;
+            const elPosition = el.offsetTop;
             document.body.scrollTop = document.documentElement.scrollTop = elPosition - this.elHeight;
           }
         }
@@ -33,7 +33,7 @@ export class TopMenuComponent implements OnInit {
     });
   }
 
-  public menuToggle():void {
+  public menuToggle(): void {
     this.isOpen = !this.isOpen;
 
     if (this.isOpen) {
@@ -45,17 +45,13 @@ export class TopMenuComponent implements OnInit {
     }
   }
 
-  public ngOnInit():void {
+  public ngOnInit(): void {
     window.initParticles();
   }
 
-  // tslint:disable
+
   @HostListener('window:scroll', ['$event'])
-  private scroll() {
-    if (window.scrollY > this.startFixedPosition) {
-      this.isSticky = true;
-    } else {
-      this.isSticky = false;
-    }
+  private scroll() { // tslint:disable-line:no-unused-variable
+    this.isSticky = window.scrollY > this.startFixedPosition;
   }
 }

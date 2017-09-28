@@ -2,10 +2,29 @@
   "extends": "tslint-config-valorsoft",
   "rulesDirectory": "./node_modules/codelyzer",
   "rules": {
-    "component-selector": false,
     "no-null-keyword": false,
     "only-arrow-functions": false,
-    "max-file-line-count": [true, 1000],
-    "no-parameter-properties": false
+    "max-file-line-count": [
+      true,
+      1000
+    ],
+    "no-parameter-properties": false,
+    "member-access": [
+      true,
+      "check-accessor"
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      "",
+      "camelCase"
+    ],
+    "component-selector": false,
+    "pipe-naming": [
+      true,
+      "camelCase",
+      ""
+    ],
+    "no-any": false
   }
 }

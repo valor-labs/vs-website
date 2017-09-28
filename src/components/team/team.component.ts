@@ -9,13 +9,13 @@ import { Member } from '@services/classes/member';
 })
 
 export class TeamComponent implements OnInit {
-  public team:Member[];
+  public team: Member[];
 
-  public ngOnInit():void {
-    this.team = this.mainService.getTeam();
+  constructor(public mainService: MainService) {
+
   }
 
-  public constructor(public mainService:MainService) {
-
+  public ngOnInit(): void {
+    this.team = this.mainService.getTeam();
   }
 }
