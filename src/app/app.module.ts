@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { CarouselModule } from 'ng2-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Ng2PageScrollModule } from 'ng2-page-scroll/src/ng2-page-scroll.module';
 
 import { AppComponent } from './app.component';

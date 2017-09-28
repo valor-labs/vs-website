@@ -18,8 +18,9 @@ export class ProjectComponent implements OnInit {
   public projectLink: string;
   public pageName: string;
   public project: Project;
+
   public constructor(public route: ActivatedRoute,
-                     public projectsService:ProjectsService,
+                     public projectsService: ProjectsService,
                      private router: Router,
                      private sanitizer: DomSanitizer,
                      private mainService: MainService,
@@ -32,15 +33,16 @@ export class ProjectComponent implements OnInit {
       /* tslint:disable */
       this.projectLink = params['projectLink'];
       /* tslint:enable */
-      let project = this.projectsService.getByLink(this.projectLink);
+      const project = this.projectsService.getByLink(this.projectLink);
 
       // setting up <title> and tab name
-      this._titleService.setTitle('Project: ' + project.title);
+      this._titleService.setTitle(`Project: ${project.title}`);
 
       // split items to 4 columns
-      let formattedTechnologies: any = [[], [], [], []];
+      let formattedTechnologies = [[], [], [], []];
+      const columnsNum = 4;
       project.technologies.forEach((technology: string, index: number) => {
-        formattedTechnologies[index % 4].push(technology);
+        formattedTechnologies[index % columnsNum].push(technology);
       });
       project.formattedTechnologies = formattedTechnologies;
 
@@ -49,7 +51,7 @@ export class ProjectComponent implements OnInit {
         return project.members.indexOf(member.memberId) >= 0;
       });
       // split items to 4 columns
-      let formattedMembers: any = [];
+      const formattedMembers = [];
       members.forEach((member: Member) => {
         formattedMembers.push({
           avatar: member.avatar,
@@ -61,7 +63,7 @@ export class ProjectComponent implements OnInit {
       project.formattedMembers = formattedMembers;
 
       project.reference = this.mainService.getFeedbackForProject(project.projectId);
-      if(project.video) {
+      if (project.video) {
         project.video = this.sanitizer.bypassSecurityTrustResourceUrl(project.video);
       }
       this.project = project;
@@ -69,8 +71,8 @@ export class ProjectComponent implements OnInit {
   }
 
   public goToMember(memberUrl: string): void {
-    if(memberUrl) {
-      this.router.navigate(['./team/' + memberUrl]);
+    if (memberUrl) {
+      this.router.navigate([`./team/${memberUrl}`]);
     }
   }
 }

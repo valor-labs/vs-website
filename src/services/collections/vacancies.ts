@@ -1,4 +1,6 @@
-export const vacancies: any[] =   [
+/* tslint:disable */
+
+export const vacancies: any[] = [
   {
     vacancyId: 0,
     name: 'Front-End developer',

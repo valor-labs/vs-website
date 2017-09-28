@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 export const team: any[] = [
   {
     memberId: 1,
@@ -192,7 +194,7 @@ export const team: any[] = [
     socials: {
       linkedin: 'https://ua.linkedin.com/in/vyacheslav-panchenko-9313b162'
     }
-  },/*
+  }, /*
    {
    memberId: 14,
    show: false,

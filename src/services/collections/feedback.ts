@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 export const feedbacks: any[] = [
   {
     name: 'Anna Rosling',

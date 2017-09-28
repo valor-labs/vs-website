@@ -96,13 +96,13 @@
       </div>
       <div class="col-lg-9">
         <div class="project__member-list">
-          <template ngFor let-member [ngForOf]="project.formattedMembers">
+          <ng-template ngFor let-member [ngForOf]="project.formattedMembers">
             <div [ngClass]="{'project__member_exmember': !member.url}" class="project__member col-lg-3 col-md-3 col-sm-3 col-xs-6">
               <img (click)="goToMember(member.url)" [src]="member.avatar" width="70" height="70">
               <span (click)="goToMember(member.url)" class="project__member-name">{{member.name}}</span>
               <span class="project__member-position">{{member.position}}</span>
             </div>
-          </template>
+          </ng-template>
         </div>
       </div>
     </div>

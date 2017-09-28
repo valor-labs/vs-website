@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="team-list">
-      <template ngFor let-member [ngForOf]="team">
+      <ng-template ngFor let-member [ngForOf]="team">
         <div *ngIf="member.show" class="team-item">
           <div class="team-item__preview-image">
             <a [routerLink]="['/team', member.url]">
@@ -21,7 +21,7 @@
             <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
           </ul>
         </div>
-      </template>
+      </ng-template>
     </div>
   </div>
 </div>
