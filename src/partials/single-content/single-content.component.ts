@@ -13,11 +13,12 @@ export class SingleContentComponent implements OnInit {
 
   public content: ContentItem;
 
+  constructor(public contentService: ContentService) {
+  }
+
   public ngOnInit(): void {
     const content: any = this.contentService.getContent(this.contentId);
 
     this.content = content;
   }
-
-  public constructor(public contentService: ContentService) {}
 }

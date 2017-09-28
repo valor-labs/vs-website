@@ -13,7 +13,7 @@ import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VacancyComponent } from './components/vacancy/vacancy.component';
 
-export const routes:Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: MainComponent,

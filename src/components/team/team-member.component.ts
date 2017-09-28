@@ -11,14 +11,17 @@ import { Member } from '@services/classes/member';
 })
 
 export class MemberComponent implements OnInit {
-  public socials:any = {};
-  public member:Member;
+  public socials: any = {};
+  public member: Member;
   public projects: any;
-  public projectsService: ProjectsService;
 
-  public constructor(private mainService:MainService, private router:Router, private route:ActivatedRoute, private _titleService:Title, projectsService: ProjectsService) {
-    this.route.params.subscribe((params:{memberUrl:string}) => {
-      let member = this.mainService.getMemberByUrl(params.memberUrl);
+  constructor(private mainService: MainService,
+              private router: Router,
+              private route: ActivatedRoute,
+              private _titleService: Title,
+              private projectsService: ProjectsService) {
+    this.route.params.subscribe((params: { memberUrl: string }) => {
+      const member = this.mainService.getMemberByUrl(params.memberUrl);
       if (!member) {
         return this.router.navigate(['/team']);
       }
@@ -26,10 +29,9 @@ export class MemberComponent implements OnInit {
       this.socials = member.socials;
       this._titleService.setTitle(member.name);
     });
-    this.projectsService = projectsService;
   }
 
-  public ngOnInit():void {
+  public ngOnInit(): void {
     this.projects = this.projectsService.getParticipant(this.member.memberId);
   }
 }

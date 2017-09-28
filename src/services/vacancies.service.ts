@@ -5,7 +5,8 @@ import { vacancies } from './collections/vacancies';
 @Injectable()
 export class VacanciesService {
   public getVacancies(): Vacancy[] {
-    let copy = JSON.parse(JSON.stringify(vacancies));
+    const copy = JSON.parse(JSON.stringify(vacancies));
+
     return copy;
   }
 

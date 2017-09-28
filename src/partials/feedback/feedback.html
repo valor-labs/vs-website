@@ -7,21 +7,21 @@
             <img [src]="comment.image" alt="">
           </div>
           <strong>Industry</strong>
-          <span>{{comment.industry}}</span>
+          <span>{{ comment.industry }}</span>
           <strong>Location</strong>
-          <span>{{comment.location}}</span>
+          <span>{{ comment.location }}</span>
         </div>
         <div class="slide__right">
           <div class="slide__person">
             <div class="slide__avatar">
               <img [src]="comment.photo" alt="">
             </div>
-            <strong class="slide__name">{{comment.name}}</strong>
-            <span class="slide__position">{{comment.position}}</span>
+            <strong class="slide__name">{{ comment.name }}</strong>
+            <span class="slide__position">{{ comment.position }}</span>
           </div>
           <div class="slide__text">
-            <p>{{comment.shortText}}</p>
-            <a href="{{comment.link}}">View case »</a>
+            <p>{{ comment.shortText }}</p>
+            <a href="{{ comment.link }}">View case »</a>
           </div>
         </div>
       </div>

@@ -7,12 +7,16 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 })
 
 export class HamburgerMenuComponent implements OnInit {
-  public isOpen: boolean = false;
+  public isOpen = false;
+
+  constructor(public router: Router) {
+
+  }
 
   public ngOnInit(): void {
-    this.router.events.subscribe((event:Event) => {
-      if(event instanceof NavigationEnd) {
-        if(event.url !== '/') {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        if (event.url !== '/') {
           document.body.style.overflow = 'auto';
           document.body.className = '';
           window.ontouchmove = null;
@@ -22,7 +26,7 @@ export class HamburgerMenuComponent implements OnInit {
     });
   }
 
-  public menuToggle():void {
+  public menuToggle(): void {
     this.isOpen = !this.isOpen;
 
     if (this.isOpen) {
@@ -34,9 +38,5 @@ export class HamburgerMenuComponent implements OnInit {
       document.body.className = '';
       window.ontouchmove = null;
     }
-  }
-
-  public constructor(public router:Router) {
-
   }
 }

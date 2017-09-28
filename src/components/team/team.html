@@ -15,10 +15,10 @@
               <img [src]="member.fullImage" alt="{{member.name}}">
             </a>
           </div>
-          <a [routerLink]="['/team', member.url]" class="team-item__name">{{member.name}}</a>
-          <span class="team-item__position">{{member.position}}</span>
+          <a [routerLink]="['/team', member.url]" class="team-item__name">{{ member.name }}</a>
+          <span class="team-item__position">{{ member.position }}</span>
           <ul class="team-item__skills">
-            <li class="team-item__skill" *ngFor="let skill of member.skills">{{skill}}</li>
+            <li class="team-item__skill" *ngFor="let skill of member.skills">{{ skill }}</li>
           </ul>
         </div>
       </ng-template>

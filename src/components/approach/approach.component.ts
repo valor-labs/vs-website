@@ -9,20 +9,20 @@ import { Project } from '@services/classes/project';
   templateUrl: './approach.html'
 })
 export class ApproachComponent implements OnInit {
-  public projects:Project[];
-  public myInterval:number = 500000;
-  public noWrapSlides:boolean = false;
+  public projects: Project[];
+  public myInterval = 500000;
+  public noWrapSlides = false;
 
-  public ngOnInit():void {
+  constructor(private projectsService: ProjectsService, private sanitizer: DomSanitizer) {
+  }
+
+  public ngOnInit(): void {
     this.projects = this.projectsService.getAll();
 
-    this.projects.forEach((item:any) => {
+    this.projects.forEach((item: any) => {
       if (item.video) {
         item.video = this.sanitizer.bypassSecurityTrustResourceUrl(item.video);
       }
     });
-  }
-
-  public constructor(private projectsService:ProjectsService, private sanitizer:DomSanitizer) {
   }
 }

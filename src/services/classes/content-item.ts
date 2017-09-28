@@ -6,5 +6,5 @@ export class ContentItem {
                      public linkText: string,
                      public columns: {}[],
                      public link: string) {
-  };
+  }
 }

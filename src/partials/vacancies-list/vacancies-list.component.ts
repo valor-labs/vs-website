@@ -11,10 +11,10 @@ import { Vacancy } from '@services/classes/vacancy';
 export class VacanciesListComponent implements OnInit {
   public vacancies: Vacancy[];
 
-  public ngOnInit(): void {
-    this.vacancies = this.vacanciesService.getVacancies();
+  constructor(public vacanciesService: VacanciesService) {
   }
 
-  public constructor(public vacanciesService: VacanciesService) {
+  public ngOnInit(): void {
+    this.vacancies = this.vacanciesService.getVacancies();
   }
 }

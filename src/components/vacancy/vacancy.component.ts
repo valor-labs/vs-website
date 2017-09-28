@@ -14,7 +14,24 @@ export class VacancyComponent implements OnInit {
   public vacancy: Vacancy;
   public vacancyId: number;
 
-  public constructor(private vacanciesService: VacanciesService, private route: ActivatedRoute, private _titleService: Title) {
+  constructor(private vacanciesService: VacanciesService, private route: ActivatedRoute, private _titleService: Title) {
+  }
+
+  private static incScrollTo(step: number): void {
+    document.body.scrollTop += step;
+  }
+
+  private static goToScroll(step: number, duration: number, inc: number): any {
+    return () => {
+      const currentDuration = duration - inc;
+      VacancyComponent.incScrollTo(step);
+
+      if (currentDuration < inc) {
+        return;
+      }
+
+      window.requestAnimationFrame(this.goToScroll(step, currentDuration, inc));
+    };
   }
 
   public ngOnInit(): void {
@@ -27,38 +44,23 @@ export class VacancyComponent implements OnInit {
       this.vacancy = this.vacanciesService.getById(this.vacancyId);
 
       // setting up <title> and tab name
-      this._titleService.setTitle('Vacancy: '+ this.vacancy.name);
+      this._titleService.setTitle(`Vacancy: ${this.vacancy.name}`);
     });
   }
 
   public scrollTo(e: MouseEvent): void {
+    const inc = 20;
+    const duration = 1000;
     e.preventDefault();
-    this.animateScroll('applyForm', 20, 1000);
+    this.animateScroll('applyForm', inc, duration);
   }
 
-  public  animateScroll(id: string, inc: number, duration: number): any {
+  public animateScroll(id: string, inc: number, duration: number): any {
     const elem = document.getElementById(id);
     const startScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const endScroll = elem.offsetTop;
     const step = (endScroll - startScroll) / duration * inc;
 
-    window.requestAnimationFrame(this.goToScroll(step, duration, inc));
-  }
-
-  private  goToScroll(step: number, duration: number, inc: number): any {
-    return () => {
-      const currentDuration = duration - inc;
-      this.incScrollTo(step);
-
-      if (currentDuration < inc) {
-        return;
-      }
-
-      window.requestAnimationFrame(this.goToScroll(step, currentDuration, inc));
-    };
-  }
-
-  private  incScrollTo(step: number): void {
-    document.body.scrollTop += step;
+    window.requestAnimationFrame(VacancyComponent.goToScroll(step, duration, inc));
   }
 }

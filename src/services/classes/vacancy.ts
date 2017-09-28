@@ -8,5 +8,5 @@ export class Vacancy {
                      public requirementsPlus: string[],
                      public offer: string[],
                      public headerImage: string) {
-  };
+  }
 }

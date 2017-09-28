@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer, Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 import { ProjectsService } from '@services/projects.service';
 import { MainService } from '@services/main.service';
@@ -39,7 +38,7 @@ export class ProjectComponent implements OnInit {
       this._titleService.setTitle(`Project: ${project.title}`);
 
       // split items to 4 columns
-      let formattedTechnologies = [[], [], [], []];
+      const formattedTechnologies = [[], [], [], []];
       const columnsNum = 4;
       project.technologies.forEach((technology: string, index: number) => {
         formattedTechnologies[index % columnsNum].push(technology);

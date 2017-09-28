@@ -35,9 +35,9 @@ export const team: any[] = [
   },
   {
     memberId: 2,
-    show: true,
+    show: false,
     name: 'Bogdan Katrych',
-    url: 'katrych',
+    // url: 'katrych',
     position: 'Project manager',
     avatar: 'assets/images/team/ava-katrych.jpg',
     fullImage: 'assets/images/team/katrych.jpg',

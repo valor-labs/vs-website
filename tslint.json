@@ -19,16 +19,12 @@
       "",
       "camelCase"
     ],
-    "component-selector": [
-      true,
-      "element",
-      "",
-      "kebab-case"
-    ],
+    "component-selector": false,
     "pipe-naming": [
       true,
       "camelCase",
       ""
-    ]
+    ],
+    "no-any": false
   }
 }

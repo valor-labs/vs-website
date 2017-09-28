@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Location } from '@angular/common';
-import { Subject } from 'rxjs/Subject';
+// import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'about',
@@ -8,15 +8,15 @@ import { Subject } from 'rxjs/Subject';
 })
 export class AboutComponent implements OnInit {
   private location: Location;
-  private urlEvents: Subject<any>;
+  // private urlEvents: Subject<any>;
 
-  public constructor(@Inject(Location) location: Location) {
-    this.urlEvents = new Subject();
+  constructor(@Inject(Location) location: Location) {
+    // this.urlEvents = new Subject();
     this.location = location;
   }
 
   public ngOnInit(): void {
-    let urlPath = location.hash;
+    const urlPath = location.hash;
 
     if (urlPath.indexOf('culture') !== -1) {
       document.getElementById('our-culture').scrollIntoView();
