@@ -82,11 +82,14 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 2,
-    name: 'JavaScript Developer',
-    description: 'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create a pleasant experience for users and are easy to maintain. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
+    name: 'JavaScript Jun+ Developer',
+    description: 'As part of the expansion Valor Software is looking for a Junior+ JavaScript Developer. We are looking for an enthusiastic individual with a passion for learning new skills and technologies. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
-      'Write clean and well-structured code;',
-      'Contribute ideas for new features and identify areas for improvement proactively.'
+      'Assist in the development of both existing as well as new and future projects;',
+      'Modifying existing code and troubleshooting issues when they arise;',
+      'Share knowledge within agile team and the wider department;',
+      'Participate in peer code reviews, both as reviewer and reviewed;',
+      'Search and use of new web technologies for solving problems;'
     ],
     offer: [
       'Knowledgeable & casually team to work with;',
@@ -98,9 +101,40 @@ export const vacancies: any[] = [
       'Regular internal workshops with non-boring speakers;'
     ],
     requirements: [
+      '0.5+ year of web development experience;',
+      'Experience with any framework / library for developing complex front-end: React, Vue, Backbone, Ember, Knockout; (preferably Angular);',
+      'Experience with JavaScript;',
+      'Experience in HTML5 and CSS3;',
+      'Ability to work with version control systems (git) will be a plus;',
+      'TechnicaI/Intermediate English is a plus;'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 3,
+    name: 'Middle JavaScript Dev',
+    description: 'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create pleasant experience for users and are easy to maintain. As part of our team, you’ll have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
+    responsibilities: [
+      'Write clean and well-structured code;',
+      'Provide website maintenance and enhancements;',
+      'Contribute ideas for new features and identify areas for improvement proactively;',
+      'Collaborative work with QA team to ensure timely delivery of high-quality products;',
+      'Reach outside the mainstream to adopt the best of all communities: open source, Agile, programming, etc.'
+    ],
+    offer: [
+      'Knowledgeable & casually team to work with;',
+      'Competitive salary;',
+      'Casual work environment;',
+      'Partial grant of the cost of certification and related conferences;',
+      'Non-stop professional growth and actually interesting projects;',
+      'Huge books library;',
+      'Regular internal workshops with non-boring speakers.'
+    ],
+    requirements: [
       '2+ years of web development experience;',
       'Ability to interact with third-party APIs and build RESTful web services using Node.js;',
-      'Willing to to create well-designed UIs using Angular v4+ (experience with other modern JS frameworks is a plus);',
+      'Willing to create well-designed UIs using Angular 4+ Javascript framework (React, Backbone, experience is a plus);',
       'Ability to solve problems quickly and independently;',
       'Experience with npm, webpack or similar modules;',
       'CSS and responsive web design;',
@@ -119,46 +153,81 @@ export const vacancies: any[] = [
     location: 'Kharkiv, Ukraine'
   },
   {
-    vacancyId: 3,
-    name: 'Project Manager',
-    description: 'We are seeking for an ambitious self-starter with a positive attitude. The right Project Manager must have excellent communication skills, written as well as verbal as you would be liaising with both internal and external stakeholders and maintain close contact with team members. Technical proficiency, and ability to handle any technical queries effectively for Project Manager is a must. This role would be a big step on your way to becoming a Senior Project Manager position within a truly pioneering IT company. ',
+    vacancyId: 4,
+    name: 'DevOps',
+    description: 'Valor Software is looking for DevOps Engineer to help automate platform/application builds for both internal and external products.  As a DevOps engineer, you will be responsible for managing our software and cloud-based infrastructure. We are in search of someone who can write the code that automatically deploys software and configures it appropriately. This is an extremely hands-on and engaging role with lots of responsibility, interesting challenges, and exposure to cutting-edge tech. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
-      'Typical activities within this project support role include: generation and maintenance of cross functional project plans, organization, and documentation of project meetings, creation / analysis / reporting of project metrics, coordination with stakeholders;',
-      'Leads critical project governance activities, including facilitating project meetings, progressing projects through life cycle transitions, and ensuring quality standards are maintained through quality assurance activities;',
-      'Develops and implements risk assessment, change management, quality assurance, performance, and control measures to ensures completion of projects by established standards;',
-      'Early identification of issues and/or concerns that either has the potential or will impact the project baseline;',
-      'Providing accurate and timely information, data and reports regarding the project status, activities and performance.'
+      'Understanding Systems Development Life Cycle and automating with DevOps practices;',
+      'Collaborate with QA and Dev teams to understand current processes;',
+      'Research best practices and technology solutions;',
+      'Ability to communicate progress and strategy to other teams;',
+      'Work with project management and leadership to develop schedules, estimates and deliver according to plan;',
+      'Be a team player, working as part of a major team;',
+      'Be able to work independently;',
+      'Follow specifications and architecture plans;',
+      'Excellent communication skills, both written and spoken;'
     ],
     offer: [
-      'Passionate & fun team to work with;',
+      'Knowledgeable & casually team to work with;',
       'Competitive salary;',
-      'Fast, professional growth and lots and lots of new experience are guaranteed;',
+      'Casual work environment;',
       'Partial grant of the cost of certification and related conferences;',
-      'Friendly and relaxed atmosphere;',
-      'Flexible working hours;',
-      'Extremely good coffee.'
+      'Non-stop professional growth and actually interesting projects;',
+      'Huge books library;',
+      'Regular internal workshops with non-boring speakers.'
     ],
     requirements: [
-      'At least one year of experience in managing technology/online/business projects in a professional environment involving multiple stakeholders;',
-      'At least one year experience in managing teams;',
-      'Knowledge of IT operation processes such as risk management;',
-      'Strong estimation skills;',
-      'Knowledge of Agile project management approaches;',
-      'Excellent time management, organizational skills and communication skills;',
-      'Competent in managing multiple projects and client relationships at one time;',
-      'Strong understanding of the need for Quality within the project environment;',
-      'Excellent english communication skills (Intermediate+);',
-      'Knowledge of Agile project management approaches;',
-      'Experience dealing with a range of customers;',
-      'Excellent problem-solving skills;'
+      'Experience in administering Linux / UNIX and Windows systems;',
+      'Experience with web-servers (Apache, nginx);',
+      'Strong bash scripting skills;',
+      'Experience with monitoring tools (NewRelic, etc.);',
+      'Experience with AWS (EC2, ECS, CloudFormation);',
+      'Experience with the Google Cloud Platform;',
+      'Experience with Docker / Kubernetes;',
+      'Basics of network operation (switching, routing, load balancing);',
+      'Understanding CI / CD and practical experience with it;',
+      'Configuration Management System (Puppet / Chef or Ansible);',
+      'Intermediate English.'
     ],
     requirementsPlus: [
-      'Knowledge of what Waterfall approach is;',
-      'Proven records of education in project management area;',
-      'Experience in managing web development projects;'
+      'A good understanding of Git through command line (commit, create tags, create branches, check commit history);',
+      'Basic Node.js scripting skills;',
+      'Additional certifications and masters in technology related field or MBA.'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 5,
+    name: 'Graphic/Web Designer',
+    description: 'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designed will work in close collaboration with customers and dev teams to deliver cutting-edge projects.',
+    responsibilities: [
+      'Collaborate with internal teams to define and design innovative materials and solutions. Develops internal and external presentations, as well as graphics for product illustrations, logos, and websites;',
+      'Assist in implementing branding strategy, and improves/enhances collateral within brand guidelines;',
+      'Creation of GIF animations;',
+      'Work closely with UX/UI designer;',
+      'Work with internal teams and external clients on web applications/websites;',
+      'Creating wireframes, prototypes;',
+      'Perform other related duties as assigned.'
+    ],
+    offer: [
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Partial grant of the cost of certification and related conferences;',
+      'The possibility of professional growth and growth of skills;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Good coffee.'
+    ],
+    requirements: [
+      '1-2+ years of experience in graphic or web/mobile design;',
+      'Portfolio showing exceptional creative design including illustrations, web or mobile designs;',
+      'Illustrator/Photoshop, Sketch is a plus;',
+      'Wireframing tools knowledge: Moqups, Axure, whatever suits your style ;)',
+      'Invision or Zeplin is a plus;',
+      'At least pre-intermediate English.'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
   }
-
 ];
