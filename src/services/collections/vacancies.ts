@@ -134,8 +134,8 @@ export const vacancies: any[] = [
     requirements: [
       '2+ years of web development experience;',
       'Ability to interact with third-party APIs and build RESTful web services using Node.js;',
-      'Willing to create well-designed UIs using Angular 4+ Javascript framework (React, Backbone, experience is a plus);',
-      'Ability to solve problems quickly and independently;',
+      'Willing to create well-designed UIs using Angular 4+ Javascript framework;',
+      'Ability to solve issues quickly and independently;',
       'Experience with npm, webpack or similar modules;',
       'CSS and responsive web design;',
       'Strong written and verbal communication skills.'
