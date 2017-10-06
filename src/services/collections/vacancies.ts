@@ -134,8 +134,8 @@ export const vacancies: any[] = [
     requirements: [
       '2+ years of web development experience;',
       'Ability to interact with third-party APIs and build RESTful web services using Node.js;',
-      'Willing to create well-designed UIs using Angular 4+ Javascript framework (React, Backbone, experience is a plus);',
-      'Ability to solve problems quickly and independently;',
+      'Willing to create well-designed UIs using Angular 4+ Javascript framework;',
+      'Ability to solve issues quickly and independently;',
       'Experience with npm, webpack or similar modules;',
       'CSS and responsive web design;',
       'Strong written and verbal communication skills.'
@@ -200,7 +200,7 @@ export const vacancies: any[] = [
   {
     vacancyId: 5,
     name: 'Graphic/Web Designer',
-    description: 'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designed will work in close collaboration with customers and dev teams to deliver cutting-edge projects.',
+    description: 'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designer will work in close collaboration with customers and dev teams to deliver cutting-edge projects.',
     responsibilities: [
       'Collaborate with internal teams to define and design innovative materials and solutions. Develops internal and external presentations, as well as graphics for product illustrations, logos, and websites;',
       'Assist in implementing branding strategy, and improves/enhances collateral within brand guidelines;',
