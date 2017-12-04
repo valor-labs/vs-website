@@ -2,6 +2,7 @@ export class Vacancy {
   public constructor(public vacancyId: number,
                      public name: string,
                      public description: string,
+                     public show: boolean,
                      public responsibilities: string[],
                      public requirements: string [],
                      public location: string,

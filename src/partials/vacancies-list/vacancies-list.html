@@ -1,4 +1,6 @@
-<div *ngFor="let vacancy of vacancies" class="vacancy-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-  <vacancy-preview  [vacancy]="vacancy"></vacancy-preview>
-</div>
+<ng-template ngFor let-vacancy [ngForOf]="vacancies">
+  <div *ngIf="vacancy.show" class="vacancy-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <vacancy-preview [vacancy]="vacancy"></vacancy-preview>
+  </div>
+</ng-template>
 
