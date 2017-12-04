@@ -3,6 +3,7 @@
 export const vacancies: any[] = [
   {
     vacancyId: 0,
+    show: true,
     name: 'Front-End developer',
     description: 'Company seeks hard working, motivated individual to develop interactive web sites. Applicants should have multiple years experience writing custom HTML, CSS3, and JavaScript' +
     ' (ES6, TypeScript). Expertise writing semantic, modular front end code using HTML5, CSS3, and W3C coding practices a must. Understanding of the concepts of progressive enhancement, mobile first and future friendly design highly encouraged.',
@@ -41,6 +42,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 1,
+    show: true,
     name: 'QA',
     description: 'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.',
     responsibilities: [
@@ -82,6 +84,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 2,
+    show: false,
     name: 'JavaScript Jun+ Developer',
     description: 'As part of the expansion Valor Software is looking for a Junior+ JavaScript Developer. We are looking for an enthusiastic individual with a passion for learning new skills and technologies. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
@@ -113,6 +116,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 3,
+    show: true,
     name: 'Middle JavaScript Dev',
     description: 'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create pleasant experience for users and are easy to maintain. As part of our team, you’ll have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
@@ -155,6 +159,7 @@ export const vacancies: any[] = [
   {
     vacancyId: 4,
     name: 'DevOps',
+    show: false,
     description: 'Valor Software is looking for DevOps Engineer to help automate platform/application builds for both internal and external products.  As a DevOps engineer, you will be responsible for managing our software and cloud-based infrastructure. We are in search of someone who can write the code that automatically deploys software and configures it appropriately. This is an extremely hands-on and engaging role with lots of responsibility, interesting challenges, and exposure to cutting-edge tech. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
     responsibilities: [
       'Understanding Systems Development Life Cycle and automating with DevOps practices;',
@@ -199,6 +204,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 5,
+    show: false,
     name: 'Graphic/Web Designer',
     description: 'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designer will work in close collaboration with customers and dev teams to deliver cutting-edge projects.',
     responsibilities: [
