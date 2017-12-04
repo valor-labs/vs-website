@@ -42,6 +42,11 @@ To hide team member on the /team page, set show: false in team.ts.
 
 Leave member on the project page, but make him unclickable, remove url param.
 
+
+**Vacancies:**
+
+To hide vacancy on the /careers page, set show: false in vacancies.ts.
+
 ### Publishing
 
 #### Autodeploy is now configured only for staging server using GitHub Deploy keys and Travis CI.
