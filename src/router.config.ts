@@ -7,7 +7,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectComponent } from './components/project/project.component';
 import { AboutComponent } from './components/about/about.component';
-import { TeamComponent } from './components/team/team.component';
+// import { TeamComponent } from './components/team/team.component';
 import { MemberComponent } from './components/team/team-member.component';
 import { CareersComponent } from './components/careers/careers.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -24,7 +24,7 @@ export const routes: Routes = [
       {path: 'clients', component: ProjectsComponent},
       {path: 'project/:projectLink', component: ProjectComponent},
       {path: 'about', component: AboutComponent},
-      {path: 'team', component: TeamComponent},
+      /*{path: 'team', component: TeamComponent},*/
       {path: 'team/:memberUrl', component: MemberComponent},
       {path: 'careers', component: CareersComponent},
       {path: 'careers/:vacancyId', component: VacancyComponent},
