@@ -1,5 +1,5 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 // import { Subject } from 'rxjs/Subject';
 
 @Component({
@@ -7,20 +7,19 @@ import { Location } from '@angular/common';
   templateUrl: './about.html'
 })
 export class AboutComponent implements OnInit {
-  private location: Location;
   // private urlEvents: Subject<any>;
 
-  constructor(@Inject(Location) location: Location) {
+  constructor(private route: ActivatedRoute) {
     // this.urlEvents = new Subject();
-    this.location = location;
   }
 
   public ngOnInit(): void {
-    const urlPath = location.hash;
+    this.route.fragment.subscribe((fragment: string) => {
+      const urlPath = fragment;
 
-    if (urlPath.indexOf('culture') !== -1) {
-      document.getElementById('our-culture').scrollIntoView();
-    }
+      if (urlPath && urlPath.indexOf('culture') !== -1) {
+        document.getElementById('our-culture').scrollIntoView();
+      }
+    });
   }
-
 }

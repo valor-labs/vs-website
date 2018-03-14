@@ -23,7 +23,7 @@ export class TopMenuComponent implements OnInit {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         const tree = router.parseUrl(router.url);
         if (tree.fragment) {
-          const el = document.querySelector(`#${tree.fragment}`) as HTMLElement;
+          const el = document.querySelector<HTMLElement>(`#${tree.fragment}`);
           if (el) {
             const elPosition = el.offsetTop;
             document.body.scrollTop = document.documentElement.scrollTop = elPosition - this.elHeight;
