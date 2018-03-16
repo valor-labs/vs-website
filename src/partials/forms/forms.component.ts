@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, Inject } from '@angular/core';
-import { Location } from '@angular/common';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 // import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -9,7 +8,7 @@ import { MailService } from '@services/mail.service';
   selector: 'forms',
   templateUrl: './forms.html'
 })
-export class FormsComponent implements OnInit {
+export class FormsComponent implements OnInit, OnDestroy {
   @Input('pageName') public pageName: string;
   public success = false;
   public preloader = false;
@@ -32,14 +31,13 @@ export class FormsComponent implements OnInit {
   public isContactForm = false;
   public isCaseForm = false;
   public isVacancyForm = false;
-  private location: Location;
+
   // private urlEvents: Subject<any>;
   private mailServiceSubscribe: Subscription;
   private mailService: MailService;
 
-  public constructor(@Inject(Location) location: Location, mailService: MailService) {
+  public constructor(mailService: MailService) {
     // this.urlEvents = new Subject();
-    this.location = location;
     this.mailService = mailService;
   }
 
@@ -56,6 +54,10 @@ export class FormsComponent implements OnInit {
     if (this.pageName === 'Project page') {
       this.isCaseForm = true;
     }
+  }
+
+  public ngOnDestroy() {
+    this.mailServiceSubscribe.unsubscribe();
   }
 
   public onBlur(): void {
