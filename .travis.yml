@@ -19,7 +19,7 @@ script:
 after_success:
   - ./node_modules/.bin/codecov  -f coverage/coverage-final.json
   - test $TRAVIS_BRANCH = "master" && npm run deploy:gh-pages.prod
-  - test $TRAVIS_BRANCH = "ci-autodeploy-path-swap" && npm run deploy:gh-pages.stage
+  - test $TRAVIS_BRANCH = "development" && npm run deploy:gh-pages.stage
 
 addons:
   firefox: "42.0"
