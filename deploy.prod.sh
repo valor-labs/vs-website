@@ -3,7 +3,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 echo "deploying to gh-pages..."
 SHA=`git rev-parse --verify HEAD`
-URL='git@github.com:VS-work/VS-work.github.io.git'
+URL='git@github.com:valor-software/valor-software.github.io.git'
 
 openssl aes-256-cbc -K $encrypted_3fc7c455333c_key -iv $encrypted_3fc7c455333c_iv -in deploy_key.enc -out deploy_key -d
 
