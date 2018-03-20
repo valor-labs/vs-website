@@ -6,17 +6,17 @@ node_js:
 script:
   - npm run clean && npm run build
 
+if: branch = ci-autodeploy-path-swap
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local-dir: dist
   keep-history: true
-  repo: valor-software/valor-software.github.io
   target-branch: master
-  on:
-    branch: ci-autodeploy-path-swap
+  repo: valor-software/valor-software.github.io
 
+if: branch = test-travis-autodeploy
 deploy:
   provider: pages
   skip-cleanup: true
@@ -25,5 +25,3 @@ deploy:
   keep-history: true
   repo: VS-work/VS-work.github.io
   target-branch: master
-  on:
-    branch: test-travis-autodeploy
