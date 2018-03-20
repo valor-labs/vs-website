@@ -12,10 +12,10 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: dist
   keep-history: true
-  repo: valor-software/valor-software.github.io
+  repo: VS-work/VS-work.github.io
   target-branch: master
   on:
-    branch: ci-autodeploy-path-swap
+    branch: test-travis-autodeploy
 
 deploy:
   provider: pages
@@ -23,7 +23,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: dist
   keep-history: true
-  repo: VS-work/VS-work.github.io
+  repo: valor-software/valor-software.github.io
   target-branch: master
   on:
-    branch: test-travis-autodeploy
+    branch: ci-autodeploy-path-swap
