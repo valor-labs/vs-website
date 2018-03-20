@@ -8,7 +8,6 @@
   "main": "index.js",
   "scripts": {
     "clean": "del bundles coverage dist",
-    "deploy:gh-pages": "npm run clean && npm run build && sh ./deploy.sh",
     "manual.deploy:stage": "npm run clean && npm run build && gh-pages -d dist -r git@github.com:VS-work/VS-work.github.io.git -b master -m 'manual deploy to GitHub Pages'",
     "premanual.deploy:stage": "npm t",
     "manual.deploy:prod": "npm run clean && npm run build && gh-pages -d dist -r git@github.com:valor-software/valor-software.github.io.git -b master -m 'manual deploy to GitHub Pages'",
