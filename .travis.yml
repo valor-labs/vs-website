@@ -18,8 +18,25 @@ script:
 
 after_success:
   - ./node_modules/.bin/codecov  -f coverage/coverage-final.json
-  - test $TRAVIS_BRANCH = "master" && npm run deploy:gh-pages.prod
-  - test $TRAVIS_BRANCH = "development" && npm run deploy:gh-pages.stage
+
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  local-dir: dist
+#  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+#  keep-history: true
+#  on:
+#    branch: master
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: dist
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  github-url: git@github.com:VS-work/VS-work.github.io.git
+  on:
+    branch: ci-autodeploy-path-swap
 
 addons:
   firefox: "42.0"
