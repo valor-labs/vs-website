@@ -1,49 +1,29 @@
-sudo: required
 dist: trusty
 language: node_js
 node_js:
   - "8"
 
-before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - sudo apt-get update
-  - sudo apt-get install -y libappindicator1 fonts-liberation
-  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  - sudo dpkg -i google-chrome*.deb
-
 script:
-  - npm test
-
-after_success:
-  - ./node_modules/.bin/codecov  -f coverage/coverage-final.json
-
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  local-dir: dist
-#  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-#  keep-history: true
-#  on:
-#    branch: master
+  - npm run clean && npm run build
 
 deploy:
   provider: pages
   skip-cleanup: true
+  github-token: $GITHUB_TOKEN
   local-dir: dist
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
-  github-url: git@github.com:VS-work/VS-work.github.io.git
+  repo: valor-software/valor-software.github.io
+  target-branch: master
   on:
     branch: ci-autodeploy-path-swap
 
-addons:
-  firefox: "42.0"
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    # required by node-gyp to build some packages
-    packages:
-    - g++-4.8
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: dist
+  keep-history: true
+  repo: VS-work/VS-work.github.io
+  target-branch: master
+  on:
+    branch: test-travis-autodeploy
