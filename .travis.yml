@@ -6,7 +6,6 @@ node_js:
 script:
   - npm run clean && npm run build
 
-if: branch = ci-autodeploy-path-swap
 deploy:
   - provider: pages
     skip-cleanup: true
