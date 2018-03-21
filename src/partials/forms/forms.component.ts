@@ -57,7 +57,9 @@ export class FormsComponent implements OnInit, OnDestroy {
   }
 
   public ngOnDestroy() {
-    this.mailServiceSubscribe.unsubscribe();
+    if (this.mailServiceSubscribe) {
+      this.mailServiceSubscribe.unsubscribe();
+    }
   }
 
   public onBlur(): void {
