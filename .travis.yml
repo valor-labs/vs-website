@@ -17,11 +17,11 @@ deploy:
     on:
       branch: master
   - provider: pages
-      skip-cleanup: true
-      github-token: $GITHUB_TOKEN
-      local-dir: dist
-      keep-history: true
-      target-branch: master
-      repo: valor-software/valor-software.github.io
-      on:
-        branch: development
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    local-dir: dist
+    keep-history: true
+    target-branch: master
+    repo: valor-software/valor-software.github.io
+    on:
+      branch: development
