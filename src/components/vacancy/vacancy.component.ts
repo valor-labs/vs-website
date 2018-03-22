@@ -47,20 +47,4 @@ export class VacancyComponent implements OnInit {
       this._titleService.setTitle(`Vacancy: ${this.vacancy.name}`);
     });
   }
-
-  public scrollTo(e: MouseEvent): void {
-    const inc = 20;
-    const duration = 1000;
-    e.preventDefault();
-    this.animateScroll('applyForm', inc, duration);
-  }
-
-  public animateScroll(id: string, inc: number, duration: number): any {
-    const elem = document.getElementById(id);
-    const startScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const endScroll = elem.offsetTop;
-    const step = (endScroll - startScroll) / duration * inc;
-
-    window.requestAnimationFrame(VacancyComponent.goToScroll(step, duration, inc));
-  }
 }
