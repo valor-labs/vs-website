@@ -235,5 +235,52 @@ export const vacancies: any[] = [
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
-  }
+  },
+  {
+    vacancyId: 6,
+    show: true,
+    name: 'Sales Analyst | Sales Manager',
+    description: 'As a Sales Analyst | Manager, your primary target will be lead generation to accelerate growth and ' +
+    'improve Valor Software productivity. This is a strategic role that will require you to develop solutions to ' +
+    'complex business challenges. You\'ll be working closely with a team of professional developers to ensure smooth ' +
+    'execution and implementation of these strategic solutions through the sales channels. You will provide analytical ' +
+    'expertise and business understanding to executives and cross-functional leaders as you advocate business growth ' +
+    'opportunities and highlight growth impact from your programs.',
+    responsibilities: [
+      'Develop a full working knowledge of the operations of the Company;',
+      'Meet or exceed set goals;',
+      'Monitor production of all top accounts and evaluate trends within your market;',
+      'Provide regular insights on the Sales and Delivery business. Answer the question “Why” behind the metrics;',
+      'Communicate effectively with managers to identify and address areas for improvement;',
+      'Lead generation (from gathering information about responsible person till the first contact);',
+      'Make analysts of funnel sales at first levels of interaction with leads;',
+      'Ability to write cold e-mails and calls;',
+      'Communication with foreign customers;',
+      'Willing to bear a comprehensive liability for result.'
+    ],
+    offer: [
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Partial grant of the cost of certification and IT conferences;',
+      'The possibility of professional growth and growth of skills;',
+      'Friendly and relaxed atmosphere;',
+      'Good coffee (we mean that!);',
+      'Non-boring team-buildings and mostly adequate coworkers:).'
+    ],
+    requirements: [
+      '2+ years of successful Sales Analytics experience in relevant to IT industries;',
+      'Fluent English, both verbal and written, to catch the customer from title of an e-mail;',
+      'Identify needs of potential business partners;',
+      'Develop and maintain IT market awareness to ensure ability to predict revenue opportunities and set proactive strategies;',
+      'Figure out customer’s value and form their interests to our company’s services according with regular interaction with them;',
+      'Must possess a high level of experience, discretion and technical skill;',
+      'Must be able to handle confidential matters in a professional manner;',
+      'Able to work independently, rigorous, detail-oriented, critical thinker and performance-driven as well as ability to work in team (in an Agile/SCRUM environment);',
+      'Easily builds rapport over any communication means and howledge to listen and identify a need;',
+      'Competitive; loves to win and the excitement of closing deals;',
+      'Strong time-management skills and attention to details.'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
 ];
