@@ -16,7 +16,7 @@
         <p>{{ vacancy.description }}</p>
       </div>
       <div class="col-lg-1 col-md-1">
-        <button pageScroll (click)="scrollTo($event)" class="btn btn_scroll btn_small project__btn">Apply</button>
+        <button pageScroll pageScrollDuration="1000" pageScrollTarget="#applyForm" class="btn btn_scroll btn_small project__btn">Apply</button>
       </div>
     </div>
 

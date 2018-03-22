@@ -15,7 +15,7 @@ deploy:
     repo: VS-work/VS-work.github.io
     target-branch: master
     on:
-      branch: master
+      branch: development
   - provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
@@ -24,4 +24,4 @@ deploy:
     target-branch: master
     repo: valor-software/valor-software.github.io
     on:
-      branch: development
+      branch: master
