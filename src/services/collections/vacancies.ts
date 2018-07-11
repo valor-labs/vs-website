@@ -5,8 +5,10 @@ export const vacancies: any[] = [
     vacancyId: 0,
     show: true,
     name: 'Front-End developer',
-    description: 'Company seeks hard working, motivated individual to develop interactive web sites. Applicants should have multiple years experience writing custom HTML, CSS3, and JavaScript' +
-    ' (ES6, TypeScript). Expertise writing semantic, modular front end code using HTML5, CSS3, and W3C coding practices a must. Understanding of the concepts of progressive enhancement, mobile first and future friendly design highly encouraged.',
+    description: [
+      'Company seeks hard working, motivated individual to develop interactive web sites. Applicants should have multiple years experience writing custom HTML, CSS3, and JavaScript (ES6, TypeScript). Expertise writing semantic, modular front end code using HTML5, CSS3, and W3C coding practices a must. Understanding of the concepts of progressive enhancement, mobile first and future friendly design highly encouraged.'
+      ,
+    ],
     responsibilities: [
       'Producing Markup;',
       'New features implementation;',
@@ -44,7 +46,10 @@ export const vacancies: any[] = [
     vacancyId: 1,
     show: true,
     name: 'QA',
-    description: 'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.',
+    description: [
+      'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.'
+      ,
+    ],
     responsibilities: [
       'Participating in the development and delivery of testing including functional testing, integration testing, and regression testing as well as automated testing and UAT;',
       'Automate manual test cases;',
@@ -86,7 +91,10 @@ export const vacancies: any[] = [
     vacancyId: 2,
     show: false,
     name: 'JavaScript Jun+ Developer',
-    description: 'As part of the expansion Valor Software is looking for a Junior+ JavaScript Developer. We are looking for an enthusiastic individual with a passion for learning new skills and technologies. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
+    description: [
+      'As part of the expansion Valor Software is looking for a Junior+ JavaScript Developer. We are looking for an enthusiastic individual with a passion for learning new skills and technologies. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.'
+      ,
+    ],
     responsibilities: [
       'Assist in the development of both existing as well as new and future projects;',
       'Modifying existing code and troubleshooting issues when they arise;',
@@ -118,7 +126,10 @@ export const vacancies: any[] = [
     vacancyId: 3,
     show: true,
     name: 'Middle JavaScript Dev',
-    description: 'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create pleasant experience for users and are easy to maintain. As part of our team, you’ll have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
+    description: [
+      'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create pleasant experience for users and are easy to maintain. As part of our team, you’ll have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.'
+      ,
+    ],
     responsibilities: [
       'Write clean and well-structured code;',
       'Provide website maintenance and enhancements;',
@@ -160,7 +171,10 @@ export const vacancies: any[] = [
     vacancyId: 4,
     name: 'DevOps',
     show: false,
-    description: 'Valor Software is looking for DevOps Engineer to help automate platform/application builds for both internal and external products.  As a DevOps engineer, you will be responsible for managing our software and cloud-based infrastructure. We are in search of someone who can write the code that automatically deploys software and configures it appropriately. This is an extremely hands-on and engaging role with lots of responsibility, interesting challenges, and exposure to cutting-edge tech. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.',
+    description: [
+      'Valor Software is looking for DevOps Engineer to help automate platform/application builds for both internal and external products.  As a DevOps engineer, you will be responsible for managing our software and cloud-based infrastructure. We are in search of someone who can write the code that automatically deploys software and configures it appropriately. This is an extremely hands-on and engaging role with lots of responsibility, interesting challenges, and exposure to cutting-edge tech. As part of our team, you will have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.'
+      ,
+    ],
     responsibilities: [
       'Understanding Systems Development Life Cycle and automating with DevOps practices;',
       'Collaborate with QA and Dev teams to understand current processes;',
@@ -206,7 +220,10 @@ export const vacancies: any[] = [
     vacancyId: 5,
     show: false,
     name: 'Graphic/Web Designer',
-    description: 'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designer will work in close collaboration with customers and dev teams to deliver cutting-edge projects.',
+    description: [
+      'We are seeking a talented, creative and technically savvy graphic designer who can evolve concepts into real eye-candy content. Knowledge of latest trends in design and deep love for the web is a must. The designer will work in close collaboration with customers and dev teams to deliver cutting-edge projects.'
+      ,
+    ],
     responsibilities: [
       'Collaborate with internal teams to define and design innovative materials and solutions. Develops internal and external presentations, as well as graphics for product illustrations, logos, and websites;',
       'Assist in implementing branding strategy, and improves/enhances collateral within brand guidelines;',
@@ -238,14 +255,12 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 6,
-    show: true,
+    show: false,
     name: 'Sales Analyst | Sales Manager',
-    description: 'As a Sales Analyst | Manager, your primary target will be lead generation to accelerate growth and ' +
-    'improve Valor Software productivity. This is a strategic role that will require you to develop solutions to ' +
-    'complex business challenges. You\'ll be working closely with a team of professional developers to ensure smooth ' +
-    'execution and implementation of these strategic solutions through the sales channels. You will provide analytical ' +
-    'expertise and business understanding to executives and cross-functional leaders as you advocate business growth ' +
-    'opportunities and highlight growth impact from your programs.',
+    description: [
+      'As a Sales Analyst | Manager, your primary target will be lead generation to accelerate growth and improve Valor Software productivity. This is a strategic role that will require you to develop solutions to complex business challenges. You\'ll be working closely with a team of professional developers to ensure smooth execution and implementation of these strategic solutions through the sales channels. You will provide analytical expertise and business understanding to executives and cross-functional leaders as you advocate business growth opportunities and highlight growth impact from your programs.'
+      ,
+    ],
     responsibilities: [
       'Develop a full working knowledge of the operations of the Company;',
       'Meet or exceed set goals;',
@@ -283,4 +298,87 @@ export const vacancies: any[] = [
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
   },
+  {
+    vacancyId: 7,
+    show: true,
+    name: 'UX/UI Designer',
+    description: [
+      'We are looking for a creative and technically savvy UI/UX Designer with hands-on knowledge about usability and modern UI trends. As a UI/UX Designer at Valor Software you will be a part of the Design Team, working hand in hand with customers and dev teams to deliver cutting-edge projects and communicate great user experience. You will be given the best opportunities to express yourself and at the same time deliver high quality product.'
+      , 'The position holds a great variety of projects, being a combination of improving existing solutions as well as designing new ones. Our ideal candidate is an experienced Designer who’s skill set lives at the intersection of UX and UI design. You and your team will play a key role in defining, solving, and implementing innovative solutions for product direction, visual, and experience.'
+    ],
+    responsibilities: [
+      'Collaborate with internal teams to define and design innovative materials and solutions;',
+      'Understanding of web & mobile app development and general project management practices;',
+      'Assist in implementing branding strategy, and improves/enhances collateral within brand guidelines;',
+      'Work closely with internal Design & Dev Teams and external clients on Web Applications/Websites;',
+      'Creating wireframes, prototypes;',
+      'Perform other related duties as assigned.'
+    ],
+    offer: [
+      'Competitive salary depending on experience and skills;',
+      'Timely salary payment;',
+      'Partial grant of the cost of certification and related conferences;',
+      'The possibility of professional growth and growth of skills;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Good coffee.'
+    ],
+    requirements: [
+      'At least 2 years of relevant experience with a creative agency and/or in-house creative department in a role that blends both UI and UX design concepts;',
+      'Portfolio showing exceptional creative design, ability to pick the best typeface, web or/and mobile designs;',
+      'Sketch, Invision, Adobe Photoshop, Illustrator skills preferred;',
+      'Wireframing tools knowledge: Moqups, Axure + the ability to think big, go beyond just wireframes, and consider the whole experience;',
+      'Focus on user experience (UX) to maximize usability in all designs and mock-ups;',
+      'At least intermediate English (working with requirements, speaking with customers).'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 8,
+    show: true,
+    name: 'Project Manager',
+    description: [
+      'We are seeking for an ambitious self-starter with a positive attitude. The right Project Manager must have excellent communication skills, written as well as verbal as you would be liaising with both internal and external stakeholders and maintain close contact with team members. Technical proficiency, and ability to handle any technical queries effectively for Project Manager is a must.'
+      ,
+    ],
+    responsibilities: [
+      'Typical activities within this project support role include: generation and maintenance of cross functional project plans, organization, and documentation of project meetings, creation / analysis / reporting of project metrics, coordination with stakeholders;',
+      'Leads critical project governance activities, including facilitating project meetings, progressing projects through life cycle transitions, and ensuring quality standards are maintained through quality assurance activities;',
+      'Develops and implements risk assessment, change management, quality assurance, performance, and control measures to ensures completion of projects by established standards;',
+      'Early identification of issues and/or concerns that either has the potential or will impact the project baseline;',
+      'Providing accurate and timely information, data and reports regarding the project status, activities and performance.'
+    ],
+    offer: [
+      'Passionate & fun team to work with;',
+      'Competitive salary;',
+      'Fast, professional growth and lots and lots of new experience are guaranteed;',
+      'Partial grant of the cost of certification and related conferences;',
+      'Friendly and relaxed atmosphere;',
+      'Flexible working hours;',
+      'Good coffee.'
+    ],
+    requirements: [
+      'At least one year of experience in managing technology/online/business projects in a professional environment involving multiple stakeholders;',
+      'At least one year experience in managing teams;',
+      'Knowledge of IT operation processes such as risk management;',
+      'Strong estimation skills;',
+      'Knowledge of Agile project management approaches;',
+      'Excellent time management, organizational skills, and communication skills;',
+      'Competent in managing multiple projects and client relationships at one time;',
+      'Strong understanding of the need for Quality within the project environment;',
+      'Experience in managing web development projects is a plus;',
+      'Proven records of education in project management area is a plus;',
+      'Excellent english communication skills, both verbal and written: Upper Intermediate+;',
+      'Experience dealing with a range of customers;',
+      'Excellent problem-solving skills.'
+    ],
+    requirementsPlus: [
+      'Knowledge of what Waterfall approach is;',
+      'Experience in managing web development projects is a plus;',
+      'Proven records of education in project management area is a plus.'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  }
 ];
