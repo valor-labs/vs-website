@@ -13,7 +13,7 @@
         <h5 class="project__heading">Description</h5>
       </div>
       <div class="col-lg-9 col-md-11">
-        <p>{{ vacancy.description }}</p>
+        <p *ngFor="let paragraph of vacancy.description">{{ paragraph }}</p>
       </div>
       <div class="col-lg-1 col-md-1">
         <button pageScroll pageScrollDuration="1000" pageScrollTarget="#applyForm" class="btn btn_scroll btn_small project__btn">Apply</button>
