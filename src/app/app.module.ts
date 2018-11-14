@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Ng2PageScrollModule } from 'ng2-page-scroll/src/ng2-page-scroll.module';
@@ -27,11 +27,11 @@ import { VacancyComponent } from '../components/vacancy/vacancy.component';
 
 import { partials } from '../partials';
 
-import { MainService } from '../services/main.service';
-import { ProjectsService } from '../services/projects.service';
-import { VacanciesService } from '../services/vacancies.service';
-import { ContentService } from '../services/content.service';
-import { MailService } from '../services/mail.service';
+import { MainService } from '@services/main.service';
+import { ProjectsService } from '@services/projects.service';
+import { VacanciesService } from '@services/vacancies.service';
+import { ContentService } from '@services/content.service';
+import { MailService } from '@services/mail.service';
 
 import { RouterModule } from '@angular/router';
 import { routes } from '../router.config';
@@ -63,7 +63,7 @@ const routing = RouterModule.forRoot(routes);
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     routing,
     Ng2PageScrollModule,
     CarouselModule.forRoot()
