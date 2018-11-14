@@ -94,12 +94,6 @@ export class FormsComponent implements OnInit, OnDestroy {
     let typeOfEmail = '';
 
     const mailCallback = (res: any): void => {
-      if (res.err) {
-        this.preloader = false;
-        alert('Something goes wrong');
-
-        return;
-      }
       const successTime = 3000;
       this.success = true;
       this.preloader = false;
@@ -119,7 +113,15 @@ export class FormsComponent implements OnInit, OnDestroy {
       typeOfEmail = 'client';
       this.success = false;
       this.mailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe(mailCallback);
+        .subscribe(res => {
+          mailCallback(res);
+        }, error => {
+          /* tslint:disable-next-line */
+          console.log(error);
+          this.preloader = false;
+          const message = error._body || 'Something went wrong';
+          alert(message);
+        });
     }
 
     if (this.isVacancyForm) {
@@ -135,7 +137,15 @@ export class FormsComponent implements OnInit, OnDestroy {
       typeOfEmail = 'vacancy';
       this.success = false;
       this.mailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe(mailCallback);
+        .subscribe(res => {
+          mailCallback(res);
+        }, error => {
+          /* tslint:disable-next-line */
+          console.log(error);
+          this.preloader = false;
+          const message = error._body || 'Something went wrong';
+          alert(message);
+        });
     }
 
     if (this.isContactForm) {
@@ -150,7 +160,15 @@ export class FormsComponent implements OnInit, OnDestroy {
       typeOfEmail = 'contact';
       this.success = false;
       this.mailServiceSubscribe = this.mailService.sendEmail(formData, typeOfEmail)
-        .subscribe(mailCallback);
+        .subscribe(res => {
+          mailCallback(res);
+        }, error => {
+          /* tslint:disable-next-line */
+          console.log(error);
+          this.preloader = false;
+          const message = error._body || 'Something went wrong';
+          alert(message);
+        });
     }
   }
 }
