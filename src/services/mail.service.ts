@@ -11,11 +11,6 @@ export class MailService {
 
   public sendEmail(query: any, endpoint: string): Observable<any> {
     // send query to the server
-    return this.http.post(`${ environment.apiUrl }/send/${ endpoint }`, query)
-    .map((res: any) => {
-      const parseRes = JSON.parse(res._body);
-
-      return {err: parseRes.error};
-    });
+    return this.http.post(`${ environment.apiUrl }/send/${ endpoint }`, query);
   }
 }
