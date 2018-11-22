@@ -4,51 +4,9 @@ export const vacancies: any[] = [
   {
     vacancyId: 0,
     show: true,
-    name: 'Front-End developer',
-    description: [
-      'Company seeks hard working, motivated individual to develop interactive web sites. Applicants should have multiple years experience writing custom HTML, CSS3, and JavaScript (ES6, TypeScript). Expertise writing semantic, modular front end code using HTML5, CSS3, and W3C coding practices a must. Understanding of the concepts of progressive enhancement, mobile first and future friendly design highly encouraged.'
-      ,
-    ],
-    responsibilities: [
-      'Producing Markup;',
-      'New features implementation;',
-      'Requirements analysis and estimation;',
-      'Client communication (written and/or spoken).'
-    ],
-    offer: [
-      'Competitive salary depending on experience and skills;',
-      'Timely salary payment;',
-      'Partial grant of the cost of certification and related conferences;',
-      'The possibility of professional growth and growth of skills;',
-      'Friendly and relaxed atmosphere;',
-      'Flexible working hours;',
-      'Good coffee.'
-    ],
-    requirements: [
-      '2+ years of similar experience;',
-      'Knowledge of HTML5, CSS3, LESS (SASS or Stylus), Bootstrap;',
-      'Knowledge of JS (ES6 and TypeScript is a plus);',
-      'Experience with Angular or similar (Angular2 knowledge is a plus );',
-      'Experience building modern JavaScript web-applications (SPA) with rich and complex UI;',
-      'Cross-browser and cross-platform support (Ionic, NativeScript, Electron);',
-      'Experience with Photoshop, Fireworks and related tools;',
-      'Experience with version control systems (git, github);',
-      'Knowledge of continuous integration (CI\\CD);',
-      'Attention to details and focus on quality of work;',
-      'Familiarity and understanding of Agile methodologies;',
-      'Good level of responsibility, flexibility, communication;',
-      'Good written and verbal English is an important condition.'
-    ],
-    headerImage: 'assets/images/vacancy/vacancy.jpg',
-    location: 'Kharkiv, Ukraine'
-  },
-  {
-    vacancyId: 1,
-    show: true,
     name: 'QA',
     description: [
       'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.'
-      ,
     ],
     responsibilities: [
       'Participating in the development and delivery of testing including functional testing, integration testing, and regression testing as well as automated testing and UAT;',
@@ -61,13 +19,21 @@ export const vacancies: any[] = [
       'Work planning and estimation.'
     ],
     offer: [
-      'Competitive salary depending on experience and skills;',
-      'Timely salary payment;',
-      'Partial grant of the cost of certification and related conferences;',
-      'The possibility of professional growth and growth of skills;',
-      'Friendly and relaxed atmosphere;',
-      'Flexible working hours;',
-      'Good coffee.'
+      'Competitive salary',
+      'Family atmosphere',
+      'Company-wise mentorship and knowledge sharing',
+      'We’re a big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks 2018',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team, that’s all!',
+      '2 game-rooms',
+      'Recreation area (Massage and Sport equipment)',
+      'Performance review with possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office',
     ],
     requirements: [
       '2+ years of manual testing / automation testing experience;',
@@ -78,11 +44,229 @@ export const vacancies: any[] = [
       'Client side knowledge - HTML, CSS;',
       'Fluent knowledge of tools for testing automation;',
       'Experience with version control systems (git);',
-      'Knowledge of continuous integration servers (CI\CD);',
+      'Knowledge of continuous integration servers (CI/CD);',
       'Familiarity and understanding of Agile methodologies;',
       'Good written and verbal communication skills;',
       'Good level of responsibility, flexibility, communication;',
       'Good written and verbal English is necessary.'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 1,
+    show: true,
+    name: 'Junior Technical Writer',
+    description: [
+      'Valor Software is looking for an uprising Technical Writer who enjoys the writing process and is ready to develop help systems, guides, interface text, and user assistance docs. If translating complicated technical issues into user-friendly procedures sounds exactly like your thing and you have a strong service oriented mindset & enjoy human interaction and teamwork — you are a perfect candidate!'
+    ],
+    responsibilities: [
+      'Unambiguously and clearly describe the functional logic;',
+      'Develop, structure and organize universal documentation for a multidisciplinary team;',
+      'Construction of easy-to-understand flowcharts;',
+      'Regular actualization and updating of project documentation;',
+      'Structuring and standardizing documentation;',
+      'Collaborate and interact with other Tech Writer & team members to write important internal documentation;',
+      'Write technical-oriented articles;',
+      'Update old guidelines to make them shorter, simpler and more understandable;',
+      'Develop and implement new guidelines;'
+    ],
+    offer: [
+      'Competitive salary',
+      'Family atmosphere',
+      'Company-wise mentorship and knowledge sharing',
+      'We’re a big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks 2018',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team, that’s all!',
+      '2 game-rooms',
+      'Recreation area (Massage and Sport equipment)',
+      'Performance review with possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '1+ year of experience as a Copywriter or half a year+ as a Technical Writer;',
+      'Basic understanding of how the programming works, what is Node.js, JavaScript, Angular, etc.',
+      'Highly developed communication skills, ability to work in a team;',
+      'Competent written language, a high level of proficiency in English (UIntermediate+pper intermediate);',
+      'Ability to simply describe complex technical concepts;',
+      'Analytical and systemic thinking. Excellent ability to decompose and structure information;',
+      'The ability to find the most appropriate solutions for the organization of documentation;',
+      'The ability to understand the technical aspects and describe them in a form suitable for understanding by the audience of ordinary users;',
+      'Attention to detail, perseverance, thoroughness, ability to foresee and think over various cases;',
+      'Work experience as a copywriter or similar is a plus;'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 2,
+    show: true,
+    name: 'JavaScript Developer (Angular)',
+    description: [
+      `Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with 
+      customers from the USA. The core of the project is an e-commerce platform which is part of a big company that 
+      provides subscription-based services. As part of our team, you will have the opportunity to develop your skills 
+      with modern frontend frameworks and fulfil your ideas in building production-ready solutions.`
+    ],
+    responsibilities: [
+      'Design and develop customer-facing web applications (e-Commerce)',
+      'Deliver new, progressive features and stabilize/enhance those that already exist',
+      'Prepare estimates (for tasks) and in-time feature deliveries',
+      'Take care of project architecture',
+      'Communication with teams and customers. Be a team player',
+      'Follow the development workflow',
+      'Write clean and well-structured code'
+    ],
+    offer: [
+      'Competitive salary',
+      'Foreign customers (USA, Europe)',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We are big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe ->  ngTalks.io',
+      'Pet-friendly environment. We have three cats in the office as well dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage & Sports equipment)',
+      'Performance reviews with possible salary raises every 6 months',
+      'Flexible work schedule and opportunity to work remotely',
+      'Partial grant of the cost for certification and related conferences',
+      'English Speaking Clubs with native speakers',
+      'Sick leave compensation (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '2+ years of using Angular v2 (version 2)',
+      'Experience in Typescript, rxjs',
+      'Experience with CSS Frameworks (e.g., Bootstrap)',
+      'Good knowledge of HTTP, REST',
+      'Unit-testing, preferably Jasmine',
+      'Experience with Scrum/Kanban Agile frameworks',
+      'English (verbal and written): Intermediate+'
+    ],
+    requirementsPlus: [
+      'NestJS or Express experience (will be a strong plus)',
+      'Experience with backend web frameworks (Rails)',
+      'Familiarity with SQL (e.g., MySQL or PostgreSQL) or NoSQL stores (e.g., Mongo)',
+      'High passion for new technologies and approaches',
+      'Mentorship skills',
+      'Experience or understanding TDD and Pair Programming practices'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 3,
+    show: true,
+    name: 'JavaScript Full Stack Developer (Angular && Node.js)',
+    description: [
+      'Valor Software is looking for a Full Stack developer to join a company to work on a new in-house project. Core of the project is a Human Capital Management platform to optimize professional assessment in medium and big companies. As part of our team, you’ll have the opportunity to use best practices and patterns to create the project with Clean Architecture and standardized components, try new stack and frameworks, grow your career, contribute your ideas to management reimagining product, and above all have fun doing it.'
+    ],
+    responsibilities: [
+      'Deliver new progressive features and stabilize/enhance that already exist',
+      'Prepare estimates (for own tasks) and in-time features delivery',
+      'Take care about project architecture',
+      'Communication with team and customer. Be a team member, not a solo-player',
+      'Stick to the development workflow',
+      'Write clean and well-structured code'
+    ],
+    offer: [
+      'Competitive salary',
+      'Foreign customers (USA, Europe)',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re a big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sport equipment)',
+      'Performance review with possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office',
+    ],
+    requirements: [
+      '2+ years of using Angular (Version 2)',
+      '2+ years of using NodeJs',
+      '1+ year of working with MySQL DB',
+      'Unit-testing',
+      'Experience with Scrum/Kanban Agile frameworks',
+      'English (verbal and written): Intermediate+'
+    ],
+    requirementsPlus: [
+      'NestJs or Express experience (will be a strong plus)',
+      'Be interested in integrating AI/ML',
+      'High passion for new technologies and approaches',
+      'Mentorship skills',
+      'Experience or understanding TDD and Pair Programming practices'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 4,
+    show: true,
+    name: 'JS Developer for AI/ML-based project',
+    description: [
+      'Valor Software is looking for a JavaScript developer to join a company to work on a new in-house project. Core of the project is a Human Capital Management platform to optimize professional assessment in medium and big companies. As part of our team, you’ll have the opportunity of working on the project with Clean Architecture and standardized components. You can try new stack and frameworks, improve AI/ML skills and knowledge, integrate the project with other applications grow your career, contribute your ideas to management reimagining product, and above all have fun doing it.'
+    ],
+    responsibilities: [
+      'Write clean and well-structured code',
+      'Deliver AI-based features',
+      'Enhance and improve chat-bot',
+      'Use DataSets for ML',
+      'Deliver integrations with different tools (Slack, Outlook, G Suite, etc.)',
+      'Prepare estimates (for own tasks) and in-time features delivery',
+      'Take care about project architecture',
+      'Communication with team and customer. Be a team member, not a solo-player',
+    ],
+    offer: [
+      'Competitive salary',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sport equipment)',
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      'Strong knowledge of AI/ML theory and patterns',
+      'ECMAScript 6',
+      'Experience with Angular v4',
+      'Mongo DB (1+ years)',
+      'MySQL DB (1+ years)',
+      'Solid knowledge of TypeScript',
+      'English (verbal and written): Intermediate+',
+      'Experience with Scrum/Kanban Agile methodologies',
+      'Be a details oriented person',
+      'To have a professional behavior',
+      'Be a product-oriented person',
+      'Have a passion for AI/ML',
+      'Documentation skills',
+      'High passion for new technologies and approaches',
+    ],
+    requirementsPlus: [
+      'Experience with NodeJs (1+ years)',
+      'Experience with NestJs (1+ years)',
+      'Mentorship skills',
+      'Experience or understanding of TDD and Pair Programming practices'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
@@ -124,7 +308,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 3,
-    show: true,
+    show: false,
     name: 'Middle JavaScript Dev',
     description: [
       'As a JavaScript Developer, your position will primarily consist of development using Node.js and Angular 4+ to create applications that create pleasant experience for users and are easy to maintain. As part of our team, you’ll have the opportunity to grow your career, contribute your ideas to life-changing products and services, and—above all—have fun doing it.'
@@ -300,7 +484,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 7,
-    show: true,
+    show: false,
     name: 'UX/UI Designer',
     description: [
       'We are looking for a creative and technically savvy UI/UX Designer with hands-on knowledge about usability and modern UI trends. As a UI/UX Designer at Valor Software you will be a part of the Design Team, working hand in hand with customers and dev teams to deliver cutting-edge projects and communicate great user experience. You will be given the best opportunities to express yourself and at the same time deliver high quality product.'
@@ -336,7 +520,7 @@ export const vacancies: any[] = [
   },
   {
     vacancyId: 8,
-    show: true,
+    show: false,
     name: 'Project Manager',
     description: [
       'We are seeking for an ambitious self-starter with a positive attitude. The right Project Manager must have excellent communication skills, written as well as verbal as you would be liaising with both internal and external stakeholders and maintain close contact with team members. Technical proficiency, and ability to handle any technical queries effectively for Project Manager is a must.'
@@ -380,5 +564,63 @@ export const vacancies: any[] = [
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
-  }
+  },
+  {
+    vacancyId: 9,
+    show: false,
+    name: 'JavaScript Developer (Angular)',
+    description: [
+      `Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with 
+      customers from the USA. The core of the project is an e-commerce platform which is part of a big company that 
+      provides subscription-based services. As part of our team, you will have the opportunity to develop your skills 
+      with modern frontend frameworks and fulfil your ideas in building production-ready solutions.`
+    ],
+    responsibilities: [
+      'Design and develop customer-facing web applications (e-Commerce)',
+      'Deliver new, progressive features and stabilize/enhance those that already exist',
+      'Prepare estimates (for tasks) and in-time feature deliveries',
+      'Take care of project architecture',
+      'Communication with teams and customers. Be a team player',
+      'Follow the development workflow',
+      'Write clean and well-structured code'
+    ],
+    offer: [
+      'Competitive salary',
+      'Foreign customers (USA, Europe)',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We are big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe ->  ngTalks.io',
+      'Pet-friendly environment. We have three cats in the office as well dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage & Sports equipment)',
+      'Performance reviews with possible salary raises every 6 months',
+      'Flexible work schedule and opportunity to work remotely',
+      'Partial grant of the cost for certification and related conferences',
+      'English Speaking Clubs with native speakers',
+      'Sick leave compensation (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '2+ years of using Angular v2 (version 2)',
+      'Experience in Typescript, rxjs',
+      'Experience with CSS Frameworks (e.g., Bootstrap)',
+      'Good knowledge of HTTP, REST',
+      'Unit-testing, preferably Jasmine',
+      'Experience with Scrum/Kanban Agile frameworks',
+      'English (verbal and written): Intermediate+'
+    ],
+    requirementsPlus: [
+      'NestJS or Express experience (will be a strong plus)',
+      'Experience with backend web frameworks (Rails)',
+      'Familiarity with SQL (e.g., MySQL or PostgreSQL) or NoSQL stores (e.g., Mongo)',
+      'High passion for new technologies and approaches',
+      'Mentorship skills',
+      'Experience or understanding TDD and Pair Programming practices'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
 ];
