@@ -272,6 +272,54 @@ export const vacancies: any[] = [
     location: 'Kharkiv, Ukraine'
   },
   {
+    vacancyId: 5,
+    show: true,
+    name: 'Senior Sales Analyst (Remote)',
+    description: [
+      'Valor Software is looking for a remote Senior Sales Analyst | Manager to join our team. The primary objective of the Senior Sales Analyst is to execute projects, programs and day-to-day duties with an emphasis on sales processes and sales analytics & reporting. Sr. Analyst will play an integral role in helping Valor Software to build best in class capabilities. Specifically, the Sr. Analyst will generate leads, provide sharp, proactive, timely insights and analyses which drive enhanced business outcomes, additionally, you will be responsible for reporting on revenue attainment, discounting, capture rate, customer analysis, and pipeline forecasting.'
+    ],
+    responsibilities: [
+      'Competitive salary;',
+      'Quick, reliable and regular feedback sessions, to ensure quality remote work performance;',
+      'Flat management structure: CEO and Team;',
+      'Performance review with a possible salary rise each 6 month;',
+      'Partial grant of the cost of certification and related conferences;',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year);'
+    ],
+    offer: [
+      'Competitive salary',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sport equipment)',
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '3+ years of successful Sales Analytics experience in relevant to IT industries;',
+      'Fluent English, both verbal and written, to catch the customer from title of an e-mail;',
+      'Identify needs of potential business partners;',
+      'Develop and maintain IT market awareness to ensure ability to predict revenue opportunities and set proactive strategies;',
+      'Figure out customer’s value and form their interests to our company’s services according with regular interaction with them;',
+      'Must possess a high level of experience, discretion and technical skill;',
+      'Must be able to handle confidential matters in a professional manner;',
+      'Able to work independently, rigorous, detail-oriented, critical thinker and performance-driven as well as ability to work in team (in an Agile/SCRUM environment);',
+      'Easily builds rapport over any communication means and howledge to listen and identify a need;',
+      'Competitive; loves to win and the excitement of closing deals;',
+      'Strong time-management skills and attention to details;'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Ukraine'
+  },
+  {
     vacancyId: 2,
     show: false,
     name: 'JavaScript Jun+ Developer',
