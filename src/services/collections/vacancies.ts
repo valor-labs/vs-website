@@ -320,6 +320,59 @@ export const vacancies: any[] = [
     location: 'Ukraine'
   },
   {
+    vacancyId: 6,
+    show: true,
+    name: 'JavaScript Developer (Angular + Nativescript)',
+    description: [
+      'Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with customers from the USA. The core of the project is a mobile application on Nativescript. As part of our team, you will have the opportunity to improve your skills in mobile development and cross-platform applications, and fulfill your ideas in building production-ready solutions.'
+      ,
+    ],
+    responsibilities: [
+      'Deliver new progressive features and stabilize/enhance those that already exist',
+      'Prepare estimates (for tasks) and in-time feature deliveries',
+      'Take care of project architecture',
+      'Communication with teams and customers. Be a team player',
+      'Follow the development workflow',
+      'Write clean and well-structured code',
+  ],
+    offer: [
+      'Competitive salary',
+      'Foreign customers (USA, Europe)',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov — first Angular',
+      'Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.ua',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sports equipment)',
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '2+ years of using Angular (Version 4+)',
+      'Basic knowledge in SQL and NoSQL databases',
+      'Experience in rxjs and ngrx',
+      'Unit-testing',
+      'Experience with Scrum/Kanban Agile frameworks',
+      'English (verbal and written): Intermediate'
+    ],
+    requirementsPlus: [
+      'Nativescript (will be a strong plus)',
+      'Experience with Cordova/PhoneGap',
+      'High passion for new technologies',
+      'Mentorship skills',
+      'Experience or understanding TDD and Pair Programming practices'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
     vacancyId: 2,
     show: false,
     name: 'JavaScript Jun+ Developer',
