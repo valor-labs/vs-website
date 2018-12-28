@@ -322,9 +322,9 @@ export const vacancies: any[] = [
   {
     vacancyId: 6,
     show: true,
-    name: 'JavaScript Developer (Angular + Nativescript)',
+    name: 'Senior Angular + NativeScript developer',
     description: [
-      'Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with customers from the USA. The core of the project is a mobile application on Nativescript. As part of our team, you will have the opportunity to improve your skills in mobile development and cross-platform applications, and fulfill your ideas in building production-ready solutions.'
+      'Valor Software is looking for a NativeScript developer to join our company to work on an interesting project with customers from the USA. The core of the project is a mobile application on Nativescript. As part of our team, you will have the opportunity to improve your skills in mobile development and cross-platform applications, and fulfill your ideas in building production-ready solutions.'
       ,
     ],
     responsibilities: [
@@ -333,7 +333,7 @@ export const vacancies: any[] = [
       'Take care of project architecture',
       'Communication with teams and customers. Be a team player',
       'Follow the development workflow',
-      'Write clean and well-structured code',
+      'Write clean and well-structured code'
   ],
     offer: [
       'Competitive salary',
@@ -355,16 +355,19 @@ export const vacancies: any[] = [
       'Comfortable office'
     ],
     requirements: [
-      '2+ years of using Angular (Version 4+)',
-      'Basic knowledge in SQL and NoSQL databases',
-      'Experience in rxjs and ngrx',
+      'Angular with TypeScript (Version 4+)',
+      '2+ years of NativeScript',
+      'JS core',
+      'Knowledgeable of REST principles',
+      'Knowledge in mobile development',
+      'Knowledge in SQL and NoSQL databases',
       'Unit-testing',
       'Experience with Scrum/Kanban Agile frameworks',
       'English (verbal and written): Intermediate'
     ],
     requirementsPlus: [
-      'Nativescript (will be a strong plus)',
       'Experience with Cordova/PhoneGap',
+      'Experience in rxjs and ngrx',
       'High passion for new technologies',
       'Mentorship skills',
       'Experience or understanding TDD and Pair Programming practices'
