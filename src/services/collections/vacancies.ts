@@ -33,7 +33,7 @@ export const vacancies: any[] = [
       'English Speaking Club with a native speaker',
       'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
       'Unlimited tea, coffee, candies, and cookies',
-      'Comfortable office',
+      'Comfortable office'
     ],
     requirements: [
       '2+ years of manual testing / automation testing experience;',
@@ -106,21 +106,24 @@ export const vacancies: any[] = [
   {
     vacancyId: 2,
     show: true,
-    name: 'JavaScript Developer (Angular)',
+    name: 'UX/UI Designer',
     description: [
-      `Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with 
-      customers from the USA. The core of the project is an e-commerce platform which is part of a big company that 
-      provides subscription-based services. As part of our team, you will have the opportunity to develop your skills 
-      with modern frontend frameworks and fulfil your ideas in building production-ready solutions.`
+      `We are looking for a creative and technically savvy UX/UI Designer with hands-on knowledge about usability 
+      and modern UI trends. As a UX/UI Designer at Valor Software, you will be a part of the Design Team, working 
+      hand in hand with customers and dev teams to deliver cutting-edge projects and communicate great user experience. 
+      You will be given the best opportunities to express yourself and at the same time deliver a high-quality product. 
+      The position holds a great variety of projects, being a combination of improving existing solutions as well as 
+      designing new ones. Our ideal candidate is an experienced Designer who’s skill set lives at the intersection of 
+      UX and UI design. You and your team will play a key role in defining, solving, and implementing innovative 
+      solutions for product direction, visual, and experience.`
     ],
     responsibilities: [
-      'Design and develop customer-facing web applications (e-Commerce)',
-      'Deliver new, progressive features and stabilize/enhance those that already exist',
-      'Prepare estimates (for tasks) and in-time feature deliveries',
-      'Take care of project architecture',
-      'Communication with teams and customers. Be a team player',
-      'Follow the development workflow',
-      'Write clean and well-structured code'
+      'Work closely with internal Design & Dev Teams and external clients on Web Applications/Websites;',
+      'Collaborate with internal teams to define and design innovative materials and solutions;',
+      'Understanding of web & mobile app development and general project management practices;',
+      'Assist in implementing a branding strategy, and improves/enhances collateral within brand guidelines;',
+      'Creating wireframes, prototypes;',
+      'Perform other related duties as assigned.'
     ],
     offer: [
       'Competitive salary',
@@ -142,13 +145,18 @@ export const vacancies: any[] = [
       'Comfortable office'
     ],
     requirements: [
-      '2+ years of using Angular v2 (version 2)',
-      'Experience in Typescript, rxjs',
-      'Experience with CSS Frameworks (e.g., Bootstrap)',
-      'Good knowledge of HTTP, REST',
-      'Unit-testing, preferably Jasmine',
-      'Experience with Scrum/Kanban Agile frameworks',
-      'English (verbal and written): Intermediate+'
+      'At least 2 years of relevant experience with a creative agency and/or in-house creative department in a role that blends both UX and UI design concepts;',
+      'Portfolio showing exceptional creative design, ability to pick the best typeface, web or/and mobile designs;',
+      'Sketch, Figma, UXpin, Invision, skills preferred;',
+      'Wireframing tools knowledge: Moqups, Axure, Balsamiq + the ability to think big, go beyond just wireframes, and consider the whole experience',
+      'Focus on user experience (UX) to maximize usability in all designs and mock-ups;',
+      'Ability to analyze and structure requirements;',
+      'Strong understanding of 8-point grid and 12 col grid;',
+      'Understanding how to achieve design consistency in the projects;',
+      'Atomic design principles;',
+      'Basic HTML & CSS knowledge;',
+      'Strong willingness to study new tools and approaches;',
+      'At least intermediate English (working with requirements, speaking verbally with customers).'
     ],
     requirementsPlus: [
       'NestJS or Express experience (will be a strong plus)',
@@ -192,7 +200,7 @@ export const vacancies: any[] = [
       'English Speaking Club with a native speaker',
       'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
       'Unlimited tea, coffee, candies, and cookies',
-      'Comfortable office',
+      'Comfortable office'
     ],
     requirements: [
       '2+ years of using Angular (Version 2)',
@@ -227,7 +235,7 @@ export const vacancies: any[] = [
       'Deliver integrations with different tools (Slack, Outlook, G Suite, etc.)',
       'Prepare estimates (for own tasks) and in-time features delivery',
       'Take care about project architecture',
-      'Communication with team and customer. Be a team member, not a solo-player',
+      'Communication with team and customer. Be a team member, not a solo-player'
     ],
     offer: [
       'Competitive salary',
@@ -260,7 +268,7 @@ export const vacancies: any[] = [
       'Be a product-oriented person',
       'Have a passion for AI/ML',
       'Documentation skills',
-      'High passion for new technologies and approaches',
+      'High passion for new technologies and approaches'
     ],
     requirementsPlus: [
       'Experience with NodeJs (1+ years)',
@@ -331,7 +339,7 @@ export const vacancies: any[] = [
     name: 'Senior Angular + NativeScript developer',
     description: [
       'Valor Software is looking for a NativeScript developer to join our company to work on an interesting project with customers from the USA. The core of the project is a mobile application on Nativescript. As part of our team, you will have the opportunity to improve your skills in mobile development and cross-platform applications, and fulfill your ideas in building production-ready solutions.'
-      ,
+
     ],
     responsibilities: [
       'Deliver new progressive features and stabilize/enhance those that already exist',
@@ -340,7 +348,7 @@ export const vacancies: any[] = [
       'Communication with teams and customers. Be a team player',
       'Follow the development workflow',
       'Write clean and well-structured code'
-  ],
+    ],
     offer: [
       'Competitive salary',
       'Foreign customers (USA, Europe)',
@@ -380,7 +388,7 @@ export const vacancies: any[] = [
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
-  },
+  }
   // {
   //   vacancyId: 5,
   //   show: false,
@@ -781,4 +789,62 @@ export const vacancies: any[] = [
   //   headerImage: 'assets/images/vacancy/vacancy.jpg',
   //   location: 'Kharkiv, Ukraine'
   // },
+  // {
+  //   vacancyId: 2,
+  //   show: false,
+  //   name: 'JavaScript Developer (Angular)',
+  //   description: [
+  //     `Valor Software is looking for a JavaScript developer to join our company to work on an interesting project with
+  //     customers from the USA. The core of the project is an e-commerce platform which is part of a big company that
+  //     provides subscription-based services. As part of our team, you will have the opportunity to develop your skills
+  //     with modern frontend frameworks and fulfil your ideas in building production-ready solutions.`
+  //   ],
+  //   responsibilities: [
+  //     'Design and develop customer-facing web applications (e-Commerce)',
+  //     'Deliver new, progressive features and stabilize/enhance those that already exist',
+  //     'Prepare estimates (for tasks) and in-time feature deliveries',
+  //     'Take care of project architecture',
+  //     'Communication with teams and customers. Be a team player',
+  //     'Follow the development workflow',
+  //     'Write clean and well-structured code'
+  //   ],
+  //   offer: [
+  //     'Competitive salary',
+  //     'Foreign customers (USA, Europe)',
+  //     'Family atmosphere',
+  //     'Mentorship and knowledge sharing',
+  //     'We are big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+  //     'In August 2018 Valor Software organized the biggest Angular conference in Europe ->  ngTalks.io',
+  //     'Pet-friendly environment. We have three cats in the office as well dog days',
+  //     'Flat management structure: CEO and Team',
+  //     '2 game-rooms',
+  //     'Recreation area (Massage & Sports equipment)',
+  //     'Performance reviews with possible salary raises every 6 months',
+  //     'Flexible work schedule and opportunity to work remotely',
+  //     'Partial grant of the cost for certification and related conferences',
+  //     'English Speaking Clubs with native speakers',
+  //     'Sick leave compensation (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+  //     'Unlimited tea, coffee, candies, and cookies',
+  //     'Comfortable office'
+  //   ],
+  //   requirements: [
+  //     '2+ years of using Angular v2 (version 2)',
+  //     'Experience in Typescript, rxjs',
+  //     'Experience with CSS Frameworks (e.g., Bootstrap)',
+  //     'Good knowledge of HTTP, REST',
+  //     'Unit-testing, preferably Jasmine',
+  //     'Experience with Scrum/Kanban Agile frameworks',
+  //     'English (verbal and written): Intermediate+'
+  //   ],
+  //   requirementsPlus: [
+  //     'NestJS or Express experience (will be a strong plus)',
+  //     'Experience with backend web frameworks (Rails)',
+  //     'Familiarity with SQL (e.g., MySQL or PostgreSQL) or NoSQL stores (e.g., Mongo)',
+  //     'High passion for new technologies and approaches',
+  //     'Mentorship skills',
+  //     'Experience or understanding TDD and Pair Programming practices'
+  //   ],
+  //   headerImage: 'assets/images/vacancy/vacancy.jpg',
+  //   location: 'Kharkiv, Ukraine'
+  // }
 ];
