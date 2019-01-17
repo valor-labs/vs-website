@@ -356,7 +356,7 @@ export const vacancies: any[] = [
       'Mentorship and knowledge sharing',
       'We’re big Angular community activists: CEO Dmitriy Shekhovtsov — first Angular',
       'Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
-      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.ua',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
       'Pet-friendly environment. We have 3 cats in the office and dog days',
       'Flat management structure: CEO and Team',
       '2 game-rooms',
@@ -385,6 +385,60 @@ export const vacancies: any[] = [
       'High passion for new technologies',
       'Mentorship skills',
       'Experience or understanding TDD and Pair Programming practices'
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 7,
+    show: true,
+    name: 'System Analyst/BA',
+    description: [
+      'Valor Software is looking for a System Analyst/BA to join a company to work on a new and existing in-house projects. Core of the project is a Human Capital Management platform to optimize professional assessment in medium and big companies.\n',
+      'As part of our team, you’ll have an opportunity of working on the new generation project with AI/ML, propose own solutions and ideas.'
+    ],
+    responsibilities: [
+      'Eliciting the actual needs of stakeholders which frequently involves investigating and clarifying their expressed desires in order',
+      'to determine underlying issues and causes;',
+      'Constant communication with Engagement Team of the customer to formulate or specify the existing requirements;',
+      'Suggestions and creation product/project vision and development strategy;',
+      'Assistance in tasks decomposition;',
+      'Translate business requirements to technical software requirements, epics, user stories, etc.;',
+      'Support and create the necessary project documentation useful for developers’ teams;',
+      'Follow the development process (Agile approach);',
+      'Manage, assess and confirm priorities;',
+      'Participating in User Acceptance Tests (UAT);',
+      'Continuously improve & share knowledge, skills, and performance.'
+    ],
+    offer: [
+      'Competitive salary',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov — first Angular',
+      'Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sports equipment)',
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      '3+ years of successful experience as a system or business analyst',
+      'Excellent English knowledge (Advanced), both verbal and written',
+      'Knowledge and experience in working by Agile principles',
+      'Strong development or architecture experience',
+      'Excellent communication, negotiation, meeting facilitation skills, conflict resolving abilities',
+      'Self-management skills, ability to handle several multi-tasking activities simultaneously',
+    ],
+    requirementsPlus: [
+      'Having a proactive position in order to bring maximum possible value to the team, product/project and the entire company',
+      'ML / AI expertise will be a strong plus',
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
