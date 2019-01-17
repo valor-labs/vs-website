@@ -398,8 +398,7 @@ export const vacancies: any[] = [
       'As part of our team, you’ll have an opportunity of working on the new generation project with AI/ML, propose own solutions and ideas.'
     ],
     responsibilities: [
-      'Eliciting the actual needs of stakeholders which frequently involves investigating and clarifying their expressed desires in order',
-      'to determine underlying issues and causes;',
+      'Eliciting the actual needs of stakeholders which frequently involves investigating and clarifying their expressed desires in order to determine underlying issues and causes;',
       'Constant communication with Engagement Team of the customer to formulate or specify the existing requirements;',
       'Suggestions and creation product/project vision and development strategy;',
       'Assistance in tasks decomposition;',
