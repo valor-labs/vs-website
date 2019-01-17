@@ -30,7 +30,7 @@ export const feedbacks: any[] = [
     location: 'Sweden',
     industry: 'Social project',
     image: 'assets/images/feedback/vizabi-logo.jpg',
-    text: 'Thanks "Valor Software" for awesome work! I especially liked your openness and desire to share experience. The best of Valor, is that they never say "It\'s impossible", they always find a good approaches to satisfy the customers.',
+    text: 'What we can tell you is that Valor Software is very, very knowledgeable and very helpful. We think what sticks out the most is their capacity to find solutions instead of just saying what cannot be done. They know how to develop any feature that we request, and they are very good at user experience. They also know how to communicate with non-tech people. I think that makes them quite special because any client can communicate with them.',
     link: '#/project/vizabi-tools',
     projectId: 2
   },
@@ -63,7 +63,7 @@ export const feedbacks: any[] = [
     location: 'Dubai',
     industry: 'Comparison website',
     image: 'assets/images/feedback/souqalmal-logo.jpg',
-    text: 'Valor Software were fantastic to work with - smart, reliable, and familiar with a variety of web technologies. They were quick to pickup new concepts and extremely proactive in developing features.',
+    text: 'I really enjoyed working with Dima! He\'s an excellent developer and he really helped us build our new product, using the latest technologies out there. Dima is very knowledgable and passionate and he\'s also striving to be up to date with the latest developments in his field. He\'s a true JS ninja!',
     link: '#/project/souqalmal',
     projectId: 5
   }
