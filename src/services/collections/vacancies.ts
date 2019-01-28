@@ -106,65 +106,48 @@ export const vacancies: any[] = [
   {
     vacancyId: 2,
     show: true,
-    name: 'UX/UI Designer',
+    name: 'Remote Lead Generation Specialist',
     description: [
-      `We are looking for a creative and technically savvy UX/UI Designer with hands-on knowledge about usability 
-      and modern UI trends. As a UX/UI Designer at Valor Software, you will be a part of the Design Team, working 
-      hand in hand with customers and dev teams to deliver cutting-edge projects and communicate great user experience. 
-      You will be given the best opportunities to express yourself and at the same time deliver a high-quality product. 
-      The position holds a great variety of projects, being a combination of improving existing solutions as well as 
-      designing new ones. Our ideal candidate is an experienced Designer who’s skill set lives at the intersection of 
-      UX and UI design. You and your team will play a key role in defining, solving, and implementing innovative 
-      solutions for product direction, visual, and experience.`
+      `Valor Software is looking for a remote Lead Generation Specialist with 1+ year of experience who will play a critical role in creating opportunities to present Valor Software portfolio to potential clients and generate outbound leads. We are looking for creative and thoughtful specialist who, preferably, have a proven track record of success in identifying, creating, and nurturing opportunities that are successfully transitioned to a larger sales team for follow-up and closure.`
     ],
     responsibilities: [
-      'Work closely with internal Design & Dev Teams and external clients on Web Applications/Websites;',
-      'Collaborate with internal teams to define and design innovative materials and solutions;',
-      'Understanding of web & mobile app development and general project management practices;',
-      'Assist in implementing a branding strategy, and improves/enhances collateral within brand guidelines;',
-      'Creating wireframes, prototypes;',
-      'Perform other related duties as assigned.'
+      'Lead generation for sales campaigns via various channels (Social Networks, LinkedIn, etc.);',
+      'Negotiation & communication with potential clients;',
+      'Familiarizing potential clients/leads with company stack and services;',
+      'Studying leads, their companies and environment;',
+      'Update and maintain company database of qualified leads and manage lead tracking;',
+      'Maintain HubSpot CRM to keep all the information up-to-date;',
+      'Arrange meetings for sales managers with potential clients;',
+      'Clarifying details about project needs with client;',
+      'Daily or weekly reports about work results;'
     ],
     offer: [
       'Competitive salary',
-      'Foreign customers (USA, Europe)',
-      'Family atmosphere',
-      'Mentorship and knowledge sharing',
-      'We are big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
-      'In August 2018 Valor Software organized the biggest Angular conference in Europe ->  ngTalks.io',
-      'Pet-friendly environment. We have three cats in the office as well dog days',
+      'Quick, reliable and regular feedback sessions, to ensure quality remote work performance',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
       'Flat management structure: CEO and Team',
-      '2 game-rooms',
-      'Recreation area (Massage & Sports equipment)',
-      'Performance reviews with possible salary raises every 6 months',
-      'Flexible work schedule and opportunity to work remotely',
-      'Partial grant of the cost for certification and related conferences',
-      'English Speaking Clubs with native speakers',
-      'Sick leave compensation (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
-      'Unlimited tea, coffee, candies, and cookies',
-      'Comfortable office'
-    ],
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+],
     requirements: [
-      'At least 2 years of relevant experience with a creative agency and/or in-house creative department in a role that blends both UX and UI design concepts;',
-      'Portfolio showing exceptional creative design, ability to pick the best typeface, web or/and mobile designs;',
-      'Sketch, Figma, UXpin, Invision, skills preferred;',
-      'Wireframing tools knowledge: Moqups, Axure, Balsamiq + the ability to think big, go beyond just wireframes, and consider the whole experience',
-      'Focus on user experience (UX) to maximize usability in all designs and mock-ups;',
-      'Ability to analyze and structure requirements;',
-      'Strong understanding of 8-point grid and 12 col grid;',
-      'Understanding how to achieve design consistency in the projects;',
-      'Atomic design principles;',
-      'Basic HTML & CSS knowledge;',
-      'Strong willingness to study new tools and approaches;',
-      'At least intermediate English (working with requirements, speaking verbally with customers).'
+      'English (both spoken and written) — at least Upper-Intermediate level;',
+      'Experience in generating high quality leads;',
+      'Knowledge in managing a lead database using tools like HubSpot;',
+      'Experience using document management tools like Google Sheets and Google Docs;',
+      'Strong written and communications skills;',
+      'Experience in Outbound Sales/Lead Generation;',
+      'Experience using LinkedIn and other tools to research companies and individuals;',
+      'Keen eye on details;',
+      'Experience with B2B sales is a plus;'
     ],
     requirementsPlus: [
-      'NestJS or Express experience (will be a strong plus)',
-      'Experience with backend web frameworks (Rails)',
-      'Familiarity with SQL (e.g., MySQL or PostgreSQL) or NoSQL stores (e.g., Mongo)',
-      'High passion for new technologies and approaches',
-      'Mentorship skills',
-      'Experience or understanding TDD and Pair Programming practices'
+      'HubSpot CRM;',
+      'LinkedIn and automation tools;',
+      'Web Search tools;',
+      'Experience in cold email marketing is a plus',
+      'German, French, Spanish or Scandinavian languages will be a big plus;'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
