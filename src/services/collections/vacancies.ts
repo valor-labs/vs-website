@@ -4,7 +4,7 @@ export const vacancies: any[] = [
   {
     vacancyId: 0,
     show: true,
-    name: 'QA',
+    name: 'Automation QA Engineer (Middle+)',
     description: [
       'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.'
     ],
@@ -21,14 +21,14 @@ export const vacancies: any[] = [
     offer: [
       'Competitive salary',
       'Family atmosphere',
-      'Company-wise mentorship and knowledge sharing',
+      'Mentorship and knowledge sharing',
       'We’re a big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
-      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks 2018',
+      'In August 2018 Valor Software organized the first Angular conference in Ukraine -> ngTalks.io',
       'Pet-friendly environment. We have 3 cats in the office and dog days',
-      'Flat management structure: CEO and Team, that’s all!',
+      'Flat management structure: CEO and Team',
       '2 game-rooms',
       'Recreation area (Massage and Sport equipment)',
-      'Performance review with possible salary rise each 6 month',
+      'Performance review with a possible salary rise each 6 month',
       'Partial grant of the cost of certification and related conferences',
       'English Speaking Club with a native speaker',
       'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
@@ -36,23 +36,78 @@ export const vacancies: any[] = [
       'Comfortable office'
     ],
     requirements: [
-      '2+ years of manual testing / automation testing experience;',
-      'Good software testing background;',
+      '1.5+ years of automation testing;',
+      'Knowledge of at least one programming language (JavaScript/TypeScript is preferable);',
+      'Theoretical knowledge and practical experience with HTML, CSS;',
+      'Experience with version control systems (git is preferable);',
       'Good knowledge of test automation approaches;',
-      'Experience with version control systems (git);',
-      'Knowledge of JavaScript testing tools: Protractor, Jasmine, Karma, etc;',
-      'Client side knowledge - HTML, CSS;',
-      'Fluent knowledge of tools for testing automation;',
-      'Experience with version control systems (git);',
-      'Knowledge of continuous integration servers (CI/CD);',
+      'Software testing background;',
+      'Experience with Test documentation: test cases, test plans, checklists, estimations and status reports;',
       'Familiarity and understanding of Agile methodologies;',
-      'Good written and verbal communication skills;',
-      'Good level of responsibility, flexibility, communication;',
-      'Good written and verbal English is necessary.'
+      'Good written and verbal English & communication skills;',
+    ],
+    requirementsPlus: [
+      'Knowledge of testing tools, such as (or related): Cypress, Protractor, Jasmine, Karma, Mocha,  etc.',
+      'Experience with Cloud Testing Services (Saucelabs, Browserstack, etc.);',
+      'Knowledge of continuous integration servers (CI\\CD)'
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
   },
+
+
+  // {
+  //   vacancyId: 0,
+  //   show: false,
+  //   name: 'QA',
+  //   description: [
+  //     'We are looking for a Quality Assurance Engineer to develop and execute exploratory tests as well as automated tests in order to ensure product quality. QA engineer responsibilities include estimating, planning, and coordinating testing activities. You will also ensure that quality issues and defects are appropriately identified, documented, tracked, and resolved. Our testing approach assumes tight integration with development process itself.'
+  //   ],
+  //   responsibilities: [
+  //     'Participating in the development and delivery of testing including functional testing, integration testing, and regression testing as well as automated testing and UAT;',
+  //     'Automate manual test cases;',
+  //     'Build robust test suites that run stable in any environment;',
+  //     'Automation test case creation and execution;',
+  //     'Extending and maintain of existing testing framework;',
+  //     'Bugs reporting and bug fix verification;',
+  //     'Preparation of testing result reports;',
+  //     'Work planning and estimation.'
+  //   ],
+  //   offer: [
+  //     'Competitive salary',
+  //     'Family atmosphere',
+  //     'Company-wise mentorship and knowledge sharing',
+  //     'We’re a big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+  //     'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks 2018',
+  //     'Pet-friendly environment. We have 3 cats in the office and dog days',
+  //     'Flat management structure: CEO and Team, that’s all!',
+  //     '2 game-rooms',
+  //     'Recreation area (Massage and Sport equipment)',
+  //     'Performance review with possible salary rise each 6 month',
+  //     'Partial grant of the cost of certification and related conferences',
+  //     'English Speaking Club with a native speaker',
+  //     'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+  //     'Unlimited tea, coffee, candies, and cookies',
+  //     'Comfortable office'
+  //   ],
+  //   requirements: [
+  //     '2+ years of manual testing / automation testing experience;',
+  //     'Good software testing background;',
+  //     'Good knowledge of test automation approaches;',
+  //     'Experience with version control systems (git);',
+  //     'Knowledge of JavaScript testing tools: Protractor, Jasmine, Karma, etc;',
+  //     'Client side knowledge - HTML, CSS;',
+  //     'Fluent knowledge of tools for testing automation;',
+  //     'Experience with version control systems (git);',
+  //     'Knowledge of continuous integration servers (CI/CD);',
+  //     'Familiarity and understanding of Agile methodologies;',
+  //     'Good written and verbal communication skills;',
+  //     'Good level of responsibility, flexibility, communication;',
+  //     'Good written and verbal English is necessary.'
+  //   ],
+  //   headerImage: 'assets/images/vacancy/vacancy.jpg',
+  //   location: 'Kharkiv, Ukraine'
+  // },
   {
     vacancyId: 1,
     show: true,
