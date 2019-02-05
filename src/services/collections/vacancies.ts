@@ -477,7 +477,61 @@ export const vacancies: any[] = [
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
-  }
+  },
+  {
+    vacancyId: 8,
+    show: true,
+    name: 'Project Manager',
+    description: [
+      'Valor Software is looking for an ambitious Project Manager, preferably, with QA or Dev background, as technical proficiency and ability to handle any technical queries effectively for Project Manager is a must. The right Project Manager must also have excellent communication skills, written as well as verbal, as you would be liaising with both internal and external stakeholders and maintain close contact with team members.\n',
+      'This role would be a big step on your way to becoming a Senior Project Manager position within a truly pioneering IT company.'
+    ],
+    responsibilities: [
+      'Generation and maintenance of cross functional project plans, organization, and documentation of project meetings' +
+      ' creation / analysis / reporting of project metrics coordination with stakeholders;',
+      'Leads critical project governance activities, including facilitating project meetings, progressing projects through life cycle transitions, and ensuring quality standards are ' +
+      'maintained through quality assurance activities;',
+      'Develops and implements risk assessment, change management, quality assurance, performance, and control measures to ensures completion of projects by established standards;',
+      'Early identification of issues and/or concerns that either has the potential or will impact the project baseline;',
+      'Providing accurate and timely information, data and reports regarding the project status, activities and performance;',
+    ],
+    offer: [
+      'Competitive salary',
+      'Family atmosphere',
+      'Mentorship and knowledge sharing',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov — first Angular Google Developer Expert (GDE) in Ukraine and he is in the Angular Core Team and author of ngx-bootstrap library.',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Team',
+      '2 game-rooms',
+      'Recreation area (Massage and Sports equipment)',
+      'Performance review with a possible salary rise each 6 month',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      'At least one year of experience in managing technology/online/business projects in a professional environment involving multiple stakeholders;',
+      'At least one year experience in managing teams;',
+      'Knowledge of IT operation processes such as risk management;',
+      'Strong estimation skills;',
+      'Knowledge of Waterfall & Agile project management approaches;',
+      'Excellent time management, organizational skills, and communication skills;',
+      'Competent in managing multiple projects and client relationships at one time;',
+      'Strong understanding of the need for Quality within the project environment;',
+      'Excellent english communication skills, both verbal and written: Upper Intermediate+;',
+      'Experience dealing with a range of customers;',
+      'Excellent problem-solving skills;',
+    ],
+    requirementsPlus: [
+      'Experience in managing web development projects is a plus',
+      'Proven records of education in project management area is a plus',
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
+  },
   // {
   //   vacancyId: 5,
   //   show: false,
