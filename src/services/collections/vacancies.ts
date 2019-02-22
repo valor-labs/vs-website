@@ -183,7 +183,7 @@ export const vacancies: any[] = [
       'Comfortable office'
     ],
     requirements: [
-      '2+ years of using Angular 2+',
+      '2+ years of using Angular v2+',
       '2+ years of using NodeJs',
       '1+ year of working with MySQL DB',
       'Unit-testing',
@@ -301,7 +301,7 @@ export const vacancies: any[] = [
       'English (both verbal and written): Intermediate+;'
     ],
     requirementsPlus: [
-      'Experience with Angular 2+ will be a strong plus ',
+      'Experience with Angular v2+ will be a strong plus ',
       'Experience with SQL DB will be a strong plus',
       'Be interested or have experience in integrating AI/ML (will be a strong plus) ',
       'High passion for new technologies and approaches',
@@ -344,7 +344,7 @@ export const vacancies: any[] = [
       'Comfortable office'
     ],
     requirements: [
-      'Angular with TypeScript 2+',
+      'Angular v2+ with TypeScript',
       '2+ years of NativeScript',
       'JS core',
       'Knowledgeable of REST principles',
