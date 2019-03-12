@@ -526,5 +526,58 @@ export const vacancies: any[] = [
     ],
     headerImage: 'assets/images/vacancy/vacancy.jpg',
     location: 'Kharkiv, Ukraine'
+  },
+  {
+    vacancyId: 10,
+    show: true,
+    name: 'IT Sales Manager',
+    description: [
+      'Valor Software is looking for a Sales Manager to join our team. We are looking for a high-performing Sales Manager to help us meet our customer acquisition and revenue ' +
+      'growth targets. The primary objective is to communicate with the client and provide an almost full cycle of sales from the initial contact to the closed deal.'
+    ],
+    responsibilities: [
+      'Maintaining communication with prospects via email, LinkedIn, and other dedicated sales platforms and channels;',
+      'Drive the sales process from plan to close;',
+      'Manage and document information about customers and requirements using the HubSpot CRM;',
+      'Identify opportunities for self-development, in conjunction with your supervisor, to continually improve your ability to perform your role and prepare yourself ' +
+      'to take on new roles in the future;',
+      'Research and pre-sales preparation for sales calls;',
+      'Must be able to handle confidential matters in a professional manner;',
+      'Able to work independently, rigorous, detail-oriented, critical thinker and performance-driven;',
+      'Maintain sales activity records and prepare sales reports;',
+      'Close deals with partnership aim;'
+    ],
+    offer: [
+      'Family atmosphere',
+      'Competitive compensation',
+      'Team-wise mentorship and constant knowledge sharing;',
+      'We’re big Angular community activists: CEO Dmitriy Shekhovtsov - first Angular Google Developer Expert (GDE) in Ukraine, the author of ngx-bootstrap library',
+      'In August 2018 Valor Software organized the biggest Angular conference in Europe -> ngTalks.io',
+      'Pet-friendly environment. We have 3 cats in the office and dog days',
+      'Flat management structure: CEO and Teams, that’s all;',
+      '2 game-rooms',
+      'Recreation area (Massage and Sports equipment)',
+      'Performance review with a possible compensation rise each 6 months;',
+      'Partial grant of the cost of certification and related conferences',
+      'English Speaking Club with a native speaker',
+      'Compensation for sick leaves (5 per year), Days Off (1 per quarter) and regular vacations (15 working days per year)',
+      'Unlimited tea, coffee, candies, and cookies',
+      'Comfortable office'
+    ],
+    requirements: [
+      'At least 2 years in IT software sales;',
+      'Excellent English written and verbal communication skills;',
+      'Negotiations skills;',
+      'Proven experience in technical software sales;',
+      'Ability to understand customer’s needs;',
+      'Experience in working in an international environment;',
+      'Good communication and presentation skills;',
+    ],
+    requirementsPlus: [
+      'Understanding of web development process is a plus;',
+      'Ability to work in a team in an Agile/SCRUM environment;',
+    ],
+    headerImage: 'assets/images/vacancy/vacancy.jpg',
+    location: 'Kharkiv, Ukraine'
   }
 ];
