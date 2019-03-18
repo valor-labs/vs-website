@@ -119,7 +119,7 @@ export class FormsComponent implements OnInit, OnDestroy {
           /* tslint:disable-next-line */
           console.log(error);
           this.preloader = false;
-          const message = error.message || 'Something went wrong';
+          const message = error.error || error.message || 'Something went wrong';
           alert(message);
         });
     }
@@ -143,7 +143,7 @@ export class FormsComponent implements OnInit, OnDestroy {
           /* tslint:disable-next-line */
           console.log(error);
           this.preloader = false;
-          const message = error.message || 'Something went wrong';
+          const message = error.error || error.message || 'Something went wrong';
           alert(message);
         });
     }
@@ -166,7 +166,7 @@ export class FormsComponent implements OnInit, OnDestroy {
           /* tslint:disable-next-line */
           console.log(error);
           this.preloader = false;
-          const message = error.message || 'Something went wrong';
+          const message = error.error || error.message || 'Something went wrong';
           alert(message);
         });
     }
