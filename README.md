@@ -7,6 +7,7 @@
 
 [![Angular Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/guide/styleguide)
 
+
 ### Development
 Read this first
 - [Style Guide](https://angular.io/guide/styleguide)
@@ -31,6 +32,7 @@ Make your changes, make sure tests pass
 `npm t`
 
 Create PR, assign developers who can make code review. (ask your mentor, team/tech lead..);
+
 
 #### Storage notes
 
